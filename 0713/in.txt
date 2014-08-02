@@ -1,0 +1,9 @@
+ installed 12.10 and it just didn't work for me, so I re-installed 12.04.1, and after working out the usual stuff, I went to install the extra language packs I need (Korean, German, Spanish). However, when I try to install them from the Language Support part of the System Settings control panel, I get this error message:
+
+"Software database is broken
+
+It is impossible to install or remove any software. Please use the package manager "Synaptic" or run "sudo apt-get install -f" in a terminal to fix this issue at first."
+
+I checked everything in Synaptic (repos, broken packages, etc) that I could. I did sudo-apt-get update && sudo apt-get dist-upgrade like 1,000 times. I tried sudo apt-get install -f. I tried sudo dpkg --configure -a. I tried installing each language separately, one at a time, and got the same error message. I've never had this problem before, and never had any problem installing language support before. Everything I have found by googling/duckduckgoing this problem points to the above-mentioned solutions.
+
+I'm using a Gateway NV series laptop (64 bit) that I bought in 2010 and have been running Ubuntu on it since (updated every six months with new releases). I always have no problems with installing language support. 

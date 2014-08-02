@@ -1,0 +1,10 @@
+google.com
+阿里巴巴    1280.00     估值    香港&杭州   陆兆禧  www.alibaba.com
+亚马逊  1240.30     纳斯达克    西雅图  杰夫·贝佐斯     www.amazon.com
+Ebay    743.03  纳斯达克    圣荷西市    约翰·多纳霍     www.ebay.com
+Facebook    641.30  纳斯达克    帕拉阿图    马克·扎克伯格   www.facebook.com
+腾讯    597.04  港交所  北京    马化腾  www.qq.com  
+百度    316.86  纳斯达克    北京    李彦宏  www.baidu.com
+雅虎    271.90  纳斯达克    森尼韦尔市  玛丽莎·梅耶尔   www.yahoo.com
+LinkedIn    174.22  纽交所  山景城  杰夫·韦纳   www.linkedin.com
+Netflix     98.46   纳斯达克    洛斯盖图    Reed Hastings   www.netflix.com

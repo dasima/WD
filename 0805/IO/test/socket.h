@@ -1,10 +1,10 @@
-#include "socket.h"
-#include "network.h"
+#ifndef _SOCKET_H_
+#define _SOCKET_H_ 
+
+#include "read_write.h"
 #include <netinet/in.h>
 #include <sys/select.h>
-
-
-int get_listen_fd()
+int getListenFd()
 {
     //创建socket套接字
     int listenfd = socket(PF_INET, SOCK_STREAM, 0);
@@ -31,3 +31,5 @@ int get_listen_fd()
 
     return listenfd;
 }
+
+#endif  /*_SOCKET_H_*/

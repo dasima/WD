@@ -17,6 +17,7 @@ void *Thread::threadFunc(void *arg)
 {
     Thread *pt = static_cast<Thread*>(arg);
     pt->callback_();//调用线程逻辑
+    return NULL;
 }
 
 void Thread::start()

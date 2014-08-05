@@ -21,19 +21,18 @@ ThreadPool::~ThreadPool()
 
 void ThreadPool::addTask(const Task &task)
 {
-    mutex_.lock();
+    MutexLockGuard lock(mutex_);
     while(queue_.size() >= queue_size_)
         empty_.wait();
     queue_.push(task);
     full_.notify();//通知消费者取任务
-    mutex_.unlock();
 }
 
 //
 ThreadPool::Task ThreadPool::getTask()
 {
-    mutex_.lock();
-    while(queue_.empty() && is_started_)
+    MutexLockGuard lock(mutex_);
+    while(queue_.empty() && is_started_)//???is_started_
         full_.wait();
     /*
      *这里的wait可以被stop函数中的notifyAll所激活
@@ -42,14 +41,13 @@ ThreadPool::Task ThreadPool::getTask()
      *显然，此时队列仍然为空
      */
     Task task;
-    //如果队列为空
+    //如果队列不为空
     if(!queue_.empty())
     {
         task = queue_.front();
         queue_.pop();
         empty_.notify();//通知生产者
     }
-    mutex_.unlock();
     return task;
 }
 
@@ -80,10 +78,11 @@ void ThreadPool::stop()
 {
     if(is_started_ == false)
         return;
-    mutex_.lock();
-    is_started_ = false;
-    full_.notifyAll();//激活所有正在等待任务的线程
-    mutex_.unlock();
+    {
+        MutexLockGuard lock(mutex_);
+        is_started_ = false;
+        full_.notifyAll();//激活所有正在等待任务的线程
+    }
 
     for(size_t i = 0; i != pool_size_; ++i)
         threads_[i]->join();

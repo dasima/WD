@@ -5,6 +5,10 @@
 //写这个类是为了存放线程
 
 //这里用到多重继承
+/*
+ *相当于vector<T *>
+ *额外添加了自动析构指针的功能
+ */
 template <typename T>
 class PtrVector : public std::vector<T*>,
                   private NonCopyable

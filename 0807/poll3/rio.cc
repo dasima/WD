@@ -3,6 +3,8 @@
 #include <string.h>
 #include <unistd.h>
 #include <errno.h>
+#include <iostream>
+using namespace std;
 
 Rio::Rio(int fd)
     :fd_(fd),
@@ -13,7 +15,7 @@ Rio::Rio(int fd)
 
 ssize_t Rio::rio_read(char *usrbuf, size_t n)
 {
-    size_t nread;
+    ssize_t nread;
     while(left_ <= 0)
     {
         nread = ::read(fd_, buffer_, sizeof buffer_);
@@ -29,7 +31,7 @@ ssize_t Rio::rio_read(char *usrbuf, size_t n)
         bufPtr_ = buffer_;
     }
     int cnt = n;
-    if(left_ < n)
+    if(left_ < static_cast<int>(n))
         cnt = left_;
     ::memcpy(usrbuf, bufPtr_, cnt);
     left_ -= cnt;
@@ -41,7 +43,7 @@ ssize_t Rio::rio_read(char *usrbuf, size_t n)
 ssize_t Rio::rio_readn(char *usrbuf, size_t n)
 {
     size_t nleft = n;
-    size_t nread;
+    ssize_t nread = 0;
     char *buf = usrbuf;
     while(nleft > 0)
     {
@@ -57,40 +59,42 @@ ssize_t Rio::rio_readn(char *usrbuf, size_t n)
     return (n - nleft);
 }
 
-ssize_t Rio::rio_readline(char* usrbuf, size_t n)
+ssize_t Rio::rio_readline(char* usrbuf, size_t maxlen)
 {
     char *buf = usrbuf;
-    size_t nread;
+    int nread;
     char c;
     int i;
-    for(i = 0; i < MAXLINE - 1; ++i)
+    for(i = 0; i < static_cast<int>(maxlen - 1); ++i)
     {
-        if(nread == rio_read(&c, 1) == -1)
+        if((nread = rio_read(&c, 1)) == -1)
         {
             return -1;
         }else if(nread == 0)
         {
-            if(i == 0)
+            if(i == 0)//第一个字符读取遇到EOF
+            {
                 return 0;
-            break;
+            }
+            break;//这里可能已经读取了部分字节
         }
 
-        *buf = c;
+        *buf = c;//字符放入缓冲区
         ++buf;
 
-        if(c == '\n');
-        break;
+        if(c == '\n')
+            break;
     }
     *buf = '\0';
-    return i;
+    return i;//返回成功读取的字节数，不包括最后的\0
 }
 
-ssize_t Rio::rio_writen(char *usrbuf, size_t n)
+ssize_t Rio::rio_writen(const char *usrbuf, size_t n)
 {
     size_t nleft = n;
-    size_t nwrite;
-    char *buf = usrbuf;
-    while(nwrite > 0)
+    ssize_t nwrite;
+    const char *buf = usrbuf;
+    while(nleft > 0)
     {
         if((nwrite = ::write(fd_, buf, nleft)) <= 0)
         {
@@ -101,7 +105,7 @@ ssize_t Rio::rio_writen(char *usrbuf, size_t n)
         nleft -= nwrite;
         buf += nwrite;
     }
-    return n;
+    return n;//写入最后必须为n
 }
 
 

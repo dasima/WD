@@ -1,5 +1,6 @@
 #ifndef _RIO_H_
 #define _RIO_H_
+#include "non_copyable.h"
 #include <stdlib.h>
 #define ERR_EXIT(m)\
     do\
@@ -10,14 +11,14 @@
 
 #define MAXLINE 1024
 #define RIO_BUFFER 8192
-class Rio
+class Rio : NonCopyable
 {
     public:
         explicit Rio(int);
 
         ssize_t rio_readn(char*, size_t);
         ssize_t rio_readline(char*, size_t);
-        ssize_t rio_writen(char*, size_t);
+        ssize_t rio_writen(const char*, size_t);
     private:
         ssize_t rio_read(char*, size_t);
 

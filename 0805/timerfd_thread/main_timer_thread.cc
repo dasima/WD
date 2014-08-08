@@ -16,9 +16,9 @@ int main(int argc, const char *argv[])
     TimerThread tt;
     tt.setTimer(3, 1);
     tt.setTimerCallback(test);
-    tt.startTimerThread();//poll触发了计时器？
+    tt.startTimerThread();//poll触发了计时器
     
-    sleep(10);
+    sleep(4);
 
     tt.cancelTimerThread();
     

@@ -1,4 +1,5 @@
 #include "tcp_connection.h"
+#include "tcp_server.h"
 #include "poll_poller.h"
 #include <iostream>
 #include <string>
@@ -23,13 +24,8 @@ void onMessage(const TcpConnectionPtr &conn)
     conn->sendString("ACK\n");
 }
 
-void onClose(const TcpConnectionPtr &conn)
-{
-    cout << "close conn " << endl;
-    conn->shutdown();
-}
 /*
- *
+ *这个是TcpServer类的使用案例
  */
 
 int main(int argc, const char *argv[])

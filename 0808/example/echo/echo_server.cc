@@ -1,9 +1,9 @@
-#include "EchoServer.h"
+#include "echo_server.h"
 #include <iostream>
 #include <string>
+
 using namespace std;
 using namespace placeholders;
-
 EchoServer::EchoServer(const InetAddress &addr)
     :server_(addr)
 {
@@ -21,22 +21,20 @@ void EchoServer::onConnection(const TcpConnectionPtr &conn)
 {
     cout << conn->getPeerAddr().toIp() << " port: "
         << conn->getPeerAddr().toPort() << endl;
-    conn->send("Hello, welcome to Echo Server!!!\r\n");
+    conn->sendString("Hello ,welcome to Echo Server!\r\n");
 }
 
 
 void EchoServer::onMessage(const TcpConnectionPtr &conn)
 {
-    string s(conn->receive());
-    conn->send(s);
+    string s(conn->receiveString());
+    conn->sendString(s);
 }
 
 void EchoServer::onClose(const TcpConnectionPtr &conn)
 {
-    cout << conn->getPeerAddr().toIp() << " port: "
-        << conn->getPeerAddr().toPort() << "  Close" << endl;
+    cout << conn->getPeerAddr().toIp() << " port "
+        << conn->getPeerAddr().toPort() << " close " << endl;
     conn->shutdown();
 }
-
-
 

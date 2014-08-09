@@ -20,7 +20,7 @@ void onMessage(const TcpConnectionPtr &conn)
 }
 
 /*
- *
+ *这个是类封转的使用
  */
 
 int main(int argc, const char *argv[])

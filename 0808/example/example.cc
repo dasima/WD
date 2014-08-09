@@ -1,19 +1,19 @@
-#include <echo/TcpServer.h>
+#include <echo/tcp_server.h>
 #include <iostream>
+
 using namespace std;
 
 void onConnection(const TcpConnectionPtr &conn)
 {
-    cout << "Client: " << conn->getPeerAddr().toIp() 
-        << " Port: " << conn->getPeerAddr().toPort() << endl;
-    conn->send("hello\r\n");
-    //conn->shutdown();
+    cout << "client " << conn->getPeerAddr().toIp()
+        << " port " << conn->getPeerAddr().toPort() << endl;
+    conn->sendString("Hello\r\n");
 }
 
 void onMessage(const TcpConnectionPtr &conn)
 {
-    string s(conn->receive());
-    conn->send("ACK\r\n");
+    string s(conn->receiveString());
+    conn->sendString("ACK\r\n");
 }
 
 int main(int argc, const char *argv[])

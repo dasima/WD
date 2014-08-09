@@ -2,7 +2,7 @@
 CC=g++
 CFLAGS=-Wall -g
 BIN=test
-OBJS=socket.o rio.o tcp_connection.o poll_poller.o main_server.o
+OBJS=socket.o rio.o tcp_connection.o poll_poller.o tcp_server.o test_echo_server.o
 STARD=-std=c++0x
 $(BIN):$(OBJS)
 	$(CC) $(CFLAGS) $^ -o $@

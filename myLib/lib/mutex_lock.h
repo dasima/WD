@@ -41,10 +41,12 @@ inline MutexLock::~MutexLock()
 inline void MutexLock::lock()
 {
     pthread_mutex_lock(&mutex_);
+    is_locked_ = true;
 }
 
 inline void MutexLock::unlock()
 {
+    is_locked_ = false;
     pthread_mutex_unlock(&mutex_);
 }
 

@@ -1,0 +1,7 @@
+port=8080
+log=../log/log.txt
+cache_file=../data/cache.txt
+en_dic=../data/en_out.txt
+cn_dic=../data/cn_out.txt
+cache_num=5
+update_frequence=15

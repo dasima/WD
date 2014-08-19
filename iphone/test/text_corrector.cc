@@ -12,9 +12,11 @@ using namespace std;
 using namespace string_utils;
 
 TextCorrector::TextCorrector(const string &filename1, const string &filename2)
+    :Cache_("../data/cache.txt")
 {
     readFileEn(filename1);    
     readFileCn(filename2);    
+
 }
 
 TextCorrector::~TextCorrector()
@@ -33,7 +35,13 @@ void TextCorrector::readFileEn(const string &filename)
     while(getline(in, line))
     {
         istringstream iss(line);
-
+        iss >> word >> frequence;
+        Dic_en_.insert(make_pair(word, frequence));
+    }
+    /*
+    while(getline(in, line))
+    {
+        istringstream iss(line);
         iss >> word >> frequence;
         Word new_word;
         new_word.Word_ = word;
@@ -41,7 +49,9 @@ void TextCorrector::readFileEn(const string &filename)
         new_word.Frequence_ = frequence;
         Dic_en_.insert(make_pair(word, new_word));
     }
+    */
     in.close();
+    Index_.buildIndexEn(Dic_en_);
 }
 
 void TextCorrector::readFileCn(const string &filename)
@@ -57,23 +67,31 @@ void TextCorrector::readFileCn(const string &filename)
     {
         istringstream iss(line);
         iss >> word >> frequence;
+        Dic_cn_.insert(make_pair(word, frequence));
+    }
+    /*
+    while(getline(in, line))
+    {
+        istringstream iss(line);
+        iss >> word >> frequence;
         Word new_word;
         new_word.Word_ = word;
         new_word.Frequence_ = frequence;
         new_word.Distance_ = 5;
         Dic_cn_.insert(make_pair(word, new_word));
     }
+    */
     in.close();
+    Index_.buildIndexCn(Dic_cn_);
 }
 
 string TextCorrector::textQuery(const string &word)
 {
-    cout << "c" << endl;
     string tmp = word;
     while(*(tmp.rbegin()) == '\r' || *(tmp.rbegin()) == '\n')
         tmp.resize(tmp.size() - 1);
     priority_queue<Word> queue;
-    map<string, Word>::iterator mit;
+    map<string, int>::iterator mit;
 
     string res;
     int len = string_utils::getLenOfUTF8(tmp[0]);
@@ -109,11 +127,12 @@ string TextCorrector::textQuery(const string &word)
     return res; 
 }
 
+//从中文词典中查询---OK
 string TextCorrector::cnQuery(const string &word)
 {
     string tmp = word;
     priority_queue<Word> queue;
-    map<string, Word>::iterator mit = Dic_cn_.begin();
+    map<string, int>::iterator mit = Dic_cn_.begin();
     for(; mit != Dic_cn_.end(); ++mit)
     {
         int distance = string_utils::editDistance((mit->first).c_str(), word.c_str());
@@ -122,6 +141,7 @@ string TextCorrector::cnQuery(const string &word)
             Word mword;
             mword.Distance_ = distance;
             mword.Word_ = mit->first;
+            mword.Frequence_ = mit->second;
             queue.push(mword);
         }
     }
@@ -133,6 +153,7 @@ string TextCorrector::cnQuery(const string &word)
             break;
         word_out = queue.top().Word_;
         //cout << word_out << endl;
+        Cache_.buildCache(word, word_out);
         word_out += "\r\n";
         res += word_out;
         queue.pop();
@@ -146,7 +167,7 @@ string TextCorrector::enQuery(const string &word)
    // cout << "en" << endl;
     string tmp = word;
     priority_queue<Word> queue;
-    map<string, Word>::iterator mit = Dic_en_.begin();
+    map<string, int>::iterator mit = Dic_en_.begin();
     for(; mit != Dic_en_.end(); ++mit)
     {
         int distance = string_utils::editDistance((mit->first).c_str(), word.c_str());
@@ -155,6 +176,7 @@ string TextCorrector::enQuery(const string &word)
             Word mword;
             mword.Distance_ = distance;
             mword.Word_ = mit->first;
+            mword.Frequence_ = mit->second;
             queue.push(mword);
         }
     }
@@ -167,6 +189,7 @@ string TextCorrector::enQuery(const string &word)
             break;
         //cout << "res" << endl;
         word_out = queue.top().Word_;
+        Cache_.buildCache(word, word_out);
         //cout << word_out << endl;
         word_out += "\r\n";
         res += word_out;
@@ -174,5 +197,4 @@ string TextCorrector::enQuery(const string &word)
     }
     return res;
 }
-
 

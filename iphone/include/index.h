@@ -1,7 +1,7 @@
 #ifndef _INDEX_H_
 #define _INDEX_H_
 
-#include "../include/word.h"
+#include "word.h"
 #include <string>
 #include <map>
 #include <stdint.h>
@@ -10,13 +10,13 @@ class Index
 {
     public:
         Index()
-            :Index_(26)
         {}
-        void buildIndex(const std::map<std::string, Word> &);
+        void buildIndexEn(const std::map<std::string, int> &);
+        void buildIndexCn(const std::map<std::string, int> &);
         //void createIndexCn(const std::unordered_map<std::string, Word> &);
 
     private:
-            std::map<uint32_t, std::set<Word> > Index_;
+            std::map<uint32_t, std::map<std::string, int> > Index_;
 
 };
 

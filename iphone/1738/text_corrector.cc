@@ -12,7 +12,7 @@ using namespace std;
 using namespace string_utils;
 
 TextCorrector::TextCorrector(const string &filename1, const string &filename2)
-//    :Cache_("../data/cache.txt")
+    :Cache_("../data/cache.txt")
 {
     readFileEn(filename1);    
     readFileCn(filename2);    

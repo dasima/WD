@@ -1,4 +1,4 @@
-#include "log.h"
+#include "../include/log.h"
 #include "../include/lib/exception.h"
 #include <iostream>
 #include <fstream>
@@ -27,11 +27,15 @@ void Log::getLog()
     {
         MutexLockGuard lock(Mutex_);
         while(Is_started_ && Queue_.empty())
+        {
             Cond_.wait();
+        }
         string str;
         if(!Queue_.empty())
         {
+            str = Queue_.front();
             Queue_.pop();
+            //writeToLog("hi");
             writeToLog(str);
         }
         else
@@ -44,18 +48,18 @@ void Log::getLog()
 void Log::addLog(const string &str)
 {
     MutexLockGuard lock(Mutex_);
-    Queue_.pop();
+    Queue_.push(str);
     if(Queue_.size() == 1)
         Cond_.notify();
 }
 
-void Log::writeToLog(const string &str)
+void Log::writeToLog(const string &log_file)
 {
     ofstream of;
     of.open(Log_file_, ofstream::app);
     if(!of)
         throw Exception("open file failed");
-    of << str << endl;
+    of << log_file << endl;
     of.close();
 
 }

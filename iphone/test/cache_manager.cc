@@ -29,7 +29,7 @@ CacheManager::CacheManager(const string &cache_file,
         Flags_[ix] = 0;
         Queue_.push(ix);
     }
-    Timer_.setTime(10, update_frequence);
+    Timer_.setTimer(10, update_frequence);
     Timer_.setTimerCallback(::bind(&CacheManager::writeToCacheFile, this));
 }
 
@@ -49,8 +49,8 @@ void CacheManager::stop()
 {
     if(Is_started_)
     {
-        Is_started_ = false;
-        Full_.signalAll();
+        Is_started_ = true;
+        Full_.notifyAll();
     }
 }
 
@@ -58,11 +58,12 @@ Cache *CacheManager::getCache()
 {
     MutexLockGuard lock(Mutex_);
     size_t i;
-    while(Is_started_  && Queue_.isEmpty())
+    while(Is_started_  && Queue_.empty())
         Full_.wait();
-    if(!Queue_.isEmpty())
+    if(!Queue_.empty())
     {
-        Queue_.pop(i);
+        i = Queue_.front();
+        Queue_.pop();
     }
     return &Caches_[i];
 }
@@ -72,11 +73,11 @@ void CacheManager::returnCache(size_t i)
 {
     MutexLockGuard lock(Mutex_);
     Queue_.push(i);
-    if(Queue_.getSize() == 1)
+    if(Queue_.size() == 1)
         Full_.notify();
 }
 
-void CacheManager::writeToFile()
+void CacheManager::writeToCacheFile()
 {
     map<string, set<string> >::iterator begin, end;
     for(size_t i = 0; i != Cache_num_; ++i)

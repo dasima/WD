@@ -2,7 +2,7 @@
 CC=g++
 CFLAGS=-Wall -g
 BIN=server
-OBJS=main_dic.o text_corrector.o string_utils.o cache.o index.o log.o
+OBJS=main_server.o text_corrector.o string_utils.o cache.o index.o log.o query_server.o get_config.o 
 OTHER=-std=c++0x
 LINKS=-lecho -lpthread
 $(BIN):$(OBJS)

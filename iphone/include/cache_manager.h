@@ -6,9 +6,9 @@
 #include <vector>
 #include <queue>
 #include "../include/cache.h"
-#include "../include/packaging/queue.h"
-#include "../include/packaging/mutual.h"
-#include "../include/packaging/condition.h"
+//#include "../include/packaging/queue.h"
+#include "../include/lib/mutex_lock.h"
+#include "../include/lib/condition.h"
 #include "./lib/timer_thread.h"
 #include "./lib/mutex_lock.h"
 
@@ -32,7 +32,7 @@ class CacheManager
         Cache Cache_total_;//总缓存
         std::vector<size_t> Flags_;//
         bool Is_started_;
-        queue<size_t> Queue_;//队列
+        std::queue<size_t> Queue_;//队列
         MutexLock Mutex_;//锁
         Condition Empty_;//信号量
         Condition Full_;

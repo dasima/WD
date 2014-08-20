@@ -6,11 +6,13 @@
 #include <iostream>
 using namespace std;
 
-
+/*
 Cache::Cache(const string &filename)
 {
     readFromCacheFile(filename);
 }
+*/
+
 void Cache::readFromCacheFile(const string &filename)
 {
     ifstream in;
@@ -59,4 +61,13 @@ void Cache::writeToCacheFile(const string &filename)
         of << endl;
     }
     of.close();
+}
+
+set<string> Cache::searchFromCache(const string &word)
+{
+    map<string, set<string> >::iterator mit = Cache_.find(word);
+    set<string> candidates;
+    if(mit != Cache_.end())
+        candidates = mit->second;
+    return candidates;
 }

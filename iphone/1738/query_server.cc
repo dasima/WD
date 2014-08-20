@@ -9,8 +9,8 @@ QueryServer::QueryServer(const InetAddress &addr,
                        const string &filename3)
     :server_(addr), 
     query_(filename, filename2),
-    pool_(1000, 4)
-//    cache_(filename3)
+    pool_(1000, 4),
+    cache_(filename3)
 
 {
 
@@ -75,8 +75,7 @@ void QueryServer::runQuery(const string &s, const TcpConnectionPtr &conn)
         word.erase(word.size()-1);//???erase
         word.erase(word.size()-1);
     }
-    //cout << string_utils::getLenOfUTF8(word[0]) << endl;
-    //这里处理中文有问题
+    cout << string_utils::getLenOfUTF8(word[0]) << endl;
     vector<uint32_t> vec;
     string_utils::parseUTF8String(word, vec);
     string res = query_.textQuery(word);

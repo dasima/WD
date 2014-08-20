@@ -6,11 +6,11 @@
 #include <iostream>
 using namespace std;
 
+
 Cache::Cache(const string &filename)
 {
     readFromCacheFile(filename);
 }
-
 void Cache::readFromCacheFile(const string &filename)
 {
     ifstream in;
@@ -38,19 +38,16 @@ void Cache::buildCache(const string &word, const string &word_cache)
     Cache_[word].insert(word_cache);
 }
 
-//程序运行成功后，把cout全注释了
 void Cache::writeToCacheFile(const string &filename)
 {
-    cout << "sss" << endl;
     ofstream of;
     of.open(filename.c_str());
     if(!of)
         throw Exception("open file failed");
     map<string, set<string> >::iterator mit = Cache_.begin();
-    for(; mit != Cache_.end(); ++mit)
+    for(;mit != Cache_.end(); ++mit)
     {
-        cout << "mmm" << endl;
-        cout << mit->first << " " ;
+        //cout << mit->first << " " ;
         of << mit->first << " " ;
         set<string>::iterator sit = (mit->second).begin();
         for(; sit != (mit->second).end(); ++sit)

@@ -11,6 +11,7 @@ class Cache
         typedef std::map<std::string, std::set<std::string> > MS_;
 
         Cache(const std::string &);
+        Cache() {}
 
         MS_ &getCache()
         { return Cache_; }
@@ -18,6 +19,8 @@ class Cache
         void buildCache(const std::string &, const std::string &);
         void readFromCacheFile(const std::string &);
         void writeToCacheFile(const std::string &);
+
+        std::set<std::string> searchFromCache(const std::string &);
 
         void setOrder(size_t order)
         { Order_ = order; }

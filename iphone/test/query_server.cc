@@ -1,5 +1,5 @@
 //#include "../include/query_server.h"
-#include "query_server.h"
+#include "../include/query_server.h"
 #include "../include/string_utils.h"
 #include <sstream>
 #include <time.h>
@@ -13,7 +13,6 @@ QueryServer::QueryServer(GetConfig *config)
     cache_(config->getCacheFile()),
     log_(config->getLogFile())
 {
-    cout << "c" << endl;
     server_.setConnection(bind(&QueryServer::onConnection, this, _1));
     server_.setMessage(bind(&QueryServer::onMessage, this, _1));
     server_.setClose(bind(&QueryServer::onClose, this, _1));
@@ -31,7 +30,6 @@ QueryServer::~QueryServer()
 
 void QueryServer::start()
 {
-    cout << "start" << endl;
     /*
      *这里执行顺序为：
      *1.执行计时器函数调用，
@@ -60,7 +58,7 @@ void QueryServer::start()
 
 void QueryServer::onConnection(const TcpConnectionPtr &conn)
 {
-    cout << "connect" << endl;
+    //cout << "connect" << endl;
     cout << conn->getPeerAddr().toIp() << " port "
         << conn->getPeerAddr().toPort() << " on" <<endl;
     ostringstream oss;
@@ -70,26 +68,29 @@ void QueryServer::onConnection(const TcpConnectionPtr &conn)
     time_t timep;
     time(&timep);
     log_msg += asctime(gmtime(&timep));
-    cout << "----" <<log_msg << endl;
+    //cout << "----" <<log_msg << endl;
     log_.addLog(log_msg);
     conn->sendString("Welcome, please input the word:\r\n");
 }
 
 void QueryServer::onMessage(const TcpConnectionPtr &conn)
 {
-    cout << "message" << endl;
     string word(conn->receiveString());
     word.substr(word.length() - 2);
     
     ostringstream oss;
     oss << conn->getPeerAddr().toIp() << " port "
         << conn->getPeerAddr().toPort() << "---";
+    //string_utils::parseUTF8String(word, vec);
+    //vector<uint32_t> vec;
+    //string_utils::parseUTF8String(word, vec);
     string log_msg = oss.str();
     log_msg += word;
     time_t timep;
     time(&timep);
     log_msg += asctime(gmtime(&timep));
     log_.addLog(log_msg);
+    //log_.addLog(word);
 
     pool_.addTask(bind(&QueryServer::runQuery, this, word, conn));
 }
@@ -112,14 +113,17 @@ void QueryServer::runQuery(const string &s, const TcpConnectionPtr &conn)
 
 void QueryServer::writeCache()
 {
-    //这里需要等待5秒中才能把缓存中内容写入磁盘文件
-    cout << "wcache" << endl;
-    cache_.writeToCacheFile("../data/cache.txt");
+    /*
+     *这里建立cache都是query_中建立cache,
+     *所以，写入cache文件也要用query的类成员调用才行
+     */
+    //这里需要等待计时器设置的10秒才能把缓存中内容写入磁盘文件
+    //cache_.writeToCacheFile("../data/cache.txt");//cache_中一直都没有cache的生成，所以，不会写入文件也是空的
+    query_.getCache().writeToCacheFile("../data/cache.txt");
 }
 
 void QueryServer::onClose(const TcpConnectionPtr &conn)
 {
-    cout << "close" << endl;
     cout << conn->getPeerAddr().toIp() << " port "
         << conn->getPeerAddr().toPort() << " close" << endl; 
     ostringstream oss;
@@ -130,6 +134,7 @@ void QueryServer::onClose(const TcpConnectionPtr &conn)
     time(&timep);
     log_msg += asctime(gmtime(&timep));
     log_.addLog(log_msg);
+
     conn->shutdown();
    
 }

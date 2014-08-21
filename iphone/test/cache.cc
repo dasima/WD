@@ -25,6 +25,7 @@ void Cache::readFromCacheFile(const string &filename)
     {
         istringstream iss(line);
         iss >> usr_word;
+        //cout << usr_word << "--" << endl;
         while(iss >> word_cache)
         {
             Cache_[usr_word].insert(word_cache);
@@ -41,7 +42,6 @@ void Cache::buildCache(const string &word, const string &word_cache)
 //程序运行成功后，把cout全注释了
 void Cache::writeToCacheFile(const string &filename)
 {
-    cout << "sss" << endl;
     ofstream of;
     of.open(filename.c_str());
     if(!of)
@@ -49,8 +49,7 @@ void Cache::writeToCacheFile(const string &filename)
     map<string, set<string> >::iterator mit = Cache_.begin();
     for(; mit != Cache_.end(); ++mit)
     {
-        cout << "mmm" << endl;
-        cout << mit->first << " " ;
+       // cout << mit->first << " " ;
         of << mit->first << " " ;
         set<string>::iterator sit = (mit->second).begin();
         for(; sit != (mit->second).end(); ++sit)

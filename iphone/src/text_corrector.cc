@@ -12,11 +12,10 @@ using namespace std;
 using namespace string_utils;
 
 TextCorrector::TextCorrector(const string &filename1, const string &filename2)
-//    :Cache_("../data/cache.txt")
+    :Cache_("../data/cache.txt")
 {
     readFileEn(filename1);    
     readFileCn(filename2);    
-
 }
 
 TextCorrector::~TextCorrector()
@@ -109,7 +108,8 @@ string TextCorrector::textQuery(const string &word)
             mit = Dic_cn_.find(word);
             if(mit != Dic_cn_.end())
             {
-                cout << word << endl;
+                //cout << word << endl;
+                Cache_.buildCache(word, word);
                 return word;
             }
             res = cnQuery(tmp);
@@ -133,7 +133,7 @@ string TextCorrector::textQuery(const string &word)
             res = enQuery(tmp);
         }
     }
-    cout << res << endl;
+    //cout << res << endl;
     return res; 
 }
 
@@ -174,7 +174,6 @@ string TextCorrector::cnQuery(const string &word)
 //从英文词典中查询相近的单词---OK
 string TextCorrector::enQuery(const string &word)
 {
-    // cout << "en" << endl;
     string tmp = word;
     priority_queue<Word> queue;
     //map<string, int>::iterator mit = Dic_en_.begin();

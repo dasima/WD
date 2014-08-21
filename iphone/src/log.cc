@@ -1,5 +1,6 @@
 #include "../include/log.h"
 #include "../include/lib/exception.h"
+#include "../include/string_utils.h"
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -11,13 +12,11 @@ Log::Log(const string &log_file)
     Thread_(bind(&Log::getLog, this))
 {
     Thread_.start();
-    cout << "1" << endl;
     Is_started_ = true;
 }
 
 void Log::stop()
 {
-    cout << "5" << endl;
     Is_started_ = false;
     Cond_.notifyAll();
     Thread_.join();
@@ -25,23 +24,21 @@ void Log::stop()
 
 void Log::getLog()
 {
-    cout << "2" << endl;
     while(Is_started_)
     {
         MutexLockGuard lock(Mutex_);
         while(Is_started_ && Queue_.empty())
         {
-            cout << "000" << endl;
             Cond_.wait();
         }
         string str;
+        //vector<uint32_t> vec;
+        //string_utils::parseUTF8String(str, vec);
         if(!Queue_.empty())
         {
             str = Queue_.front();
             Queue_.pop();
-            cout << "41" << endl;
-            writeToLog("hi");
-            cout << "42" << endl;
+            //writeToLog("hi");
             writeToLog(str);
         }
         else
@@ -53,8 +50,9 @@ void Log::getLog()
 
 void Log::addLog(const string &str)
 {
-    cout << "3" << endl;
     MutexLockGuard lock(Mutex_);
+    //vector<uint32_t> vec;
+   // string_utils::parseUTF8String(str, vec);
     Queue_.push(str);
     if(Queue_.size() == 1)
         Cond_.notify();
@@ -62,7 +60,6 @@ void Log::addLog(const string &str)
 
 void Log::writeToLog(const string &log_file)
 {
-    cout << "4" << endl;
     ofstream of;
     of.open(Log_file_, ofstream::app);
     if(!of)

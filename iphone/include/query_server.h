@@ -14,7 +14,7 @@ class QueryServer : NonCopyable
     public:
         //QueryServer(const InetAddress &, const std::string &, const std::string &, const std::string & );
         ~QueryServer();
-        QueryServer(const InetAddress&, const std::string&, const std::string &, const std::string &);
+        QueryServer(GetConfig *);
         void start();
     private:
         void onConnection(const TcpConnectionPtr &);
@@ -22,6 +22,7 @@ class QueryServer : NonCopyable
         void onClose(const TcpConnectionPtr &);
 
         void runQuery(const std::string &, const TcpConnectionPtr &);
+        //void runQuery(const std::string &, const TcpConnectionPtr &, Cache *);
 
         //0814为了把缓存回写，使用计时器，计时器调用这个函数
         void writeCache();
@@ -30,6 +31,7 @@ class QueryServer : NonCopyable
         TextCorrector query_;
         ThreadPool pool_;
         Cache cache_;
+        //CacheManeger caches_;
         TimerThread timer_;
         Log log_;
 };

@@ -1,7 +1,7 @@
 #include "../include/text_corrector.h"
 #include "../include/cache.h"
 //#include "../include/query_server.h"
-#include "query_server.h"
+#include "../include/query_server.h"
 #include "../include/log.h"
 #include <iostream>
 #include <string>
@@ -16,7 +16,6 @@ int main(int argc, const char *argv[])
     config->readConfig("../conf/config.txt");
     //QueryServer server(InetAddress(8080), "../data/dic_en.txt", "../data/dic_cn.txt", "../data/cache.txt");
     QueryServer server(config);
-    cout << "b" << endl;
     server.start();
 
     return 0;

@@ -22,7 +22,7 @@ void GetConfig::readConfig(const string &filename)
         pos = line.find("=");
         type = line.substr(0, pos);
         param = line.substr(pos + 1);
-        cout << "type " << type << " param " << param << endl;
+ //       cout << "type " << type << " param " << param << endl;
         if(type == "port")
             Port_ = atoi(param.c_str());
         else if(type == "log")

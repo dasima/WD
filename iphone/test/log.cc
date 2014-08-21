@@ -1,5 +1,6 @@
 #include "../include/log.h"
 #include "../include/lib/exception.h"
+#include "../include/string_utils.h"
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -31,6 +32,8 @@ void Log::getLog()
             Cond_.wait();
         }
         string str;
+        //vector<uint32_t> vec;
+        //string_utils::parseUTF8String(str, vec);
         if(!Queue_.empty())
         {
             str = Queue_.front();
@@ -48,6 +51,8 @@ void Log::getLog()
 void Log::addLog(const string &str)
 {
     MutexLockGuard lock(Mutex_);
+    //vector<uint32_t> vec;
+   // string_utils::parseUTF8String(str, vec);
     Queue_.push(str);
     if(Queue_.size() == 1)
         Cond_.notify();

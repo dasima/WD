@@ -15,7 +15,6 @@ using namespace CppJieba;
 const char * const JIEBA_DICT_FILE = "../lib/cppjieba/dict/jieba.dict.utf8";
 const char * const HMM_DICT_FILE = "../lib/cppjieba/dict/hmm_model.utf8";
 
-MixSegment seg(JIEBA_DICT_FILE, HMM_DICT_FILE);
 
 WordUnique::WordUnique()
 {
@@ -75,12 +74,14 @@ void WordUnique::getDoc()
         }
     }
     vector<string>::iterator vit = Vec_.begin();
-    makeCut(*vit);
+    string s = *vit;
+    makeCut(s);
 }
 
 //这里需要每次传给makeCut一个字符串参数
 void makeCut(const string &path)
 {
+    MixSegment seg(JIEBA_DICT_FILE, HMM_DICT_FILE);
     cutWord(seg, path);
 }
 
@@ -98,8 +99,8 @@ void WordUnique::cutWord(const ISegment &seg, const char * const filename)
         if(!line.empty())
         {
             words.clear();
-            seg.cut(line, wors);
-            join(wors.begin(), words.end(), res, " ");
+            seg.cut(line, words);
+            join(words.begin(), words.end(), res, " ");
             cout << res << endl;
         }
     }

@@ -1,0 +1,25 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+具有理论阈值的子波域滤波方法
+潘　泉　戴冠中　张洪才
+(西北工业大学自动控制系*西安*710072)
+　　摘　要　本文在对多尺度滤波和子波域滤波综述的基础上,用奇异性和自相似性理论对信号与噪声的不同性质进行了分析,揭示了信号与噪声的多尺度数学机理,并对基于此机理的Mallat去噪声算法和子波域波波(WTDF)算法进行了研究,首次给出了WTDF的阈值选取方法和理论证明,完善和推广了WTDF,通过仿真计算表明,具有理论阈值的WTDF较之传统的试凑阈值WTDF性能有明显的改善。
+　　主题词　子波域滤波　阈值　子波分解与重构
+A THRESHOLD SELECTION METHOD 
+FOR WAVELET TRANSFORM DOMAIN FILTER
+Pan Quan　Dai Guanzhong　Zhang Hongcai
+(Dept.of Automatic Control Northwestern Polytechnical University*Xi'an*710072)
+　　Abstract　In this paper we describe the signal processing algorithms which use wavelet transform theory.Then a method to select threshold for wavelet transform domain filter(WTDF) is developed.The threshold selection method for WTDF brings the algorithm to completion.The simulation shows that the new algorithm is better than WTDF without the new threshold.
+　　Key words　Wavelet transform　Multiscale analysis　Threshold
+1　引　言
+　　信号处理是子波变换最重要的工程应用领域,是子波理论发展的最重要工程动力之一。在早期的多尺度信号处理工作中,人们就已注意到信号和噪声在不同尺度上有不同的特征表现,并试图有效地利用这些特征,子波变换的出现为这一思想提供了一个自然而完善的工具［1,5,6］,使信号的多尺度处理技术向前推进了一大步。
+　　自八十年代Morlet［1］将子波变换用于信号处理以来,这一领域的研究空前活跃。1992年Mallat［2］等人提出了基于信号奇异性(Singularity)的信号和图像多尺度边缘表示法及其基于此法的图像信号滤波方法。Mallat的方法是目前对信号和图像及噪声的多尺度数学特性刻画得最精细,数学基础最完善的理论之一。Mallat方法存在原理复杂,算法不易操作,编程较困难等不足,但其发展和应用潜力很大。Lu［3］等人直接将子波变换理论与传统的多尺度信号处理方法相结合,给出了一种性能优良的子波滤波器,并在医学图像处理领域得到应用。Lu的方法(子波域滤波器WTDF)对信号和图像去噪的同时,有相当好的保留信号图像边缘特征的能力,但WTDF未能给出多尺度滤波过程叠代求解时的阈值选取方法或选取原则,对滤波性能有所影响,算法在理论上尚欠完善。耶鲁大学的Coifman和斯坦福大学的Donoho另辟蹊径,提出了直接对信号和图像取阈值处理［4］。C-D算法同样没有给出阈值的选取方法和原则,关于C-D方法的研究我们另有专文报告。
+　　本文将首先研究信号和噪声的多尺度数学机理(第2节),然后分析研究子波域滤波算法(第3节),最后给出WTDF阈值选取的证明和方法,并通过仿真计算比较了Lu与新算法的滤波性能。
+2　信号和噪声的多尺度数学机理
+　　在有背景干扰环境下检测信号,不仅与信号的形式和干扰性质有关,也与信号处理的方式本身密切相关。对不同类型的信号寻找最佳的处理技术一直是信号处理及检测的主要问题。
+　　传统的谱分析技术,当信号是时间平稳,且有明显区别于噪声的谱特性时是十分有效的。然而实际中经常遇到非平稳信号的情况,由于这类信号的谱特性扩展得很宽,利用傅氏变换的基函数很难与其匹配。以子波变换为基础的处理方法在获得高的信噪比增益的同时,能够保持对信号突变信息的良好分辨,因此对非平稳信号处理有其自身的优越性。
+　　首先我们通过奇异性和自相似性理论来分析信号与噪声的不同性质。
+　　我们称无限次可导的函数是光滑的或没有奇异性的,若函数在某处有间断或某阶导数不连续,则称该函数在此处有奇异性。傅氏变换一直是研究函数奇异性的基本工具,由一函数的傅氏变换趋于零的快慢可以推断该函数是否有奇异性及奇异性的大小。但傅氏变换缺乏空间局部性,因而一函数的傅氏变换只能确定一函数奇异的整体性质,而难以确定其奇异点在空间的具体分布。
+　　设实子波ψ(x)满足连续可微条件,并具有n阶消失矩(n∈N),f(x)∈L2(R),δx0为x0的任一开邻域,则

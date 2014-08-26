@@ -1,0 +1,25 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年  第3期   No.3 May   1998
+科技期刊
+基于极化域能量谱的飞机
+目标识别
+
+肖顺平　王雪松　郭桂蓉　庄钊文
+(国防科技大学电子工程学院ATR国家实验室*长沙*410073)
+　　摘　要　本文导出了Poincare极化球大圆极化轨道上目标散射能量与极化态的正弦关系,结合宽带观测条件,定义了极化域能量谱的新概念,并利用五种飞机目标的宽带极化散射数据,提取了极化域能量谱特征,获得了良好的目标识别效果。
+　　主题词　宽带　极化域能量谱　雷达目标识别
+AIRPLANE TARGET RECOGNITION 
+BASED ON ENERGY SPECTRUM IN 
+THE POLARIZATION DOMAIN
+Xiao Shunping　Wang Xuesong　Guo Guirong　Zhuang Zhaowen
+(ATR Lab,National Univ of Defense Technology*Changsha*410073)
+　　Abstract　In this paper,the relationship between target's scattering energy and the incident polarization is derived on the greatcircle track on the Poincare Sphere.Considering the wideband measurement condition,the conception of energy spectrum in the polarization domain is defined.On the basis of energy spectrum,the polarization features of five kinds of airplane targets are extracted in the wide-band and polarimetric case,and satisfactory recognition results are achieved.
+　　Key words　Wide-band　Energy spectrum in the polarization domain　Radar target recognition
+1　引　言
+　　目标散射信号中的极化是极为重要的信息资源,对它的充分开发利用将为目标识别开阔新的前景,是雷达技术重要的发展方向之一。迄今虽然出现过一些极化雷达目标识别方法(多数是在少量观测频率上及对简单形体目标而言),但总的来说极化目标识别的研究仍处于低谷,有关工作在文献［1］中进行了系统的搜集与归纳。八十年代末,宽带波形技术的成熟,给雷达目标极化识别增添了新的特征信息量,使得对飞机等复杂目标的可靠识别成为可能。从目前已有的技术途径来看,关于极化谱的概念及其在目标识别中的应用研究,极少见到报道,本文工作就是这方面的一次新尝试。
+2　目标散射能量与极化轨道上极化态的关系
+2.1　椭圆极化比
+　　考虑极化基变换,即
+　　(A.B)=(H.V)［T］,酉过渡矩阵
+由于

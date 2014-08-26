@@ -1,0 +1,12 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000 Vol.19 No.2 P.58-59
+
+
+
+
+Windows 9x使用技巧问答（一）
+谢晓巍　陈轩飞　谢晓艳
+　　Windows 9x因其使用方便、操作简单而迅速成为目前最为流行的操作系统。但是，用户要想灵活使用Windows 9x，以满足个人的需求，也并不容易。下面对Windows 9x使用中经常出现的问题进行解答。
+1 系统环境
+　　问：Windows 9x总是将用户编辑的文档自动保存在“我的文档”（C

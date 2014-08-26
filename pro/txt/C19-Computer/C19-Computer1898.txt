@@ -1,0 +1,9 @@
+微型机与应用
+WEIXINGJI YU YINGYONG
+2000　Vol.19　No.5　P.14-15,16
+
+
+
+
+在Visual Basic程序中调用Fortran动态链接库的方法
+鲜飞军

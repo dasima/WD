@@ -1,0 +1,50 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第2期 No.2 1999
+
+
+
+用于描述网络拓扑的形式语言的研究*
+于之硕　杨　静
+　　摘要　论述了应用随机线性文法及产生式描述计算机网络拓扑结构的方法.在该形式语言的描述中,设置了3个基元状态,通过对基元状态及各种状态规律的分析,准确地描述了网络中结点间通信及共享存储器的状态.同时,证明了用此方法在某种条件下从初始结点到终了结点间可以建立惟一的访问路径,并能避免冲突.此方法对计算机网络结点访问/冲突避免的研究具有一定的参考价值.
+　　关键词　概率矩阵,文法,基元,网络.
+　　中图法分类号　TP301
+Research of a Formal Language for Describingomputer Network Topology 
+YU Zhi-shou　YANG Jing
+　　Abstract　　Being different from the general method, a formal language and grammar, stochastic liner grammar and its representation are used to describe the topology logic of the computer network by analyzing the grammar of three elemental statuses. It can be seen that combining them may describe statuses of each node in communication and shared memory of the computer network. In this paper, it is proved that the grammar can establish only route between the start node and the terminal node in some conditions. Under conditions above if may avoid collision. The use and the limit of the grammar are presented at the end of the paper.
+　　Key words　Probability matrix, grammar, base element, network.
+　　对计算机网络拓扑结构的设计,容量分配算法通常都采取基于图论及割集的方法.本文所提出的网络信息流量计算和分配方法是基于概率量度.即一种语言及其文法,通过严格的定义和文法产生式,使网络抽象为一种语言表达式,再应用前人所推导出来的语言性质精确地计算出概率量度分配值,可使所要求的计算机网络中两个结点机之间建立唯一最佳的通信路径.为使计算机网络符合本文描述的语言方法,特假设如下：
+　　(1) 计算机网络的完全图如图1［1］所示.其中每一结点都表示一个带有存储器的计算机用户.
+
+图1　计算机网络完全图
+　　(2) 计算机网络中各结点上有3种状态：① 处理机申请某结点资源；② 因资源“忙”而处于等待；③ 得到资源后或是读或是写.
+　　(3) 设网上有m个结点,对K点来说,它对网上其他结点的访问概率Pk应是
+Pk=Pki,　　　　　　　　　　　　　　　　　　(1) 
+其中Pkk表示对本结点机的存储器访问.为分析方便,可把Pk分成P′k,P″k,即
+Pk=P′k+P″k.　　　　　　　　　　　　　　　　　(2) 
+其中P′k为一类的访问概率和,且
+P′k=Pki　　　i={1,2,...,q}.　　　　　　　　　　　(3) 
+P″k为另一类的访问概率和,且
+P″k=Pki　　　i={q+1,q+2,...,n}.　　　　　　　　　　(4) 
+　　(4) 网上每一结点随机请求资源符合马尔科夫模式.
+　　(5) 从概率量度分配来说,对于星形网、环形网及总线网仅是网状网的一种特殊情况.设网状网的概率分配如以下矩阵(与图1等价).
+
+　　而星形、环形及总线形网的概率分配矩阵如图2所示［1］.由图2可见,在具有相同结点数目的情况下,矩阵的格式都为6×6,所不同的是某些概率为零.总线网也可求出概率分配矩阵.
+
+　　　　　　　　　　
+(a)星形网及概率矩阵　　　　　　　　(b)星形网及概率矩阵
+图2　星形、环形网及概率矩阵
+1　描述网络的形式语言模式
+1.1　随机语言模式分类
+　　一般来说,随机描述文法有4种类型及1个派生型,即：0型――无限制文法；1型――上下文有关文法；2型――上下文无关文法；3型――有限状态文法；派生型――随机线性文法.
+　　各种文法可以描述各种随机事件,其随机描述语言的短语语法结构可以定义为一个四元式［2］,即
+Gs=(VN,VT,PS,S),　　　　　　　　　　　　　　　(5) 
+其中VN为非终止符；VT为终止符；PS为随机产生式有限集合；S为起始符,S∈VN.
+　　本文所引用的随机线性文法的结构GS与式(5)相同,但VN={A1...AK},S=A1,VT={U,V,Ur},而PS为Ai→UAjV,Ai→Ur,且对于每个Aj∈VN.定义等价类CAi的通用表达式为
+CAi={PS的所有左端为Ai的产生式},
+即
+PS=CAi.　　　　　　　　　　　　　　　　(6) 
+　　若对具体PS的产生式为Ai→UAjV,Ai→Ur来说,设Ai→UAjV的概率为Pij,设Ai→Ur的概率为Pir.对于第i点的产生式概率为
+PS=Pij+Pir.　　　　　　　　　　　　　　(7) 
+1.2　线性随机文法的一致性
+　　由于随机文法一致性的定义为

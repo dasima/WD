@@ -1,0 +1,23 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1999年　第25卷　第5期　Vol.25 No.5 1999
+
+
+
+基于模糊产生式规则的智能管理模型及其应用1)
+郜焕平　涂序彦　崔援民　钟　冀
+关键词　标准模糊划分，模糊产生式规则，智能管理模型.
+INTELLIGENT MANAGEMENT MODEL BASED ON FUZZY PRODUCTION RULE AND ITS APPLICATION
+GAO Huanping　TU Xuyan　CUI Yuanmin　Zhong Ji
+(Economy Information Department of Hebei University of Economy & Trade, Shijiazhuang　050011)
+Key words　Standard fuzzy dividing, fuzzy production rule, intelligent management model.
+1　引　言
+　　智能管理系统是主动系统，人是主动环节，人的思维、语言、行为具有主动性、灵活性、创造性、也具有模糊性，而通常的数学模型是精确的、定常的，难以描述人的主动性和处理问题时表现的模糊性［1］.特别是在计算机管理系统中模拟这些特性就更困难.本文提出一种基于模糊产生式规则的智能管理模型，可用于描述人的主动性和模糊性.
+2　管理目标论域的标准模糊划分
+　　定义1.设有管理要素论域S，C、D为论域S上的模糊集，x为论域S中的元素，x∈S，则模糊集合C对于模糊集合D的可能性测度：
+　　p=Poss(D｜C)=(C(x)*D(x))，（其中p∈［0，1］，“*”是合成算子）.　(1)
+　　定义2.设有管理目标论域S，F(S)为论域S上模糊集的全体，x为论域S上的元素，一组凸模糊集｛Ai｜i=1,2,…,r｝，Ai∈F(S) ，若满足：
+　　1)i ∈ I,Poss(Ai｜Ai)=1;　(2)
+
+　　2)　(3)
+　　3)

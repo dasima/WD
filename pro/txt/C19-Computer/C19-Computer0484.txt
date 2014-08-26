@@ -1,0 +1,18 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+2000　Vol.26　No.3　P.430-432
+
+
+
+单机调度中平均流程时间和延期
+工件数的双目标问题
+司昕　郑应平　安燮南
+关键词　单机调度，多目标，平均流程时间，延期工件数.
+BICRITERION PROBLEM IN SINGLE-MACHINE SCHEDULING WITH
+MEAN FLOW TIME AND NUMBER OF TARDY JOBS
+SI Xin　　ZHENG Yingping　　AN Xienan
+(Institute of Automation, Chinese Academy of Sciences, Beijing　100080)
+Key words　Single-machine scheduling, bicriterion, mean flow time, number of tardy jobs.
+1　引言
+　　本文在具有平均流程时间和延期工件数两个目标的情况下对单机多目标问题进行研究，所研究的调度环境为假设工件集N的n个工件在一台机器上进行无中断的加工，每个工件的加工时间、到达时间和交工日期分别为pi，ri和di，且每个工件在零时刻到达，即ri=0，其完工时间为Ci，流程时间Fi=Ci-ri=Ci，平均流程时间每个工件的延迟Ti=max｛0,ci-di｝，如果工件i是延迟的(即Ti>0)，则令Ui=1；否则Ui=0.延期工件个数记为
+　　本文所要讨论的问题是(P)：在上述调度环境下，如何确定工件的一个加工排序，使得平均流程时间和延期工件数n

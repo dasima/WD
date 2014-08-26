@@ -1,0 +1,23 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1999年 第25卷 第6期 Vol.25 No.6 1999
+
+
+
+联想记忆神经网络局部指数稳定的
+充要条件及特征函数
+王利生　谈　正　张军凯
+摘　要　讨论非线性连续联想记忆神经网络平衡点局部指数稳定的判定条件及平衡点指数吸引域的估计，得到了平衡点局部指数稳定的充要条件，并引入一个特征函数，可以判定平衡点的邻域是否为指数吸引域.文中给出一族范数下(所有单调范数)网络局部或全局指数稳定的判定条件，推广了已知文献在特定范数下所得到的结论.
+关键词　联想记忆神经网络，局部指数稳定，吸引域，收敛指数.
+A SUFFICIENT AND NECESSARY CONDITION FOR LOCAL
+EXPONENTIAL STABILITY OF CONTINUOUS-TIME
+ASSOCIATE MEMORY NEURAL NETWORKS
+WANG Lisheng　TAN Zheng　ZHANG Junkai
+(School of Electric and Information Engineering, Xi'an Jiao Tong University, Xi'an　710049)
+Abstract　A sufficient and necessary condition for nonlinear continuous-time associate memory neural networks to be locally exponentially stable is obtained, and a function is defined for characterizing the domain of attraction of equilibrium point. Some conditions for networks to be locally or globally exponentially stable under a group of norms(monotone norms) are also obtained, which generalize the results of some literature.
+Key words　Local exponential stability, domain of attraction, convergent rate, global exponential stability, associate memory neural network.
+1　引言
+　　平衡点的吸引域估计是神经网络稳定性分析中的重要问题.神经网络可用于智能控制及模式识别等信息处理系统，主要是因为神经网络的动态行为具有稳定的吸引子.联想记忆神经网络有多个分别对应于不同记忆模式的平衡点，稳定性分析的目的是判断在何种条件下平衡点局部渐进稳定以及估计平衡点的吸引域.联想记忆神经网络的容错能力及恢复能力与各平衡态的吸引域密切相关.本文研究非线性连续联想记忆神经网络平衡点的局部指数稳定性.讨论两个基本问题：其一，如何判定网络平衡点为局部指数稳定的平衡点?其二，如何估计平衡点的指数吸引域?这里，平衡点为Rn中一个向量，不包括振荡环的情形.本文给出了网络平衡点为局部指数稳定点的充要条件，回答了第一个问题；对于第二个问题，本文定义了一个特征函数，只要在平衡点的球形领域内特征函数小于零，则该邻域为吸引域，给出吸引域的一种潜在的计算方法.本文结果推广了文献［1～3，7，8］中的主要结论.因为非线性连续神经网络可看作特殊的非线性初值问题，所以先讨论非线性初值问题的稳定性.
+　　
+2　非线性初值问题局部指数稳定的充要条件
+　　设T：是非线性算子，x*∈D是常向量.定义两个函数N(T,x*,D)与

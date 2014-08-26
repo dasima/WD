@@ -1,0 +1,38 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1997年　第23卷　第6期　Vol.23　No.6　1997
+
+
+
+
+广义可镇定连续时延系统的通用
+连续线性控制器设计
+M de la Sen　罗宁苏
+　　摘　要　讨论确保闭环线性时延系统在Lyapunov意义下全局一致稳定的通用线性控制器的设计问题.文中给出的通用镇定控制器适用于有限、无限和时变的点型、分布型及混合型等各类时延系统.
+　　关键词　时延系统，点型时延，分布型时延，稳定性，镇定控制器.
+ON THE DESIGH OF UNIVERSAL STABILIZING CONTINUOUS
+LINEAR CONTROLLERS WITH DELAYS FOR GENERALIZED
+DELAYED CONTINUOUS STABILIZABLE SYSTEMS
+M dE lA SEN　　LUO NINGSU 
+(Dpto. Electricidady Electrónica, Universidad del País Vasco, 48940 Leioa, Bizkaia, SPAIN)
+Abstract　This paper deals with the design problem of generalized linear stabilizing controllers for linear systems with after-effect so that the resulting closed-loop system is globally uniformly asymptotically stable in the Lyapunov's sense.The stabilizing controllers are universal in the sense that they include the usual delays (namely, point, distributed and mixed point-distributed delays) which can be finite, infinite or even time-varying.
+Key words　Delay systems, point delays, distributed delays, Lyapunov's stability, stabilizing controllers.
+1　引言
+　　微分差分方程广泛应用于时延微分系统(含滞后效应的系统［1］)的建模.通过对常微分方程的标准Picard-Lind?loff和Cauchy-Peano定理［2，3］的推广，可解决该类系统唯一解的存在性问题［1］.文献［4］分析了开环微分系统的Lyapunov稳定性和周期解的轨道稳定性.文献［3－5］指出时延系统的可控可观性概念间的相关等价性与无时延系统相比，并非十分直接.对于同量时延系统的设计问题，文献［5］证明：若系统谱可控，则存在一个含时延的反馈矩阵使得单输入闭环系统亦可控.近年来，许多学者研究了时延系统的镇定性和稳定性问题［1，6－13］.通常采用以下两类稳定性测试方法：基于单/多变量时延系统的特征多项式的根配置［5］，或将时延系统视为环上的1-D模型.对于同量或非同量时延系统，文献［6］采用n-D(n≥2)模型进行稳定性测试.本文将研究点型、分布型、混合型等各类含状态和输入时延系统的镇定性问题.提出了一类新颖的含上述同类型时延的通用控制器.在以下章节中，用SP，SD，SED和SVD简记点型、分布型、指数分布型和无限Volterra分布型的时延系统.
+2　时延系统
+2.1　点型时延系统
+(SP):(t)=A(t)x(t)+A0(t)x(t-h)+B(t)u(t)+B0(t)u(t-h′), t≥0,　　　　　(1)
+其中x(t)∈Rn为轨迹值；u(t)∈Rm(m≤n)为控制矢量；xt(θ)=x(t+θ); ut(θ′)=u(t+θ′); θ∈［-h,0),θ′∈［-h′0);正参数h,h′分别表示系统的内、外时延；A( . )，A0( . )为(n×m)矩阵函数；B( . )，B0( . )为含实元的(n×m)矩阵函数；初始轨迹x(θ)=x0(θ);θ∈［-h,0)为连续或绝对连续有界函数.
+2.2　分布型时延系统
+(SD):(t)=A(t)x(t)+xt+B(t)u(t)+ut, t≥0,　　　　　　　　　(2)
+其中x( . )，u( . )，A( . )，B( . )，x0( . )的定义同SP系统；算子和定义为=,,α( . )，β( . )为BV(［-σ,0);Rn×n),BV(［-σ′,0);Rn×m)上的矩阵(或标量)有限测度，BV为一类有界变分且局部可积的矩阵测度.
+3　初始结果
+　　将SD(s),SED(s)系统简化为SP(s)系统，可得时不变SD(s),SED(s)系统的等价描述.
+引理1.
+　　(i)对于SED系统有
+　(3)
+其中u(t)=0;t＜0,x0(t)=(t);∈AC(［-h,0］;Rn);t∈［-h,0］.采用广义SP系统可将(3)式等价描述为
+　　　　　　　(4)
+其中(t)=［xT(t)xT1(t)uT1(t)］T;0(t)=［T(t)OTOT］T; t∈［-h,0］,x1( . )∈Rn,u1( . )∈Rm;=［BTOTIm］T;
+　　　　　　(5)
+对于自由运动系统，可用扩展状态矢量=［xT

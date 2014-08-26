@@ -1,0 +1,11 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　Vol.19　No.6　P.33
+
+
+
+
+具有自动排错功能的
+SCADA系统的设计与实现
+杨磊
+　　SCADA

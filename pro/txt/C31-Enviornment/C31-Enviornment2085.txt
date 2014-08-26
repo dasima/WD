@@ -1,0 +1,23 @@
+城市环境与城市生态
+URBAN ENVIRONMENT & URAN ECOLOGY
+1999年　第12卷　第1期　Vol.12　No.1　1999
+
+
+
+离散规划在近海地区排海废水污染物
+总量控制中的应用
+淮斌　李清雪　陶建华
+　　摘要　本文采用离散规划方法对某滨海新区排海废水污染物总量控制方案进行了优化分析，得到了不同消减率下的最优方案。并对近岸海域海水水质进行了模拟预测。
+　　关键词　离散规划　总量控制　水质模拟
+Discrete Programming Application to the Total Pollutant Control of Wastewater Discharged into Ocean in the Newly Developed Area
+Huai Bin　Li Qingxue　Tao Jianhua
+(Dept.Of Mechanics,Tianjin University,Tianjin 300072)
+　　Abstract　The total pollutant control of the newly developed area was optimized by using discrete programming.The optimum schemes were obtained at different removal rates of pollutants.Finally,the inshore water quality were simulated and predicted.
+　　Key words　discrete programming　　total pollutant control　　water quality simulating
+　　近年来，天津滨海新区的水环境质量逐年恶化，水资源严重短缺，严重制约了该地区的经济发展。本文采用离散规划方法对该滨海新区排海废水中污染物总量控制方案进行了优化分析。
+1　离散数学规划模型
+　　将整个规划区域分为n个小区，每个小区作为一个污染源参加规划，排污量记为Qi(i=1,2,……n)。对于每个固定的污染源i可有一系列的治理措施来消减它的排污量，与这些措施对应的排污量记为Qij。
+　　数学模型：
+目标函数：minP=∑Pij(i=1，2，……，m)
+　　　　　=∑Fj(Qj)(j=1，2，……，n)
+约束条件：∑AijQij

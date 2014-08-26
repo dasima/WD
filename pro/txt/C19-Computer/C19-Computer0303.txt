@@ -1,0 +1,42 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第10卷 第7期　No.7 Vol.10 1999
+
+
+
+基于垂直数据分布的关联规则高效发现算法
+欧阳为民　蔡庆生
+　　摘要　文章分析了在KDD研究中现有的关联规则发现算法关于频繁项目集的生成与测试方法,提出了一种新的基于垂直数据分布的关联规则发现算法.该算法无需复杂的Hash数据结构,仅需对整个数据库作两次遍历,从而既方便了实现,又提高了效率.
+　　关键词　关联规则,频繁项目集,等价类.
+　　中图法分类号　TP311
+An Efficient Algorithm for Discovering Association 
+Rules Based on Vertical Data Layout
+OU-YANG Wei-min1　CAI Qing-sheng2
+1(Computing Center Anhui University Hefei 230039)
+2(Department of Computer Science University of Science and Technology of China Hefei 230027)
+　　Abstract　In this paper, the authors analyze the methods to generate and test frequent itemsets in existing algorithms in KDD research, and put forward a new efficient algorithm for discovering association rules based on vertical data layout. This algorithm has no need of Hash data structure and makes only two databases scans. As a result, the algorithm not only facilitates the implementation, but also improves the efficiency.
+　　Key words　Association rule, frequent itemsets, equivalence class.
+　　关联规则是R.Agrawal等人[1,2]首先提出的KDD研究的一个重要课题.它可作如下形式化定义：令I={i1,i2,...,im}为项目集,D为事务数据库,其中每个事务T是一个项目子集(TI),并另有一个唯一的顾客标识符TID.我们说事务T包含项目集X,如果XT.关联规则是形如XY的逻辑蕴含式,其中XT,且X∩Y=.如果事务数据库中有s%的事务包含X∪Y,那么,我们说关联规则XY的支持为s；如果事务数据库中包含X的事务中有c%的事务同时也包含Y,那么,我们说关联规则XY的信任为c.
+　　文献[2～7]分别提出了多种关联规则发现算法,其中最著名的是R.Agrawal提出的Apriori算法[2].大多数算法的主要缺点是要对数据库作多次遍历,从而导致较大的I/O负载.而且,这些算法都使用了Hash数据结构,对其进行维护与搜索又要增加额外的负载.Partition算法[7]虽然只需对数据库作两次遍历,但随着划分块数量的增加,局部频繁集的数量也将相应增加.DIC(dynamic itemset counting)算法[6]可以在一次遍历中对长度不同的若干项目集进行计数,从而提高了每次遍历的效率.但它实现起来不甚方便,而且仍然需要Hash数据结构.我们的目标是，算法既要高效，实现起来又要方便.为此,我们提出了等价类概念,并将数据库的数据分布由通常的水平方式改为垂直方式,从而提出基于垂直数据分布的关联规则发现算法.
+　　本文第1节提出项目集聚类技术――等价类概念.第2节讨论数据的分布方式.第3节提出基于垂直数据分布的关联规则高效发现算法.第4节是实验结果.最后总结全文.
+1 项目集聚类
+　　考察集合{A,B,C,D,E},其所有子集构成的子集空间如图1所示.注意,应忽略所有空集.频繁集以实线框表示,最大频繁集(某频繁集是最大的,如果它不是任何其他频繁集的子集)以粗实线框表示,非频繁集以虚线框表示.某频繁集的子集必是频繁的,所有的频繁集形成一个边界,如图1中的粗线所示,边界之下是频繁集,边界之上是非频繁集.显然,最佳的关联规则发现算法应仅仅生成并测试频繁集,而避免任何非频繁集的生成并测试.这就是说,算法应能有效地确定频繁集边界的结构.幸运的是,由最大频繁集导出的子集空间正好与边界结构相对一致.这些子空间也如图1所示.
+
+图1　项目集聚类
+　　一般地,我们是无法预知最大频繁集的,但是,我们可以设法得到尽可能小的、包含最大频繁集的超集.为此,我们引入等价类概念来对项目集进行聚类.考察Apriori算法中的候选生成方法.第k次遍历所需的候选集Ck是通过链接频繁(k-1)-项目集Lk-1而得到的.于是,我们有Ck={x=p[1]p[2]...p[k-1]q[k-1]},对所有p,q∈Lk-1,p[1:k-2]=q[1:k-2].为方便计,一般要求项目集中各项目之间保持某种偏序关系,这里，我们采用通常的字母序.于是,p[k-1]<q[k-1].x[i]表示项目集x的第i个项目,x[i:j]表示项目集x中的从第i个到第j个项目.由图1可知,L2={AB,AC,AD,BC,BD,CD,CE,DE},那么有C3={ABC,ABD,ACD,BCD,CDE}.我们按照前k-2个项目(称为(k-2)-前缀)是否相同来对Lk-1进行等价类划分,即具有相同(k-2)-前缀的项目集属于同一个等价类,记作
+　　　　　　　　　　Pa=[a]={x[k-1]∈L1|a[1:k-2]=x[1:k-2]}.
+于是,候选k-项目集可以通过链接同一等价类中的所有的元素对,然后再以类标识符作为各链接结果的前缀这种方法来生成.对上述例子中的L2,我们得到如下等价类：PA=[A]={B,C,D},PB=[B]={C,D},PC=[C]={D,E},PD=[D]={E}.由等价类[A]，[B]和[C]链接生成的集合分别为{ABC,ABD,ACD},{BCD},{CDE}.这3个集合彼此独立.由于仅有1个元素的等价类不能产生新的候选,因而可以不再进一步加以考虑.
+　　注意,在实际实现时,等价类的生成可以在候选生成的同时进行构造.其方法如下：
+　　Input: Ck={x1,x2,...,xn},其中各项目集按字典序排列,Ck[i]表示候选集Ck中的第i个项目集,|Ck|表示候选集Ck中所包含的项目集的个数；
+　　Output: Lk+1的等价类；
+　　Begin
+　　　(1)　for i=1 to |Ck| do {
+　　　(2)　　[Ck[i]]=; /* 等价类[Ck[i]]初始化为空集 */
+　　　(3)　　for j=i+1 to |Ck| do {
+　　　(4)　　　C=Ck[i][1]Ck[i][2]...Ck[i][k]Ck[j][k]; /* 候选链接,详见第2节 */
+　　　(5)　　　if C.support≥minsup then[Ck[i]]=[Ck[i]]∪{C};
+　　　(6)　　　}
+　　　(7)　　}
+　　End
+　　上述算法中的候选生成方法与Apriori算法中的候选生成方法相比至少有三大优点.首先,前者不需要作任何比较运算,直接进行拼接即可；而后者却需要判断p和q的前k-1个项目是否相同.显然,前者更为方便、快捷.其次,前者在候选生成后没有修剪步骤,而后者是有的.这样一来,是否会由于前者的候选大于后者的候选数,因而需要对更多的候选进行支持计数,从而导致效率下降呢？回答是否定的.事实上,两者的候选数是相等的,只不过后者经过修剪步骤后候选数可能有所减少.更重要的是,根据下一节提出的基于垂直数据分布策略的候选链接方法,某个候选一经生成,其支持数就立即可知,可以直接判断其是否是频繁的.因此,没有必要在候选生成后再进行修剪.第3个优点是,引入等价类概念后,我们可以独立地在各个等价类中分别进行频繁项目集的发现,因而便于算法的并行化.
+　　在算法的任何中间步骤,当确定了频繁集Lk(k≥2)以后,我们就可以从Lk生成潜在的最大频繁集.注意,对于

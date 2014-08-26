@@ -1,0 +1,56 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第10卷 第7期　No.7 Vol.10 1999
+
+
+
+多重极小一般普化
+叶　风　徐晓飞
+　　摘要　文章提出一种广义θ-包含意义下的广义最小一般普化,称为多重极小一般普化.这一操作能够有效地减少普化程度,从而使过度普化问题较好地得以解决.为了有效地计算极小一般多重普化,文章研究了示例集上的普化范式与极小一般普化的关系,提出了一种基于概念聚类的归纳学习算法(clustering-based multiple minimum general generalization,简称CMGG).该算法能够有效地产生多重极小一般普化,并准确地反映出学习示例间的内在联系.
+　　关键词　归纳学习,归纳逻辑程序设计,多重极小一般普化,最小一般普化.
+　　中图法分类号　TP181
+Multiple Minimum General Generalization
+YE Feng XU Xiao-fei
+(Department of Computer Science and Engineering Harbin Institute of Technology Harbin 150001)
+　　Abstract　In this paper, the authors present a kind of generalized least general generalization, called MGG (multiple minimum general generalization), under generalized θ-subsumption. MGG does effectively reduce the generalization of inductive hypotheses to extent, such that the problem of over-generalization is satisfactorily overcome. For computing MGG efficiently, the relation between normal generalization and MGG is studied and an algorithm CMGG (clustering-based multiple minimum general generalization) based on concept clustering is proposed, which can effectively figure out MGG and reflect accurately the internal relation of the set of learning examples.
+　　Key words　Inductive learning, inductive logic programming, multiple minimum general generalization, least general generalization.
+　　在归纳逻辑程序设计（inductive logic programming,简称ILP）这一机器学习的热点研究领域中,普化是进行归纳学习的主要操作[1],而最小一般普化(least general generalization,简称LGG)则是一种常用的普化方式,是在包含(θ-subsumption)意义下的子句最小一般化方法[2].学习算法利用LGG产生示例的普化,并将其作为归纳结论.LGG是一种有效的归纳方法.在数据挖掘与知识发现等领域中,LGG都有重要应用[1,3].
+　　LGG方法存在的主要问题是归纳结论的过度普化(over generalization),即所产生的归纳结论覆盖过多的未知事实.归纳结论的覆盖面通常应限制在一定范围内（如已知事实）,这就是归纳学习中普遍存在的最小性要求（minimality criteria）[4].归纳的最小性要求使归纳结论最接近示例所蕴涵的逻辑信息,使归纳过程不致过多地引入归纳偏向,这尤其对正例学习是必需的.然而在逻辑蕴含意义下,归纳普化是非常困难的问题,LGG方法在这一意义下是不完全的.现已证明,即使在θ-包含意义下,若不限制归纳结论的搜索空间,不存在能产生真普化、有限且完备的普化算子[5].因此,过度普化问题不存在彻底解决方案.普化必须在一定限制下进行,如,放弃能产生归纳“跳跃”的具有最小真普化性质的归纳算子等.现实可行的解决方案是获取能够有效地降低普化程度的归纳算子.Arimura等人提出的单位子句上的K-最小多重普化算子[6],在特定的范围内,以多单位子句的形式有效地产生简单示例集上的具有较低普化程度的归纳结论.
+　　本文针对上述问题提出广义θ-包含概念,并在这一基础上提出子句集上的多重极小一般普化(multiple and minimum general generalization,简称MGG)的理论与方法,有效地缓解了过度普化问题.本文的结论是对文献[6]的结果的进一步推广.为实现MGG方法,本文引入一种确定子句间相关程度的启发函数,据此给出一种基于概念聚类的算法(clustering-based multiple minimum general generalization,简称CMGG),使MGG方法得以有效实现.实验表明,MGG方法是解决LGG普化问题的有效方案.
+1 相关概念
+1.1 项、子句与语言
+　　项是构成原子的基本成分.对项的结构及其性质的研究是MGG方法的基础.令A为有穷集,｜A｜表示A的基数；有穷集Σ表示函数符号集,常数作为零元函数也于其中；X为与Σ不交的变量集.
+　　定义1. t称为项,如果：
+　　(1) t∈Σ,t为零元函数或t∈X；
+　　(2) 若t1,...,tn为项,f(n)∈Σ,则f(t1,...,tn)为项.
+　　项称为基项,若该项不含变元.T表示项集,GT表示基项集.项上的二元关系≤定义为：t,t′∈T,t≤t′当且仅当存在替换θ使得t=t′θ.t为t′的一个例子,t′为t的普化,即t′比t更为一般.由项s生成的关于项的语言记为Lt(s),Lt(s)={ω｜ω∈GT,ω≤s}.由Lt的定义知,s≤s′当且仅当Lt(s)≤Lt(s′).如果V是有穷项集,VLt(v),则称v是V的普化.如果对任意V的普化v′都有v≤v′,则称v是V的最小一般普化LGG,记为LGG(V).
+　　子句及其语言有类似项的定义.令P为谓词符号集,A(t1,...,tn)称为原子公式,如果t1,...,tn为项,A∈P为n元谓词.文字是原子公式或其否定.子句为文字的有穷集合,子句也表示其中文字的析取,其中变元为全称约束.子句集上的二元关系≥θ(θ-包含)定义如下.
+　　定义2. C,D为子句,Cθ-包含D,记为C≥θD,当且仅当存在替换θ使得CθD.
+　　C称为D的普化,相应地,D为C的特化,亦称为C的一个例子.C称为D的真普化,记为C>D,如果C≥θD且DθC.由子句E生成的语言记为Lc(E),Lc(E)={F｜E≥θF}.由子句集S生成的语言仍记为Lc(S),Lc(S)=Lc(E).如果U是有穷子句集,ULc(u),则称u是U的普化；如果对任意U的普化u′,都有u′≥θu,则称u为U的最小一般普化,记为LGG(U).本文在可区分的场合,对子句和项使用公共术语.类似地,C≥θD当且仅当LGG({C})≥θLGG({D}),常把这种情形称为C覆盖D.
+1.2 最小一般普化的计算
+　　θ-包含关系下子句的最小一般普化LGG是ILP中最常用的普化方法,算法由Plotkin给出[2],计算按下述递归方式进行.
+　　项间的LGG计算：
+　　(1) LGG({s,t})=X,如果s=f(s1,...,sn),t=g(t1,...,tm),f≠g,X是现行计算中未出现的新变量,在后续计算中,项对{s,t}的LGG均以X代之；
+　　(2) LGG({s,t})=f(LGG({s1,t1}),...,LGG({sn,tn})),如果s=f(s1,...,sn),t=f(t1,...,tn).
+　　文字间的LGG计算：
+　　(3) LGG({p(s1,...,sn),p(t1,...,tn)})=p(LGG{s1,t1}),...,LGG({sn,tn})),p为n元谓词；
+　　(4) LGG({p(s1,...,sn),q(t1,...,tm)})=无定义,如果p,q为不同符号文字.
+　　子句间的LGG计算：
+　　(5) LGG({C})=C；
+　　(6) LGG({C1,C2})={l｜l1(C1,l2∈C2,l=LGG({l1,l2},LGG({l1,l2}有定义)}；
+　　(7) LGG({C1,...,Cn})=LGG({C1,LGG(C2,...,Cn)}).
+　　例1:C1={p(a)←q(a),q(f(a))},C2={p(b)←q(f(b))}.
+　　LGG({C1,C2})={p(X)←q(Y),q(f(X))}；C1与C2另有一LGG解C′={p(X)←q(f(X))},但在θ-包含关系下,C与C′等价,因为C≥θC′且C′≥θ C.
+2　多重普化
+　　最小一般普化是在θ-包含关系下定义的,而不是在逻辑蕴含意义下定义的,这是因为，在计算上,在逻辑蕴涵意义下的最小一般普化计算存在着很大的困难,而θ-包含下的最小一般普化计算较逻辑蕴涵要容易得多.但是,LGG仍存在着过度普化问题.
+　　例2:表连接的逻辑程序表述是典型的ILP学习问题.现有示例集E={{app([],[],[])}, {app([b],[a],[b,a])},{app([a],[],[a])},{app([],[a],[a])}, {app([a,b],[c,d],[a,b,c,d])}}.按上述LGG算法,得到LGG(S)={app(X,Y,Z)}.然而,若以{app(X,Y,Z)}为归纳结论,则几乎无意义,因为app(X,Y,Z)过于一般,可以覆盖关于app的一切正反例.
+　　如果将S进行适当分组,再进行LGG普化,则得到：
+　　LGG({{app([],[],[])},{app([],[a],[a])}})={app([],X,X)};
+　　LGG({{app([b],[a],[b,a])},{app([a],[],[a])},{app([a,b],[c,d],[a,b,c,d])}})={app([A｜X],Y,[A｜X])}.
+　　将两个普化结论合起来便可覆盖S,这一归纳结论已接近正确的表连接表述,即是本文的二重极小一般普化例.
+　　上例引出进行多重普化的必要性.较之单普化(LGG),多重普化将显著地降低普化程度,有利于得到满意的归纳结论.以下内容是有关多重普化的形式讨论,首先将θ-包含概念推广到子句集.令S,S′为子句集.
+　　定义3. S Gθ-包含S′,记为S≥GθS′,当且仅当对任意D∈S′,都存在C∈S及替换θ,使得CθD,其中S和S′都是子句集.
+　　性质1. 若S,S′为单子集,则S≥GθS′当且仅当S′≥θS′.
+　　性质2. 若S≥GθS′,则SS′.
+　　因此,S为S′的普化.本文将S称为k子句集,如果S是由至多k个子句构成的集合.
+　　定义4. k子句集S称为S′的k重极小一般普化(k-minimum general generalization,简称k-MGG),记为

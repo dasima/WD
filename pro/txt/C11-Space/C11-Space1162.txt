@@ -1,0 +1,32 @@
+航空工艺技术
+AERONAUTICAL MANUFACTURING TECHNOLOGY
+1999年　第3期　No.3 1999
+
+
+
+基于微控制器的动平衡机
+通用电测系统的研究
+Research on Microcontrollor_Based Measuring System Used
+for Different Types of Dynamic Balancing Machines
+周正干　满庆丰　周卫宁　邬学礼
+　　［摘要］　论述了一种以89C51微控制器为核心的动平衡机通用电测系统的实现方法。系统采用了90年代先进的硬软件结合技术，寻求达到高精度、多功能、易操作和低成本的总体目标。为了满足不同用户的需求，系统可支持多种支承方式，具有多种显示方式、多种补偿方式、多次启动平均、多面校正计算、多种打印方式以及自动标定等功能。
+　　关键词： 动平衡机　电测系统　微控制器应用
+
+　　［ABSTRACT］　This paper describes a microcontrollor_based measuring system used for different types of dynamic balancing machines. Using advanced technology both in hardware and software of the nineties, this system aims to reach the general goal of high precision, multiple function, easy_to_operate and low cost. In order to meet the needs of different users, this system is designed to be applicable under different supporting, displaying and compensating modes. Besides, this system is also capable of realizing: averaging over time & runs, re_distribution of correction data between multiplanes, data/screen printing and automatic calibration, etc..
+　　Keywords: Dynamic balancing machine　Measuring system　Application of microcontrollor
+
+　　机器中绕轴线旋转的零部件，称为机器的转子。如果一个转子的质量分布均匀，制造和安装合格，则运转是平稳的，其对轴承的压力，只有静压力，我们称之为平衡的转子。反之，若转子因质量分布不均匀，安装不当，致使其中心惯性主轴与回转轴线不重合而在旋转时对轴承加有动压力，我们称之为不平衡的转子。
+　　对于旋转轴线有约束的不平衡转子，动不平衡在支承上造成的动压力也称动载荷，它不仅会引起整个旋转机械的振动，产生噪音，增加能耗，还会加快轴承的磨损，造成转子部件的高频疲劳破坏和支承机匣及某些部件强迫振动损坏，降低旋转机械的寿命，严重时还会导致重大事故。
+　　对于旋转轴线无约束的转子(如卫星等)，动不平衡将会影响其在空间的姿态，进而影响工作质量。
+　　由于这些不平衡是在转子转动时出现的，故一般需要在转动时进行测量，然后校正，因此称为动平衡。动平衡效果如何，在很大程度上受测量系统精度的制约。
+　　从原理上分，测量系统可分为软支承动平衡机和硬支承动平衡机。软支承动平衡机问世于50年代末至60年代初，至今仍广泛使用，特别是在超高速、高精度、小转子和大批量(如曲轴)的平衡以及在自动动平衡机领域仍用软支承动平衡机。硬支承动平衡机是自70年代初迅速发展起来的一种用途广泛的通用动平衡机，由于其标定与转子的M(质量)和I(转动惯量)无关，因此只需要一次标定(而软支承动平衡机的标定系数随转子的M和I而异，故对于不同类型的转子，需要一一重新标定)。近年来，由于硬支承动平衡机结构上的不断改进，电测系统也日益完善，平衡精度不断提高且通用性强，因此目前硬支承动平衡机已成为动平衡机的主流。
+　　动平衡机由以下几部分组成：机械测振系统(含振动传感器和相位信号发生器)、驱动系统、电子测量系统、校正装置和安全防护装置。其中，机械测振系统等的发展相对缓慢，而电测系统发展却十分迅速。由于微机的日益普及，微机化的电测系统已经成为国内外动平衡机设计的新潮流。随着近代超大规模集成电路的出现，微处理器及其外围芯片有了迅速发展，选择微控制器实现微机化动平衡机电测系统是一种经济、可行的方案。
+　　由此可见，动平衡技术是一种机电一体化的复杂技术，也是制约机械工业发展的关键技术，它直接影响各种旋转机械的工作质量和寿命．
+　　为了跟踪世界先进的动平衡技术，提高国内电测系统的水平，研制了测量精度高、功能齐全、操作简单、适用于各种动平衡机的通用微机化电测系统。
+
+1　系统的总体设计方案
+1.1　影响系统方案的因素
+　　动平衡机电测系统的主要任务是从机械测振系统所得到的含干扰的微弱的动不平衡信号中提取与转子旋转同频的有用信号的幅值和相位信息，同时，还要配合机械测振系统解决转子的平面分离(解算)以及转子的自动定相问题。这是我们在电测系统设计时的基本出发点。
+　　本系统是动平衡机通用电测系统，适用于各种动平衡机，包括不同支承系统(硬支承和软支承)和测振传感器(位移、速度和力传感器)，因此需要考虑以下问题：
+　　.　不同支承系统与不同测振传感器组合的平衡机，传感器输出的不平衡量信号与ω的关系是不同的(ω――转子的旋转角速度)；
+　　.

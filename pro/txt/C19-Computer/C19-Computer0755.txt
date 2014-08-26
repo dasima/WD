@@ -1,0 +1,24 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1999年　第25卷　第5期　Vol.25 No.5 1999
+
+
+
+基于三角网格模型多分辨分解的图像压缩
+李文舜　李介谷
+摘　要　构造了图像的三角网格模型.基于三角网格模型的多分辨分解，提出了一个新的图像压缩方法.通过图像的三角网格模型的多分辨分解、压缩与重构，实现了图像的多分辨解、压缩与重构.构造了一个在小波图像压缩中未曾使用过的小波滤波器组，该小波滤波器组算法具有O(n)运行时间.实验表明，该方法能获得较好的图像压缩性能.
+关键词　三角网格，图像压缩，多分辨分析，小波滤波器组，尺度空间.
+IMAGE COMPRESSION USING MULTIRESOLUTION DECOMPOSITION OF TRIANGULAR MESH MODEL
+LI Wenshun　LI Jiegu
+(Institute of Image Processing & Pattern Recognition, Shanghai Jiaotong Univ., Shanghai　200030)
+Abstract　In this paper, a triangular mesh model of image is constructed. Based on multiresolution decomposition of the triangular mesh model, a new image compression method is proposed. Multiresolution decomposition, compression and reconstruction of image are implemented through multiresolution analysis of the triangular mesh model of image. A new wavelet filter bank is constructed, which has never been used in wavelet image compression before. The filter bank algorithm has O(n) running time. The exprimental resnlts show that the proposed method can achieve satisfactory image comprossion performance.
+Key words　Triangular mesh, image compression, multiresolution analysis, wavelet filter bank, scalar space.
+1　引　言
+　　小波分析在图像处理领域中(包括图像压缩领域)受到高度地重视，其原理在文献［1―4］中作过研究，就是把输入信号分层次地分解为低分辨率的平滑信号和小波细节信号.在每层当中，平滑信号和小波细节信号都包含有重构更高分辨层的信息.通常小波系数较小，可达到压缩的目的.在图像压缩中，由于所使用的尺度函数及小波函数的不同，因而有不同的小波滤波器.如9／7拍(Tap)滤波器［5］、D4滤波器［2］及Haar滤波器［6］.本文所使用的尺度函数和小波函数为分段线性函数，由此所构造的四个滤波器(两个分解滤波器和两个合成滤波器)为稀疏矩阵，该滤波器算法具有O(n)运行时间.另外，在图像压缩中所使用的二维小波通常为一维小波的张量积［7］.而本文所构造的小波可用于分解定义在细分连续性的任意拓扑域上的函数，其分解过程如一维小波的情况.三角网格分解可用于多面体压缩、动画的分层控制、曲面的多分辨率编辑等［8］.本文以图像灰度作为高度构造一个图像的三角网格模型来实现图像分解、压缩及重构，这也可看作其应用之一.
+2　图像的三角网格模型及尺度函数选取
+　　多分辨分析的研究对象实际上是函数和函数空间.因此，图像作为一个信号在分解之前，必须将其定义为某个域上的函数.图像通常为定义在矩形域上的二维函数：I=g(x,y)，其中x,y分别为水平和垂直方向的像素位置.这里将图像定义在如图1所示的细分连续性三角域上，每个像素点都对应于一个相同位置的三角顶点.若三角顶点以像素灰度值作为高度，则构成图像的三角网格模型.对于非方形或方形但不细分连续的图像，可将三角域扩张为细分连续的三角域.对于扩张区域内的三角顶点对应的高度值置为零.由于这一区域内完全是平坦的，所以三角网格多分辨分解后对应于这一区域的小波系数为零，因而对压缩没有多大影响.在三角网格重构后，只取图像所对应的区域来恢复图像.由三角网格恢复图像时，只需将像素的灰度值取为三角顶点的高度值即可.
+
+
+
+图1　细分连续的三角域
+　　针对图像的三角网格模型，也可如文献［8］一样以分段线性函数作为尺度函数.相应于每个三角域顶点有一个如图2所示的尺度函数

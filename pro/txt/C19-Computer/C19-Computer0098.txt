@@ -1,0 +1,25 @@
+计算机应用
+COMPUTER APPLICATIONS
+1999年 第19卷 第9期 Vol.19 No.9 1999
+
+
+
+时间序列数据立方的存储与聚集计算
+唐常杰　杨　峰　于中华　相利民　左
+　　摘　要　本文讨论了从时序数建造、存储数据立方，以及聚集计算的算法，其中N23算法和扩展的EN23算法可以方便地将一个N（N>3）维数据立方转换为三维数据立方，大大降低了I/O次数，极大地提高了运行效率。
+　　关键词　数据采掘，数据立方，聚集计算，时态数据
+THE STORAGE AND AGGREGATION ON THE DATA
+CUBE FOR TIME SERIES
+Tang Changjie　Yang Feng　Yu Zhonghua　Xiang Limin　Zuo Jie
+Computer Department,Sichuan University　Sichuan.Chengdu 610064
+　　Abstract　This paper proposes the algorithms to build, storage and aggregate the data cube for temporal data. Among them the algorithm N23 and EN23 can convert the N dimensional data cube into a 3 dimensional data cube with low I/O cost and high performance.
+　　Keywords　Data mining, Data cube, Aggregation, Temporal data
+　　　　在现实生活中，有大量与时间有关的数据,称为时序数据(或时态数据)。从时序数据中发现指示(例如周期模式)具有广泛的应用前景。
+1　对时序数据采掘的意义及难点
+　　决策者在决策之前，常常需要从历史性数据(即时态数据)了解相关对象的规律和趋势，对未来进行预测。例如，对消费者进行分析，发现哪些人更加可能会对邮件宣传作出反应； 预测消费贷款的可能结果,预测呆帐，坏帐；预测电视台在各种节目方案下的收视率，以更好地编排节目，增加广告收入等等。
+　　从时序数据中发现规律，至少有两个困难∶数据量大；发现模式(例如周期)的算法。先驱者经过探索，指出多维数据立方是解决这些困难的基本数据结构之一。
+　　作为OLAP(联机事务分析)的工具，多维数据立方在实现时有两种方案，即基于关系数据库的ROLAP和基于多维数据库的MOLAP。ROLAP中数据单元为元组，适合于大型的数据集，其优势在于稀疏数据在关系数据库中比在数组中存贮得更加紧密。MOLAP直接使用特殊的数据结构（如稀疏数组）来实现多维数据立方，数组的维作为坐标轴。根据一个数据单元在稀疏数组中的位置，可以推导出它在多维数据立方中的准确位置。但是，当数据比较稀疏的时候，这种方法存贮效率低。压缩技术成为需要解决的关键问题。
+
+图1　三维数据立方
+2　多维空间位置矢量与一维数组互换
+　　设被处理数据对象有N维，分别记为D0,D1,……,DN-1。对每一维增加个值Sum，对象在Di 维上的值为 (di0,di1,……，diSUM)。为了方便，diSUM 表示为Di｜Di｜ 。每一个维Di 都有｜Di｜+1 个值。用矢量V（v0,v1,……，vN-1 来表明数据立方单元多维空间中的位置。一个数据立方单元的地址中至少有一个vj 等于｜Dj｜ ，其中j≥0，并且j

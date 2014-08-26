@@ -1,0 +1,41 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1999年　第25卷　第5期　Vol.25 No.5 1999
+
+
+
+一类PETRI网的时间性能简化分析1)
+徐志斌　郑大钟
+摘　要　实际系统的Petri网模型中加入时间因素形成TPN，在评价系统性能时，TPN的周期性具有重要意义.为降低系统的性能分析和计算的复杂性，基于分解的方法，结合结构简化分析，探讨具有同步连接时各分解子网与总网之间时间性能的关系，并给出一些典型结构的简化算法.
+关键词　TPN，基本子网，周期时间，同步连接.
+REDUCTION METHOD FOR TIME ANALYSIS OF A CLASS
+OF PETRI NETS
+XU Zhibin　ZHENG Dazhong
+(Automation Department,Tsinghua University,Beijing　100084)
+Abstract　In the physical system,it is necessary to add time factor into model,and cycle time is important in the performance analysis.In order to decrease complexity of analysis and computation,we propose a decomposing method with structure reduction.When there are synchronized links between subnets,the cycle time compute algorithm and reduction method of special structure are given in detail in this paper.
+Key words　TPN, elementary net, cycle time, synchronized link.
+1　引　言
+　　由于实际系统的规模庞大，直接进行系统周期性的计算将导致计算维数灾难.文献［1］针对一类特殊C/E网，结合网的特殊结构分析和回路计算来求取系统的周期时间.文献［2］针对事件图，提出了一种逐步简化系统结构，求取系统的周期时间的方法.本文基于Petri网的分解，结合子网结构简化和子网间结构的连接分析来计算系统时间性能，并给出结构简化的方法和总网与子网间时间性能的关系.
+2　基本概念
+　　定义1. 一周期时间，周期时间是指网N从标识M开始，对无冲突结构的网，每一个变迁至少发生一次，最后又回到标识M所需要的最小时间；对有冲突结构的网，将其按冲突结构支路分解为无冲突结构的子网N1，…，Nk，其周期时间为各子网周期时间的最大值.
+　　TPN的定义中引入时间因素的方法一般有三种：仅在变迁中加入时间；仅在位置中加入时间；同时在位置和变迁中加入时间.三种方法等效，本文取最后一种表达方法进行性能分析.为便于子网内部状态集结和结构简化时进行Token数目调整，文中设输入和输出函数取值为｛0，1｝.对于具有多重弧和自循环的Petri网，可以先采用PETRI网等价变换方法，变换为满足上述条件的子网，再利用本文所提的方法进行简化分析.
+　　其余Petri网的相关定义，如节点的前集、后集、周期性、活性和有界性等参见文献［3］，TPN概念参见文献［5］.
+3　结　果
+　　首先讨论分解后子网的串行、F/J和并行等结构的简化，每种结构分为无托肯和有托肯两种情形讨论.结构定义参见文献［4］.
+3.1　时间参数固定情形
+3.1.1　简单串行结构
+　　简单串行结构记为SB(P，T，I，O)，以位置到位置的结构简化为例，其简化结果如图1所示.
+
+
+图1　简单串行结构的简化
+　　由图1可知，位置到位置的串行结构简化成一个位置，简化后位置与原结构具有如下关系
+　(1)
+　(2)
+对于起始节点为位置、终止节点为变迁和起始节点为变迁和终止节点为位置的串行结构可简化为一个位置p和一个变迁t,且
+τ(p)=∑τp(pi),　τ(t)=∑τt(tj),　M(p)=∑M(pi).　(3)
+对于起始和终止节点都是变迁的串行结构简化为一个变迁，有
+　(4)
+有托肯时要对与该结构相关的位置作调整.调整方法有两种，设结构起始变迁为t1，终止变迁为tn，所含托肯数为ML=∑M(pi)，则
+　　1) 调整t1前集位置托肯数
+　(5)
+　　2) 调整tn后集位置托肯数

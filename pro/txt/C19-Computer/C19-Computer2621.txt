@@ -1,0 +1,52 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第10卷 第7期　No.7 Vol.10 1999
+
+
+
+一种运行时消除指针别名歧义的新方法
+汤志忠　乔 林　张赤红　苏伯珙
+　　摘要　提出一种采用软硬件结合的运行时消除指针别名歧义的新方法SHRTD（software/hardware run-time disambiguation）.为延迟运行时不正确的内存访问及其后继操作,SHRTD的功能单元执行NOP操作.为保证所有延迟操作执行顺序的一致性,编译时就确定执行NOP操作的所有功能单元的顺序和NOP操作的数目.SHRTD方法适用于不可逆代码,同时它的代码空间受限,也不存在严重的代码可重入性问题.新方法有效地解决了指针别名问题,为获得潜在的指令级并行加速提供了可能.
+　　关键词　指令级并行性,超长指令字,指针别名,运行时检查,运行时补偿.
+　　中图法分类号　TP338
+A New Run-Time Pointer Aliasing Disambiguation Method
+TANG Zhi-zhong1 QIAO Lin1 ZHANG Chi-hong1 SU Bo-gong2
+1(Department of Computer Science and Technology　Tsinghua University　Beijing　100084)
+2(Department of Computer Science　William Paterson University　USA)
+　　Abstract　In this paper, a new run-time pointer aliasing disambiguation method, called SHRTD (software/hardware run-time disambiguation), which combines hardware and software techniques is presented. During run time, the SHRTD method lets function units execute NOPs to implement the postponement of the incorrect memory load operation and its successive operations. To guarantee the consistency of the execution sequence of all postponed operations, the order of function units which executes NOPs and the number of NOPs must be determined during compiler time. The SHRTD can be used for irreversible code, and it has very limited compensation code space and no serious rerollability problem. The SHRTD method solves pointer aliasing problem efficiently and makes it possible to obtain potential instruction-level parallel speedup.
+　　Key words　Instruction-level parallelism, very-long instruction word, pointer aliasing, run-time checking, run-time compensation.
+　　当前的超长指令字（very-long instruction word,简称VLIW）编译器都采用静态代码调度和软件流水的方法开发程序的指令级并行性（instruction-level parallelism,简称ILP）［1］.这两种方法最大的局限是存在内存访问的歧义相关性（ambiguous dependence）,因而即使编译器能够处理数组静态别名分析,也不能够很好地处理指针别名（pointer aliasing）分析.为了解决指针别名问题,以获得更高的潜在指令级并行处理加速,文献［2］提出了两种运行时消除歧义性（run-time disambiguation,简称RTD）的方法：运行时检查（run-time check）方法和运行时补偿（run-time compensation）方法.将这两种方法应用于软件流水时,运行时补偿方法虽然允许不确定的内存访问,但它只适合那些可逆代码［2］.运行时检查方法虽然适用于任何代码,但存在代码可重入性（rerollability）问题.这两种方法共同的缺陷是存在严重的代码空间问题,尤其是在全局软件流水中可能导致巨大的补偿代码空间开销.
+　　本文提出一种新的基于软硬件结合的运行时检查方法SHRTD.SHRTD的基本思想是：（1）为延迟运行时不正确的内存访问及其后继操作,功能单元执行NOP操作而不是执行补偿代码；（2）为保证所有延迟操作执行顺序的一致性,编译时就确定执行NOP操作的所有功能单元的顺序和NOP操作的数目.
+1 SHRTD硬件基本结构
+　　一个完整的指令级并行计算机加速系统主要由三大部分组成：主机、采用超标量体系结构的单处理机和采用VLIW体系结构的8个处理单元（PE）串联的多处理机.图1是一个简化的PE体系结构和SHRTD硬件支持环境.该体系结构包含7个功能单元：2个ALU、2个乘法器、2个内存访问端口和1个分支和循环控制单元（BRLC）.该VLIW处理器能够在1个时钟周期中处理4个整数操作、2个内存访问操作和4个分支操作.SHRTD的硬件支持环境在指令存储器上添加了一个存储延迟操作的指令缓冲区、一个从指令缓冲区或正常的指令存储器选择操作的多路选择器集合和一个带有SHRTD WORD只读存储器的控制指令缓冲区.
+
+图1　单个PE的体系结构
+2　相关定义与定理
+　　本文假设：所有的操作都只占用1个时钟周期；所有的PE共享一个单一的内存片；且每个PE只有一个内存读、内存写和BRLC单元,每个BRLC单元可以同时处理4个分支操作.
+　　定义1(操作距离). 设op1和op2是程序中的两个操作,则它们之间间隔的操作数目加1称为这两个操作的操作距离,记为dis(op1, op2).
+　　定义2(安放距离). 设op1和op2是程序中已安放的两个操作,且在原始串行代码中操作op1在操作op2之前.若安放后它们之间间隔的VLIW操作数目为N,则这两个操作的安放距离
+　　　　　　　
+　　定义3（代码补偿量）. 设op1和op2分别是程序中两个已安放的歧义STORE和LOAD操作,且它们的安放距离d(op1,op2)＜0.当检测到地址冲突时，必须补偿一些空操作以延迟不正确的LOAD及其后继操作,我们称这些补偿的空操作数目为代码补偿量（code compensation measure）.
+　　显然,若op1和op2安放在不同的内存端口,则相应的代码补偿量Ω=|d(op1,op2)|+1.
+　　定义4（体内安放距离和体间安放距离）. 对任意一个迭代次数为n的循环中的操作op1和op2,设op(k)1和op(j)2分别表示op1和op2的第k次和第j次迭代,1≤j≤n,1≤k≤n.如果j≠k,称安放距离d(op(k)1,op(j)2)为体间安放距离；如果j=k,称安放距离d(op(k)1,op(j)2)为体内安放距离.考虑到操作op1和op2在循环体不同迭代的体内安放距离是相同的,故可将体内安放距离简记为dinn(op1,op2).
+　　循环程序的软件流水算法必须在循环调度前确定循环的体间启动间距II,即相邻两次循环迭代的第1个操作之间的体间安放距离.一旦确定了循环体间启动间距II,则有如下定理.
+　　定理1. 给定循环的体间启动间距II.设op(k)1和op(j)2分别是循环程序中两个已安放的歧义LOAD和STORE操作,且它们的体内安放距离为dinn(op1,op2),体间安放距离d(op(k)1,op(j)2)<0,j<k.若op(k)1和op(j)2安放在不同的内存端口,则一次迭代需要插入的SHRTD操作个数p=.
+　　证明：因为并行程序每隔II启动一次循环迭代,则在操作op(j)1和op(j)2之间共启动了次循环迭代.注意到不在这段时间内启动的循环迭代并不存在歧义相关性,从而只需要在这些循环迭代所属的操作op(k)1之前插入相应的SHRTD操作,以判断操作op(k)1和op(j)2（j+1≤k≤j+是否存在歧义相关性即可,p=即为一次迭代需要插入的SHRTD数目.　　□
+　　定理2. 给定循环的体间启动间距II.设op(k)1和op(j)2分别是循环程序中两个已安放的歧义LOAD和STORE操作,当SHRTD检测到地址冲突时,相应的代码补偿量
+　　　　　　　　Ω=｜d(op(k)1,op(j)2)｜+1=dinn(op1,op2)-(k-j)×II+1.
+　　证明：因为对存在歧义相关性的任意操作op(k)1和op(j)2,Ω=｜d(op(k)1,op(j)2)｜+1为其代码补偿量.设操作op(j)1的启动周期为t,则操作op(j)2的启动周期为t+dinn(op1,op2),操作op(k)1的启动周期为t+(k-j)×II,故操作op(k)1和op(j)2的体间安放距离
+　　　　d(op(k)1,op(j)2)=(t+(k-j)×II)-(t+dinn(op1,op2))=(k-j)×II-dinn(op1,op2).
+　　既然op(k)1在op(j)2之前启动,上述结果显然是负值.当SHRTD检测到歧义相关性时,op(k)1已经超前执行了|(k-j)×II-dinn(op1,op2)|个时钟周期,并读取了op(j)2执行前的数据.为保证程序的正确执行,必须在op(k)1之前插入｜(k-j)×II-dinn(op1,op2)｜+1个补偿空操作,从而有相应的代码补偿量Ω=｜d(op(k)1,op(j)2)｜+1=dinn(op1,op2)-(k-j)×II+1.　　□
+3　SHRTD基本原理
+　　表1和表2说明了如何在软件流水过程中使用SHRTD,原始的程序代码如图2所示,插入RTD代码之后的程序如图3所示.表1是无地址冲突的软件流水结果,操作号和指针别名后加括号的上标编号表示该操作属于哪次迭代.
+表1　循环程序实例：无地址冲突时的软件流水结果
+CLKALU1ALU2MUL1MUL2MEM1MEM2BRLC0BRLC1BRLC2
+1　　op(1)1　　　　　　
+2　　op(2)1　op(1)5　　　SHRTD(op(2)5,op(1)8)
+3op(1)6　op(3)1　op(2)5　　SHRTD(op(3)5,op(1)8)SHRTD(op(3)5,op(2)8)
+4op(2)6op(1)7op(4)1　op(3)5　SHRTD(op(4)5,op(1)8)SHRTD(op(4)5,op(2)8)SHRTD(op(4)5,op(3)8)
+5op(3)6op(2)7op(5)1　op(4)5op(1)8SHRTD(op(5)5,op(2)8)SHRTD(op(5)5,op(3)8)SHRTD(op(5)5,op(4)8)
+6op(4)6op(3)7op(6)1op(1)9op(5)5op(2)8SHRTD(op(6)5,op(3)8)SHRTD(op(6)5,op(4)8)SHRTD(op(6)5,op(5)8)
+7op(5)6op(4)7op(7)1op(2)9op(6)5op(3)8SHRTD(op(7)5,op(4)8)SHRTD(op(7)5,op(5)8)SHRTD(op(7)5,op(6)8)
+8op(6)6op(5)7op(8)1op(3)9op(7)5op(4)8SHRTD(op(8)5,op(5)8)SHRTD(op(8)5,op(6)8)SHRTD(op(8)5,op(7)8)
+9op(7)6op(6)7op(9)1op(4)9op(8)5op(5)8SHRTD(op(9)5,op(6)8)SHRTD(op(9)5,op(7)8)SHRTD(op(9)5,op(8)8)

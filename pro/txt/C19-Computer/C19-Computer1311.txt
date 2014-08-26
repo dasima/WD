@@ -1,0 +1,58 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+2000　Vol.26　No.3　P.360-364
+
+
+
+结构不确定性系统的敏感性分析
+高志伟　王先来　王德贤
+摘　要　讨论了控制对象和控制器同时存在稳定反馈结构不确定性的鲁棒稳定性和性能敏感性问题，给出了摄动系统鲁棒稳定的充分条件，得到了敏感函数矩阵和闭环传递函数矩阵H∞的摄动上界.这里控制器并不要求是真稳定的，因此得到的结果较有一般性.
+关键词　结构不确定性，稳定反馈摄动，敏感函数矩阵，H∞摄动界.
+SENSITIVITY ANALYSIS OF SYSTEMS UNDER STABLE
+FEEDBACK STRUCTURED UNCERTAINTY
+GAO Zhiwei　WANG Xianlai　WANG Dexian
+(School of Electrical Automation and Energy Engineering, Tianjin University, Tianjing　300072)
+Abstract　In this paper, the problem of the stability robustness and the performance sensitivity is investigated for systems under stable feedback structured uncertainties both on the plant G and the feedback controller K simultaneously. Sufficient conditions for the robust stability and the upper bounds for the sensitivity function matrix and the closed-loop transfer function matrix are given in terms of H∞-norms. The controller K does not need to be proper and stable,therefore the results obtained here is of general sense.
+Key words　Structured uncertainty, stable feedback uncertainty, sensitivity function matrix, perturbed bounds.
+1　引言
+　　众所周知，结构不确定性或摄动在实际系统中是广泛存在的.因此，系统的鲁棒控制研究20多年来一直受到普遍的关注［1，2］.不难看出，即使在某种结构不确定性或摄动的干扰下，系统能够鲁棒稳定，但是系统的性能指标却在摄动下发生了变化，以至于不一定能够满足原来的性能要求.因而，系统的性能对于结构不确定性或摄动的敏感程度如何，显然是一个有意义的研究问题.文［3］分别分析了控制对象存在加摄动、输入乘摄动、输出乘摄动以及控制器存在加摄动的不确定性系统的性能敏感性问题.文［4，5］则把文［3］中提出的四种结构不确定性放在一起同时考虑，扩展了文［3］的结果.稳定反馈摄动是在实际系统中广泛存在的另一种典型的结构不确定性，文［6］讨论了这种摄动结构.然而，文［6］假定控制器是真稳定的，这样得到的结果难免有些局限性.为了使得到的结果较有一般性，本文将取消对控制器的限制，即这里假定控制对象和控制器同时存在稳定反馈结构不确定性，而且控制对象和控制器都可以是非真稳定的有理矩阵.　　
+
+
+图1　名义系统Σ(G，K)
+2　预备知识
+　　考虑图1所示的名义系统和图2所示的稳定反馈结构不确定性，图中G和K分别表示控制对象和控制器的传递函数矩阵.反馈摄动Δgf和Δkf均为真稳定的.记RH∞为真稳定有理函数矩阵的集合，则Δgf，Δkf∈RH∞.
+　　令是控制对象在RH∞上的左互质分式表达；(U，V)是反馈控制器K=UV-1的右互质分式表达［1～3］.那么，名义系统Σ(G，K)的传递函数矩阵为
+　　　(1)
+其中I为单位矩阵，
+
+
+图2　结构不确定性
+　　名义系统Σ(G，K)的敏感函数矩阵定义为
+　　　(2)
+　　显然，H(G，K)∈RH∞的充要条件就是为了后面讨论有意义及叙述方便，给出如下重要假设.
+　　假设1.
+　　　(3)，(4)，(5)
+　　式(3)保证了名义系统Σ(G，K)是真稳的，即H(G，K)∈RH∞；同时式(3)也使名义系统Σ(G，K)的敏感函数矩阵S和闭环传递函数矩阵H(G，K)的表达式(1)和(2)得到了简化；式(3)也保证了S∈RH∞.式(4)和(5)定义了名义系统Σ(G，K)的敏感函数矩阵S和闭环传递函数矩阵H(G，K)的H∞上限.
+　　与名义系统相对应，这里用Σ(GΔ，KΔ)，H(GΔ，KΔ)，SΔ，GΔ，KΔ来分别表示稳定反馈不确定性(图2)系统、摄动传递函数矩阵、摄动敏感函数矩阵、摄动控制对象和摄动控制器的传递函数矩阵.
+3　主要结果
+　　定理1.图1所示系统同时具有图2所示的两种结构不确定性，并有假设1成立，如果
+　　　(6)，(7)
+　　　(8)，(9)
+其中α和β是非负常数，则
+　　1)摄动系统Σ(GΔ，KΔ)的敏感函数矩阵SΔ保持真稳定，且
+　　　(10)
+　　2)摄动系统Σ(GΔ，KΔ)的闭环传递函数矩阵H(GΔ，KΔ)保持真稳定，且
+(11)
+　　证明.
+　　1)由图1和图2有
+　　　(12)
+KΔ=K(I-ΔkfK)-1=U(V-ΔkfU)-1，　　　(13)
+则
+　　　(14)
+其中且在式(14)的推导过程中用到了式(3).
+　　由式(14)进而有
+　　　(15)
+　　由条件(6)～(9)有
+(16)
+　　由式(16)即有(I-Δ*)-1∈RH∞，由式(15)进而有SΔ∈RH∞.
+　　令Z=(I-Δ

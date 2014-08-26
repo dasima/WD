@@ -1,0 +1,48 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1997年　第23卷　第4期　Vol.23　No.4　1997
+
+
+
+动基座机器人的末端受限鲁棒跟踪控制1)
+王兴贵　谈大龙　吴镇炜　张春杰
+　　摘　要　结合具有扰动基座末端受限机器人的动力学特性，提出了虚构线性不确定系统的匹配模型概念. 通过引入线性不确定系统的鲁棒跟踪控制器设计方法，发展了一种新的受约束机器人的力鲁棒跟踪控制方法. 文中给出了动基座PUMA562机器人的实验结果. 
+　　关键词　约束机器人，鲁棒控制，不确定性系统， 非线性系统，机器人动力学.
+THE ROBUST TRACKING CONTROL OF RESTRAINED ROBOT 
+WITH RANDOM PERTURBATION ON THE BASE
+WANG XINGGUI
+(The PLA College of Ordance Engineering, Shijiazhuang 050003)
+TAN DALONG　　WU ZHENWEI　　ZHANG CHUNJIE
+(Shenyang Institute of Automation, the Chinese Academy of Sciences, Shenyang 110015)
+Abstract　According to the dynamics of the restrained robot system with random perturbation on the base, a matching model of imaginary linear uncertain system is established in this paper. The method to design a robust stabilizing controller for the linear uncertain system is introduced, and a force robust tracking control method is developed for the restrained robot. The effectiveness of this method has been verified by experiment with the PUMA562 mounted on a omnidirectional vehicle.
+Key words　Restrained robot, robust control, uncertain system, nonlinear system, robot dynamics.
+1　引言
+　　机器人操作系统的许多作业都可归结为末端受约束的控制问题，其中， 包括多机器人协调操作系统. 因此，受约束的机器人控制问题早已引起研究者们的重视［1―4］. 目前研究的热点是固定基座受约束机器人的力/位置混合控制，主要是将系统的运动和约束力解耦，然后对其分别采取不同的控制策略［1―3］. 尤其对约束力通常只采用简单的积分反馈控制，它实际上是运用静态或准静态控制本质为动态的过程. 多数文献提供的数值仿真及实验结果均表现出约束力和运动轨迹的颤动较严重. 在空间和水下环境作业的机器人及自动化工厂中装在自治小车上的机器人等，这些机器人系统在工作时基座不可能固定不动，显然，当机器人的基座有随机扰动时，必须研究新的更有效的控制方法. 
+2　动基座末端受限机器人的动力学方程
+　　设机器人基座的扰动量为，∈Rm(m≤6)，对应机器人的爪端工作轨迹扰动变量e有
+
+(1)
+式中J′(,)为对应的Jacobian变换矩阵. 
+　　在爪端工作坐标系描述的机器人动力学方程，当基座无扰动时，沿期望的指令轨迹平衡点族作线性化处理， 忽略二阶以上高次项有
+
+(2)
+式中=-d为位移偏差；
+　　为驱动力偏差；
+　　为爪端接触外力偏差；
+　　为系统标称矩阵. 式(2)是机器人基座无扰动时，在爪端坐标系描述的系统对应指令轨迹的标称偏差动态方程. 
+　　当机器人的末端受限，基座有扰动量时，若维持机器人爪端位姿不变，机器人的实际平衡点(关节空间)将偏离指令轨迹的平衡点. 方程(2)中变量所对应的标称系数矩阵将产生扰动增量， 致使实际系统变为不确定系统
+
+(3)
+式中ΔMx, ΔCx, ΔGx为系统标称矩阵的扰动量. 
+3　控制器设计
+3.1　虚构模型
+　　首先定义一个虚构的线性不确定匹配模型，也就是构造一个关于式(3)中的虚拟线性定常不确定系统模型
+
+(4)
+式中为虚构系统状态变量；
+　　――渐近跟踪引入的附加向量；
+　　r(t)――系统参考输入信号；
+　　――虚构系统标称矩阵；
+　　――系统的扰动和参考输入量，均为阶跃信号. 
+系统(4)的不确定性满足如下匹配条件：
+ΔA=BD(r), D(r)=[r

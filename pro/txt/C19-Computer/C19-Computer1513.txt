@@ -1,0 +1,38 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1998年 第24卷 第4期 Vol.24 No.4 1998
+
+
+
+
+非线性系统的实现与最小阶问题1)
+郑毓蕃　曾晓东
+摘　要　在系统的微分域及相应的微分向量空间上定义了一个非交换的多项式环(算子环)，并利用这个环定义非线性系统的传递函数.用微分向量空间为工具，讨论单输入/单输出非线性系统的实现问题.主要结果回答了：1)在什么条件下，不同的输入/输出微分方程有相同(等价)的实现；2)在未知实现的条件下，如何确定输入/输出微分方程最小实现的阶数.覆盖了线性系统理论的相关结果.
+关键词　非线性系统，实现，微分向量空间，非交换环，传递函数.
+REALIZATION AND MINIMAL ORDER FOR NONLINEAR SYSTEMS
+ZHENG YUFAN
+(Institute of Systems Science,East China Normal University,Shang hai 200062)
+ZENG XIAODONG
+(Dept.of Automation,Sichuan Union University,Chengdu 610065)
+Abstract　The realization problems for single－input/single－output differential equations are discussed within the framework of differen tial vector space.Main results of this work answer two fundamental questions:(1) und er what conditions different input/output differential equations have the sa me r ealization;(2)how to calculate the order of the minimal realization of input/out put differential equations without knowing its realization.In order to solve the se problems the notion of transfer function for nonlinear systems is defined over a non－commutative polynomial ring.The description of nonlinear realization pr oblems is fully incorporated with that of the linear control theory.
+Key words　Nonlinear system,realization,differential vector space,non－commutative ring,transfer function.
+1　引言
+　　实现问题是控制理论中一个基本问题.对于非线性系统的实现问题，七十年代末，Fliess［1］回答了如何由生成级数形式的输入/输出方程构造状态空间方程的实现.以后其他作者［2，3］将这方面工作做得更为完善.
+　　本文讨论了输入/输出微分方程的实现以及最小实现的阶计算问题.这些问题已有一些研究结果，例如文［4］给出了非线系统实现的一个定义，并给出了输入/输出微分方程存在状态空间实现的一个必要但非充分的条件.文［5］讨论了最小实现的阶.
+　　本文讨论单输入/单输出微分方程
+　　(1)
+其中u是输入变量，y是输出变量.k,r是函数中关于y,u的最高导数阶，且k＞r.
+　　问题1. 不同的输入/输出方程，满足什么条件它们具有等价的仿射状态空间实现
+=f(x)+g(x)u,　y=h(x).　　　(2)
+　　回答这个问题并非易事，考察以下三个方程
+-yu=0.　　(3)
+　　(4)
+　　(5)
+及三个状态空间方程
+　(6)，(7)，(8)
+　　消去状态变量x，式(6)，(7)，(8)分别导出式(3)，(4)，(5).按文［2］的定义，式(6)，(7)，(8)分别是式(3)，(4)，(5)的实现.容易验证：式(3)的任意解(y(t),u(t))必为式(4)，(5)的解.那么根据线性系统的理论，式(7)，(8)也是式(3)的实现.进一步式(6)，(7)，(8)应该是式(3)，(4)，(5)中任一个方程的三个不同形式，但又彼此等价的实现.对非线性系统，这个结论是不对的.因为式(8)是一个能观，能控的系统，所以式(8)本身是一个最小实现(参阅文［6］，这样式(8)不可能是式(3)的实现.式(7)是(4)的一个实现，对(7)作能控性分解就发现，式(7)与(6)都是(3)的实现.这样(6)，(7)，(8)这三个实现之间并不存在等价性.
+　　问题2. 给定一个可实现的输入/输出方程，如何计算它的最小实现的阶数而无需构造它的实现.
+　　在线性系统理论中，上述二问题是通过寻找输入/输出方程的既约传递函数而作出回答的.同样，本文引入非线性输入/输出方程传递函数的概念，然后用它来回答第一个问题，进一步回答第二个问题.
+
+2　预备知识
+　　假定方程(1)中

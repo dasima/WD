@@ -1,0 +1,55 @@
+信息与控制
+Information and Control
+1999年　第28卷　第1期　Vol.28　No.1　1999
+
+
+
+模糊Flow-shop问题及其遗传优化
+熊红云　　　　　何　钺
+
+　　摘　要　研究模糊生产环境下的Flow-shop调度问题．针对实际生产中加工时间的不确定性，应用模糊加工时间参数替代传统的清晰参数表示方法，引入了一种新的模糊数比较方法―面积补偿法，构造了一种解模糊Flow-shop问题的有效遗传算法．最后给出计算实例及仿真结果．
+　　关键词　模糊数，模糊Flow-shop问题，模糊流程时间，遗传算法
+FUZZY FLOW-SHOP PROBLEMS AND ITS' GENETIC OPTIMAL
+XIONG Hongyun　HE Yue
+(Chang Sha Railway University, Chang Sha, 410075)(Xi'an JiaoTong University, Xi'an, 710049)
+Abstract　This paper examines fuzzy flow shop scheduling prob lems with imprecision durations. Instead of exact number , fuzzy numbers are ide ally suited to represent these duartions. A new comparison method for fuzzy numb er is introduced, and a genetic algorithm is constructed for fuzzy flow shop opt imization. In the end, the simulated results are shown.
+　　Key words　fuzzy numbers, flow-shop scheduling problem, fuzzy m akespan, genetic algorithm
+
+1　模糊Flow-shop调度问题
+　　自从1954年，Johnson第一次系统地提出两台机床、几种零件顺序加工的Flow-shop调度 问题以来，由于其在理论分析上的复杂化，和在实际生产应用中的普遍性和重要性，Flow- shop问题一直为人们研究的重要课题之一．
+　　但在以前的研究中，假设所有的时间参数（如加工时间）都是精确的，对加工时间弹性可变 的情况还很少研究\．而事实上，由于各种随机因素，如机器故障、工人操作 的熟练程度、因故缺勤、环境参数等的影响，精确的加工时间是很少能获得的．车间的管理 者或决策者能提供给我们的也只能是一个大概数据以及数据的可能变化范围，如工件A的加 工时间大约为30～40分钟，最大不超过45分钟，最小不低于25分钟．
+　　对于这种不确定的情况，传统的处理方法是：
+　　(1) 将非精确数近似用一个精确数来表示，然后用解精确问题的方法求解，这种方法存在两 个缺点，一是模型发生了变化，问题的解产生偏差；一是获得的问题解形式不符合传统的表 达方式、不直观．以一个简单的两机床、两工件的模糊Flow-shop问题为例，模糊加工数据如表1，用精确方法和模糊方法获得的结果如表2．　　
+表1　2工件2机床模糊/清晰加工参数
+
+JobOp.Fuzzy Duration(TrFN)CrispMach.
+AA12121212121M1
+　A21516242520M2
+BB12121212121M1
+　B21919191919M2
+
+　
+表2　2工件2机床调度结果
+
+　Schedule　Obj(Crisp)Obj(Fuzzy)
+S1A1B16162.75
+　A2B2
+S2B1A16262
+　B2A2
+
+　
+　　从表2中结果可见，在清晰环境下，调度S1的流程时间为61，优于S2的62；而在模糊环境下，S2的去模糊时间为62，优于S1的62.75．
+　　(2) 用随机概率分布函数来表示参数的分布情况，这种处理方法要求参数的历史数据是可知 的，而事实上要获得这些数据是很困难的，并且基于随机方法的优化在处理上也很困难．
+　　近年来，随着模糊技术的发展，应用模糊数来表示和处理不确定参数问题获得了广泛关注［2,3］，显示了其它方法无法比拟的优越性和应用前景．因此我们应用模糊数来表 示不确定的加工时间，研究模糊加工环境下的Flow-shop调度问题．
+　　在模糊Flow-shop问题中，对一次具体的排序而言，工件的加工顺序是确定的，而工件的完工时间，以及总的流程时间(makespan)是模糊的，这与我们在实际生产中的表达方式是一致的．用表示模糊数a，设n个工件的加工顺序为S=（S1, S2, … , Sn ），其中Si为加工排位第i的工件号．i,k表示Si在Mk上的模糊加工时间 ，i,k表示工件Si在机床Mk上的模糊完工时间，i=1,2,…,n；k=1,2,…,m ．i,k可按以下公式计算：
+　　　　　　　　　　　　　　　　　(1)
+
+式中和mx分别表示模糊数的加法和取最大值操作．Flow-shop问题的目标就是使总的完工时间最短，即求minn,m．
+　　从(1)中可以看出，解模糊Flow-shop问题的关键是模糊数的运算与比较．在以下部分 ，我们先简要介绍模糊数的知识，然后介绍模糊数的一种直观比较方法――面积补偿法．由 于Flow-shop问题是NP-完备的，我们用遗传算法的方法来解模糊Flow-shop 问题．最后给出数值实例及结果分析．
+2　模糊数及基于面积补偿的比较方法
+　　模糊数是模糊集的一种特殊形式［1］．模糊数一般采用分段直线的方法来表示，最 常用的是三角形模糊数（TFN）和梯形模糊数（TrFN)．对于一个梯形模糊数TrFN ，可表达为=(a,b,c,d)，括符中的4个数分别表示梯形的4个顶点．TrFN的隶属 度函数表示为：
+　　　　　　　　　　　　　　　(2)
+2.1　模糊数的比较
+　　模糊数的比较是模糊优化的一个关键问题．很多文献研究了模糊数的比较方法，提出了各种 比较指标［4］．最有名的指标是Dudois和Prade［5］提出的基于概率论 的四个指标（possibility of dominance, possibility of strict dominance, necessi ty of Dominica, and necessity of strict dominance）．由于这些指标都是在[0,1] 区间内进行比较，因此不能明确提出一个数比另外一个数大(小)多少，并且这几种方法还存 在不直观，缺乏一致性的缺点．
+　　最近，Forremps和Roubens［6］提出基于面积补偿的模糊数比较方法，面积由隶 属度函数确定．这种方法可以计算两个模糊数之间的距离，并且具有直观、易于理解的特点 ．根据Dempster-Shafer理论［6］，模糊数可以看作某个变量的概率分布F．给定模糊数，定义两个特殊的概率分布，累积概率分布F*(cumulative possibilit y distribution)和累积必然分布F*(cumulative necessity distribution)．
+　　F*(x)=sup{μ(r)|r≤x}　x∈; F*(x)inf{1-μ(r)|r＞x},

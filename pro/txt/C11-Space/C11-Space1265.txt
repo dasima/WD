@@ -1,0 +1,23 @@
+航空材料学报
+JOURNAL OF AERONAUTICAL MATERIALS
+1999年　第19卷　第1期　Vol.19　No.1　1999
+
+
+
+筒形机匣连接凸耳疲劳寿命及其影响因素
+谢明立　　习年生　　赵爱国
+摘要： 分析了筒形机匣连接凸耳疲劳寿命的主要影响因素。结果表明，5个试验件凸耳组织的再结晶程度有很大的差别，正是由于凸耳组织再结晶程度的分散性导致了其疲劳寿命的分散性。进一步的分析表明，凸耳组织再结晶程度的分散性是由于模锻时材料原始晶粒大小和形变量不同造成的。此外，凸耳孔壁表面的加工缺陷也是降低凸耳疲劳寿命的一个重要因素。
+关键词： 凸耳； 疲劳断裂； 再结晶； 晶粒度
+中图分类号：V275.1　　　文献标识码：A　　　文章编号：1005-5053（1999）01-0045-06
+
+An analysis on effective factors to fatigue lives
+of pull rod linking lugs of tube-shaped cases
+XIE Ming-li　　XI Nian-sheng　　ZHAO Ai-guo
+(Institute of Aeronautical Materials， Beijing 100095， China)
+Abstract: The cause of the diversity of fatigue lives of linking lugs of five tube-shaped cases was investigated by microfractography and metallography techniques. The recrystallization degrees of microstructure of lugs are much different. It is the diversity of recrystallization degrees that results in that of fatigue lives of lugs. The diversity of the recrystallization degrees may be resulted from the difference in deformation magnitude and original grain size of materials in die forging. In addition, another important factor of decreasing lives of lugs is machining defects in hole wall surfaces of lugs.
+Key words: lug; fatigue fracture; recrystallization; grain size
+
+　　筒形机匣用以连接直升机旋翼和机身，是直升机的关键受力件，其上有4对凸耳，通过这4对凸耳传递旋翼的各种载荷。每个凸耳的内孔间隙配有一个带挡边的衬套（材料为1Cr17Ni3），装配前，在接合面涂乐泰680厌氧胶，然后装配粘接并固化。工作时，传载轴销插入成对凸耳的衬套内。为确定筒形机匣的使用寿命，对其凸耳进行了疲劳试验。本文研究了筒形机匣连接凸耳的疲劳寿命，分析了凸耳疲劳寿命的主要影响因素及疲劳寿命分散性大的原因。
+1　试验与结果
+1.1　材料及疲劳试验
+　　共试验了4个国产件和1个国外件。国产件毛坯用LC9CS棒料（国外件用法产7075T73）模锻加工而成。筒形机匣的工艺过程为：棒料→坯料→初锻→半精锻→精锻→热处理→粗加工→热处理→精加工→表面处理→组装成形。4个国产件成型于不同的批次，其所用原材料规格有所不同：1号试验件由

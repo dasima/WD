@@ -1,0 +1,30 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1998年 第24卷 第1期  Vol.24  No.1 1998
+
+
+
+具有多非线性和多未建模动态
+系统的鲁棒绝对稳定性
+田玉平
+摘　要　研究了同时具有多个扇形非线性环节和多个未建模动态的多变量系统的鲁棒绝对稳定性. 用带有Popov乘子的线性分式变换模型对线性和非线性不确定性进行了统一处理. 得到了系统的鲁棒绝对稳定性判据， 并将这一判据的计算化为凸优化问题， 最后给出了计算示例. 
+关键词　鲁棒绝对稳定性， 多非线性，未建模动态， 多变量Popov判据. 
+ROBUST ABSOLUTE STABILITY OF SYSTEMS WITH MULTIPLE
+NONLINEARITIES AND UNMODELED DYNAMICS
+TIAN YUPING
+(Department of Automatic Control, Southeast University, Nanjing 210018)
+Abstract　This paper discusses the robust absolute stability of multivariable systems with multiple sector-bounded nonlinearities and unmodeled dynamics. Linear and nonlinear uncertainties are handled by a unified linear fractional transformation(LFT) model with Popov multipliers. A robust absolute stability criterion is obtained for the discussed systems. A convex optimization procedure is proposed to compute the given criterion. Finally, an illustrative example is given to show the efficiency of the obtained criterion.
+Key words　Robust absolute stability, multiple nonlinearities, unmodeled dynamics, multivariable Popov criterion.
+1　引言
+　　具有无记忆非线性环节的Lur′e系统的绝对稳定性在60年代得到了广泛而深入的研究［1，2］. Popov判据是这一领域中最著名的成就之一［2］. 这一判据在文［3］中被进一步推广到具有多个非线性环节的系统中. 
+　　近年来， 受鲁棒控制理论发展的推动，不少学者开始研究当线性模型含有不确定性时系统的鲁棒绝对稳定性问题. 文［4，5］等受Kharitonov定理［6］的启发， 研究了含区间参数不确定性的单变量Lur′e系统，给出了鲁棒绝对稳定性的一些顶点检验条件. 然而，由于这种方法的基本工具是多项式族的鲁棒性分析，所以很难推广到多变量系统中. 
+　　本文直接从小增益定理出发， 运用等价回路变换方法， 首先进一步改进了文［3］的多变量Popov判据，进而通过对系统中线性分式变换结构的分析，给出了同时含有多个非线性环节和多个未建模动态系统的鲁棒绝对稳定性判据. 这一判据具有与多变量Popov判据完全相同的简洁形式. 最后我们将多变量Popov判据的计算化为一个凸优化问题. 
+2　含多个未建模动态系统的鲁棒Popov判据
+2.1　多变量Popov判据的改进
+　　含多个非线性环节的系统可以通过等价变换表示为如图1所示的形式. 其中M(s)是稳定传递函数矩阵，记作M(s)∈RHm×m∞. fi(σi)(i=1,…,m)是无记忆连续非线性函数，满足扇形条件
+0≤σifi(σi)≤2σ2i,　　fi(0)=0. 　　　　　　　　　　　　　　(1)
+
+
+图1　多非线性系统
+对于上述多非线性系统，文［3］给出了判别其绝对稳定性的多变量Popov判据. 下面我们说明该结果仍有进一步改进的余地. 为此引入两个矩阵集和一个引理. 
+Q1={diag[q

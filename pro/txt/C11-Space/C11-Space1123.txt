@@ -1,0 +1,41 @@
+航空工艺技术
+AERONAUTICAL MANUFACTURING TECHNOLOGY
+1999年 第1期 No.1 1999
+
+
+
+铝合金天线十字轴整体铸造工艺
+
+王维章
+　　[摘要]　通过对铸造铝合金天线十字轴的工艺分析，提出了采用普通砂型铸造该零件的方法，并叙述了零件的铸造工艺和铸件性能。
+　　关键词： 铝合金　铸造　十字轴
+Monoblock Casting Process of Al Alloy Antenna Cross Axle
+　　[ABSTRACT]　This paper proposes a general sand casting process of an antenna cross axle in aluminium alloy by means of its process analysis, and describes the casting technology and performance of this components.
+　　Keywords: Al alloy　Casting　Cross axle
+　　天线头部的重要器件铸造铝合金十字轴是我所承担国家重点型号气象雷达研制过程中的关键零件之一，其性能的好坏直接影响该雷达的探测距离。
+　　十字轴(图1)是典型的具有内腔通道的波导关节器件，其技术条件为：
+　　(1)内腔通道的尺寸为 mm；
+　　(2)内腔通道呈90°且两个端口要求垂直，其误差不得大于0.03 mm；内腔通道表面粗糙度要求高；
+　　(3)零件为Ⅰ类铸件，针孔按一级验收，铸件加工部位经机械加工后不得有任何气孔或夹杂。
+
+图1　铸造铝合金天线十字轴零件
+Fig.1　Casting of Al alloy antenna cross axle part
+1　铸造工艺
+1.1　型芯芯模的研制
+　　为制备型芯，设计了用铝合金型材加工的凹模板和凸模板(图2)。凸模的尺寸精度和表面粗糙度Ra　均高于设计要求，通过将凹模板和凸模板合并从浇口中灌注经配制的环氧树脂形成芯模，再用两块芯模来制备型芯。这种设计虽然取得了良好的实际效果，但仍不能满足设计提出的十字轴内腔通道尺寸精度和表面粗糙度的高要求。
+(a)
+(b)
+图2　凹模板和凸模板
+Fig.2　Female mould plate and male mould plate
+(a)凹模；(b)凸模。
+1.2　内腔材料的选用及制备工艺
+　　由于十字轴内腔通道有上述要求，型芯制作就成了关键。为达到技术要求，采用水溶性烧结型芯材料来成型十字轴内腔通道。这种自行研制的型芯材料由白刚玉和盐组合，烧结形成网络骨架和可溶物，经四川省地质矿产局中心实验室、成都科技大学金属材料系铸工教研室等单位测试，其性能见表1。
+表1　水溶性烧结型芯材料的性能
+
+抗拉
+强度
+σ/Pa烧结
+收缩
+K/%最　大
+发气量
+G

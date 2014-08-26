@@ -1,0 +1,20 @@
+航空工艺技术
+AERONAUTICAL MANUFACTURING TECHNOLOGY
+1999年　第4期　No.4
+
+
+
+
+钛合金线圈架精加工工艺
+Finish Machining of Ti Alloy Coil Rack
+谢凤林　杨成贞
+　　［摘要］　分析了高精度钛合金线圈架加工的难点，讨论了零件车削、磨削加工工艺及参数。
+　　关键词： 钛合金　线圈架　车削　磨削　工艺
+　　［ABSTRACT］　The problem in machining high precise Ti alloy coil rack is analyzed. The turning and grinding processes of this part and parameters are discussed in the paper.
+　　Keywords: Ti alloy　Coil rack　Turning　Grinding　Process
+　　目前广泛应用于航空航天、石油化工、医疗器械等工业中的钛合金，具有强度重量比高、耐腐蚀和耐热性强、抗磁性能好等特点，但因这类合金热传导系数小、比热低、化学活泼性强及弹性模量小等特征，给切削加工带来一定困难。
+　　车削加工时，钛合金轴类零件较钢质轴类零件更易挠曲，从而引起振动，产生变形，不易达到应有的尺寸精度和表面粗糙度要求。在磨削过程中，砂轮消耗大，磨削表面的粗糙度等级低(一般低于Ra?0.8?μm)。
+　　针对以上问题，结合型号产品的需求，对钛合金线圈架进行了试验研究。
+1　典型线圈架零件工艺分析
+　　钛合金线圈架如图1所示，材料为TA6，具有磁性低、导热性差、热膨胀系数较大、可切削性差等特点。其加工难点是：壁薄，孔的长径比大，同轴度要求较高，材质为难加工材料，进行整体加工相当困难。
+　　为了降低加工难度，将线圈架分为左盖、右盖和主体3部分，分别留一定余量进行加工。左盖和右盖选用棒材，主体毛坯选用

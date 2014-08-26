@@ -1,0 +1,16 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+2000　Vol.26　No.1　P.132-135
+
+
+
+广义不确定系统鲁棒稳定性及鲁棒镇定的矩阵不等式方法
+徐胜元 杨成梧
+摘 要 考虑广义不确定系统的鲁棒稳定性及鲁棒镇定问题.提出了广义不确定系统‘广义二次稳定’及‘广义二次可镇定’的概念,利用矩阵不等式,分别得到了所考虑广义不确定系统广义二次稳定及广义二次可镇定的充要条件，而且,使广义不确定系统鲁棒镇定的状态反馈控制律的设计可通过求解一给定的矩阵不等式而得到.
+关键词 广义不确定系统,广义二次稳定,广义二次可镇定,矩阵不等式.
+A MATRIX INEQUALITIES APPROACH TO THE ROBUST
+STABILITY AND ROBUST STABILIZATION FOR UNCERTAIN GENERALIZED SYSTEMS
+XU Shengyuan YANG Chengwu
+(School of Power Engineering ,Nanjing University of Science and Technology,Nanjing 210094)
+Abstract In this paper,the problems of robust stability and robust stabilization for uncertain generalized systems are considered.The concepts of ‘generalized quadratic stability' and ‘generalized quadratic stabilizability' for uncertain generalized systems are proposed.In terms of matrix inequalities,necessary and sufficient conditions under which the considered system is robustly stable and robustly stabilizable are derived respectively. Furthermore,the robust stabilizing state feedback control law can be designed by finding a solution to a given matrix inequality.
+Key words Uncertain generalized systems,generalized quadratic stability,genera

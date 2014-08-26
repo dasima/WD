@@ -1,0 +1,15 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+2000　Vol.26　No.1　P.116-120
+
+
+
+不确定系统具有圆盘区域极点约束的鲁棒控制
+俞立　陈国定　杨马英
+摘 要 对一类不确定线性系统，提出了存在状态反馈控制律，使得闭环系统的所有极点均位于一给定圆盘中的一个充分必要条件.结合控制律反馈增益参数极小化的要求，建立了一个具有线性矩阵不等式约束的凸优化问题，通过该问题的解，可以构造一个具有较小反馈增益参数和给定要求的控制律.所提出的方法既可应用到连续系统，也可应用到离散系统.
+关键词 不确定性，鲁棒控制，线性矩阵不等式，极点配置.
+ROBUST CONTROL OF UNCERTAIN LINEAR SYSTEM
+WITH DISK POLE CONSTRAINTS
+YU Li CHEN Guoding YANG Maying
+(College of Information Engineering, Zhejiang University of Technology, Hangzhou 310032)
+Abstract For a class of uncertain linear systems, a necessary and sufficient condition for the existence of state feedback control laws which assign the closed

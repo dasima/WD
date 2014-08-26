@@ -1,0 +1,16 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+2000　Vol.26　No.1　P.90-93
+
+
+
+变边界饱和特性减小抖振的设计方法
+李涛　冯勇　安澄全
+摘 要 提出了一种变结构控制平滑方法，推导出变结构控制系统的稳态误差指标与饱和特性宽度之间定量的数学关系，通过系统的稳态误差指标可以设计出宽度变化的饱和特性.仿真结果验证了该方法的有效性.
+关键词 变结构系统，非线性系统，滑模平面.
+CHATTERING REDUCTION WITH TIME VARYING WIDTH
+LI Tao
+(Automation Department,Tsinghua University,Beijing 100084)
+FENG Yong AN Chengquan
+(Department of Electronic Engineering,Harbin Institute of Technology,Harbin 150001)
+Abstract This paper presents a method of softening variable structure control.The mathematical relationship between the steady

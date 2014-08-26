@@ -1,0 +1,43 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第1期 No.1 1999
+
+
+
+基于复杂特征的VN结构模板获取模型*
+赵　军　黄昌宁
+　　摘要　提出了基于复杂特征的VN结构模板获取模型.首先用统计决策树模型生长动词分类树,然后用最小描述长度原则对动词分类树剪枝,最后由动词分类树推导出VN结构模板.实验证明,在利用结构模板进行VN结构的识别时,这种模型比基于义类和极大似然估计原则的模型具有更高的精确率和召回率.
+　　关键词　自然语言处理,语料库,复杂特征集,统计决策树,最小描述长度原则.
+　　中图法分类号　TP18
+The Complex-feature-based Model for Acquisition of VN-construction Structure Templates
+ZHAO Jun　HUANG Chang-ning
+　　Abstract　In this paper, a complex-feature- and MDL-based model for acquisition of VN-construction structure templates is put forward. First, a verb classification tree is created using statistical decision tree model. Then, the tree is pruned based on MDL (minimum description length) principle. Finally, structure templates are derived based on the verb classification tree. The experiments show that using the structure templates acquired with the model to recognizing VN-structure, the system has its advantages over the model based on the sense and the MLE (maximum likelihood estimation) principle in precision and recall.
+　　Key words　Natural language processing, corpus, complex feature, statistical decision tree, minimum description length principle.
+　　在汉语中,动词V和名词N的同现情况有以下3种：偏正结构VN（如“射门方法”）、动宾结构VO（如“改进方法”）和非法组合IC（如“包括［方法的改进］”中的“包括方法”）.本文把VO结构和非法组合IC统称为～VN结构.正确地识别VN结构对于句法分析、信息检索、信息抽取等都是至关重要的,其中一种重要的方法是利用词语结构模板来识别VN结构,例如,对于“射门方法”、“改进方法”和“包括方法”,如果能够利用某种方法从训练语料中获得如下形式的结构模板：Hh05+“方法”→VN,Ih11+“方法”→VO,Jd05+“方法”→IC（其中Hh05、Ih11和Jd05是《同义词词林》［1］（以下简称《词林》）的义类代码）,则可以正确地识别它们的结构.
+　　基于词的VN结构模板获取可以形式化地表示如下：设有动词集合V=｛υ1,υ2,...,υV｝,名词集合N=｛n1,n2,...,nN｝,给定观察数据Ｏ=｛(υ,n)|υ∈V,n∈N｝,求解概率模型p(υ,n),使它能够解释观察数据O.因为这种概率模型的参数数目众多（|N|*|V|）,所以,在参数估计时存在数据稀疏问题.
+　　建立基于等价类的概率模型是解决数据稀疏问题的重要方法.这种方法可以描述为：在N的划分PN和V的划分PV之上,对于cυ∈PV和cn∈PN,求解概率模型p(cυ,cn),进而υ∈PV,n∈PN,p(υ,n)=p(cv,cn).集合的等价类划分有两种方法：①自动聚类：从训练语料中自动学习词语的等价类划分,这种方法得到的划分能够客观地反映真实文本,但是聚类中同样存在数据稀疏问题,而且聚类算法复杂,因此实用性较差［2,3］；②基于义类词典的划分,方法简单,适用性好,但是义类词典是语义分类体系,而VN结构模板不仅与词语的语义特征有关,还与词语的句法特征有关,因此,基于义类词典的划分对于词语结构模板获取是不充分的.［4,5］
+　　本文提出了基于动词复杂特征的VN结构模板获取模型,该模型在对集合进行划分的同时考虑了动词的语法特征和语义特征,优于单纯基于义类词典的模型；与自动聚类方法相比较,该模型充分利用复杂特征集的多种信息来限制模型的求解空间,实用性更强.
+1　基于复杂特征的VN结构模板获取模型
+1.1　问题定义
+　　一个动词和名词同现是构成VN结构还是～VN结构,既与动词和名词本身的语法和语义特征有关,也与该同现对的上下文环境的语法和语义特征有关.本文将其本身的特征称为静态特征,将上下文环境的特征称为动态特征.本文主要研究任意动词和特定名词n同现时的结构,在实验中只考虑动词的静态特征,它们有：词性子类SUBV（包括及物动词υt,不及物动词υi等）,音节数SYL（包括单音节mon,双音节bi等）,义类词典《词林》的大类SENSE1(F～J)、中类SENSE2(a～n)和SENSE3小类(01～67)以及动词的词形WORD等.
+　　基于复杂特征的VN结构模板获取模型可描述如下：设有特定名词n,动词集合V(n)=｛υ1,υ2,...,υV｝,给定观察数据S=VN+～VN,其中VN=｛(υ,n)|υ和n构成VN结构,υ∈V,n∈N｝,～VN =｛(υ,n)|v和n不构成VN结构,υ∈V,n∈N｝,其中动词v以复杂特征集的形式表示如下：
+ 
+其中fi为特征名,xi为特征值.
+　　基于动词复杂特征的VN结构模板获取的中心思想是：①识别与结构相关的特征,并依据这些特征对动词集合V(n)进行划分；②基于动词的划分,估计每个等价类中的动词与n同现构成VN和～VN的概率.其中的关键问题是等价类的划分,对于V(n)的一个划分P,应满足以下条件：
+　　①P2V(n)；　　　　②cυ=V(n)；　　　　③cυi,cυj∈P,cυi∩cυj=φ；
+　　④cυ∈P,如果｜cυ｜＞1,则υ≠φ,其中∪表示复杂特征集的合一运算.
+在该划分上建立的概率模型既可以解释例子集,又可以对未观察的动词和名词同现的结构作出精确的判断.本文利用统计决策树SDT(statistical decision tree)模型［6］进行动词等价类的划分,一方面,SDT的表达能力强于N元模型,相当于插值N元模型；另一方面,SDT模型的最大优势在于自动抽取相关特征的能力.
+1.2　用SDT模型生长动词分类树
+1.2.1　用SDT表示动词分类树
+　　SDT是一个决策机制,它根据一系列特征,赋予每一种可能的选择一个概率值p(f|h),其中h表示一系列特征,f为当前作出的选择,概率值P(f|h) 由前n个特征提问序列q1,q2,...,qn来决定(其中第i个特征提问仅与前i-1个特征提问有关).
+　　 图1是用SDT表示的一棵动词分类树,它描述了一个具有某些特征的动词与名词“成绩”同现时构成VN结构或～VN结构的概率.其中,内部结点是提问结点,一个提问结点表示对一个特征的提问,从该结点延伸的树枝代表该特征可能的取值；叶结点是选择结点,表示符合从根结点到该结点的路径上所有“特征―值”的动词与名词“成绩”同现时是构成VN结构还是～VN结构.所提问的特征有：动词的子类SUBV、动词的音节数SYL、动词的义类SENSE等.例如,结点8表示SUBV=υt,SYL=bi且SENSE=Hg的动词与名词“成绩”同现构成VN结构.
+ 
+图1　统计决策树例图 
+1.2.2　基于极大似然估计MLE(maximum likelihood estimation)原则的动词分类树的生长算法
+　　动词分类树生长算法的关键是每个提问结点所提问的特征的选择问题,本文利用基于信息增益的特征来选择方法［6］生长动词分类树.设X是由任意动词与特定名词n的同现对构成的训练集,X={(υ,n,c,m)｜υ∈V,c∈C},其中C={VN,～VN}是分类集,V是动词集合,m是υ和n的同现次数；设动词特征集为A={A1,...,Ap},特征Ak的取值的集合Vk={υk1,...,υkn},则递归地生长关于特定名词n的动词分类树T的算法描述如下：
+　　① 建立动词分类树T的根结点root,将训练集X与root相关联；
+　　② 设当前结点为nodei,与nodei关联的训练集为Xi,如果对于任意(υ,n,c,m)∈Xi,有c=VN或c=～VN,则确定为叶结点,返回；
+　　③ 对Ai∈A,分别计算
+　　　　．熵H(Xi)=-Pclogpc;
+　　　　．条件熵H(Xi｜Ak)=-P(c｜Ak=υ)logp(c｜Ak=υ)；
+　　④ 计算对Ak提问的信息增益：IG(Ak,Xi)=(H(Xi)－H(Xi｜Ak)),其中IV(Ak)是为了避免选择具有较多取值的特征的倾向所加的系数,表示为IV(Ak)=-

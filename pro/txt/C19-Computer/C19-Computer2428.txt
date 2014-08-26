@@ -1,0 +1,35 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH
+AND DEVELOPMENT
+1999年 第36卷 第12期 Vol.36 No.12 1999
+
+
+
+Q-学习及其在智能机器人局部路径
+规划中的应用研究
+张汝波　杨广铭　顾国昌　张国印
+摘　要　强化学习一词来自于行为心理学，这门学科把行为学习看成反复试验的过程，从而把环境状态映射成相应的动作.在设计智能机器人过程中，如何来实现行为主义的思想、在与环境的交互中学习行为动作？文中把机器人在未知环境中为躲避障碍所采取的动作看作一种行为，采用强化学习方法来实现智能机器人避碰行为学习.Q-学习算法是类似于动态规划的一种强化学习方法，文中在介绍了Q-学习的基本算法之后，提出了具有竞争思想和自组织机制的Q-学习神经网络学习算法；然后研究了该算法在智能机器人局部路径规划中的应用，在文中的最后给出了详细的仿真结果.
+关键词　Q-学习，神经网络，智能机器人，局部路径规划
+中图法分类号　TP242.6
+Q-LEARNING AND ITS APPLICATION IN LOCAL PATH
+PLANNING OF INTELLIGENT ROBOTS
+ZHANG Ru-Bo, YANG Guang-Ming, GU Guo-Chang, and ZHANG Guo-Yin
+(Department of Computer and Information Science,
+Harbin Engineering University, Harbin 150001)
+Abstract　The concept of reinforcement learning comes from behavior psychology that takes behavior learning as trial and error, by which the states of environment are mapped into corresponding actions. There's a question of how the behaviorism can be used to learn the actions in interaction with the environment in designing intelligent robots. In this paper, the actions that a robot takes to avoid obstacles are taken as one class of behaviors and the reinforcement learning is used to realize behavior learning of obstacle avoidance. Q-learning is one kind of reinforcement learning method that is similar to dynamic programming. After basic ideas of Q-learning are introduced, a neural network learning algorithm of Q-learning with concepts of competition and self-organization is presented. Its application in local path planning of intelligent robots is also introduced. Finally, the detailed simulation results are presented.
+Key words　Q-learning, neural network, intelligent robot, local path plan
+1　引　　言
+　　在连接主义学习中，学习算法基本上可以分为3种类型，非监督学习(unsupervised learning)、监督学习(supervised learning)和强化学习(reinforcement learning).
+　　非监督学习规则在生理学上就是Pavlov的条件反射原理，当用一个毫无意义的刺激信号（如铃的响声）同时伴有另一个刺激信号（如食物）反复加给动物的时候，经过一段时间的训练后，动物就会建立一种联想.当再接受到刺激信号时，动物就会产生条件反射.这种类型的学习完全是开环的，在神经网络学习中，称之为相关规则，即神经网络中的Hebb学习规则.
+　　监督学习规则是一种反馈学习规则，当输入信号作用于系统后，观察其输出，由教师提供理想的输出信号，所产生的误差信号反馈给系统来指导学习，在神经网络学习中，称之为最小误差学习规则或称之为δ规则［1］.
+　　观察生物（特别是人）为适应环境的学习过程可以发现它有两个特点，一是人从来不是静止地被动等待而是主动对环境作试探，二是从环境对试探动作通过的反馈信号看，多数情况下是评价性（奖或罚）的，而不是像监督学习那样给出正确答案.生物在行动－－评价的环境中获得知识，改进行动方案以适应环境达到预想的目的.具有上述特点的学习就是强化学习（或称再励学习，评价学习，简记为RL）［2］.
+　　Q-学习算法是由Watkins在1989年提出的类似于动态规划算法的一种强化学习方法.它提供智能系统在马尔科夫环境中利用经历的动作序列选择最优动作的一种学习能力，并且不需要建立环境模型.Q-学习算法实际是MDP（Markov decision processes）的一种变化形式.Watkins采用lookup表来表示输入状态，证明了Q-学习的收敛性［3］.Szepesvári在一定条件下证明了Q-学习的收敛速度［4］.Williams等人采用Q-学习算法对倒摆系统进行实验研究，并与Anderson等人采用AHC方法进行了比较分析［5］.由于自身的特性，强化学习被广泛地应用在智能控制领域，许多学者都取得了令人满意的成果.Beom利用模糊逻辑和强化学习实现了陆上移动机器人导航系统，机器人通过学习能够在未知的环境中运动，可以完成避碰和到达指定目标点两种行为［6］. Winfried采用强化学习来使昆虫机器人学会6条腿的协调动作［7］.Carnegie Mellon大学的Sebastian采用神经网络结合强化学习方式使机器人通过学习能够到达室内环境中的目标［1］.
+　　本文在介绍了Q-学习的基本算法之后，提出了具有竞争思想和自组织机制的Q-学习神经网络学习算法；然后研究了该算法在智能机器人局部路径规划中的应用情况，即把机器人在未知环境中为躲避障碍所采取的动作看作一种行为，采用Q-学习机制进行机器人的避碰行为学习，在文中的最后给出了详细的仿真结果.
+2　Q-学习的基本算法［3］
+　　设环境是一个有限状态的离散马尔科夫过程，智能系统每步可在有限动作集合中选取某一动作，环境接受该动作后状态发生转移，同时给出评价r.例如，在时刻t选择动作at，环境由状态st转移到st+1，给出评价rt，rt及st+1的概率分布取决于at及st.环境状态以如下概率变化到st+1
+prob［s=ss+1/st,at］=P［st,at,st+1］
+(1)
+智能系统面临的任务是决定一个最优策略，使得总的折扣奖励信号期望值最大.在策略π的作用下，状态s的值为
+
+(2)
+由于智能系统希望立即收到强化信号r(π(x))，然后以概率移动到一个赋值为Vπ(st+1)的一个状态.动态规划理论保证至少有一个策略π

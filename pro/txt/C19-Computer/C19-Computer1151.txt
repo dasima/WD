@@ -1,0 +1,21 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1999年 第25卷 第6期 Vol.25 No.6 1999
+
+
+
+线状图形矢量化中的行段分析与后处理
+邹荣金　蔡士杰　张福炎
+摘　要　针对目前工程图纸识别中存在的几项难点技术，提出基于行程编码的矢量化方法，对小弯度直线的纠正问题、特征线段的延伸与合并算法进行了研究.同时使用图像局部形态分析的方法，直接在原图像上进行识别，保证了图像信息的完整性和可检测性.该项研究结果在建筑工程图纸的自动识别及自动计算中得到了较好的应用.
+关键词　图像扫描，行段，工程图矢量化，识别.
+GRAPH SEGMENT ANALYSIS AND POST-PROCESSING
+OF LINE GRAPHICS IN ENGINEERING
+DRAWINGS VECTORIZATION
+ZOU Rongjin　CAI Shijie　ZHANG Fuyan
+(State Key Laboratory of Software Novel Technology, Multimedia Research Institute,
+Nanjing University, Nanjing　210093)
+Abstract　This paper proposed a vectorization method based on the run length coding for recognition of engineering drawings. We studied the aspects of the small bend line correction problem as well as the combining and extending algorithm of the vectorization line segments. At the same time, image morphology analysis method was also used in the research, which ensured the information integrity and graphic testability when directly using the original scanning image of the engineering drawings. The achievements have been used for automatical recognition and calculation of architecture engineering drawings.
+Key words　Image scanning, graph segment, engineering drawings vectorization, recognition.
+1　引言
+　　长期以来，人们一直在努力解决图纸自动输入的问题.随着近年来扫描仪的迅速发展和计算机性能的大幅度提高，工程图纸的矢量化已成为学术界与业界关注的一个热点，这方面的研究对多媒体技术中的各种图、表等信息的自动输入和应用是一个极大的推动.
+　　计算机能否读懂一张图纸，其中有许多关键技术问题需要解决：1)图纸的矢量化，

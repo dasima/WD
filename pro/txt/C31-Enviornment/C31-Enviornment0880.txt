@@ -1,0 +1,19 @@
+环境科学学报
+ACTA SCIENTIAE CIRCUMSTANTIAE
+1999年　第19卷　第4期　Vol.19　No.4　1999
+
+
+
+温敏性线型共聚物对金属离子的吸附
+张剑波　
+摘要　利用合成的NIPAAm-AAc温敏性线型共聚物研究了其对无机金属离子的吸附性能，以期应用于水污染的治理.结果表明其有明显的浓集效果，在pH=4时，对Y3+、Er3+和UO2+2的浓集率分别达到84%、65%和56%，相应的浓集量分别为11.2mg.g-1、4.45mg.g-1和11.3mg.g-1，并讨论了影响浓集的条件和吸附机理.
+关键词　温敏性线型共聚物；金属离子；浓集.
+Absorptivity of temperature sensitivity linear copolymers to metal ions in dilute aqueous solution
+ZHANG Jianbo 
+(Department of Technical Physics,Peking University,Beijing 100871)
+Abstract　Absorptivity of linear copolymers to metal ions was studied in dilute aqueous solution.The conditions of concentration were given and the mechanism was discuses.The concentration effect of polyNIPAAm-co-AAc) was higher than that of polyNIAAm,which was found not only for Er3+ but for UO2+2 and Cr(VI).Because polyNIPAAm is nonionizing polymer which was not influenced by pH.On the contrary,ionization of poly(NIPAAm-co-AAc) took place at high pH.The hydrolysis of these metals was suggested in the pH range of 2 to 4.Concentration effect of copolymer for UO2+2 was found at pH 3.The concentration yield increased rapidly with a little increase in pH,because six-element-ring compound of COOH with UO2+2 was formed.The concentration effect was observed forEr3+,UO2+2 and Cr(VI).
+Keywords　temperature sensitivity copolymers,metal,absorptivity.
+　　
+1　前言
+　　水溶性温度敏感性聚合物(water soluble temperature sensitive polymer)具有低临界相转变温度LCST(lower critical solution temperature)，在此温度以上，聚合物则以沉淀析出，并且此过程可逆.由于具有这一特性其被广泛应用于化学分离，生物分子耦合，药物纯化等方面［1，2］，而将其对无机金属离子的吸附性能应用于环境污染的治理，却是一个崭新的领域.
+　　本文研究以N-异丙基丙烯酰胺(NIPAAm)为主体的聚合物对金属离子的吸附性能，采用新的思路，寻找高效、清洁、低成本的除污方法.此法的特点在于，利用材料的温度敏感性及聚合溶解

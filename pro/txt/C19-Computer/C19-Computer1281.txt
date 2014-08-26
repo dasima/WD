@@ -1,0 +1,16 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+2000　Vol.26　No.1　P.32-42
+
+
+
+关于统计学习理论与支持向量机
+张学工
+摘 要 模式识别、函数拟合及概率密度估计等都属于基于数据学习的问题，现有方法的重要基础是传统的统计学，前提是有足够多样本，当样本数目有限时难以取得理想的效果.统计学习理论(SLT)是由Vapnik等人提出的一种小样本统计理论，着重研究在小样本情况下的统计规律及学习方法性质.SLT为机器学习问题建立了一个较好的理论框架，也发展了一种新的通用学习算法――支持向量机(SVM)，能够较好的解决小样本学习问题.目前，SLT和SVM已成为国际上机器学习领域新的研究热点.本文是一篇综述，旨在介绍SLT和SVM的基本思想、特点和研究发展现状，以引起国内学者的进一步关注.
+关键词 统计学习理论，支持向量机，机器学习，模式识别.
+INTRODUCTION TO STATISTICAL LEARNING THEORY
+AND SUPPORT VECTOR MACHINES
+ZHANG Xuegong
+(Dept.of Automation,Tsinghua University,Beijing 100084)
+(State Key Laboratory of Intelligent Technology and Systems of China)
+Abstract Data

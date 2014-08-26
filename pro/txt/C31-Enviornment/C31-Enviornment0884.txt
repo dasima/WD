@@ -1,0 +1,17 @@
+环境科学学报
+ACTA SCIENTIAE CIRCUMSTANTIAE
+1999年　第19卷　第4期　Vol.19　No.4　1999
+
+
+
+地下水环境评价中分布参数随机性的空间统计分析
+张　征　刘淑春
+摘要　地下水环境评价中各种空间分布参数往往具有复杂的不确定性，对分布参数空间变化的二重性特征进行了分析，论述了空间分布参数统计分析的原理与方法.由于所采用的方法能够弥补经典概率统计方法对地下水环境评价中空间分布参数随机性分析的不足，因而能够获得这类参数变量空间变化的结构性信息及空间最优估计值，使得对地下水环境评价中各种参数变量空间分布不确定性的分析与评价趋于合理.
+关键词　随机变量；环境评价；空间分布参数；地下水.
+Spatial statistical analysis on randomness of spatial distributed parameters in groundwater environmental assessment
+ZHANG Zheng, LIU Shuchun 
+(College of Forest Resources and Environment, Beijing Forestry University, Beijing 100083)
+Abstract　The spatial distributed parameters in groundwater environmental assessment bear complex uncertainty. In this paper, the characteristics of spatial structure and random in the spatial distributed parameters are analyzed. The principles and approaches of spatial statistical analysis on distributed variables are also elaborated. As a result of applying a new statistical method to analyze the uncertainty in the spatial distributed parameters, the deficiency of classical statistics in analysis on randomness of spatial distributed parameters of groundwater environmental assessment can be remedied, thus the spatial structural information and the spatial optimum estimation of the distributed parameters can be gained. As such, the spatial statistical analysis on spatial distributed parameters in groundwater environmental assessment tends to be more practical and rational. 
+Keywords　stochastic variables, environmental assessment, spatial distributed parameters, groundwater.
+　　
+　　在地下水环境评价中，无论是水流模型还是水质模型的建立都受到许多不确定性因素的影响

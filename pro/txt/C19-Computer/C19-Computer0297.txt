@@ -1,0 +1,28 @@
+软件学报
+JOURNAL OF SOFTWARE 
+1999年 第10卷 第5期 Vol.10 No.5 1999
+
+
+
+一种分层递阶的定性拓扑推理方法
+廖士中　石纯一
+摘要　文章针对现有的定性表示方法和拓扑推理算法存在的问题,提出了一种新的方法.首先,提出了基于概念邻域结构的定性表示方法.然后,给出了不同粒度层次上拓扑关系复合表的计算方法.最后,设计得出分层递阶的拓扑推理算法.文章给出的方法具有较高的认知合理性,所提出的推理算法可根据问题来选择合适的表示和推理层次,在已有推理算法给不出解的情况下,可以给出问题的合理解,对一般定性推理研究有参考价值.
+关键词　拓扑推理,概念邻域结构,复合表,分层递阶,定性空间推理.
+中图法分类号　TP18
+　　A Hierarchical Method for Qualitative Topological Inference 
+LIAO Shi-zhong1　SHI Chun-yi2
+1（Department of Computer Science　Liaoning Normal Un iversity　Dalian　116029）
+2（Department of Computer Science and Technology　Tsinghua University　Bei jing　100084）
+Abstract　A new method is proposed to solve the problems in existing qualitative represent ation methods and topological inference algorithms. First, a qualitative represe ntation mechanism based on conceptual neighborhood is described. Then, a computa tion procedure for composition tables in different topological relation levels i s put forward. Finally, a hierarchical topological inference algorithm is demons trated. The algorithm can select a suitable representation and inference level f or a given problem, and can work out a reasonable solution when other algorithms fail to give answers. The hierarchical method proposed in this paper is cogniti vely valid, and is helpful for general qualitative reasoning research.
+Key words　Topological inference, conceptual neighb orhood, composition table, hierarchy, qualitative spatial reasoning.
+　　拓扑推理是定性空间推理研究的基本问题,一般采用代数方法,并应用约束传播算法使约束网络达到路径相容性［1～3］.虽然拓扑推理已在地理信息系统、空间数据库和定性空间推理等领域得到了应用［1,2］,但现有的拓扑推理方法均以固定的粒度或抽象层次来表示拓扑关系.Smith等人只考虑了基本拓扑关系的推理方法［1］.Hernandez虽然提出了不同层次拓扑关系的表示和处理问题,并举例说明了其必要性和可能性,但没有进一步给出实现算法［2］.Grigni等人在总结拓扑推理的工作时,给出了表示拓扑关系的一种层次体系及各层次上拓扑关系的复合表,但没有给出各复合表的计算方法,也没有给出层次体系中的拓扑推理算法［3］.
+　　仅给出问题必需的表示和推理,并可以不同的粒度在多个抽象层次上进行推理,是定性推理的两个主要特点［2］.但已有的定性表示方法,如文献［4］中给出的方法,只是从形式上把定性值定义为定量集的子集,没有进一步刻画定性值子集的内在结构,因而难以实现有效的定性表示和推理.对拓扑推理而言,常识知识和问题描述中的拓扑关系往往是以隐含的,甚至是不确定的粒度或抽象层次来表示.这样,不仅要求拓扑推理系统能够给出拓扑关系在不同粒度或抽象层次上的表示,而且要求在求解问题时,能够根据问题的约束条件,确定合适的表示和推理层次,进而给出问题合理的解.因而,关于拓扑关系在不同粒度或抽象层次上的表示、组织和推理方法的研究,以及适合具体问题的表示和推理层次选择方法的研究,是重要而有意义的工作.
+　　本文针对已有工作中存在的上述问题,在文献［5,6］的工作基础上,提出了一种基于概念邻域结构的拓扑关系定性表示方法,研究了在不同粒度或抽象层次上拓扑关系复合表的计算方法,提出了一个分层递阶的拓扑推理算法.
+1 拓扑关系的定性表示
+　　拓扑关系是基本的空间关系.在定性空间推理领域,拓扑关系被认为是空间关系的一种定性表示,常以4-交集模型来形式定义［2］.文献［5］中提出了拓扑关系的闭球模型,基于闭球模型可直接推导出基本拓扑关系的完备集和概念邻域结构.下面研究拓扑关系本身的一种基于概念邻域结构的定性表示方法.
+　　定义1. 令C是空间关系的有限非空集,称ψ,φ∈C是关于C相邻的,若ψ,φ对应的物理局势可不经过第3个C中的关系相互转换［2,6,7］.
+　　对φ∈C,φ的概念邻域HC(φ)={ψ∈C｜ψ,φ是相邻的}.
+　　C的概念邻域结构描述C中各元素的概念邻域,可由概念邻域图来表示.如,基本拓扑关系的概念邻域结构可由图1表示［5］.
+
+　　推广的概念相邻关系及概念邻域结构可作如下定义.
+　　令A,B

@@ -1,0 +1,15 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1999年 第25卷 第6期 Vol.25 No.6 1999
+
+
+
+线性定常系统镇定问题的输出反馈解
+钱　春
+摘　要　研究了通过Riccati方程中矩阵D的选择，以实现由输出反馈u=-Ly来镇定系统的目的.关于上述问题OFSLQ问题有解D，以使相应的Riccati方程存在正定解P，满足，且给出对某个L，有B′P=LC的充要条件.
+关键词　镇定，输出反馈.
+OUTPUT FEEDBACK SOLUTION FOR THE PROBLEM
+OF STABILIZATION OF LINEAR TIME-INVARING SYSTEM
+QIAN Chun
+(Department of Civil Engineering, Zhejiang University, Hangzhou　310027)
+Abstract　This paper is concerned with the problem of choosing matrix D in the Riccati equation so that the system can be stabilized by the output feedback u=

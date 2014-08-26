@@ -1,0 +1,21 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+2000　Vol.26　No.1　P.94-99
+
+
+
+对带有有限缓冲区和可修机器的串行生产线的生产方差研究
+孙钰 谭民 李泉林
+摘 要 把生产与市场结合起来并考虑供需关系时，系统的生产方差研究显得非常必要.讨论的模型为两级的串行生产线，利用结构随机矩阵理论和马氏过程的协方差结构，给出了在一个给定时间区间内系统生产成品数方差的有效算法.基于正态分布，这个算法对订单满足的程度进行了概率刻划.文中的数值分析充分体现了这个算法的有效性和实用性.
+关键词 制造系统，串行生产线，机器可修，稳态可用度，生产方差.
+STUDY ON PRODUCTION VARIANCE OF FLOW LINE WITH
+REPAIRABLE MACHINES AND FINITE BUFFERS
+SUN Yu TAN Min LI Quanlin
+(Lab of Engineering Sciences for Complex Systems,Institute of Automation,Chinese Academy of Sciences,Beijing 100080)
+Abstract It is important to study production variance systematically when we combine production and market to analyze the relationship between supply and demand. The model this paper deals with is a flow line of two machines. By means of structured stochastic matrix theory and theory of Markov process, an effective algorithm obtaining the variance of end products in a given period is proposed. Based on normal distribution, the algorithm offers a description of the probability of meeting order for goods. The feasibility of the algorithm is fully shown inthe numerical example.
+Key Words Manufacturing systems, flow line, repairable machine, steady state availability, production variance.
+1 引 言
+　　近年来，制造系统的生产方差研究日益显得重要，并在国际上受到人们的极大关注.然而，相比于制造系统的生产率评估方法，生产方差的研究是相当困难的.这是国际上关于制造系统研究的热点问题之一.迄今，有关制造系统生产方差分析的文献还较少.例如Hatcher［1］首先提出了研究与生产率相关的方差问题的必要性.Hendrics［2］和Hendrics & McClain［3］讨论带有可靠机器和有限缓冲区串行生产线的输出过程，给出了评估生产方差的一种有算法.Gershwin［4］提出了单机系统方差模型，并利用分解的近似方法将单机的结果推广至多级生产线，但是仿真结果却表明随着生产线级数的增加，误差会达到30%～40%，显然这种方法的精度不足；Miltenburg［5］提出了一种计算串行生产线生产方差的算法，这种算法首先对加工、失效和修理的连续过程从指数分布进行描述.Tan［6］利用概率矩阵的块三对角结构，提出了一种在计算上比Miltenburg［4］方法更为方便的递推算法，但是这个算法仍然建立在概率矩阵的离散情形上.本文对带有有限缓冲区和机器可修的串行生产线模型进行了方差分析.不同于上述所有文献，我们利用结构随机矩阵理论和马氏过程的协方差分析，给出了计算在一个时间区间［0,T］（其中T表示cycle time数，cycle time为工件从进入生产线直到加工全部完成所用的平均时间）内系统生产成品个数方差的有效算法.从而我们可以进行生产量的区间估计以及对Due-Time给出概率刻划.本文首先给出了一种计算过程平稳概率向量的算法，这种算法对状态空间较大的模型也能保持有效性，然后给出了计算生产方差的算法.最后，数值分析体现了这种算法的有效性和实用性.
+2 模型描述
+2.1 模型假定
+　　本文考虑可修的两级生产线的生产方差问题，其模型假定如下：用

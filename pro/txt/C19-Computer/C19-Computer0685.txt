@@ -1,0 +1,68 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1998年 第24卷 第5期  Vol.24  No.5 1998
+
+
+
+非线性大系统的分散线性化与分散控制1)
+佘　焱　张嗣瀛
+摘　要　将非线性控制系统的精确线性化方法应用于非线性大系统，提出了非线性大系统的分散线性化方法，并得到了非线性系统可分散线性化的充要条件.按照这个方法，可将难度较大的一类非线性大系统分散控制器的设计转化为易于处理的线性大系统分散控制器的设计.在得到该线性大系统的分散控制器后，可通过分散坐标变换的逆变换将线性大系统的控制器变换为原非线性大系统的控制器.同时，控制器的分散性保持不变.该方法明显地降低了该类非线性大系统分散控制器的设计难度.
+关键词　非线性系统，大系统，分散线性化，分散控制.
+DECENTRALIZED LINEARIZATION AND DECENTRALIZED
+CONTROL FOR NONLINEAR LARGE-SCALE SYSTEMS
+SHE YAN
+(Dept.of Infor.and Contr.Engineer,Shanghai Jiaotong University,Shanghai　200030)
+ZHANG SIYING
+(Department of Automatic Control,Northeastern University,Shenyang　110006)
+Abstract　In this paper,the decentralized linearization method is proposed for nonlinear large-scale systems,and the sufficient and necessary conditions of decentralized linearization are obtained.We can transform a class of nonlinear large-scale systems into linear large-scale systems,which can be treated relatively easily,through so-called decentralized differentiable homeomorphism.So the decentralization controller design of nonlinear large-scale systems can be transformed into the decentralized controller design of linear large-scale systems.The difficaulty of the decentralization controller design of nonlinear large-scale system can be decreased obsviously by using this method.
+Key words　Nonlinear systems,large-scale systems,decentralized linearization,decentralized control.
+1　引言
+　　近二十年来非线性控制系统的几何理论取得了重要进展，非线性系统的一些重要的综合问题，如：扰动解耦、无交互控制、输出调节、反馈镇定等都得到了处理.其中精确线性化是几何理论的主要方向之一［1―6］.本文首次将精确线性化方法应用于非线性大系统.
+　　分散控制器(如分散镇定)的设计是大系统的一个重要问题.线性大系统的分散控制问题已有满意的结果，但对于非线性大系统，则仍是一个十分困难问题.本文使用精确线性化方法，对符合一定条件的一类非线性大系统，通过某种“分散”的同胚坐标变换将其变换成易于处理的线性大系统，从而，极大的降低这类大系统分散控制器的处理难度.在求出该线性大系统的分散控制器后，可以通过该变换的逆变换将其简单地还原.与此同时，分散坐标变换能够保持控制器的分散性不变，从而达到求出原非线性大系统的分散控制器的目的.
+2　问题的陈述
+　　考虑如下形式的非线性大系统：
+　　(1)
+其中　xl∈Rnl,ul=(ul1,…,ulml)∈Rml,是Rn上的光滑向量函数.
+　　系统(1)可以写成如下紧凑形式：
+　　(2)
+其中Gli,Fl都是Rm上的光滑向量场
+Gli=col(0,…，0,(gli)τ,0,…,0),　Fl=col(0,…,0，(fli)τ,0,…,0)　　(3)
+作者的想法是寻求如下形式的同胚变换：τ:Rn→Rn,τ=(τ1,…,τN),τl:Rnl→Rnl,
+z=(z1,…,zN)=(τ1(x1),…,τN(xN)),　　(4)
+其中xl∈Rnl，系统在新坐标下具有形式：
+　　(5)
+从而将系统(1)的分散控制问题转化为系统(5)的分散控制问题.形如(4)式的“分散”微分同胚称为系统(1)的一个分散变换.所需定义如下：
+　　定义1.称分散变换(4)是系统(1)在x0处的分散线性化，如果系统在新坐标下形如系统(5)，且(All,Bl)(l=1,…,N)均为能控对.
+3　主要结果
+　　本节将给出系统(1)能分散线性化的充要条件，证明主要结果以前先证几个引理.
+　　引理1.设x0∈Rn，且
+　　(i)dim{adkFlGli(x0)｜1≤i≤ml;0≤k≤nl-1}=nl,l=1,…,N.
+　　(ii)在x0某邻域［adsFlGlj,adtFpGpi］=0
+其中　l≠p,　j=1,…,ml,　i=1,…,mp,　s=1,…,nl,　t=1,…,np.
+则对任意的1≤s≤nl,　1≤j≤ml,　1≤t≤np,　1≤i≤mp,
+　　(6)
+　　证明.注意到
+　　(7)
+　　由条件(2)有
+　　(8)
+由条件(1)可知
+　　(9)
+　　(10)
+由式(8，9，10)知在x0的邻域有
+
+　　引理2.假设x0∈Rn是系统(1)的平衡点，且
+　　(i)对l=1,…,N,有
+　　(11)
+　　(ii)在x0某邻域
+　　(12)
+其中　l≠p,　j=1,…,ml,　i=1,…,mp,　s=1,…,nl,　t=1,…,np.
+则对任意的l，存在使得向量场
+　　(13)
+在x0点线性无关，且与xq(q≠l,1≤q≤N)无关.
+　　证明.首先证明，对任意的l，任意的i，存在nli≤nl，使得
+　　(14)
+取
+
+则nli即为所求.因为，首先由nli的定义，线性相关，即因为Fl(x0)=0，所以
+
+即　也可写成的线性组合.类似归纳可知也可写成Gli(x0),adFlGli(x0),…,ad

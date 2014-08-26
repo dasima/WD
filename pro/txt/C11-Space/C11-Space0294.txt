@@ -1,0 +1,43 @@
+导弹与航天运载技术
+MISSILES AND SPACE VEHICLES
+1999年 第2期　No.2 1999
+
+
+
+低温低压下多孔物质吸附性能的试验研究
+杨　挺　高香院　李中胜
+　　摘要　建立了在低温低压下测定多孔物质吸附性能的试验装置。在此装置上测定了ZX-15，KZ15-2，DX-30，PJ-20，ZK-40，DX-40，GH-0与5A分子筛1∶1混合吸附剂等7种国产优质活性碳（分子筛）吸附空气的吸附等温线。这些数据为低温吸附抽气产品设计提供了可靠依据。文中的试验条件下生产的ZX-15活性碳在吸附空气时，吸附量大、平衡压强低、吸附速率较快且价格低廉，是最佳选择。
+　　主题词　吸附，多孔材料，低温，低压。
+The Study of Adsorption Characteristics of Porous Material
+at Low Temperature and Low Pressure
+Yang　Ting
+(Beijing Institute of Special Engineering Machinery, 100076）
+Gao Xiangyuan
+(Xi′an Jiaotong University，710049)
+Li Zhongsheng
+(Xi′an Electric Furnace Institute，710000) 
+　　Abstract　An experimental equipment is set up to measure the adsorption characteristics of porous material at low temperature and low pressure. The adsorption isotherm of six kinds of activated carbon such as ZX-15,KZ15-2,DX-30,PJ-20,ZK-40,DX-40 for air and adsorption isotherm of mixed adsorbent of sieve 5A and GH-0 coconut activated charcoal with mass ratio 1∶1 for air are measured on the equipment.The experiment tests show that ZX-15 has the best adsorption characteristics among the porous materials which are measured. Moreover, the data of adsorption isotherm are of high value to design the cryogenic adsorption equipment.
+　　Key Words　Adsorption，Porous material，Low temperature，Low pressure.
+1　前　言
+　　在低温低压下，吸附质为空气时，活性碳是比较理想的吸附剂。因其具有丰富的微孔结构及吸附空气有较高的色散力，不但对N2，O2，Ar有较大的吸附量，而且对H2，He等难凝气体也有很强的吸附能力，故活性碳被广泛应用在低温吸附抽气中。但由于国产吸附剂的性能数据残缺不全，没有系统化、规范化，在很大程度上影响了我国低温吸附抽气技术的发展。
+　　对于活性碳这一族物质中，族中任一成员都不能由明确的结构式表示其特性，即使成分相同的活性碳也会由于制备工艺不同，如活化温度、时间等的不同，吸附性能有很大差别，如果要使用这些产品，就必须对他们进行研究。
+　　在已经研究过的几十种原料所制备的活性碳中，椰子壳活性碳被认为最适于吸附气体和蒸气［1］，因其具有丰富的毛细孔表面积，在吸附空气时具有一定的优越性。如GH-0活性碳就具备吸附量大、抽速快的特性，最佳真空度达到1.07310-3Pa［2］，是一种理想的吸附剂。但GH系列活性碳价格较贵，如能找到一种价格较低而性能和GH-0等活性碳性能相当的活性碳，应在工业生产中大量推广，其经济价值就十分显著。本文对ZX-15，KZ15-2，DX-30，PJ-20，ZK-40，DX-40等6种活性碳进行了试验分析,以期找出最佳。
+2　试验内容及装备
+　　试验内容包括：
+　　a) 测试ZX-15，KZ15-2，DX-30，PJ-20，ZK-40，DX-40，GH-0与5A分子筛以质量比1∶1混合等7组物质在78.8 K温度时的吸附等温线、降压曲线及极限真空度；
+　　b) 测试ZX-15在72.5 K温度时的吸附等温线、降压曲线及极限真空度；
+　　c) 测试GH-0与5A分子筛质量比1∶1混合剂在89.96 K时的吸附等温线、降压曲线及极限真空度。
+　　试验装置如图1所示，试验测试对象的测试条件及物化结构见表1，2。
+表1　试验对象的测试条件
+
+吸附剂
+　　
+　　名　称环境
+
+温度/K环境
+压力
+/Pa吸附
+
+质吸附剂
+质量
+/g

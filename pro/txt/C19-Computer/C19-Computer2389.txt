@@ -1,0 +1,23 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年　第36卷　第10期　Vol.36　No.10　1999
+
+
+
+Agent计算的能力理论
+毛新军　王怀民　陈火旺　刘凤歧
+　　摘　要　能力是规范和描述Agent、研究和分析Agent计算以及设计Agent的一个重要抽象概念.文中基于一种主观的观点提出了Agent计算的能力理论以支持Agent计算的理论研究，提出了规划树概念以刻画Agent如何在动态、不确定的多Agent系统中通过对其规划进行合理、有效的组织来实现其任务.基于多Agent系统计算的逻辑框架，文中给出了能力概念的形式化语义定义，获取和描述了它的一些重要属性.
+　　关键词　Agent，多Agent系统，信念，能力
+　　中图法分类号　TP18
+CAPABILITY THEORY OF AGENT'S COMPUTING
+MAO Xin-Jun, WANG Huai-Min, CHEN Huo-Wang, and LIU Feng-Qi
+(Department of Computer Science, Changsha Institute of Technology, Changsha 410073)
+　　Abstract　Capability is an important abstract concept to specify and design agent, and to investigate agent's computing. In the paper here, a capability theory of agent's computing is put forward based on the internal perspective in support of the research on the theory of agent computing. The concept of plan tree is presented to describe how agent organizes its plans effectively to achieve its tasks in a non-deterministic and dynamic multi-agent system. Based on the logic framework of multi-agent computing, the formal semantics of the capability is defined and some important logical properties are obtained.
+　　Key words　agent, multi-agent system, belief, capability 
+1　引言
+　　随着面向Agent程序设计范型［1］的提出，如何获取和分析多Agent系统的需求、指导系统设计已成为当前软件工程领域一项重要的研究课题.在AI领域，人们通常基于意向观点(intentional stance)来研究Agent，即将Agent视为由一组认知部件所构成的意向系统(intentional system)［1～3］.意向观点为我们研究Agent提供了一组高层的抽象认知概念如信念、期望、意愿等等.基于这些概念，我们可以独立于Agent的内部结构和具体实现细节来构造Agent体系结构，定义Agent状态，分析Agent行为的规律性特征.然而这些抽象认知概念并不足以有效地刻画Agent、研究和分析Agent计算.具有某种意愿的Agent并不意味着它就能成功地实现其意愿［2］，Agent成功地实现其意愿还必须具有相应的能力.
+　　能力是规范和描述Agent、理解和分析Agent计算的一个重要抽象概念，原因是：① Agent的能力是Agent进行计算的前提，它将影响和约束Agent的行为决策.在Agent计算过程中，理性Agent将根据其能力来选择规划、执行动作；② Agent的能力是Agent成功地实现其任务的一个重要条件；③ 能力概念可以有效地规范和描述复杂系统的需求，指导系统设计，这一抽象概念使得我们可以脱离系统的内部结构和具体实现细节来研究和分析复杂系统的行为，因而规范和描述Agent、分析Agent计算还必须研究和刻画能力这一抽象概念.
+2　多Agent系统计算的逻辑框架
+　　多Agent系统计算的逻辑框架主要包括3个部分：语法、模型和语义.我们将基于该逻辑框架来开展Agent计算的理论研究.
+2.1　形式化语言L
+　　形式化语言L是对命题分枝时序逻辑CTL

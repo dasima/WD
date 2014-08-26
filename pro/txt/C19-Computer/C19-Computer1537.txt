@@ -1,0 +1,21 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1998年 第24卷 第5期  Vol.24  No.5 1998
+
+
+
+基于Q学习算法和BP神经网络的
+倒立摆控制1)
+蒋国飞　　吴沧浦
+摘　要　Q学习是Watkins［1］提出的求解信息不完全马尔可夫决策问题的一种强化学习方法.将Q学习算法和BP神经网络有效结合，实现了状态未离散化的倒立摆的无模型学习控制.仿真表明：该方法不仅能成功解决确定和随机倒立摆模型的平衡控制，而且和Anderson［2］的AHC (Adaptive Heuristic Critic)等方法相比，具有更好的学习效果.
+关键词　Q学习，BP网络，学习控制，倒立摆系统，高斯噪声.
+LEARNING TO CONTROL AN INVERTED PENDULUM USING
+Q-LEARNING AND NEURAL NETWORKS
+JIANG GUOFEI　WU CANGPU
+(Department of Automatic Control, Beijing Institute of Technology, Beijing 100081)
+Abstract　Q-learning is a reinforcement learning method to solve Markovian decision problems with incomplete information. This paper presents a novel method to control an inverted pendulum with unquantized states by using Q-learning and neural networks. Simulation results are included to show that the new method can not only balance the determined or stochastic inverted pendulums successfully but also lead to a better effect of learning when compared with Anderson's AHC method.
+Key words　Q-Learning, BP neural network, learning control, inverted pendulum, Gaussian noise.
+1　引言
+　　在各种非线性系统中，倒立摆是一个十分典型的例子.用强化学习方法来实现倒立摆的平衡控制，迄今已经取得了不少成果.1983年Barto等人［3］设计了两个单层神经网络，采用AHC(Adaptive Heuristic Critic)学习算法实现了状态离散化的倒立摆控制.1989年，Anderson［2］进一步用两个双层神经网络和AHC方法实现了状态未离散化的倒立摆的平衡控制.最近，Peng［4］通过将状态离散化成为162个区域，用Lookup表表示Q值的方法实现了基于Q学习算法的倒立摆的平衡控制.然而在那些有连续状态的问题中，如果采用离散化这些连续量再用Lookup表来表示的方法，则Q学习算法和常规动态规划方法一样，存在状态变量的空间复杂性问题，即所谓的维数灾问题.解决方法之一是用参数化的结构来表示Q值，如低阶多项式、决策树等.本文通过训练BP网络来逼近Q值函数并利用BP网络的泛化能力，实现了基于Q学习算法的状态未离散化的确定和随机倒立摆的无模型学习控制.本文的目的在于用倒立摆控制问题来证实：用Q学习和神经网络结合的方法去实现某些状态连续控制系统的无模型控制的可行性.
+2　Q学习
+　　在介绍Q学习方法前，先简述有限马氏决策问题的模型；在每个时间步k=1,2,…,控制器观察马氏过程的状态为xk，选择决策ak，收到即时报酬rk，并使系统转移到下一个状态yk，转移概率为Pxkyk(ak).控制的目的是寻求一个最优控制策略，使未来每个时间步所获报酬的折扣和的期望最大，即极大化，其中0

@@ -1,0 +1,20 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第10卷 第7期　No.7 Vol.10 1999
+
+
+
+多媒体对象查询语言及其查询处理
+田增平　党华锐　周傲英　施伯乐
+　　摘要　文章研究了多媒体数据库的查询需求,提出结构化的多媒体对象查询语言MOQL(multi-media object query language).它能够支持基于类型、结构特征、同步关系、时态关系和内容信息的多媒体查询.以DB2数据库为存储机制,定义了一组代数算子和变换规则,利用它们可以将用户定义的MOQL查询变换为代数表达式,进行代数优化,并将代数查询表达式转换为能够在DB2数据库上运行的DB2SQL和C++查询过程.
+　　关键词　多媒体数据库,查询语言,查询优化.
+　　中图法分类号　TP311
+Multimedia Object Query Language and Its Query Processing
+TIAN Zeng-ping DANG Hua-rui ZHOU Ao-ying SHI Bai-le
+(Department of Computer Science Fudan University Shanghai 200433)
+　　Abstract　 In this paper, the authors study the query requirements of multimedia database and propose a structured multimedia object query language (MOQL). The language can support queries based on type, structure, synchronous relations, temporal relations, and contents of multimedia data. Taking the DB2 relational database system as a storage mechanism, they define a set of algebraic operators and some transformation rules, by which the MOQL queries defined by the users can be transformed into a set of algebraic formula and optimized. Finally, the algebraic formula can be transformed into execution plan in DB2SQL and C++ procedures, which can be run on DB2 system.
+　　Key words　Multimedia database, query language, query optimization.
+　　自从“多媒体”概念出现以来,多媒体信息查询技术就成为数据库等相关领域研究的重要课题,取得了很多成果.随着研究工作的进展,多媒体信息的查询需求以及查询语言的功能结构也逐渐明确起来.D.Woelk[1]和C.Goble等人[2]指出,基于结构和类型的查询是多媒体信息查询的重要特征.T.D.Little[3]和A.Karmouch 等人[4]提出多媒体数据库应当支持基于多媒体数据表现的时间同步关系的查询.基于结构和类型的多媒体查询使得多媒体数据组织的元数据可以被查询,为用户提供了更大的信息查询空间.
+　　多媒体数据库将传统数据库基于属性值的查询与信息检索系统基于内容的查询结合起来.E.Bertino等人的MULTOS[5]支持对图像、文本、声音的存在性条件查询.M.Flicker等人[6]开发的QBIC系统能根据图像的形状、纹理、颜色等内容进行查询.A.Gupta等人[7]开发的VIMSYS系统能根据给定的特征查询图像.Wu等人[8]开发的CORE系统能够按文本的相似度和模糊度等查询图像.E.Oomoto等人[9]研制的OVID系统能根据动态视频影像的描述特征进行查询.内容查询使得传统数据库的确定查询变为近似或模糊查询.
+　　在研究前人工作时我们注意到,以往提出的各种多媒体查询语言都是针对专门的应用,使用范围较窄,而且各种语言的语法形式与人们熟悉的数据库语言如SQL差别较大,不易学习和使用,另外,各种语言的描述能力也不尽相同.本文以数字图书馆应用为背景,研究了多媒体数据库查询的需求,提出结构化的多媒体对象查询语言MOQL(multi-media object query language).它能够支持基于类型、结构特征、同步关系、时态关系和内容信息的多媒体查询.我们以DB2数据库为存储机制,定义了一组代数算子和变换规则.利用它们可以将用户定义的MOQL查询变换为代数表达式,进行代数优化,最后,将代数查询表达式转换为能够在DB2数据库上运行的查询过程.本文的工作已用于我们开发的中国历史地图数字图书馆系统.
+　　本文第1节讨论多媒体查询的需求.第2节介绍MOQL语言依赖的多媒体对象数据模型.第3节给出MOQL语言的定义.第4节讨论

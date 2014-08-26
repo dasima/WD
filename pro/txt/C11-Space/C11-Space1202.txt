@@ -1,0 +1,21 @@
+航空工艺技术
+AERONAUTICAL MANUFACTURING TECHNOLOGY
+1999年　第4期　No.4
+
+
+
+
+激光诱发的热应力成形技术及其应用
+Technology and Application of Forming Caused by Laser_Induced Thermal Stresses
+管延锦　季　忠　孙　胜　栾贻国
+　　［摘要］　介绍了一种金属板料塑性加工的新技术――激光诱发的热应力成形技术，分析了其成形机理、特点，影响成形的主要因素及工业应用，并简要介绍了国内外的研究应用现状。
+　　关键词： 板料　激光　成形　热应力
+　　［ABSTRACT］　This paper introduces a sheet metal forming process which is caused by laser_induced thermal stresses, and analyzes its forming mechanisms, features and principal process factors in the forming procedure. Industrial applications are introduced. Finally the research status at home and abroad is reviewed briefly.
+　　Keywords: Sheet metal　Laser　Forming　Thermal stress
+　　近年来，激光加工机械的发展以及激光加工技术的成熟，特别是现代工业对柔性制造的要求，使激光技术获得了大规模系统化的工业应用，激光诱发的热应力成形技术(简称激光成形)就是在此背景下发展起来的一种新型成形技术。它是一种利用热应力来实现金属成形的方法，该应力是由高能激光束扫描金属板或金属管表面时形成不均匀的温度场造成的。
+1　一般过程
+　　适当形状和能量分布的激光束以一定速度沿某种轨迹扫描板料表面，使板料局部瞬间加热至高温状态，可得到合乎要求的非均匀温度场，同时在滞后于光束某距离处用水流或气流沿扫描轨迹进行冷却(对热传导率较高的材料可采用自然冷却的方式)，这种加热和冷却过程的循环往复，将导致不同的变形积累，从而得到所要求的形状。一般来说，如果扫描轨迹为直线，则产生沿该直线的弯曲成形。如果根据需要控制不同的扫描路径，就会得到不同形状的异形件。
+　　板料的激光弯曲可在三轴激光加工机上完成，对于形状复杂的工件，需采用五轴激光加工机或配置有增加动作自由度的专用附属装置的三轴激光加工机。
+2　机理
+　　根据激光成形过程中不同的工艺条件、所形成的温度场等，可将成形机理概括为温度梯度、皱曲和增厚机理［1～3］3种。
+　　(1)温度梯度机理。见图1(a)(图中T1

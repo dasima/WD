@@ -1,0 +1,40 @@
+软件学报
+JOURNAL OF SOFTWARE 
+1999年 第10卷 第5期 Vol.10 No.5 1999
+
+
+
+基于超平面的块数据分布策略 
+杜建成　黄　浩　郁卫江　陈道蓄　谢　立
+摘要　文章提出了基于超平面的块数组分布策略.这是一种单向的数组分布方法,它以简单的方式有效解决了不一致计算环境和不规则数组扫描情况下的数组分布问题.它可以作为对传统方法的一个补充.更重要的是,此项工作为自动数据分布提供了一种思路.
+关键词　数据分布,计算分布,不一致计算环境,超平面.
+中图法分类号　TP311
+Hyperplane-based Block Data Distribution Strategy
+DU Jian-cheng　HUANG Hao　YU Wei-jiang　CHEN Dao-xu 　XIE Li
+(State Key Laboratory for Novel Software Technology　Nanjing Uni versity　Nanjing　210093)
+(Department of Computer Science and Technology　Nanjing University　Nanjing　210 093)
+Abstract　 In this paper, a hyperplane-based block data distribution strategy is presented which is characterized by the unidirected data distribution. This strategy can solve the data distribution problems under the ununiform computational environme nts and the irregular data reference mode simply and effectively. It can be take n as a supplement for the traditional scheme. Furthermore, this research present s a new thought for the automatic data distribution.
+Key words　 Data distribution, computation distribution, ununiform computational environment , hyperplane.
+　　数据并行语言,如Fortran D,HPF,Linda等等,都是数据驱动语言.在分布存储系统中,由 数据的分布来决定计算的分布.一般来说,数据(通常指数组)分布（distribution)包括3个步 骤：数组的切割(partitioning)、对齐(alignment)和分配(allocation).数组的分布是由数 组的引用模式决定的.数组分布要满足两个目标：负载平衡和驻地通讯开销(residual commu nication)最小.驻地通讯是指某个处理结点由于引用了非本地结点的数据而导致数据在这两 个结点之间的移动.
+　　很多数据并行编程系统将数据分布的任务交由用户去完成,如Fortran D.Fortran D ［1］中所提供的数组和计算分布过程为：首先由用户将数组对齐到某个模板(template) 上,模板是一个虚拟的数组空间,然后将该模板按某种方式映射到各个处理结点上.模板的映 射方式有BLOCK映射和CYCLIC(m)映射.
+　　当确定了数组的分布之后就可以进行计算的分布了.如果数组分布是规则的,则计算分布 算法比较简单,不规则的数组分布也导致复杂的计算分布函数.传统的数据分布策略基于按维 分布,不能很好地处理不规则数组访问模式下的数据分布.本文提出基于超平面的块数据分布 策略,能够以一种简单的方式有效解决不一致计算环境和不规则数组访问情况下的数据分布 问题. 
+1　基于超平面的块数组分布策略
+1.1　平行超平面
+1.1.1
+循环模型
+　　我们考察如下的循环模型.
+　　DO/DOALL　I0=L0;U0:S0
+　　　DO/DOALL　I1=L1;U1:S1
+　　　......
+　　　　DO/DOALL Ik-1=Lk-1;Uk-1:Sk-1
+　　　　A0(f0,0 (I0,I1,...,Ik-1),f0,1(I0,I1,..., Ik-1),...,f0,k-1(I0,I1,...,Ik-1))=
+　　　　F(A1(f1,0(I0,I1,...,Ik-1),f1,1(I0,I1,...,I k-1),...,f1,k-1(I0,I1,...,Ik-1)),...,
+　　　　Am(fm,0(I0,I1,...,Ik-1),fm,1(I0,I1,...,Ik- 1),...,fm,k-1(I0,I1,...,Ik-1)))
+其中fi,n(0≤i≤m,0≤n≤k-1)是形如a0i,nI0+ a1i,nI1+ ...+ak-1i,nIk-1+aki,n的线性函数,F是关于Ai(1≤i≤m)的 函数,由fi,n(0≤n≤k-1)所构成的函数空间为
+
+简记为F＝AI＋Ak,很多科学和工程问题中的计算都具有这种标准的循环形式.
+　　一些常见的循环变换和优化方法,如循环剥离（loop peeling)、循环分布(loop dist ribution)以及循环交换(loop interchange)都有助于得到这种循环的标准形.我们也把这种 形式的多重循环称为一个相(phase).
+1.1.2　平行超平面
+　　设A为k维数组,其各维为x0,x1,...,xk-1,A的平行超平面是指一组平行的k-1 维的被A所限制的有限数组空间,如二维数组的超平面是该数组上的一组平行“线段”,三维 数组的超平面是该数组上的一组平行“平面”.在我们的循环模型中,若第l个嵌套循环为可 并行的DOALL循环(0≤l≤k-1),则由l所确定的数组Ai(0≤i≤m)的超平面为
+.
+其中il为常数,Ll≤l≤Ul,简记为X＝F(il,I),定义il为该超平面的索引.超平面 的方向指其法线方向,定义为v→=a→i,0×... ×a→i,l-1×a→i,l+1×...×a→i,k-1,其中a→i,j(0≤j≤k-1,i≠l)形如(a 0 i,ja1i,j...ak-1i,j)T.若v→与x i维平行,称其方向为标准的,为方便起见,也称其方向为xi；若v→不与 任何维平行,称其方向为非标准的.若某个非标准的超平面t在A的xp

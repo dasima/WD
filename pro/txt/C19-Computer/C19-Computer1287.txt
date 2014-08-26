@@ -1,0 +1,30 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+2000　Vol.26　No.1　P.85-89
+
+
+
+一类不稳定时滞过程的最优抗干扰控制
+张卫东 许晓鸣　孙优贤
+摘 要 针对不稳定时滞过程的干扰抑制问题提出一种新的设计方法,通过有理逼近的方法推导出了控制器参数的设计公式,给出了判断系统稳定性的充分必要条件,并在仿真研究中将本文提出的设计方法与其他设计方法进行了对比.
+关键词 不稳定过程,时滞系统,最优控制,干扰抑制.
+OPTIMAL DISTURBANCE REJECTION FOR A CLASS OF UNSTABLE PROCESSES
+ZHANG Weidong XU Xiaoming
+(Department of Automation,Shanghai Jiaotong University,Shanghai 200030)
+SUN Youxian
+(Institute of Industrial Process Control of Zhejiang University,
+National Laboratory of Industrial Control Technology,Hangzhou 310027)
+Abstract In this paper,a new design method for the controlof a class of unstable processes is developed. A rational approxiation is used for the design.Explicit formulas are derived from the concept of optimal disturbance rejection, and a sufficient and necessary condition for stability is provided.A simulation study demonstrates the validity of the new method.
+Key words Unstable process,time delay system,optimal control,disturbance rejection
+1 引言
+　　大多数化工过程的动态特性都是稳定的,可以用一阶惯性加纯滞后的模型来描述.对这类过程已经发展了许多有效的控制方法,譬如PID控制器和Smith预估器等.不稳定的动态特性通常只出现在少数的工业过程中［1］,这类对象的控制是个比较困难的问题.文献［2］通过引入辅助系统提出一种修正的Smith预估器,文献［3］讨论了P和PI控制器的最优裕度设计问题,由于最优裕度设计是通过数值方法实现的,比较麻烦,所以文献［4］又在此基础上推导了P和PI控制器的设计公式,并且给出了PI控制器设计的稳定条件.
+　　本文受文献［5］启发,在鲁棒控制理论和最优控制理论的基础上提出一种最优干扰抑制设计方法.首先,采用有理函数逼近纯滞后,将时滞系统控制问题转化为非时滞系统控制问题.然后,对不稳定控制对象进行互质分解,给出控制器的参数化形式.最后,通过对最优干扰抑制问题的求解获得控制器的参数.针对有理近似引入的误差,文中还讨论了控制系统的稳定性问题,给出了判定系统稳定性的充分必要条件.与其他设计方法相比,本文方法的突出优点在于控制器的设计过程是解析的,给出了控制器参数的设计公式.
+2 系统稳定性
+　　本文考虑的不稳定时滞过程由以下模型描述：
+　(1)
+就过程控制而言,此模型已足以描述大多数的不稳定过程.采用有理函数逼近纯滞后,有
+
+式中n是个足够大的非负整数.
+　　引入符号Φ代表一族稳定正则实有理的函数，做G(s)的互质分解
+　(2)
+使满足如下方程

@@ -1,0 +1,40 @@
+环境科学学报
+ACTA　SCIENTIAE　CIRCUMSTANTIAE
+1998年5月第18卷第5期科技期刊
+金属氧化物直接分解CO2成C的活性分析
+王力军
+(渝州大学化学系，重庆 400033)
+张春雷　吴通好　李　爽
+(吉林大学化学系，长春 130023)
+摘要　利用各种类型的简单和复合金属氧化物在H2还原活化前后分解CO2成C的活性试验的结果表明，决定金属氧化物分解CO2活性的因素是氧缺位程度、尖晶石结构(包括NaCl型结构)及其含铁相.而其它各类金属氧化物活性均极低，甚至完全无活性.氧缺位铁酸盐(MFe2O4-δ (δ＞0)，M=Mg,Zn、Cu,Co,Ni,Mn, Fe)分解CO2成C的活性较高，且按Mg＜Zn＜Cu＜Co＜Mn＜Ni＜Fe的次序增加.铁酸盐的氧缺位程度越大，分解CO2的速度越快，分解CO2成C的量越大，在573K下Fe3O3.8281仅用75min就可将0.5L 1.013×105Pa的CO2几乎100%地分解成炭.
+关键词　金属氧化物；CO2分解；氧缺位；铁酸盐；反应活性.
+ANALYSIS OF THE ACTIVITY OF DIRECT DECOMPOSING CARBON DIOXIDE INTO CARBON WITH THE VARIOUS METAL OXIDES
+
+Wang Lijun
+(Department of Chemistry, Yuzhou University, Chongqing 400033)
+Zhang Chunlei, Wu Tonghao, Li Shuang
+(Department of Chemistry, Jilin University, Changchun, 130023)
+
+ABSTRACT　The decomposition activity of carbon dioxide into carbon is examined by using various simplex and complex metal oxides reduced and unreduced by hydrogen gas. The activity of carbon dioxide decomposition is depended on the factors such as oxygen-deficiency, spinel structure(including NaCl type structure) and iron phase being among the metal oxides. But the others with non-spinel structure and the spinel oxides of non-containing iron phase show extremely low active or even non-active. Oxygen-deficient ferrites (MFe2O4-δ，δ＞0， M=Mg，Zn,Cu,Co,Ni,Mn, Fe) are highly active and their reactivity increases in the order of Mg＜Zn＜Cu＜Co＜Mn＜Ni＜Fe. The higher oxygen-deficiency of ferrites,the higher is the decomposition rate of CO2 and the larger is the amount of carbon by decomposing carbon dioxide. 0.5L carbon dioxide under the pressure of 1.013×105Pa can be almost wholely decomposed into carbon finished in 75min at 573K using Fe3O3.8281 of oxygen-deficient ferrites.
+Keywords　metal oxides, decomposition of CO2, oxygen deficiency, ferrite, reactivity.
+　　化石燃料一直是人类所依赖的主要能源材料，但随着现代工业的迅猛发展，化石燃料的消耗急剧增长，致使人类一方面面临能源危机，另一方面又面临大气中CO2浓度增加的双重问题.自1923年Fischer和Tropsck研究F-T合成且成功地将CO通过加氢固定以来［1］，CO2这个自然界中贮量丰富廉价易得的碳源引起了科学家们的浓厚兴趣，目前CO2固定化的研究也取得一定的进展.随着环境科学的发展，人们对大气层CO2浓度增加(“温室效应”)等一系列问题认识逐步深入，研究CO2固定化工作的意义就显得愈来愈重要.
+　　二氧化碳的还原研究涉及物理、化学、生物等各种方法，但有关CO2直接固化成C的研究及文献报道却不多见.由于CO2固定成C也是解决宇宙飞船等密封舱体系内维持生命的空气净化及供氧等关键问题，所以近年来这方面的研究十分活跃.目前，宇宙飞船上所采用的Bosch法是将CO2和H2通入金属铁上于700―1000K下反应［2，4］，但CO2转化率低于30%，且有大量的CO和CH4的毒副产物生成，因此效果并不十分理想.1990年日本的Tamaura和Tabata［5］首次报道了用氧缺位磁铁矿分解CO2成C的研究结果，为CO2固定化的研究开辟了一条新的途径.
+　　本文系统地考察了不同类型金属氧化物分解CO2成C的活性，重点研究了影响金属氧化物分解CO2活性的因素，为CO2直接固定成C的研究提供了科学依据.
+　　
+1　实验部分
+1.1　铁酸盐的制备
+　　将0.24mol/L的MSO4(M=Fe,Mn,Co,Ni, Zn,Cu,Mg)1.0L和0.48mol/L的FeSO4溶液1.0L加入到容积为3.0L的五颈烧瓶中，通入N2，赶尽溶解的氧及CO2后，快速升温至358K，加入1.44mol/L的NaOH溶液1.0L.待温度恒定在358K后，切换N2为300mL/h流速的空气鼓泡氧化.空气氧化20h时，将反应悬浮液抽滤，再依次经醋酸缓冲液、蒸馏水及丙酮洗涤后，在高纯N2吹扫下于323K干燥样品.
+1.2　供试样品的还原及其对CO2的分解
+　　所有供试的金属氧化物样品均在0.5L密闭的无梯度反应器中，在573K下用40mL/min的H2还原活化3h，获得氧缺位的金属氧化物(不同氧缺位程度铁酸盐则通过不同还原时间来获得)，然后切换成20mL/min流速的He气吹扫10min，再抽真空处理10min，即可通入纯CO2至1.013×105Pa在573K下进行分解反应5h.体系总压力由真空压力表测量，内部气体种类由SP-2305型气相色谱热导池检测，样品上沉积的碳量用Perkin Elmer 2400 CHN型元素分析仪测定.
+
+表1　铁酸盐还原前后分解CO2的反应活性
+Table 1 Activity of decomposition of CO2 before and after 
+ferrites reduced by H2 of rate of 40mL/min at 573K
+
+样　品CO2转化率，
+%C选择性，
+%CO选择性，
+%烃类选择性，
+%
+Fe3O43.299.80.20
+Fe3O4

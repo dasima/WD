@@ -1,0 +1,72 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+登月舱软着陆的非线性神经元控制*
+阮晓钢
+(北京工业大学自动化系*北京*100022)
+　　摘　要　本文针对登月舱软着陆过程的控制问题,提出了一种非线性动态逆与状态反馈控制相结合的神经元控制系统设计方案。该方案包含两分:(1)借助前馈神经元网络通过学习逼近任意非线性映射的能力,建立被控系统的非线性动态逆神经元模型,用神经元网络实现被控非线性系统的线性化; (2)在线性化模型的基础上构造系统的神经元最优状态反馈控制器。本文给出的仿真结果显示出神经计算学在航天飞行器控制问题中所具有的潜在能力。
+　　主题词　登月舱　软着陆　非线性系统　神经元控制　动态逆　状态反馈
+A NONLINEAR NEUROCONTROL SCHEME FOR 
+LUNAR SOFT LANDING
+Ruan Xiaogang
+(Automation Department,Beijing Polytechnic University*Beijing*100022)
+　　Abstract　A neurocontrol scheme for lunar soft landing is proposed in this paper,which combines nonlinear dynamic inversion with optimal state feedback.The scheme mainly consists of two parts.First,the nonlinear dynamic inversion of the controlled object is modeled with an artificial neural network by means of its ability to learn to approximate any functions,and therefore,the controlled object is linearized by the neural inversion model.Secondly,based on the linearized system another artificial neural network is used as a controller to realize certain optimal state feedback controllaw.Finally,the effectiveness of the scheme described in this paper is investigated by computer simulation.The simulation results are encouraging and show that neurocomputation could play important role in control of the future spaceships.
+　　Key words　Lunar modules　Soft landing　Nonlinear systems　Neurocontrol　Dynamic inversion　State feedback
+1　引言
+　航天飞行器作为动力学系统,往往表现出强非线性、柔性、模型不精确或模型未知等复杂特征,其控制也因此而变得非常困难。近年来,随着神经计算学的发展,神经元控制(Neurocontrol)作为新兴的智能控制技术开始渗入航空航天领域［1-2］。人工神经元网络所具有的自学习自组织能力,为解决非线性、模型不精确或模型未知系统控制问题提供了一条新的途径。
+　　本文针对登月舱软着陆过程控制问题,提出了一种非线性动态逆与状态反馈控制相结合的神经元控制系统设计方案。该方案包含两个部分:(1)借助前馈神经元网络通过学习逼近任意非线性映射的能力,建立被控系统的非线性动态逆神经元模型,用神经元网络实现被控非线性系统的线性化;(2)在线性化模型的基础上构造系统的神经元最优状态反馈控制器。非线性动态逆控制技术是处理非线性控制问题的一种有效方法,而该方法对被控制对象数学模型的过分依赖,使其应用受到很大的限制。本文应用神经元网络实现被控非线性系统的动态逆模型,使该方案在具有处理非线性问题的能力的同时,具有了处理模型不精确或模型未知问题的能力;而系统的线性化又使文献［1］提出的神经元状态反馈控制方案易于实现。本文以登月舱软着陆过程的控制为应用背景,对本文提出的方案进行了仿真研究,仿真结果显示,神经元控制具有处理航天飞行器控制问题的潜在能力。
+2　登月舱模型及其软着陆控制问题
+2.1　单变量非线性系统的数学描述
+　　考虑具有如下仿射型非线性微分方程数学模型的航天飞行器:
+(2-1a)
+y(t)=Cx(t)　　　　x0=x(t0)(2-1b)
+其中:u(t)为控制量,y(t)为系统的运动轨迹,x∈Rn,A∈Rn×1,B∈Rn×1,C∈R1×n。
+2.2　控制问题的描述　　
+
+
+图1　登月舱模型及运动
+设系统的期望运动轨迹为yd(t),则其控制问题定义为:寻求某种控制律u(t),使泛函
+(2-2)
+趋于极小。
+　　最优控制问题(2-2)在下面将被分解为J(1)和J(2)两个子最优控制问题。
+2.3　登月舱软着陆过程控制问题描述
+2.3.1　登月舱模型及其运动
+　　登月舱在月球表面软着陆是登月行动的重要环节之一。在软着陆过程中,假设登月舱相对于月球表面的运动是垂直的(如图1所示),并满足条件:
+　　1)作用于登月舱的力只是其自身的重力和起制动作用的推力F,。
+　　2)推进系统质量流速满足:
+　　登月舱动态特性由如下非线性微分方程描述:
+(2-3)
+　　将式(2-5)化为式(2-1)所示的非线性状态微分方程:
+x(t)=x1(t)
+(2-4)
+其中,y=x1为登月舱距离月球表面的高度,为控制量。参照阿波罗11号飞船着陆段飞行数据［3-4］,有:
+　　1)月球表面重力加速度g=1.62m/s2
+　　2)比例系数K=8000
+　　3)初值条件x0=［x1(0)　x2(0)　x3(0)］T=［156m　4.9m/s　15000kg］T　(t0=0)
+2.3.2　登月舱陆着陆过程的控制目标
+　　令登月舱的期望降落过程为:
+yd(t)=y(0)(1-e-0.0314t)(2-5)
+　　这是一个使登月舱下降速度呈指数衰减的过程,以保证登月舱安全地着陆。当登月舱距离月球表面的高度趋近零时,其垂直降落的速度也趋近零。
+3　基于神经元网络的控制方案
+3.1　神经元控制的理论基础
+3.1.1　BP神经元网络模型
+　　本文采用的神经元网络为如图2所示的多输入-单输出三层BP网络。
+
+(a)(b)
+图2　BP神经元网络模型
+3.1.2　BP神经元网络算法
+　　(1)前向传递算法
+　　令Nkj为第k层第j个神经元,Okj为Nkj的输出,θkj为Nkj的阈值,wkji为联结Nki与Nk+1j的权系数,Lk为网络第k层的节点数,则:
+(3-1a)
+(3-1b)
+　　(2)往回传播算法(BP学习算法)
+　　设BP网络有样本集合S={(R(s),O(s)d)｜s=1,2,…,N}。令O(s)为BP网络在输入R(s)=(r1,r2,…rL0)作用下的实际输出。则BP网络的输出误差为:
+ΔO(s)=O(s)d-O(s)(3-2)
+　　定义能量函数
+E=∑Ni=1｛ΔO(s)｝2(3-3)
+　　则按梯度下降原则,有BP学习算法:
+(3-4)
+3.1.3　BP神经元网络逼近映射的特性
+　　引理3-1:(Hecht-Nielsen 1989［5］)
+　　给定任意ε＞0和任意L2函数f:［0,1］n

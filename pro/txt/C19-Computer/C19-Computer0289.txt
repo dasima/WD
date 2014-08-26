@@ -1,0 +1,29 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第4期 第10卷 Vol.10 No.4 1999
+
+
+
+利用不动点求解子句逻辑推演的Petri网模型
+林　闯　吴建平
+摘要　文章研究了子句逻辑推演的Petri网模型表示和不动点求解方法.基于四值逻辑和冲突变迁的概念,可用Horn子句的Petri网模型方法来构造非Horn子句的Petri网模型.逻辑推演的基本方法之一就是寻找逻辑赋值的不动点.该文显示了一种基于Petri网模型的子句逻辑不动点求解算法,比现有算法更为有效.
+关键词　逻辑推演,子句,Petri网,不动点,四值逻辑.
+中图法分类号　TP301
+Logical Inference of Clauses in Petri Net Models Using Fixpoint
+LIN Chuang1 WU Jian-ping2
+1 (Information Science Institute　State Information Center Beijing 100045)
+2(Department of Computer Science and Technology Tsinghua University Beijing 100084)
+Abstract　 The Petri net models of the clauses for logical inference using fixpoint are studied and the four-valued logic and the conflict transition concept are introduced. The authors can construct the Petri net models of non-Horn clauses based on the models of Horn clauses. Finding the fixpoint of logical values is one of the fundamental methods for logical inference. In this paper, an algorithm for the fixpoint based on the Petri net models of values is presented, and it is more efficient than the previous ones.
+Key words　Logical inference, clauses, Petri net, fixpoint, four-valued logic.
+　　逻辑推演是人工智能的基础之一,推演过程就是确定一个给定的命题是否由所收集的一组事实和子句规则所蕴含.在推理研究中,已有多种模型方法来表示知识和推理过程.Petri网之所以被选来模拟逻辑推演,不但是因为Petri网具有很好的模型描述静态和动态特性――并发、并行和冲突,而且也因为Petri网有很好的数学分析技术,可以给出问题求解的算法.将逻辑推演问题转换成Petri网模型,并用Petri网特有的分析方法去处理逻辑推演问题,可以增强用不同和有效的方法处理这类问题的机会.
+　　Petri网已被用来描述Horn子句的逻辑推演［1,2］以及一组子句的不一致性的检查［3］.Murata等人［4］已经给出了从一组Horn子句转换成一个Petri网模型的算法过程,而且建立了一组Horn子句不一致的必要条件和充分条件.他们给出了Horn子句的逻辑推演Petri网模型的不变量求解算法［1］.
+　　在文献［5］中,Petri网用于非Horn子句的逻辑推演模型,但是没有提供有效的推演算法,对负命题的表示也不确切.在本文中,我们要扩充Horn子句Petri网模型的表示方法,使之适应非Horn子句模型的表示.基于我们的非单调逻辑推演模型的工作［6］,可以引入四值逻辑,给标记分配4种不同的颜色以表达命题的不同赋值.引入冲突变迁的概念,用以解决析取子句(异或表达式)的模型表示.不动点的概念在逻辑推演的研究中有重要的作用,逻辑推演的过程可以看做是不动点的形成过程.不动点可以用在逻辑编程理论的表示语义方法中.在Petri网逻辑模型中,不动点可由某个标识来表示,求解不动点就变成求解标识的最大赋值.
+1　定义和术语:网、子句和真值
+　　这一节将引入Petri网、子句和四值逻辑的相关概念和术语.
+1.1　Petri网
+　　我们仅非形式地描述Petri网的一般相关的概念,有关Petri网的定义和术语可参见文献［7］.
+　　Petri网由位置和变迁两类结点构成.这两类结点之间由有向弧连结,弧标权重在逻辑模型中为“1”,标记在位置中的分布形成标识.一个变迁在其输入位置中都至少保留有一个标记的情况下,可能实施.变迁的实施,使其输入位置中都减少一个标记,且使其输出位置中都增加一个标记.
+　　变迁的实施导致标识的变化,由一个标识达到一个后继标识.标识的这种变化也可由网的关联矩阵C来表达.关联矩阵C又可分别由输入矩阵I和输出矩阵O来表示.关联矩阵的列元素由网的每个位置构成,行元素由网的每个变迁构成.在矩阵I中,当位置Pj到变迁Ti有弧相连结,则Iij元素为弧标,否则为零.在矩阵O中,当变迁Ti到位置Pj有弧相连结,则Oij元素为弧标,否则为零.关联矩阵C=O-I.用Ct表达关联矩阵与变迁t相关的行,则一个变迁t在标识M下实施达到后继标识M′可表达为M′=M+Ct,或者M′=M+Ot-It.在Petri网图形表示中,我们用线段表示变迁,用圆表示位置,位置中的黑点表示标记（token).
+1.2　子　句
+　　在一阶逻辑推演研究中,一个子句定义(wff)有如下形式:
+B1,...,Bq

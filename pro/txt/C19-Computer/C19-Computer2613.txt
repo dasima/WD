@@ -1,0 +1,19 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第6期 第10卷 Vol.10 No.6 1999
+
+
+
+分布实现完全LOTOS规范的转换方法
+谢 冰　陈火旺　王兵山
+　　摘要　基于LOTOS规范语言,文章从系统功能规范出发,结合实际系统的分布特性,推导出符合实际系统结构的模块化规范的转换方法.用标注的完全LOTOS语言规范表达复杂的系统分布特性,研究了使用广播通信方式进行协同的、直接处理多模块划分的规范分解算法.
+　　关键词　分布式系统,进程代数,LOTOS规范语言,规范分解.
+　　中图法分类号　TP393
+　
+Decomposition Transformation for the Distributed 
+Implementation of Full LOTOS Specification
+XIE Bing　CHEN Huo-wang　WANG Bing-shan
+(Department of Computer Science Changsha Institute of Technology Changsha 410073)
+　　Abstract 　In this paper, based on the LOTOS specification language, the authors present the transformation which starts from the functional specification and the distributed properties of target system to the corresponding modular specification. The authors present the tagged specification to represent the complex distributed properties of the full LOTOS specifications and study the decomposition transformation of full LOTOS specification which using the broadcasting communication gates in the system's internal coordinating communications and directly decomposing the multiple subsets.
+　　Key words　Distributed system, process algebra, LOTOS specification, specification decomposition.
+　　系统功能规范是与实现细节无关的.在分布式系统中实现时,设计人员需要设计出各个模块的功能规范.这些模块执行其上所分担的系统功能,通过模块间的通信，协同实现系统功能规范.本文研究了一种设计算法,使得设计人员在确定目标系统的分布特性后,即可直接推导出模块化规范.这种规范转换方法可表示为“系统功能规范+实际系统分布特性

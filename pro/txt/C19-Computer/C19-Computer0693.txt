@@ -1,0 +1,23 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1998年 第24卷 第5期  Vol.24  No.5 1998
+
+
+
+一种基于多分辨分析的脉冲响应辨识方法1)
+张建刚　张　杰　毛剑琴
+摘　要　提出了一种基于正交基展开方法的脉冲响应辨识方法――正交尺度变换法.这种方法以正交尺度函数展开的形式表示脉冲响应函数，对信号进行正交尺度变换，并使用最小二乘类参数辨识方法估计参数.仿真结果验证了理论的正确性和方法的可行性.
+关键词　多分辨分析，正交尺度函数，正交尺度变换，脉冲响应.
+PULSE RESPONSE IDENTIFICATION APPROACH
+BASED ON MULTIRESOLUTION ANALYSIS
+ZHANG JIANGANG　　ZHANG JIE　　MAO JIANQIN
+(The Seventh Division, Beijing University of Aeronautics & Astronautics, Beijing 100083)
+Abstract　In this paper, an orthonormal scale transformation approach is proposed, which is a pulse response identification approach based on orthonormal basis expansion. In this approach, the orthonormal scaling function expansion is employed to express pulse response, the input/output signals are transformed using orthonormal scale transformation, and the parameters are identified by means of LS method. Finally, the simulation results have shown that this approach is feasible.
+Key words　Multiresolution analysis, orthonormal scaling function, orthonormal scale transformation, pulse response.
+1　引言
+　　Eykhoff在文献［1］中提出了线性系统脉冲响应的辨识的正交函数展开方法――学习法，对于确定性过程，这种方法具有良好的收敛性.
+　　本文讨论采用正交尺度函数展开表示脉冲响应的辨识方法.正交尺度函数在频域和时域都是紧支的，尺度变换的局部性好，因而具有良好的时频特性.对信号进行正交尺度变换，可以得到简洁的表达形式，并使用最小二乘类辨识方法.这种方法对确定性过程和随机过程都得到较好的辨识精度.
+2　多分辨分析
+2.1　多分辨分析
+　　定义1［2］.所谓多分辨分析，是指满足下列条件的一个子空间族｛Vj｝∞j=-∞.
+　　1)　…V-1V0V1

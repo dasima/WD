@@ -103,10 +103,12 @@ string TextCorrector::textQuery(const string &word)
     string tmp = word;
     string res;
     string tmp2;
+    /*
     while(*tmp.rbegin() == '\r' || *tmp.rbegin() == '\n')
     {
         tmp.resize(tmp.size() -1);
     }
+    */
     //2.先从缓存中查找
     auto a = cache_txt_.find(tmp);
     //查找成功
@@ -118,6 +120,8 @@ string TextCorrector::textQuery(const string &word)
         //auto --- set<string>::iterator
         for(auto index = candidate.begin(); index != candidate.end(); ++index)
         {
+            //这里cout是为了测试本地回显
+            //cout << *index << endl;
             tmp2 = *index;
             tmp2 += "\r\n";
             res += tmp2;
@@ -186,6 +190,8 @@ string TextCorrector::textQuery(const string &word)
                 break;
             }
             word_out = queue_.top().word_;
+            //cout 是本地运行程序是测试回显
+            //cout << word_out << endl;
             buildCache(word, word_out);
             word_out += "\r\n";
             res += word_out;

@@ -1,0 +1,29 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第1期 No.1 1999
+
+
+
+无向图的边极大匹配并行算法及其应用
+马　军　岩间一雄　顾谦平
+　　摘要　在EREW PRAM(exclusive-read and exclusive-write parallel random access machine)并行计算模型上,对范围很广的一类无向图的边极大匹配问题,给出时间复杂性为O(logn),使用O((n+m)/logn)处理器的最佳、高速并行算法.
+　　关键词　并行图算法,边极大匹配.
+　　中图法分类号　TP301
+A Parallel Maximal Matching Algorithm for Undirected Graphs with Applications
+MA Jun1 IWAMA Kazuo2 GU Qian-ping3
+　　Abstract　 A fast and optimal parallel maximal matching algorithm is proposed for a class of graphs. It runs in O(logn) time with O((m+n)/logn) processors on a EREW PRAM (exclusive-read and exclusive-write parallel random access machine).
+　　Key words　Parallel graph algorithms, maximal matching.
+　　设G(V,E)为无向图,V={1,2,...,n}为G的顶点集,υ∈V,υ表示顶点标号.E为G的边集,n=|V|,m=|E|.子集ME被称为G的边匹配,若e1,e2∈M,e1与e2无共同顶点.若M不被G的任何边匹配所真包含,则M被称为G的极大边匹配MM(maximal matching).MM的并行求解算法已成为许多应用问题并行求解的基础算法.［1,2］目前,在EREW PRAM(exclusive-read and exclusive-write parallel random access machine)的并行计算模型上,对MM的费用最好的算法解为使用O(n+m)个处理机,时间复杂性为O(log4n)的并行算法.［2］本文中,在范围很广的一类图集合上,提出对MM的新并行算法,该算法的运算步数比此前的最好算法在该图集合上减少O(logn)因子,为在该图集合上的最佳算法.
+1　基本术语
+　　设边集E=F1∪...∪Fk,Fi为森林且当i≠j,Fi∩Fj=ф.称所有这样的边分割中,具有最少森林数k的分割为G的裁减(Arboricity).其最少森林数目记为a(G).设Π={G|G为无向图且a(G)=Ｏ(1)},则已知Π含有平面图、种类(Genus)受限图及最大顶点度数受限图等.［3,4］设AV,Γ(A)={x|(x,υ)∈E,υ∈A且xA}为顶点集合A的邻域；Ti=(Vi,Ei,ri)为G的一棵有向根树,满足ViV,EiE,ri为Ti的根.depth(υ)被定义为顶点υ到ri路径上的边数.定义depth(ri)=0.F被称为G的一个有向林,若F由G的k(>1)棵有向根树T1∪...∪Tk组成,满足：① E(Ti)∩E(Tj)=ф,i≠j;② V(T1)∪...∪V(Tk)=V(G).F可由一维数组F(1..n)表示,即F(i)=j,当且仅当在子树Tk上,j为i的父结点.定义F(ri)=ri.
+　　定理1. ［5］　设W(n)为在PRAM模型上,在Ｏ(1)时间内可并行完成的操作步数,则在有p台处理机的PRAM上,W(n)个操作步可在Ｏ(W(n)/p)时间内被p台处理机并行完成.
+2　极大边匹配的高效并行算法
+　　算法. Matching
+　　输入: 图G的邻接矩阵.
+　　输出: G的一个极大边匹配M.
+　　(1) i:=1;G1:=G;M:=ф;υ∈V,计算顶点度数degree(v).
+　　(2.1) 若Gi=ф,则返回;
+　　(2.2) 调用过程Forest,建立Gi的一个生成林F1i.
+　　(2.3) υ∈V(Ti),Ti∈F1i,计算root(υ),root(υ)为Ti的根顶点标号.对每一边(υ,w)∈Ti,用弧〈υ,w〉,〈w,υ〉替代,Ti变为有向欧拉图Ci,通过Ci把root(υ)并行地送到Ti的每个顶点.［5］然后把Ci复原为Ti.
+　　(2.4) 调用过程F-Matching,找出F1i的一个极大边匹配M1i.
+　　(2.5) 建立子图G′i(V′,E′),E′={(υ,w)|(υ,w)∈E(Gi),满足在F1i中root(υ)≠root(w)且υ,w

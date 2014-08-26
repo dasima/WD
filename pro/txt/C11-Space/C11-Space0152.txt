@@ -1,0 +1,65 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年4月  第19卷  第2期科技期刊
+
+
+多模自适应目标图像跟踪
+周 锐 申功勋
+(北京航空航天大学第五研究室*北京*100083)
+崔祜涛 杨 涤
+(哈尔滨工业大学*哈尔滨*150001)
+摘  要   本文建立了图像序列中含加性和乘性两种噪声模型影响下的目标偏
+移值测量模型。并针对目标机动性,采用多模虑波器和两段卡尔曼虑波器对目
+标状态进行估值,有效抑制了各种噪声影响,又消除了显式的目标机动性检测,
+且有较高的实时性和较少的存储量等优点。
+
+主题词  图像相关  多模跟踪   速度和加速度滤波器  模型概率
+　
+MULTIPLE MODELS ADAPTIVE 
+TARGET IMAGE TRACKING
+Zhou Rui Shen Gongxun
+(Beijng University of Aeronautics and Astronautics*
+Beijing*100083)
+Cui Hutao Yang Di
+(Harbin Institute of Technology*Harbin*150001)
+Abstract  In this paper,the target image position offset measurement models in image 
+sequence are developed under the effects of additive and multiplitive noise.In consid-
+eration of the target maneuvering,the target states are estimated by multiple-model 
+filters and two-stage Kalman filters,depressing the effects of noise and avoiding the 
+explicit maneuvering detection.The algorithm has good performance with high speed 
+and small savings.
+
+Key words  Image correlation  Multiple model tracking   Velocity and acceleration 
+filter  Model probabitity 
+
+1  引言
+
+　　在基于图像传感器的目标跟踪系中,由于各种噪声影响,例如传感器噪声、
+背景噪声和图像量化噪声等,使得跟踪器提取到的目标位置信息含有较大误差。
+这些噪声一般可以分为两类:加性噪声和乘性噪声。滤波是抑制噪声、提高跟
+踪精度的一种有效方法,而正确的目标测量模型和动态模型是实现精确跟踪与
+滤波的前提和基础。Fitts［1］相关算法由于能得到亚象素级精度的偏移
+值测量,因而使得其成为高精度跟踪系统的一种常用方法。文献［3］采用速
+度滤波器和加速度滤波器并行切换的方法实现了对机动性或随机不确定性运
+动目标的跟踪,滤波维数低,计算量小,但需要显式的机动性检测。文献［4］
+采用交互式多模滤波器,通过模型概率的计算消除了显式的机动性检测,但计
+算量较大。
+
+　　本文采用Fitts相关算法建立噪声图像中目标偏移值测量模型,通过多
+模滤波器［4］和两段卡尔曼滤波器［3］相结合,实现了对机动目标的精确
+跟踪,既消除了显式的目标机动性检测,又有较高的实时性和较少的存储量
+等优点。
+
+2  目标图像偏移值测量模型
+
+　将目标图像中要跟踪的点作为参考点,则参考点与传感器视场中心之间的
+距离即为目标偏移量。设r(x,y)为目标参考图像,s(x,y)为传感器检测到的
+实时图像,并假定实时图像是由参考图像平移以后并迭加不相关高斯噪声n(x,
+y)的结果,于是有
+s(x,y)=cr(x-εx,y-εy)+n(x,y)
+(1)
+其中,εx,εy为目标图像参考点的偏移量,c是比例变换因子。对于帧频较高
+的跟踪器,εx,εy一般较小,于是可对r(x,y)Taylor展开,并保留到一阶项
+s(x,y)=c［r(x,y)+εxrx+εyry］+n(x,y)
+(2)
+其中rx=

@@ -1,0 +1,22 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第1期 No.1 1999
+
+
+
+利用确定性退火技术的旅行商问题求解算法*
+杨广文1　郑纬民1　王鼎兴1　李晓明2
+　　摘要　将确定性退火技术及聚类方法应用于旅行商问题,给出了求解旅行商问题的一种启发式算法.该方法将旅行商问题的离散模型转化为连续模型去求解,通过求解一系列随温度变化的物理系统的自由能函数的局部极小来获得旅行商问题的解,并给出了一个简单的显式迭代公式.算例表明,该算法性能良好.
+　　关键词　确定性退火技术,旅行商问题,聚类,极大熵原理.
+　　中图法分类号　TP18
+An Algorithm for Travelling Salesman Problem Using Deterministic Annealing
+YANG Guang-wen1　ZHENG Wei-min1　WANG Ding-xing1　LI Xiao-ming2
+　　Abstract　In this paper, the deterministic annealing and clustering algorithms are applied to the travelling salesman problem, and a heuristic algorithm for the travelling salesman problem is put forward. The method transforms the discrete model of the travelling salesman problem into the continuous model, and the solution of the problem is obtained by solving local optimal solution of a series of problems to minimize the free energy of a physical system which varies with temperature. A simple explicit iterative formula is given. The computation results indicate that this algorithm has good performance.
+　　Key words　Deterministic annealing, travelling salesman problem, clustering, the principle of maximum entropy.
+　　旅行商问题TSP（travelling salesman problem）是一个经典的图论问题.由于这一问题为NP难解问题,求解最优解是非常困难的,目前还没有十分有效的方法.
+　　按自然法则计算“将大量自然科学领域中的思想与方法用于其传统应用领域之外的其他领域,将原思想与方法的本质提取出来,用于解决新领域中的问题”,将为求解复杂系统提供可行的计算方法.［1］作为一个重要分支,确定性退火技术是由K.Rose博士首先提出的［2］,它依据退火过程,将求解优化问题的最优点转化为求一系列随温度变化的物理系统的自由能函数的极小.理论上讲,它能够使算法避开局部极小而得到全局极小,具有广阔的应用前景.本文将确定性退火技术应用于TSP,给出一种启发式求解算法.
+1　确定性退火技术
+　　对一固体物理系统,将其加温熔化后降温,当温度下降足够缓慢时,在每一温度下,系统将达到平衡态,最后当温度很低时,物体完全凝固,整个系统将达到最低能态.在每一固定温度下,物理系统的自由能所取的极小值对应于系统的平衡态,系统将会自发地趋向平衡态.确定性退火技术正是基于退火过程这一物理背景的.
+　　对于求解一极小化问题
+minE=E(x),　　　　　　　　　　　　　　　　　(1) 
+E(x)可看作是某一系统的能量.在某一温度下,系统状态的变化总是朝着自由能减少的方向进行,当系统达到平衡态时,自由能函数达到极小.构造物理系统(式(1))对应的自由能函数F(x,T).自由能函数F(x,T)至少满足下述条件:当T=∞时,F(x,T)关于x的全局极小极易求出；当T=0时,F(x,T)=E(x).这两个条件可以认为是确定性退火技术对自由能函数的要求.确定性退火技术,以系统在T=T+ΔT时自由能函数极小的状态x

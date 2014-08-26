@@ -1,0 +1,42 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第4期 No.4 Vol.18 1998
+科技期刊
+
+城市生态补偿能力衡量和应用
+叶文虎　魏　斌　仝　川　(北京大学环境科学中心, 北京 100871) 
+文　摘　城市生态补偿在城乡开发、城市规划等许多工作中具有重要的意义。为衡量城市生态补偿能力, 本文提出了绿当量的概念,并以济南市为例, 探讨了对二氧化碳、降尘和二氧化硫的生态补偿方法。根据实际情况，以街道办事处为单元评价济南市内现有绿地的生态补偿能力，并根据环境目标的要求，提出了各办事处需增加的公共绿地面积，为制定市区公共绿地配置规划提供了依据。计算结果表明，从总体上说，济南市现有的绿色植物可补偿济南市排放到大气中的二氧化碳的22.3%，二氧化硫的23.1%；其总吸尘能力略大于年排尘能力。绿当量概念和计算方法在济南市城区公共绿地配置规划中的成功应用，表明它可对其它城市绿地生态补偿能力的评价和城市环境规划的制定发挥指导和借鉴作用。
+关键词　城市生态补偿　绿当量　公共绿地配置
+
+Measurement and application of urban ecological compensation . Ye Wenhu , Wei Bin，Tong Chuan (Center for Environmental Sciences, Peking University, Beijing 100871).China Environmental Science.1998,18(4):298～301
+Abstract―Urban ecological compensation plays an important role in county development,city planning and many other works. In order to measure the abilities of urban ecological compensation and formulate the macroscopic planning for policy-management, this article puts forward the concept of green equivalent and application methods of urban ecological compensation. Taking Jinan city as an example, the abilities of its existing greenland in each unit of subdistrict are evaluated and the areas of greenland to be enlarged according to the requirement of air environmental target are calculated. The results demonstrate that the green plant of Jinan city could compensate 22.3% of carbon dioxide and 23.1% of sulfur-dioxide emission in the air,and its abilities of adsorbing dust is a little bigger than that of discharging dust. Owing to successful application of the concept and measuring methods of green equivalent in the public greenland planning of Jinan urban district, it may also be referential in directing other cities in ecological compensation evaluation of greenland and the design of environmental planning.
+Key words:urban ecological compensation　green equivalent 　public greenland allocation
+　　自然生态补偿(Natural Ecological Compensation)指“生物有机体、种群、群落或生态系统受到干扰时，所表现出来的缓和干扰、调节自身状态使生存得以维持的能力; 或者可以看作生态负荷(Ecological Loading)的还原能力"〔1〕。它包括环境自净(物理自净、化学自净和生物自净)〔2〕和系统内的组分负反馈(自我调节机制)。城市生态补偿是指城市自然生态系统对由于城市社会、经济活动造成的对城市生态环境的破坏所起的缓冲和补偿作用, 在城乡开发〔3〕、工程建设、城市污染的总量控制以及生态恢复等工作中具有重要的理论和实际意义。国内一些学者〔4，5〕曾在广州、南京等大城市作过一些城市市区碳氧平衡问题的定性或半定量的研究, 但都未能从生态补偿的角度给出规划绿地面积的计算办法。
+1　城市生态补偿及绿当量概念的提出
+　　在城市生态补偿中, 绿地发挥着至关重要的作用，常被称为城市的“肺”, 其功能主要表现在吸热降温、吸收CO2、释放O3、滞尘、减噪、增加土壤渗透和净化水质、吸收SO2以及满足休憩需要等方面。不同类型绿地（草地、乔木林地、灌木林地和绿篱）的城市生态补偿能力不一样。对于同一补偿目的, 不同类型的绿地, 所需面积不一样；对于同种类型绿地, 出于不同的补偿目的, 所需要的面积也不一样(表1)。
+表1　不同绿地类型城市生态补偿能力比较
+Table 1　The comparison of urban ecological compensation abilities 
+among different kinds of greenlands 
+
+绿地类型年吸收CO2〔6〕
+(hm2/t)　年滞降尘〔7〕　
+　(hm2/t)　减噪〔7〕
+(hm2/dB)年增加渗透**
+(hm2/t)　 年吸收SO2〔7〕
+(hm2/t)
+草地　1.4423　0.00121.5～2.53.9816.22 
+绿篱*　1.2000　0.000967.5左右2.0～3.02.53 
+灌木　0.8982　0.000757.5左右2.102.03 
+乔木　0.7212　0.000463.0～4.290.431.04
+
+　　注:* 绿篱的宽度一定, 本文取1m计算　** 数据取自祁连山水源涵养所人工降雨模拟实验
+　　由于在制定为决策管理服务的宏观规划时, 不可能从每一种类型绿地的生态补偿方案去着手研究, 因此, 如何用一个共同的度量尺度来表示各种类型绿地对城市环境污染的生态补偿能力，已成为制定城市环境规划的关键问题之一。为此, 本文提出绿当量（Green Equivalent）的概念，即补偿某种单位污染物所需要的绿量。
+　　这一概念只限于对单要素的补偿对象, 因此可看作狭义绿当量。广义的绿当量概念可定义为最低满足全部绿地功能所需要的最大绿量,一般可称为综合绿当量其数学形式可表示为:
+　　　　 　(1)
+式中:GC为综合绿当量;Gli为 l 种绿地 i 种生态补偿目的;Klj为 l 种绿地在完成 j 种生态补偿目的时受完成其它生态补偿目的干扰的系数, 在0～1之间, 可由实验获得; l为绿地类型, l=1,2,3,……，M;i、j为生态补偿目的, i、j=1,2,……，N。
+　　将草地对各种污染物(t/a)的补偿能力定义为单位绿当量, 于是依据其它类型绿地与草地的补偿能力之比便可得到各种类型绿地的绿当量(表2)。
+表2　不同类型绿地的绿当量
+Table 2　The green equivalent of different kinds 
+of greenlands
+
+绿地类型G

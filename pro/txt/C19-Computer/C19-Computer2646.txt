@@ -1,0 +1,30 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第10卷 第8期 Vol.10 No.8 1999
+
+
+
+文法推断研究的历史和现状
+张瑞岭
+摘要　文法推断属于形式语言的归纳学习问题,它研究如何从语言的有限信息出发,通过归纳推断得到语言的语法定义.文章综述文法推断研究的历史和现状.首先阐述文法推断的理论模型,接着罗列上下文无关文法类及其非平凡子类、隐马尔可夫模型以及随机上下文无关文法的推断方法,最后简介文法推断的应用,并展望其发展趋势.
+关键词　示例学习,归纳推断,形式语言的学习,文法推断.
+中图法分类号　TP
+Grammatical Inference: Retrospect and Prospect
+ZHANG Rui-ling
+(Laboratory of Computer Science Institute of Software The Chinese Academy of Sciences Beijing 100080)
+Abstract　 Grammatical Inference (GI) is a problem of inductive learning of formal languages, which deals with how to obtain the grammatical description of a formal language from given finite data drawn from the language. In this paper, the authors provide a survey of the history and recent advances in GI field. They first present some learning models for GI. Then, they enumerate methods for GI with an emphasis on the results concerning the inference of context free grammar class and its some subclasses, hidden Markov models, and stochastic context-free grammar class. At last, they briefly give some applications of GI as well as the future directions of GI research.
+Key words　Learning from examples, inductive inference, learning of formal languages, grammatical inference.
+　　文法推断(grammatical inference)属于形式语言的归纳学习问题.语言的归纳学习致力于研究如何从语言的有限信息出发,通过归纳推断得到语言的定义.当待学习语言的最终定义以不同的形式表示时,其归纳学习过程也有所不同.严格地说,文法推断是指待学习语言的定义用文法表示时的归纳学习过程.
+　　文法推断从语言的有限信息(输入)出发,通过一个归纳推断过程,最终得到语言的文法描述(输出).其中输入信息一般包含一个正例样本集,或同时包括一个反例样本集,还可能包含其他附加信息.文法推断问题的提出,可追溯到20世纪50年代末,所以相对于计算机科学中某些研究领域而言,文法推断是一个历史悠久的研究领域;同时,由于文法推断问题本身固有的复杂性,其发展还不够成熟,还有大量的理论和技术问题需要人们去研究和探索,所以它又是一个新兴的研究领域.
+　　文法推断研究的最初20年内,特别是在1970～1980年间,取得了丰硕的研究成果.但从80年代初开始,有关文法推断问题的研究论文越来越少,原因不在于该问题的研究已很成熟;而是由于文法推断问题本身固有的困难,使得其研究处于低迷状态.近几年,许多研究者试着将其他一些技术,如遗传算法和神经网络运用到文法推断中,特别是将概率统计理论结合到文法推断中,使得文法推断进入实际应用成为可能,于是文法推断的研究又活跃起来,并从1993年起召开了4届关于文法推断专题的国际会议.其他一些专题会议中也包含了文法推断的研究成果,如类比及归纳推断、算法学习理论和计算学习理论,另外,在ACM关于计算理论的年度会议中也包含部分相关论文.
+　　　目前为止,关于或涉及文法推断问题的综述性文章主要有［1～4］.本文旨在介绍文法推断的理论模型和方法,特别介绍当前研究热点和趋势.在介绍研究成果时特别罗列出有关上下文无关文法及其非平凡子类文法（即正规文法的超类）以及随机文法的推断方法.
+1 有关定义
+　　一个上下文无关文法(context-free grammar,简称CFG)G用一个四元组表示,即
+G=(N,Σ,P,X)
+　　其中N和Σ分别为非终极符集合和终极符集合;P为产生式集合;X为开始非终极符.字母表V=N∪Σ.Σ上串集合（包括空串）记为Σ*,空串用ε表示.Σ+=Σ*-{ε}.V上的终极符和非终极符串组成的集合（包括ε）记为V*,V+=V*-{ε}.一个串α的长度记为|α|.P中每个产生式形如A→β,这里,A∈N,β∈V*.我们用αβ表示γ,δ,η,A满足α=γAδ,β=γηδ且A→η是一个产生式.αβ表示串α0,α1,...,αm(m≥0)满足
+α=α0α1...αm=β.
+这里,序列α0,...,αm称为从α到β的一个推导.文法G产生的语言记为L(G),即
+L(G)={s|s∈Σ*},Xs},
+也就是对L(G)中任一实例串s,存在从X到s的一个推导,该推导过程可以用一个树表示,该树就称为G关于s的语法树（或称派生树）,派生树的根结点为开始非终极符X,所有叶结点连接起来即为s.派生树的形状（即不考虑其内部结点的标记）称为s的轮廓(skeleton).推导过程也可以用依次使用的产生式序列表示,即一个实例s的推导过程记为D(s)=(r1,...,rm),ri为P中产生式.
+　　若一个CFG G的产生式集合P中的所有产生式形如:A→a或A→aB,A,B∈N,a∈Σ,则称G为正规文法(regular grammar).一个语言L是正规语言,当且仅当存在一个正规文法G,有L=L(G).同时,一个语言L是正规语言,当且仅当存在一个确定有限状态自动机(deterministic finite automata,简称DFA)A,其接受语言L(A)=L.在下面的描述中,正规文法、正规语言和DFA等名词可互相替换.
+　　对于一个语言L,若终极符串s∈L,则称s为L的正例;若s

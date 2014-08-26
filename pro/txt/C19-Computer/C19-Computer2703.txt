@@ -1,0 +1,30 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年　第10卷　第11期　Vol.10　No.11　1999
+
+
+
+连续属性空间上的规则学习算法
+权光日 刘文远 叶风　陈晓鹏
+　　摘要　文章研究连续属性空间上的规则学习算法。首先简述了研究连续属性空间上的规则学习算法的目的和意义，并将规则学习理论中的一些基本概念推广到连续属性空间。在此基础上，研究了连续属性空间离散化问题，证明了属性空间最小离散化问题是NP困难问题，并将信息熵函数与无穷范数的概念应用到连续属性离散化问题，提出了基于信息熵的属性空间极小化算法。最后，提出了连续属性空间上的规则学习算法,并给出了数值实验结果。
+　　关键词　规则学习算法，连续属性空间，信息熵，无穷范数，NP困难问题。
+　　中图法分类号　TP181
+A Rule Learning Algorithm on Continuous Attributes Space
+QUAN Guang-ri1 LIU Wen-yuan2 YE Feng2 CHEN Xiao-peng1
+1 (Weihai Campus Harbin Institute of Technology Weihai 264200)
+2(Department of Computer Science and Engineering Harbin Institute of Technology Harbin 150001)
+　　Abstract　The rule learning algorithm on continuous attributes space is studied in this paper. First,  thepurpose and the importance of studying rule learning algorithm on continuous attributes space are briefly introduced, and then some basic concepts in the theory of rule learning are extended to the continuous attributes space. On this basis, the authors study the problem to divide continuous attributes space, and prove that the problem of min dividing continuous attributes space is a NP hard problem. The concepts of information entropy and infinite normed apply to the problem of dividing continuous attribute space and a new algorithm of dividing continuous attribute space based on the function of information entropy are presented. At last, a rule learning algorithm on continuous attributes space is presented and the data results of the experiments are given.
+　　Key words　Rule learning algorithm, continuous attribute space, information entropy, infinite normed, NP hard problem.
+　　样本空间化简问题是人工智能领域中的重要研究课题.示例学习算法通过样本例子的训练产生识别函数.示例学习系统的学习速度与精度以及识别速度不仅依赖于所采用的学习算法本身,而且与训练样本集合的规模与样本空间的描述密切相关.对实际采样的数据进行筛选和改用适当的描述是提高学习速度与识别精度以及节省存储空间的重要手段.另外,样本例子的筛选与属性空间的优化描述还可以提高识别系统对输入例子噪音的鲁棒性.
+　　1987年,Quinlan在研究连续属性空间上的决策树学习算法时,提出了基于信息熵的属性分割算法［1,2］.Fayyad等人在Quinlan工作的基础上提出了能够加快离散化速度的改进算法［2～4］.本文在前人工作的基础上,将信息熵函数与无穷范数的概念应用到连续属性离散化问题,提出了基于信息熵的属性空间极小化算法.其目的在于在区间分割过程中防止过分细化,以便提高学习系统的聚类能力以及识别系统对输入例子噪音的鲁棒性.在此基础上,提出了连续属性空间上的规则学习算法.
+1 基本概念
+　　设连续闭区间,j=1,2,...,n,为第j个属性xj的值域(取值范围),E=D1×D2×...×Dn是n维无穷向量空间,E中的元素e=(v1,v2,...,vn)叫做例子,其中vj∈Dj.设PE和NE是E的两个子集,为区别起见,分别称为正例集和反例集.
+　　定义1. Dj的子集Aj称为Dj的有限个区间的并,当且仅当Aj为有限个区间(闭区间、开区间或半开半闭区间)的并,简称区间并.
+　　显然,如果Aj,Bj为Dj的区间并,则Aj∪Bj,Aj∩Bj和Dj-Aj皆是Dj的区间并.
+　　定义2. 选择子是形为{xj=Aj}或{xj≠Bj}的关系语句,其中Aj,Bj为满足的区间并,并且规定{xj≠Bj}={xj=Dj-Bj}.公式是1个选择子或几个选择子的合取式,记为,其中,N={1,2,...,n}.注意:(1) 对于公式L中不出现的属性,规定它取值为该属性的值域,即任何j∈N,如果,则等价于在L上逻辑乘选择子{xj=Dj};(2) 例子可以看做是公式的特殊情况统一处理,即e=(v1,v2,...,vn)={xj={vj}}.选择子S={xj=Aj}覆盖一个公式L={xj=A′j}当且仅当j∈J并且A′jAj.已知公式L={xj=Aj}及L′={xj=A′j},L覆盖L′当且仅当JJ′并且对任何j,j∈J,A′jAj.
+　　定义3. 一个公式称为(对已知例子集PE∪NE)一致的,如果它不覆盖反例集NE中的任何反例.一个规则称为一致的,如果它的每一个公式都是一致的.一个规则称为完备的,如果任何一个PE中的正例子都被它覆盖,即它的某一公式覆盖.如果一个规则是一致的又是完备的,则简称一致完备的.
+　　定义4. 已知反例矩阵NE和一个公式L={xj=Aj}.对NE的每一列j∈N,如果jJ,则用死元素“*”对NE中第j列的所有元素作代换;如果j∈J,则用“*”对NE中第j列属于Aj的所有元素作代换.这样得到的矩阵叫做公式L的扩张矩阵,记为EM(L).在扩张矩阵中,分别来自不同行的非死元素组成的集合叫做EM(L)的一条路.
+　　易见,当定义4中的公式用正例e+代替时,就得到正例e+的扩张矩阵EM(e+).
+　　定义5. 设EM(L)是一致公式L的扩张矩阵,如果在EM(L)中的某一行中只有一个非死元素,则称该元素为必选元素.
+　　由于EM(L)的必选元素一定属于所有覆盖L的公式中的对应选择子,因此有着重要的作用.
+　　定义6. 已知公式L={xj=Aj}及公式F={xj=Bj},则将L和F对应的选择子的取值合并得到一个新的公式,称为L和F的合并,记为L

@@ -1,0 +1,29 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第19卷 第3期  Vol.19 No.3 1999
+
+
+
+证据论与约集论
+苏运霖　管纪文　David A.Bell
+摘　要　约集论用于处理模糊性与不确定性.在某些方面,它同Dempster-Shafer的证据论相重迭,但约集论使用分划来描述约集、下界近似及上界近似,从而获取知识表示中的不确定性,而证据论使用证据函数来实现同一目的.该文针对两个理论表述上的差异,揭示出其内在的关系,以有助于人们对两者的理解,从而为开拓它们的应用铺平道路.此外,在证据论中,组合证据的基本操作是正交和,而在约集论中,基本操作是分划的交,因而存在“证据组合是否对应于分划的交”的问题.通过一个例子来说明回答是否定的.
+关键词　证据论,约集论,正交和,分划.
+中图法分类号　TP18
+Evidence Theory and Rough Set Theory
+SU Yun-lin 
+Department of Computer Science Ji'nan University Guangzhou 510632
+GUAN Ji-wen　David A. Bell
+School of Information and Software Engineering University of Ulster at Jordanstown UK
+Abstract　 The rough set theory is introduced to deal with vagueness and uncertainty. In some aspects, the rough set theory overlaps with the Dempster-Shafer theory of evidence, but the rough set theory uses partitions to specify rough sets, lower and upper approximations, and then to capture uncertainty in knowledge representation. In this paper, directing against the discrepancy in the specification between the two theories, the authors explore their relationship in order for ones to understand them and open the way of applying them. In addition, in evidence theory, the basic aperation to combine evidences is the orthogonal sum, while in the rough set theory, the basic operation is the intersection of partition. Therefore, “Does the evidence combination correspond to the partition?” is the question which may be naturally raised. An example is presented to show that the answer is “no”.
+Key words　Evidence theory, rough set theory, orthogonal sum, partition.
+　　Dempster-Shafer所建立的证据论［1］通过证据函数来获取知识表示中的不确定性［2］,而Pawlak新建立的约集论［3］通过使用分划的相交来实现同一目的.两者相比,后者由于直观和易于使用而受到普遍欢迎.但是,前者在理论上更为成熟.因此,研究后者同前者的关系,既有实际意义也有理论意义.
+　　为使本文更具可读性,我们首先简略地在第1节中介绍Dempster-Shafer的证据论,即证据函数――质量函数、信念函数以及似真函数,以及基本操作――正交和.
+　　在第2节中,我们介绍约集论,即对于一个全集的子集的下界近似和上界近似，并给出下列重要事实,即按照Dempster-Shafer函数,下界近似的质量是一个信念函数.而上界近似的质量是一个似真函数,并对它予以详细证明,此前还没有人完成这一工作［4～7］.
+　　第3节作为结束,我们讨论证据论中把证据加经组合的操作――正交和,同约集论中的基本操作――分划的交的关系,即提出证据组合是否对应于分划的交的问题.我们给出一个例子来说明回答是否定的.
+1　证据论
+　　所谓证据论是用于描述或量化证据的一组函数的理论.这些函数是质量函数、信念函数以及似真函数等等.这些函数是彼此一一对应的,而且每一个和另外任何一个一样提供同样多的信息.为了行文的需要,我们将对它们一一予以定义.
+首先定义一个全集U.我们的选择是在U中进行的、且这些选择应是互斥和穷尽的.
+　　［0,1］表示0与1之间的（含0和1）的所有实数.
+　　一个函数d:U→［0,1］是一个巴叶斯概率密度函数,如果它满足公量D:.
+　　同这一函数密切相关的是巴叶斯概率密度函数.一个函数P:2U→［0,1］是一个巴叶斯概率密度函数,如果它满足下列公理：
+　　公理P1. P(

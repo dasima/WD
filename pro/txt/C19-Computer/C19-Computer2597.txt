@@ -1,0 +1,33 @@
+软件学报
+JOURNAL OF SOFTWARE 
+1999年 第10卷 第5期 Vol.10 No.5 1999
+
+
+
+实时数据库系统中的嵌套事务
+刘云生　李国徽
+摘要　传统的原子事务是由一个平坦数据库操作序列组成的,事务的执行具有ACID(Atomicity, Consistency, Isolation, Durability)特性.然而,在实时应用环境下,这些却不太适用.该文提出了一种支持实时应用的嵌套事务模型,给出了嵌套事务的特性及正确性标准,着重对嵌套实时事务的优先级分派与并发控制协议进行了讨论.
+关键词　事务模型,嵌套事务,优先级分派,并发控制,事务正确性, 实时数据库.
+中图法分类号　TP311
+Nested Transactions in Real-time Database Systems
+LIU Yun-sheng　LI Guo-hui
+College of Computer Science and Technology Huazhong University of Science and Technology Wuhan 430074
+Abstract In the traditional transaction model, a trans action is a flat sequence of the database operations and the executions of trans actions have the ACID(Atomicity, Consistency, Isolation, Durability) properties. But under the real-time environment, these appear unsuitable. A nested transac tion model to support real-time applications is proposed and the properties and the correctness stanadards of nested transactions are presented in this pap er. The priority assignment strategies and the concurrency control protocol for nested real-time transactions are discussed with emphasis.
+Key words Transaction model, nested transaction, pri ority assignment, concurrency control, transaction correctness, real-time d atabase.
+　　实时应用要求事务能自动监视系统(数据库)的状态及其变迁,在特定情形或时间点触发特定 的活动（事务）.被触发(triggered)的活动按照应用语义的要求可以是触发(triggering)事 务的一个部件、一个独立的事务或触发事务的子事务.这就要求我们提供嵌套事务机制,并给 出嵌套事务处理的调度算法、并发控制协议及事务执行的正确性标准.
+　　一般地说,嵌套事务的语义来源主要有以下几个方面:
+　　（1） 动态触发的活动按应用要求成为触发事务的子事务;
+　　（2） 在分布式应用环境下,一个事务可以划分成若干个代理事务,在不同的节点上分工合作 执行,这些代理事务就是原事务的子事务;
+　　（3） 在一些工程应用中,长寿（long-lived）事务或开端（open-ended）事务成为对系 统资源要求的瓶颈.可以把长寿事务或开端事务划分成若干个逻辑上独立的子事务,使占用的 资源能被提前释放;
+　　（4） 应用语义在结构上显式地要求一个事务为另一事务的子事务.
+1 嵌套事务模型
+1.1 嵌套事务
+　　在传统的平坦原子事务模型中,一个事务就是一个平淡的操作序列,没有内部结构,具有ACID( Atomicity,Consistency,Isolation,Durability)特性.事务的调度和并发控制满足可串行化 的正确性标准.嵌套事务则不同.
+　　定义1. 显式地包含另一事务的事务称为嵌套事务.被包 含者称为子事务,包含者称为其父事务,以p(t1,t2)表示t1为t2的父事务,或用c(t 2,t1)表示t2是t1的子事务.
+　　子事务又可包含其自身的子事务.父事务按照同步和异步两种方式触发子事务.在同步方式中 ,子事务被触发执行时,父事务处于等待状态,直到子事务执行完成.在异步方式中,父子事务 同时并发执行.
+　　定义2. 在事务的执行过程中触发一个子事务的行为称为事务嵌套事 件,记为NTE.
+NTE∷=Eid(〈TID〉,〈SYN〉),
+其中Eid为事件标识符,TID为被触发事务的标识,SYN为上面所讨论的触发方式.
+　　与一个事务t相联系的所有事务嵌套事件组成的集合称为事务t的事务嵌套事件集,记为NTE t.
+　　定义3. 事务t1为t2的祖先事务,记为p*(t1,t2),当且仅 当
+p(t1,t2)∨

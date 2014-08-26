@@ -1,0 +1,26 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第19卷 第3期  Vol.19 No.3 1999
+
+
+
+基于优先解释的不完全信息推理及其应用
+叶风　徐晓飞　王亚东
+摘　要　不完全信息下的近似推理是知识工程面临的困难问题之一.文章提出了一种具有非单调性质的优先逻辑程序理论.该理论能够对知识的解释进行综合评判，进而优选解释，使其成为现有知识的最佳理论逼近，达到在择优意义下的理论完全化，避免了对知识的完全性及一致性要求.为获取应用领域的优先逻辑程序，基于归纳逻辑程序设计技术设计了一种多方法归纳学习算法，该算法具有较强的归纳能力.此理论与算法已应用在863农业专家系统中,并获得满意结果.
+关键词　专家系统，不完全信息推理，优先解释，归纳逻辑程序设计.
+中图法分类号　TP18
+Precedent Interpretation Based Incomplete Information 
+Reasoning and Its Application
+YE Feng XU Xiao-fei WANG Ya-dong
+(Department of Computer Science and Engineering Harbin Institute of Technology Harbin 150001)
+Abstract　 Approximate reasoning with the incomplete information is one of the difficulties that the knowledge engineering has faced. A precedent logic program theory with the property of nonmonotonicity is proposed in this paper. The synthesis evaluation for the interpretation of knowledge can be taken with the theory, such that the optimal selection of interpretation is made possible which becomes the best approach to the current knowledge. The theory completion in the significance of optimal selection is achieved and the requirement of completion and consistency of knowledge are avoided. To acquire the precedent logic programs in the applications, based on an inductive logic programming, learning algorithm is presented which incorporates the multiple inductive methods and has greater ability of induction. The presented theory and the algorithm have been applied in an expert system and gained satisfactory results.
+Key words　Expert system, incomplete information reasoning, precedent interpretation, inductive logic programming.
+　　不完全信息下的近似推理是知识工程面临的最困难问题之一，也是人工智能研究中的重要课题，因而有着重要的理论与应用价值.人工智能基础领域对人类在不完全信息下，从含有错误甚至矛盾的信念中自如地进行推理这一机制进行了大量研究,诸如常识推理的研究.这类研究工作导致一批刻画这一机制的形式系统［1～3］的出现，这些系统均有非单调性质.这些理论总的特征是刻画在某些特定信息未知情况下,系统应作出的各种信念并以此扩充知识，此类理论面临的最大问题是,其计算难解性与理论修正困难.模拟这一机制的另一方案是连接系统，神经网络具有快速计算及容错的能力，是对付不完全信息的有力工具.然而，神经网络缺乏足够的表达能力以处理高级推理活动.
+　　G.Pinkas的罚逻辑［4］是命题级上的工作，仅是矛盾命题的一种解决方案.本文在此基础上提出了一种基于正规逻辑程序的优先理论，将连接网络中的权值思想引入逻辑程序中，从而得到优先逻辑程序子句理论（简称优先理论）.这一理论是一阶的,并自然地具有逻辑程序计算上的优越性，利用这一理论可以得到所表示的知识的优先解释.优先解释是依据优先理论进行择优的结果，是标准逻辑程序模型的自然推广，表达了一种与现有工作完全不同的推理机制.研究表明，优先解释这一新的推理机制能够很好地刻画人类在不完全信息下的直觉推理，能够有效地处理矛盾或不完全知识的推理问题.本文的另一项工作是，设计一个基于归纳逻辑程序设计［5,6］方法ILP(inductive logic programming)的学习算法BDI(bi-directional induction)，利用这一算法能够归纳产生应用领域的优先理论.最后通过一个专家系统实例，说明本文理论与算法的应用情况.
+1　优先逻辑程序理论
+　　在不完全信息下进行推理的关键是使知识相对完全化.传统做法是将某种信念施加于整个知识集来扩充知识，这种做法没有考虑各知识个体的可靠性对整体所产生的影响，因此存在各种问题.本节定义一种有关个体知识可靠性及知识解释评价的理论.
+1.1 优先逻辑程序语法
+　　表达可靠性常用的方式有概率、主观信度等.本文采用Pinkas［4］的处理方式，即赋予知识实体一个实数，对其不作特别解释,以表达一种一般框架，这使得许多系统能够轻易地纳入其中.
+　　下面的优先逻辑程序部分地采用了Pinkas的罚逻辑(penalty logic)处理方式，赋予每一程序子句一个实数，这使通过子句得到的结论有了度量.
+　　 定义1. 优先逻辑程序是逻辑程序的扩充，是形如r：P←Q1,...,Qn的扩充子句集.其中r∈R+是正实数，称为优先值；P是原子，称为子句头；Qi是文字，称为子句体（子目标）.
+　　为表述方便，常将扩充子句记为集合形式{P,

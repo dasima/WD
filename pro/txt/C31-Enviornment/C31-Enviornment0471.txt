@@ -1,0 +1,57 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1999年 第19卷　第5期　Vol.19 No.5 1999
+
+
+
+表面活性剂在土壤颗粒物上的吸附行为
+戴树桂　董亮　王臻
+摘要：对两种阴离子表面活性剂和两种非离子表面活性剂在土壤中的吸附行为进行了初步研究.结果表明,表面活性剂在土壤/水体系中的吸附过程很快.表面活性剂浓度接近或大于临界胶团浓度后,吸附等温线为线性.温度升高会降低阴离子表面活性剂的吸附,而增加非离子表面活性剂的吸附.盐度对非离子表面活性剂吸附的影响不显著,但可略微增加阴离子表面活性剂的吸附量.实验结果对表面活性剂增效修复技术的应用有一定参考价值.
+关键词：表面活性剂；吸附；土壤
+中图分类号：X131.3 文献标识码：A 文章编号：1000- 6923(1999)05- 0392- 05
+The adsorption of surfactants on soil.
+DAI Shu-gui, DONG liang, WANG zhen
+(College of Environmental Science and Engineering, Nankai University, Tianjin 300071, China). China Environmental Science. 1999,19(5)：392～396
+Abstract：In this paper, the adsorption of anionic surfactant and non-ionic surfactant on soil has been studied. It is found that the equilibrium of surfactants between soil and water is very fast, adsorption isotherms are linear when the concentration of surfactants was close to or higher than the critical mecelle concentration, adsorption isotherms appear linear the temperature has different effect on adsorption for these two kinds of surfactant: adsorption of anionic surfactant would be decreased with increasing temperature, however,the adsorption of non-ionic surfactant will going up with the temperature is raised.As for the influences of salinity and ionic strength of solution upon the anionic surfactant adsorption were not significant. The experimental results provide reference for the application of the surfactant-enhanced remediation technology.
+Key words：surfactant；adsorption；soil
+　　由于表面活性剂(Surfactant, Surface Active Agent, 以下简称SAA)具有润湿、起泡、乳化、分散、增溶、均染、洗涤等特性而广泛用于工业、农业和日常生活中,并随着废水、废物的排放而进入水体、土壤等环境.许多SAA可与细胞膜发生作用[1],而且对鱼类和水生无脊椎动物具有一定的毒性[2-4];同时微生物降解SAA会消耗水中大量的溶解氧;又由于含氮、磷的SAA会造成水体的富营养化等原因,因此环境工作者一直认为SAA是一种有害物质.经过对SAA在环境中作用的进一步研究,发现SAA的增溶特性以及降低界面张力的作用增加了土壤中憎水性有机污染物的流动性[5-7],为从土壤中消除有机污染物提供了一条新途径,即SAA增效修复技术(Surfactant-Enhanced Remediation Technology),此外,SAA的存在有利于吸附态憎水性污染物的解吸,并进入土壤溶液相,从而提高了污染物在自然环境中的降解速率[8,9].
+　　虽然上述方面是近年研究SAA在环境中作用的热点,但SAA在土壤中的吸附行为还未见报道.本文以用量最大的阴离子SAA和非离子SAA为研究对象,研究了SAA在土壤颗粒物上的吸附行为以及作用规律.
+1　实验部分
+1.1 实验材料
+　　将采集到的土壤自然风干,除去沙砾、草杆等,研碎后过20目(0.84mm)筛.土壤为中粘土,粘粒(<0.01mm)和沙粒(>0.01mm)含量分别为60% 和40% ,pH值为7.3,有机质含量为2.45% .所选的阴离子和非离子SAA见表1.
+1.2 实验方法
+1.2.1 SAA的纯化 阴离子SAA以水为溶剂重结晶提纯;非离子SAA利用析相法提纯.
+1.2.2 SAA的测定 阴离子SAA可与阳离子染料亚甲蓝生成蓝色的离子对化合物,生成的显色物被三氯甲烷萃取后,在625nm处测量吸光度,从吸光度-浓度标准曲线上可计算出阴离子SAA的浓度.非离子SAA在紫外区有最大吸收波长,通过测定该波长下的吸光度也可计算出非离子SAA的浓度.
+表1 所选阴离子和非离子的SAA
+Table 1 Surfactants used in this research
+
+类型商品名名称分子量
+阴离子SAASDS十二烷基硫酸钠288
+SDPS十二烷基苯磺酸钠348.5
+非离子SAA乳化剂op辛基苯基聚氧乙烯醚646.9
+Tween80聚氧乙烯山梨糖醇酐单油酸酯1310
+
+1.2.3 吸附速率曲线的测定 配制一定浓度的SAA溶液,加入土壤后,开始计时并振荡(15r/min),按先密后疏的原则,分不同时段采样测定.
+1.2.4 吸附等温线的测定 在125mL磨口锥形瓶中配制一系列浓度的SAA溶液,加入一定量的土壤,土、水比1∶8,恒温25±1℃,振荡过夜.取平衡后的水相离心20min(3000r/min),取一定量上清液测定SAA的浓度.每个样品作空白对照,差减法计算土壤颗粒物上吸附SAA的量.
+1.2.5 温度、离子强度对SAA吸附的影响 改变测定吸附等温线时的温度和离子强度,重复1.2.4的步骤.
+2 结果与讨论
+2.1 土壤中可溶性有机物对非离子SAA测定的干扰
+　　从图1中可看出乳化剂op和Tween80的最大吸收波长分别为275和205nm,而土壤中可溶性有机物在小于230nm的紫外区有较强的吸收、干扰Tween80的测定.为减小其造成的误差,实验中乳化剂op和Tween80的测定波长分别定为275和250nm,同时以土壤水溶液为参比,既保证了SAA有较大的吸收,同时尽量减小了土壤中可溶性有机物带来的干扰.
+
+图1 乳化剂op,Tween80及土壤中可溶性有机物在紫外区的吸收曲线
+Fig.1 UV spectra of TritonX-100,Tween80 and soluble organic materials in soil
+2.2 SAA在土壤颗粒物上的吸附速率
+　　SAA和环境中其它有机污染物不同,虽然大多数憎水性有机污染物进入水体或土壤后,主要归趋是被吸附于土壤、底泥或悬浮颗粒物上,但达到平衡的时间相对较长,而SAA具有在界面间迅速分配的特性,因此吸附平衡时间短.从图2,图3中可明显看出SAA在土壤颗粒物上的吸附是非常迅速的.阴离子SAA的平衡时间为20～40min;非离子SAA的平衡时间为50～100min.
+
+图2 十二烷基硫酸钠和十二烷基苯磺酸钠吸附速率曲线
+Fig.2 Adsorption rate curves of SDS and SDPS
+　　SAA吸附于土壤颗粒物之后,占据了一定的吸附位点,可能会对其它污染物的吸附造成一定的空间位阻,也可能通过改变土壤颗粒物表面的机械性质、电性质以及化学性质,而增加其它污染物的吸附.可见SAA的存在会对土壤的吸附行为造成很重要的影响.
+
+图3 乳化剂op,Tween80吸附速率曲线
+Fig.3 Adsorption rate curves of TritonX-100 and Tween80 
+2.3 SAA的吸附等温线
+　　SAA在BaSO4、Al2O3等颗粒物上的吸附已有许多人做过研究[10].由于这些颗粒物的组成较简单,故吸附机理和过程不复杂,SAA的吸附等温线同Langmuir型吸附等温线吻合较好.但SAA在天然土壤颗粒物上吸附却很复杂,影响吸附的因素相互协同,导致吸附等温线不规则[11,12].
+　　Bruce J.B.[13]和Shaobai S.[14]等人发现非离子SAA在土壤颗粒物上的吸附等温线同Freundlich方程很相近.
+CS =K.CWn　　(1)
+式中:CS为SAA在土壤颗粒物上的浓度;CW为SAA在水溶液中的浓度;K、n均为常数.
+　　在研究中所用SAA吸附等温议程列于表2中.这种吸附等温方程适于描述低浓度(<CMC) SAA的吸附.当SAA浓度接近或大于CMC后,溶液中出现胶团,Freundlich方程中的常数项n逐渐增大并接近1,吸附等温线呈线性.随着SAA浓度的进一步提高,吸附等温线向下弯曲.导致SAA浓度增高而吸附量减小的原因是高浓度的SAA破坏了土壤颗粒物上的吸附位点.土壤颗粒物是矿物质

@@ -1,0 +1,53 @@
+环境科学学报
+ACTA　SCIENTIAE　CIRCUMSTANTIAE
+1998年5月第18卷第5期科技期刊
+简　　报
+紫外辐射增强对大豆影响的进一步分析*
+郑有飞　简慰民　李秀芬　旦　巴
+(南京气象学院应用气象系，南京 210044)
+
+关键词　紫外辐射；大豆；影响.
+
+EFFECT OF ENHANCED SOLAR ULTRAVIOLET RADIATION ON SOYBEAN
+
+Zheng Youfei,Jian Weimin,Li Xiufen,Dan Ba
+(Nanjing Institute of Metecorlogy,Nanjing 210044)
+
+ABSTRACT　Influences of enhanced ultraviolet radiation (UVR) and various environmental factors including solar light,heat and water on soylean were investigated.The results show that increased UNR can restrain the growth of soybean and the response varies with climatic conditions.While in stress state,some of the climatic factors can causess creening or weakening effects on the UVR impact to some extent.
+Keywords　ultraviolet radiation,soybean,influence,ambient factors.
+
+　　随着大气臭氧层的不断减薄，地表接受的紫外辐射量不断增加，预计未来六十多年内，地表紫外线辐射量将增加4%―20%［1，2］.同时，随着大气温室气体的不断增加，导致全球气温升高［3］，主要农业区降水量减少，出现干旱天气［4］，这些都将对农业生产产生巨大影响.研究表明，在紫外辐射(UVR)增加的情况下，许多作物生长受到抑制［5］，但这些研究一般只注重UV辐射单独作用于作物时产生的直接影响，而对UV辐射和环境条件共同作用产生的综合影响缺乏研究，尤其缺乏未来气候因子发生变化时，紫外辐射增加对农作物影响的研究，因而其研究结果存在一定的局限性.本文在分析紫外辐射增加对大豆影响及大豆作物紫外生物学效应基础上［6，7］，探讨了UV辐射增加与环境因子(光、温、水等)的共同作用对大豆的复杂影响.
+
+1　材料与方法
+　　在1992―1993年紫外辐射对大豆影响的单因子试验［6］的基础上，又于1996年4月在南京气象学院农业气象试验站内进行了复因子试验.实验土壤肥力中等，供试品种为大豆宁镇一号.采用大田与盆栽相结合的方式，三叶期开始人工增加UV辐射，至结荚期UV处理终止.紫外光谱区域为290―400nm,近似于太阳UV辐射光谱区域，照射时间为6h(09:00―15:00)，移动式紫外灯架于大豆植株顶上40cm处.试验设两个紫外辐射水平处理：CK(自然光照)；T为在自然光照基础上增加UV辐射，其强度为0.35W*m-2，相当于南京地区4、5月份平均UV辐射强度的5%.每个UVR处理水平又设水分正常和水分亏缺处理.在测试田，还在加拿大产PGW-36型人工气候箱内进行变温光处理.自UV处理日起定期测量株高、总复叶数、叶面积、干物重、产量、净光合速率、气孔传导率、蒸腾速率，测定仪器为美国Li-cor公司产Li-6200便携式光合系统.
+
+2　结果分析
+2.1　其他气候条件正常时，UV辐射增加对大豆的影响
+　　虽然试验的紫外光辐射较弱，但大豆紫外辐射的生长有明显抑制(见表1)在形态上表现为株型缩小，植株矮化.同时增加UV辐射也抑制了大豆叶片的扩充与扩大，导致大豆叶面积减小.
+表1　其他条件正常时，UV辐射增强对大豆影响及对照比值(%)
+Table 1 UVR effect on the soybean cultivar and its ratio in comparison (%) to contral
+
+UV处理株高*, 
+cm (%)叶面积*,
+cm2/株(%)复叶数*,
+张/株(%)干物重,
+克/株(%)籽粒数,
+粒(%)粒重，
+克/粒(%)
+CK42(100)987.8(100)23.0(100)26.4(100)28(100)2.4(100)
+T33.5(79.8)664.8(73.9)17.0(79.8)15.4(58.3)16(57.1)1.4(58.3)
+
+　　*为旁枝期测定资料
+
+　　UV辐射的增强，对大豆生理活动亦有影响，导致大豆净光合速率、蒸腾速率和气孔传导率的下降(见表2)，而UV辐射对大豆光合作用的抑制程度明显大于对蒸腾作用的抑制程度.从试验看，没有观测到在UV辐射增加情况下，大豆叶片出现明显的急性伤害，因此可以认为UV可能通过抑制气孔传导或使气孔阻力增大，从而使CO2传导率和固定速率下降.试验中观测到气孔阻力增大，引起了蒸腾速率的降低，证明了UV辐射增加引起气孔开度减小是光合生产力下降的主要原因之一［5］.
+表2　UV辐射增强对大豆生理活动的影响*
+Table 2 Influence of enhanced UVR on soybean physiological activity
+
+UV处理净光合速率，μmol*(CO2)*m-2*s-1(%)蒸腾速率，mmol*(H2O)*m-2*s-1(%)气孔传导率，cm*s-1(%)
+CK20.965(100)0.0158(100)2.642(100)
+T12.857(61.3)0.0142(81.9)1.887(77.6)
+
+　　*为开花期测定资料
+
+　　试验结果表明，UV辐射增加导致大豆生物学产量、经济学产量的下降，使大豆干物重、籽粒重量均下降.其原因就是光合有效面积减少，单叶净光合速率下降，引起植株光合能力下降.UV辐射增加对农作物影响可通过一定公式加以估算［6］：
+y=y0e

@@ -1,0 +1,22 @@
+航空材料学报
+JOURNAL OF AERONAUTICAL MATERIALS
+1999年　第19卷　第1期　Vol.19　No.1　1999
+
+
+
+SiC颗粒影响SiCp/Cu复合材料
+物理性能的研究
+曾　强　　钟涛兴　　王荣明 
+摘要： 运用多元回归分析方法，研究了SiC颗粒含量、粒度及纯度对SiCp/Cu复合材料热膨胀系数和导热率的影响规律。研究表明，影响材料热膨胀系数和导热率的主要因素为SiC颗粒含量。随着SiC颗粒含量的增加，复合材料的热膨胀系数和导热率降低; SiC颗粒越小，热膨胀系数越低,而导热率越好;适当增加杂质含量有利于获得较高的导热率。
+关键词： SiCp/Cu 复合材料； 热膨胀系数； 导热率
+中图分类号： V257　　　文献标识码：A　　文章编号： 1005-5053(1999)01-0058-05
+Effects of SiC particle on physical properties
+for SiCp/Cu composites
+ZENG Qiang　　ZHONG Tao-xing　　WANG Rong-ming
+(1.Institute of Aeronautical Materials， Beijing 100095， China； 2.School of Materials Science and Engineering,Beijing Polytechnic University, Beijing 100022, China)
+Abstract： Multiple regression analyses were formulated to explore the influence mechanism on the coefficient of thermal expansion and thermal conductivity of the SiCp/Cu composites by three deterministic factors, which were content, granularity and purity of the SiC particles. The results revealed that the key factor to affect coefficient of thermal expansion of the composites was the content of the reinforcements. The coefficient of thermal expansion and thermal conductivity of the composites decreased with the increase of SiC particles. However, small reinforcements lead to decreased thermal expansion coefficient and increased thermal conductivity . Higher thermal conductivity can also be obtained by proper impurity in the composites.
+Key words: SiCp/Cu composites； coefficient of thermal expansion； thermal conductivity
+
+　　随着微电子学的发展，封装技术在器件制造中起着越来越重要的作用，对电子封装材料也提出了越来越高的要求，需要它具有低的热膨胀系数(CTE)和高的导热率(TC)［1］。Urquhart等的研究表明，采用SiC颗粒增强Al基复合材料作为电子封装，可大大降低材料的热膨胀系数，但基体的导热率略有下降［2］。随着电子封装材料地位的日益重要，需研制具有更低热膨胀系数和更高导热率的新一代电子封装材料，选用Cu代替Al制备的SiCp/Cu复合材料将是极具竞争力的侯选材料之一。这是因为Cu的热膨胀系数比Al低，但导热率比Al高，而国际上有关这方面的报导很少。本文研制了SiC颗粒增强Cu基复合材料，并对影响该复合材料热膨胀系数、导热系数的3种影响因素进行了多元分析。
+1　实验方法
+　　实验用SiCp/Cu复合材料采用不同粒度（5μm，10μm，20μm）的SiC粉和Cu粉，在微粒球磨机中混合均匀后，于80℃烘干箱中烘干，再在四柱液压机上将粉末预压成

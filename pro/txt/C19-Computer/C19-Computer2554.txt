@@ -1,0 +1,43 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第19卷 第3期  Vol.19 No.3 1999
+
+
+
+字符粘连及字线相交的分割与识别方法
+邹荣金　蔡士杰　张福炎　苏丰　陈冀兵
+摘　要　描述了工程图纸矢量化中多向粘连字符及字线相交的分割算法与识别方法.提出不同情况下字串的定向计算方法,通过粘连字块的特征矢量计算和迭代计算实现字块的分割.运用波形投影方法解决了粘连字符及字线相交情况下的字间切割问题,使工程图多向字符识别精度显著提高,该算法对局部退化状态下的字符识别具有良好的抗干扰性.
+关键词　计算机图形学,工程图纸识别,图像分割,识别.
+中图法分类号　TP391
+Segmentation and Recognition Methods of Adhesion and
+Intersection Character String with the Line
+ZOU Rong-jin CAI Shi-jie ZHANG Fu-yan SU Feng CHEN Ji-bing
+(Department of Computer Science and Technology Nanjing University Nanjing 210093)
+(State Key Laboratory for Novel Software Technology Nanjing University Nanjing 210093)
+Abstract　 The segmentation and recognition methods of the omnirange character string which is adhered or intersected with the lines in the engineering drawing vectorization are described in this paper. The directional calculation methods of the string are also supplied on different drawing distribution cases, the segmentation of the adhered string between characters is also realized by calculating the feature vectors of the adhered local string block image and using the iteration approachment algorithm. The authors use the projection method to solve the segmenting problem of the characters in the case of character adhered or intersected with the lines, which made the recognition accuracy of the omnirange string increased. The algorithm has the antijamming property for the local degradation character recognition in the engineering drawings.
+Key words　Computer graphics, engineering drawings vectorization, image segmentation, recognition.
+　　工程图纸的自动识别技术是目前学术界研究的一个热点.随着大幅面工程扫描仪的出现,研究领域和应用领域都对此十分重视,同时,多媒体技术的发展越来越要求计算机能够自动读入各种文字、图表、声音等信息,以减轻人们在计算机前的输入工作量.由于近年来计算机DPU和GUI的高速发展,文本OCR技术在走向应用和普及,而手写输入目前还未达到实用阶段,尤其是手写文稿的自动识别还有相当一段路要走,使用手写输入板对非计算机人员有一定帮助,但对一般会操作计算机的人员并不方便.工程图及图表的计算机自动识别、理解这方面的研究有很大潜在的应用价值,①其表现形式较为客观和准确,与计算机三维视觉相比难度要小;②以单色图像表示,数据量相对较小,分析识别的精度比较高;③直接面向产业界,对于工程设计、图档管理和GIS应用等领域有直接的经济价值.
+　　目前,工程图自动输入处理技术的研究［1～4］主要是使用细化的算法.虽然细化在一定程度上可获取骨骼线,但会导致大量信息的丢失,尤其对于图纸上各种不同对象形态的整体理解较为困难.这些文献中对工程图字串的识别未作深入研究,文献［1］使用连通域进行了字串方向定位,这种使用连通域中心线定向的方法在字体形状变化较大时会产生较大的方向误差,而且不能处理和识别字串粘连、字线粘连及字线相交的情况.据此，我们作了多种试验来分割字的粘连情况,提出从连通群的特征矢量出发,逐次逼近解求字串的方向,并采用纵向投影技术实施字符的分割,对字线粘连、字线相交的分割算法作了详细描述.
+1 工程图纸扫描图像中字符的分类与定向
+　　字符的提取是以连通域为基础的,首先采用八连通算法将字块提取出来,依据连通域的大小进行分割和分类,一般先分为图形、字符和噪声3类.对于大字符及小图形分类上的交叉情况,其分类方法需要依据局部图像的矩的数学特性.
+1.1 相关大小字符、图形的数学特征与分类
+　　对于一幅二值化图像｛f(x,y);x,y=0,1,2,...,N-1｝,可定义一组相关数字特征量作为局部图像几何形状的判定因子与类别所属:
+　　（1）　质心
+(,)=(M10/M00,M01/M00),其中Mpq=ΣΣf(x,y)xpyq.(1)
+　　（2）中心矩
+mpq=ΣΣf(x,y)(x-)p(y-)q,(p=0,1,2;q=0,1,2).(2)
+　　（3） 密度
+D=m00/2S（其中S为连通区域中的像素总点数）.(3)
+　　（4） 扁度
+ .(4)
+　　这里,扁度e定义为连通区域的长短轴之比.各阶矩mpq反映了字块的内部特征,不同形态的字符、图形其连通域的质心所处的相对位置(,)、密度D及扁度e不尽相同.一般情况下,在搜索连通域时将上述几项关键因子计算出来作为分类依据.例如,字符的质心通常位于连通域中心,图形则不然;而密度高的一般为字符连通区域,密度低的则为图形连通区域;字符的扁度通常在0.5～1.5之间,图形则相对变化较大.
+1.2 字串的定向与方向纠正迭代算法
+　　工程图中字符和数字的标识呈现多种不同的方向,要识别这些字符串,首先要从整个图像中将有意义的字符提取出来.工程图中分类出来的字符主要表现为两种状态:独立连通区和粘连.对于独立字符,它们具有各自独立的连通域,利用八连通递归算法可以取出每一个字符连通区的点阵,利用连通域的相邻关系,使其组成一个连通域链,链的每一个节点代表一个字符,并且每一个节点具有指向前一个字符节点的指针和指向后一个字符节点的指针,在确定前后相邻字符时需要考虑工程图中规定标识的可能存在位置.这样，在分析单个字符连通区特性时,就自然形成了串链.
+　　工程图中的多向非粘连字串的识别,其定向问题是影响字串识别精度的关键因素.为此,首先建立字符串方向的严格定义:字符串的方向为工程图中字串书写的基线方向.这种基线的定义方式与AutoCAD中的DTEXT或TEXT命令绘图方式指定基线方向并沿基线方向书写是一致的,由于不同的字符其包围盒会不相同,特别是大小写字符.尽管如此,它们的基线却是一致的.遗憾的是,在图像中通过连通群分析一般只能获得连通字符图像块的连接关系,无法直接获取字符串的基线方向.由于字符集图像中各个字符的形状变化较大,使用不同的连通域参数（如轮廓、质心等）进行定向都会产生一定的定向误差.
+　　本文首先是使用字符图像块的包围盒中心（(xmin+xmax)/2,(ymin+ymax)/2）作为字符的定位点,利用首尾字符的中心点连线作为字符串的近似或初始方向.
+对于长字串(n＞10),由于第一个字符的中心与最后1个字符的中心相距较远,利用其首尾字符的中心连线确定字符串的方向来取代字符的基线方向误差较小,设字符的中心点连线的方向为Lc,字符串的基线方向为Lb,则在这种情况下,.对于中等长度字符串(3＜n≤10),采用最小二乘法确定字符串的方向一般具有较高的精度.
+　　对于短字符串(n≤3)使用上面两种方法都会产生较大的误差.如图1所示,如果已知每个字符的理想串包围盒,就很容易确定串的方向（如图1(a)所示）.这时包围盒中心连线方向Lc就是该串基线的方向Lb,即Lc=Lb.而在实际计算中,一般只能获得串中每个字符的连通域表示及其链接关系,使用连通域包围盒的中心连线所确定的串方向与字的形态有很大关系.换言之,也就是用这种方法表示的方向只能确定一个串的初步方向Lc,要获得字串基线的精确方向b,需旋转c,本文采用逐次迭代的直线移动方法快速确定字串的基线方向Lb.设字串中各字连通域的包围盒为
+
+
+(a) 理想串包围盒与基线方向b　(b) 包围盒中心连线方向c　(c) 方向误差ε=c-b
+图1 短字串用首尾字包围盒中心连线表示串方向产生的方向误差

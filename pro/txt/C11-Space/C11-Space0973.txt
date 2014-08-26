@@ -1,0 +1,26 @@
+航空材料学报
+JOURNAL OF AERONAUTICAL MATERIALS
+1999年　第19卷　第1期　Vol.19　No.1　1999
+
+
+
+铬硅共沉积及渗后热处理对不锈钢
+力学性能的影响
+卫　平　　万　如
+
+摘要： 用原位化学气相沉积方法在Cr17Ni2钢表面共渗铬硅，通过工艺优化，获得了含铬27wt%、含硅2wt%左右的渗层，渗层厚度约为120μm，渗层为单相的α固溶体。共渗后的热处理工艺对渗后材料的力学性能有较大的影响。
+关键词： 原位化学气相沉积； 卤化物活化剂； 力学性能
+中图分类号：TG142.71　　　文献标识码：A　　　文章编号：1005-5053(1999)01-0051-07
+The effect of codeposition of SiCr and heat-treatment after
+codeposition on mechanical properties of stainless steel
+WEI Ping　　　　WAN Xiao-ru
+(Beijing University of Aeronautics and Astronautics， Beijing 100083， China)
+Abstract： In-situ codeposition of Cr and Si into steel Cr17Ni2 has been achieved using pack cementation. Through optimizing the processing parameters，a coating containing about 27wt% Cr and 2wt% Si has been obtained, and the layer thickness is about 120μm. Heat-treatment process after codeposition has great effect on mechanical properties.
+Key words: in-situ chemical vapor deposition； halide activator； mechanical property
+
+　　不锈钢虽然在许多介质中有良好的耐蚀性能,但在某些特殊条件下，其耐蚀性仍然不够，如熔盐、燃气等恶劣环境。提高不锈钢中铬的含量对提高其在恶劣环境中的抗腐蚀性能有利，但钢中铬含量的提高会给钢的力学性能带来不良的影响,如韧脆转变温度的提高，而且高铬钢的熔炼也比较困难。采用原位化学气相沉积方法(一种采用卤化物作活化剂的改进了的包渗工艺，又称Halide-Activated Pack Cementation) 能同时在不锈钢表面共沉积2种金属元素铬硅，使得材料的抗腐蚀性能有很大的提高。Rapp和Harper［1，2］等人对原位化学气相沉积这种表面改性方法做了大量的研究，他们用这2种方法在某些低碳钢和低碳合金钢上共渗铬硅，获得了十分理想的渗层［3］。国内的一些研究者［4，5］试用纯铬、硅粉取代铬硅中间合金，在某些中碳钢、超高强度钢和不锈钢上共渗铬硅，取得了较好的共渗效果。
+　　目前，国外对金属材料表面共渗的研究大都侧重于渗后材料的耐磨性和耐蚀性等，对于共渗过程及渗后热处理工艺对材料力学性能的影响报道较少。本文在前人研究成果的基础上对这个问题进行了探索，力图找到一种合适的共渗工艺及热处理工艺，使得材料经共渗以后不仅具有优良的耐蚀性能，而且有良好的力学性能。
+1　材料及试验方法
+1.1　试验材料
+　　试验用的基体材料为Cr17Ni2钢，材料成分(wt%)为：C0.14,Si0.52,Mn0.56,Cr17.21,Ni2.37,S 0.001,P 0.015)。
+　　小试样制成

@@ -1,0 +1,30 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+卫星大型挠性天线弹性振动
+抑 制 的 研 究
+齐春子　吕振铎
+(北京控制工程研究所*北京2729信箱*100080)
+　　摘　要　论文从工程实践角度探讨了具有大尺寸(直径几米～几十米)和高精度(0.05°)的挠性天线指向控制问题。在借鉴和改进有关抑制挠性天线弹性振动研究的基础上,初步设计了星―地回路的挠性天线指向控制方案。最后,通过分析数值仿真结果,给出了提高挠性天线指向精度的主要因素。
+　　主题词　挠性结构　天线指向精度　弹性振动抑制
+THE STUDY OF ELASTIC VIBRATION SUPPRESSING 
+OF LARGE FLEXIBLE ANTENNA ON SATELLITE
+Qi Chunzi　Lü Zhenduo
+(Beijing Institute of Control Engineering*P.O.Box 2729,Beijing*100080)
+　　Abstract　The paper studies the pointing control problem of flexible antenna which has large size(diameter from several meters to tens of meters)and requires high pointing accuracy(0.05°).One of the flexible antenna pointing control method is given in open loop by analyzing and improving the study of elastic vibration suppressing.Finally,after the numerical simulation,the main factors to acquire high antenna pointing accuracy are summarized.
+　　Key words　Flexible structure　Antenna pointing accuracy　Elastic vibration suppressing
+1　研究背景及问题的指出
+　　本文以具有大型挠性天线的通讯卫星为研究背景,一般而言,这类卫星的特点是具有较大的尺寸(直径几米～几十米),要求较高的指向精度(0.05°),而通常三轴稳定卫星的姿控精度较之低一个数量级,由此产生了挠性天线指向与星体姿态保持的复合控制问题。
+　　在复合控制中,有两大难点有待解决:
+　　①解耦控制;②弹性振动抑制
+　　无论是天线指向跟踪,还是卫星姿控,都会激励挠性天线的弹性振动,由于星上天线阻尼较小,因此,如不加以控制,很难满足高精度指向的要求。弹性振动的抑制可以是开环,也可以是闭环的。开环控制较之闭环控制更简便易行,设计思路是使控制频率避开具有较大振动模态分量的挠性天线低阶频率,从而保证天线指向控制的开环稳定性,为下一步跟踪指向闭环控制提供条件。
+　　本文从工程应用角度,重点探讨了复合控制系统中的一个子课题――开环弹性振动抑制问题,并通过系统的结构参数设置,使挠性天线―星体系统的耦合作用可忽略,有关解耦控制另行研究。
+2　挠性天线及星体动力学方程
+　　可以将挠性天线的运动处理为对刚性卫星的扰动作用,挠性天线运动与刚性卫星运动二者之间通过耦合系数连接,用混合坐标法得到既有刚性星体的姿态角,又有模态坐标的混合方程组［1］。
+　　其中,星体姿态控制系统取为三轴稳定卫星正常模型下的偏置动量控制系统［2］。取三轴稳定卫星的主惯量轴为卫星本体坐标系,天线坐标系与星本体坐标系的初始状态一致。
+　　星体:
+
+　　挠性天线:
+
+　　其中,卫星相对轨道坐标系的姿态由滚动角

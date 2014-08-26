@@ -1,0 +1,9 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年 第36卷 第8期 Vol.36 No.8 1999
+
+
+
+用结构性质分开复杂类
+吕义忠
+摘　要　NP(或Co-NP)是否包含在P/poly中的问题迄今仍为开问题. 80年代初证明了如果NP

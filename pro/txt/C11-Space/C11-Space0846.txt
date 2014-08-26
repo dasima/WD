@@ -1,0 +1,32 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1999年　第14卷　第1期　VOL.14　No.1　1999
+
+
+
+转子―齿轮联轴器系统的
+弯扭耦合振动研究
+　　李　明　张　勇　姜培林　虞　烈
+摘要：根据内齿轮副的啮合条件和拉格朗日方程，在旋转坐标系中建立了转子―齿轮联轴器系统的弯扭耦合振动方程。对方程进行数值积分求解，结果表明，对于对中良好的轴系，弯扭耦合与弯扭解耦时其瞬态响应的低阶频率值非常接近；对于不对中轴系，弯扭耦合会产生偶数倍频的弯曲振动分量和奇数倍频的扭转振动分量。
+主题词：转子　齿轮　联轴器　振动
+分类号：TH113
+RESEARCH ON COUPLED
+LATERAL TORSIONAL VIBRATION
+OF ROTOR-GEAR COUPLING SYSTEM
+Li Ming，Zhang Yong，Jiang Peilin，Yu Lie
+（Institute of Lubrication Theory & Bearing,Xi'an JiaoTong University,Xi'an　710049)
+ABSTRACT　Based on the meshing condition of the gears,the constraint equation describing relations between the displacements in the centers and torsional angular displacements of the mating gears is derived.The coupled lateral and torsional vibration model of a rotor system with a gear coupling is developed with Lagrange's Equation and the constraint equation in rotating reference frames.The system of two Jeffcott rotors connected by a gear coupling has been analyzed numerically and the results show that the transient response frequency of aligned rotors approximately equals to the uncoupled model in lateral vibration,but the even-integer multiples of lateral vibration and the odd-integer multiples of torsional vibration are found out by the coupled model for the misaligned rotors.
+Key　Words　Rotors　Gears　Couplings　Vibrations
+1　前　言
+　　在文献［1，2］中，均采用了几个基本假设，其中之一是“联轴器各内外齿承载相同”，这个条件隐含了这样一个事实：内齿套轴线和外齿轮轴线是对中的。而在实际工程中存在着不对中或者对中不良的情形，在不对中时，只有在啮合线上的齿对才接触［3］，因此只有少数几个齿对承载。在某些情况下，即使对中良好，由于齿形或啮合的误差也会发生上述情况，文献［4］分析了齿轮联轴器轮齿的误差后得出了一套计算公式，通过计算可知，当模数为3，齿数等于56时，其极限情况只有不到4对齿接触。工程实际的分析和试验［2，5，6］表明：一些采用齿轮联轴器连接的转子系统会程度不同地产生倍频的振动分量，而这一分量的出现正是齿轮联轴器不对中的典型特征，因此有必要进行相应的分析。本文根据内齿轮副的啮合条件和拉格朗日方程，在旋转坐标系中建立了转子―齿轮联轴器系统的弯扭耦合振动方程。最后进行了数值计算、频谱分析和相应的讨论。
+2　渐开线直齿内齿轮副啮合关系分析
+　　设Si(oixiyizi)坐标系是与内齿套固连的动坐标系，xi轴与内齿套某一齿的一侧齿形相交于基圆(半径为rb)上，zi轴与内齿套轴线重合，oi为坐标原点。设S(oxyz) 坐标系为固定坐标系，如图1所示。二坐标系之间的关系为：
+x=xicos（γ+θi）-yisin（γ+θi）+xji ， y=xisin（γ+θi）+yicos（γ+θi）+yji(1)
+　　在动坐标系中，渐开线直齿齿面上任意一点P的齿面方程（内齿套）为：
+xi=rb(cosγi+γisinγi)　　，　　yi=rb(sinγi-γicosγi)　(2)
+式中γi=α+βi，rb为基圆半径。将（2）式代入（1）式得：
+(3)
+
+
+图1　啮合关系分析
+　　在S(oxyz)坐标系中，内齿套齿面上p点的法线向量和速度分别为：

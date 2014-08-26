@@ -1,0 +1,29 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1999年　第14卷　第1期　VOL.14　No.1　1999
+
+
+
+扩压器叶片形线逆命题设计的一种新方法
+　　樊会元　王尚锦　席　光
+摘要：应用遗传算法结合神经网络技术通过对候选叶片表面速度分布与目标速度分布之间误差的极小化，求解给定表面速度分布下的扩压器叶片形线。叶片形线利用Bezier曲线参数化表示，候选叶片形线的流场分析由BP神经网完成。所提出的方法用于一离心压缩机平行直壁扩压器的二元等厚叶片设计，结果显示该方法是有效和可行的。
+主题词：扩压器　神经网络　叶片　设计
+分类号：TH452
+A NEW INVERSE DESIGN METHOD
+OF DIFFUSER BLADES PROFILE
+Fan Huiyuan，Wang Shangjin，Xi Guang
+(Xi′an Jiaotong University, Xi′an, 710049)
+ABSTRACT　A genetic algorithm combined with a neural network technique is proposed to search for turbomachinery diffuser blade profile under the condition of a given velocity distribution on its surface.Such a new inverse method works through minimizing the error between surface velocity distribution of candidate blades and the target velocity distribution.For ease in employing genetic algorithm,the blade profiles searched are parameterized with Bezier spline curves.The flow analysis of the candidate blades is carried out by BP neural networks which have been trained with a set of samples.The proposed approach is demonstrated through the application to a diffuser with two-dimensional height-and thickness-constant blades.The simulations show that the new method is not only feasible,but also reliable and effective.
+Key　Words　Diffusers　Neural networks　Blades　Design
+1　引　言
+　　透平机械扩压器叶片的逆命题设计一般是给定叶片表面速度分布（下称SVD（Surface Velocity Distribution))或压力分布，通过一定方法直接构造叶片。最成熟的逆命题方法是保角变换类方法，但它们仅限于处理平面势流问题。近几年较多被采用的逆命题方法还有最优控制和最优化类方法［1，2］。由于这些方法多为梯度类方法，因而不能有效处理多极值和非连续目标函数问题(流体机械逆命题设计问题多属此类问题)。研究者们一直在寻找更好的逆命题设计方法。遗传算法(GA)是一种模拟自然界中生物进化机制的最优化方法。由于其具有“鲁棒性”、并行性、全局收敛性等显著特点，GA被广泛应用于许多工程研究领域，特别是近年来在流体机械研究领域的应用也日益增多［3～5］。神经网络技术是模拟生物神经元结构和人脑机制的一种计算策略，目前在流体工程中的应用也初见端倪［6，7］。本文应用GA结合神经网络技术实现透平机械扩压器二元叶片逆命题设计。在叶片目标SVD给定情况下，一个由染色体表示的个体(候选叶片)组成的种群在GA算子的作用下朝目标SVD与候选叶片SVD之间误差的极小化方向进化，最终求得具有目标SVD的叶片形线。在GA进化中，两个经训练的误差反向传播神经网络(BP网)用于完成对候选叶片形线下扩压器的流场计算。BP网训练所需的样本由搜索空间中人为构造若干叶片形线以及采用已有程序对相应流场进行分析而获得。所提出的方法应用于一实际离心压缩机平行直壁扩压器的等厚叶片设计。结果显示，只要任给一个可行SVD，该方法可以成功的求得满足要求的叶片形线。
+2　GA的应用
+　　GA通过对由若干个体组成的种群利用基本生物进化准则进行进化来求解问题。现就扩压器叶片形线逆命题设计问题，建立应用GA的求解方法。
+2．1　叶片形线参数化及编码
+　　当GA被用于求解一个实际的设计问题时，首先须将每一个设计变量以有限长字符串编码。设计变量的某组编码头尾相接组成的长串即为代表某一个体（候选设计）的染色体。本文中个体为候选叶片形线，叶片形线被参数化为由很少的变量表示。本文采用Bezier样条曲线来参数化叶片形线。为此，物理平面上的环列扩压器叶栅须由(1)式被保角地变换为映象平面
+
+
+图1　映象面上叶片形线及参数示例
+上的直列叶栅。
+Z=log(Z′／R1)／log(R2/R1)　(1)
+式中：Z′代表物理平面，R1和R2代表扩压器进口和出口半径，Z代表映象平面。候选叶片形线首先在映象平面产生，然后，由(1)式的逆变换变回到物理平面作为实际候选叶片形线。设在映象平面叶片形线由4次Bezier曲线刻画，因此其形状可由相应的Bezier5边形确定。如图1所示，设Bezier5边形的顶点为P0(x0，y0)，P1(x1，y1)，…，P4(x4，y4)，则Bezier曲线可以由一个4次Bernstein多项式表示为Q(t)=

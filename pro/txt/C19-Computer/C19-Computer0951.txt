@@ -1,0 +1,53 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1997年 第23卷 第5期 Vol.23 No.5 1997
+
+
+
+二阶分布参数系统的稳定性和能控性1)
+罗跃虎　冯德兴
+摘要　讨论Hilbert空间上两个二阶线性系统的稳定性和能控性，在较一般的假设下，得到了这两个系统的指数稳定性和精确能控性，渐近稳定性和近似能控性之间的关系.最后，给出线性系统渐近稳定的一个充分必要条件.
+关键词　渐近稳定性，指数稳定性，近似能控性，精确能控性.
+STABILITY AND CONTROLLABILITY FOR SECOND
+ORDER DISTRIBUTED PARAMETER SYSTEM
+LUO YUEHU　　FENG DEXING
+(Institute of Systems Science, Chinese Academy of Sciences, Beijing 100080)
+Abstract　The stability and controllability for two second order systems are considered. Under some general assumptions, the useful relation between exponential stability and exact controllability and the relation between approximate controllability of the two second order systems are obtained. Finally, a sufficient and necessary condition for a linear system to be asymptotic stable is given. 
+Key words　Asymptotic stability, exponential stability, approximate controllability, exact controllability.
+1　引　言
+　　设H，U是Hilbert空间，用L(U,H)表示U到H的有界线性算子全体构成的Banach空间，并为简单起见，记L(H)=L(H,H).设A为H上的正定自伴算子，B是H上的线性算子，D是从U到H的线性算子.当B∈L(H)是H上非负对称算子，对任何实数α＞0，B的α次幂Bα存在且仍是非负的.用D(A)和R(A)分别表示算子A的定义域和值域，并用TA(t)表示由A生成的C0半群.
+　　考虑H上如下两个线性系统：
+　　　(1)
+　　　(2)
+　　定义能量空间按内积
+
+成为Hilbert空间.系统(1)，(2)分别对应于中如下的一阶发展方程(3)，(4)：
+　　　(3)
+　　　(4)
+其中中的线性算子
+
+分别是U到的有界线性算子和上的有界线性算子
+
+
+　　不难验证上的反自伴算.若y(t)是系统(1)的解，则为系统(1)的能量；称系统(2)是精确(或完全近似)能控的，是指相应的一阶系统(4)为精确(或完全近似)能控的.
+　　文献［1］在L2(0,l)中讨论了Bφ(x)=d(x)φ(x)时系统(1)的指数稳定性，文献［2］在时讨论了系统(2)的精确能控性，而文献［3］则在上述条件下研究了系统(1)，(2)的指数稳定性和精确能控性之间的关系.本文的主要目的是要在较一般的情形下，讨论系统(1)的稳定性与系统(2)能控性之间的关系.
+2　指数稳定性与精确能控性
+　　先给出下面几个已知命题［3-5］.
+　　命题1.设A是Hilbert空间H中反自伴算子，B∈L(U,H).则下列命题等价：1)(A，B)指数能稳；2)对任意正定算子K∈L(H),TA-BKB*(t)都指数稳定；3)存在一个对称算子K∈L(H),使TA-BKB*(t)指数稳定；4)(A，B)精确能控.
+　　命题2.设A是Hilbert空间H中反自伴算子且具有紧豫解式，B∈L(U,H).那么下列命题等价：1)(A，B)渐近能稳；2)对任意正定算子K∈L(H),TA-BKB*(t)都渐近稳定；3)存在一个对称算子K∈L(H)，使TA-BKB*(t)渐近稳定；4)(A，B)完全近似能控.
+　　命题3.设A生成Hilbert空间H中指数稳定的C0半群TA(t)，且A是耗散的，如果B∈L(H)也是耗散的，且满足如下的条件H)：
+
+那么TA+B(t)也是指数稳定的.
+　　对于H上的非负有界对称算子B，条件H)显然满足.
+　　引理1.设A是X中的反自伴算子.如果B∈L(H)是非负对称的，且存在v＞0和β＞0，使得TA-vBβ(t)是指数稳定的，则对任何μ＞0和α＞0，TA-μBα(t)都是指数稳定的.
+　　证明.首先注意，依命题1,TA-Bβ指数稳定，当且仅当(A，Bβ/2)精确可控.于是再根据命题1可不妨假设v=μ=1.取自然数k使由B的非负对称性可知，当取δ=‖B2kβ-α‖－1时，δB2kβ-Bα是耗散的对称算子.但TA-Bβ(t)指数稳定，故TA-B2β(t)指数稳定.由归纳法可知，TA-B2kβ(t)指数稳定.于是由等式
+
+和命题3可知TA-Bα(t)指数稳定.
+　　引理2.设Hilbert空间H上的算子A具有紧豫解式，并生成H中的C0压缩半群TA(t)，那么
+　　a)假设是耗散的，且A+B生成H上的C0半群.如果Re〈Bφ,φ〉=0蕴涵Bφ=0，则TA(t)的渐近稳定性蕴涵TA+B(t)的渐近稳定性.
+　　b)进一步假设A是H上的反自伴算子，B是H上的非负有界对称算子.如果存在v＞0和β＞0使得TA-vBβ(t)是渐近稳定，则对任何μ＞0和α＞0，TA-μBα(t)都是渐近稳定.
+　　证明.a)根据假设，A+B是耗散算子，有紧豫解式，且生成H上的C0压缩半群.易证
+于是由文献［6］定理3知A+B渐近稳定.
+b)由命题2和前面已证的结论a)，仿引理1的证明可知结论成立.
+　　定理1.设A是H上的正定自伴算子，B∈L(H),D∈L(U,H)，那么
+　　a)如果存在自然数n使R((BB*)n)∈R(DD

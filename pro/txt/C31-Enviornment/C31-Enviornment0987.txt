@@ -1,0 +1,56 @@
+地质灾害与环境环境
+JOURNAL OF GEOLOGICAL HAZARDS AND ENVIRONMENT PRESERVATION
+　1999年　第10卷　第4期　Vol.4　No.12 1999
+
+
+
+我国东部滨岸侵沉变异规律初探
+李相然　姜传胜
+摘要：滨岸地带自然环境多变，地质环境极为脆弱，但在社会经济发展中起着极为重要的作用。着重分析我国东部滨岸侵沉变异特征，研究滨岸侵沉变异地域分异规律与成因规律。
+关键词：滨岸侵沉变异；滨岸侵沉变异特征；滨岸侵沉变异规律
+中图分类号：P512.32；X141
+文献标识码：A
+文章编号：1006-4362(1999)4-0024-04
+DISCUSSION ON EROSION AND DEPOSITION VARIATION
+REGULAR OF LITTORAL COAST IN
+THE EASTERN AREA OF CHINA
+Li Xiangran
+(Department of Civil Engineering,Yantai University,Yantai　264005)
+Jiang Chuansheng*
+(* Quality Supervision Station of Construction Engineering in Yantai City,Yantai　264001)
+Abstract：Natural environment in the zone of littoral coast is complex and changeable,and its geological environment is also very fragile,while it takes an important part in social and economic development.Erosion and deposition variation features of littoral coast are analysed,and regional differentiation and genetic regular of erosion and deposition variation of littoral coast are also studied in this thesis.
+Key words：erosion and deposition variation of littoral coast;erosion and deposition variation features of littoral coast;erosion and deposition variation regular of littoral coast
+1　前言
+　　滨岸地带地处大陆与海洋交汇地带，自然地质环境极为脆弱敏感，所以，随着国民经济的发展，填海工程、围海工程、滩涂围垦等大规模的工程活动在滨海城市地区日益增多，引起的环境工程地质问题也日趋严重［1～3］。本文对我国东部滨岸地带在自然与人类工程活动双重作用下，滨岸侵沉变异规律及成因进行探讨。
+2　滨岸侵沉变异特征
+2.1　滨岸侵蚀特征
+　　滨岸侵蚀是一种全球性的地质灾害。1974年澳大利亚墨尔本大学教授Bird综合同行提供的资料，撰写了一份有名的“百年来的海岸变化”报告，认为在过去几十年内世界砂质海岸有70%受到侵蚀，侵蚀地区涉及美洲、西非、南非、印度、原苏联、日本和澳大利亚等国。30多年前，我国除个别废弃河口三角洲被侵蚀后退外，绝大多数海岸呈缓慢淤进稳定状态。自20世纪50年代末期以来，滨岸侵蚀日渐明显，至70年代末期加剧，目前约有70%的砂质海滩和处于开阔水域的大部分泥质潮滩受到侵蚀，而且岸滩侵蚀范围也日益扩大，侵蚀速度日渐增强。我国滨岸侵蚀非常广泛，北自鸭绿江口，南至北仑河口18 000 km大陆岸线及14 000 km珊瑚礁岸和14 000 km岛屿海岸皆有滨岸侵蚀。我国东部滨岸侵蚀特征列入表1。
+表1　中国东部滨岸侵蚀特征
+Table 1　Erosion features of littoral coast in the eastern area of China
+地　　点岸线累计后退
+(m)侵 蚀 速 率
+(m/a)滨　岸　侵　蚀　特　征
+辽
+宁大连旅顺柏岚子　1～1.5砾石堤的堤坝不断破坏
+营口田家崴子152.1主要是人为采沙所致
+兴城海滨五城301.5以海滩下蚀为主
+河
+北北戴河汤河口1002～3汤河河道挖沙所致
+滦河口120201987～1993年间岸线蚀退120 m
+山
+东蓬莱南海岸40～508～101985～1990年大部分海滩侵蚀殆尽
+青岛崂山八水河＞1005～6海岸沙丘被蚀，台阶被迫内移
+江
+苏赣榆下木套550～1 00011～20砂质海岸，损失土地13.33 km2
+废黄河口＞20 00015～451 433 km2 土地没入水中，侵蚀速率南部快于北部
+上海芦潮港―中港900501958～1991年
+浙江杭州湾南岸段　3～5现正侵蚀，砂质海岸均为挖砂所致
+福
+建霞　浦1004　
+莆田嵌头300～4009～10嵌头18巷没入海中
+白沙―塔头岸段20～801～4高潮滩面蚀低1 m
+广东漠阳江口北津2008　
+广西北仑河口20010大片木麻黄林没入海中
+海南清　澜20020岸外珊瑚礁被挖所致
+2.2　港口淤积特征
+　　滨岸地带的港口淤积现象，在南方各主要港口中普遍存在。如由于在珠江口门两侧及内河的一些河段进行围垦，直接影响港口的淤积。广州港、黄埔港及佛山、江门、中山、顺德、三水、东莞等海港航道均有不同程度的淤积。广州港淤积程度最严重的是沥

@@ -1,0 +1,19 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+2000　Vol.26　No.1　P.100-104
+
+
+
+Petri网连接过程中的行为关系
+蒋昌俊　王怀清 廖少毅
+摘 要 先前的Petri网模型的综合研究着重在性质的保持性方面，象活性、可达性和回归性.然而，系统行为关系的保持性研究应该更为重要.本文研究了Petri网模型自环连接、抑止弧连接和同步连接三种操作的行为关系，获得他们的语言关系公式，这些结果为Petri网模型综合过程中的动态行为分析提供了形式工具.
+关键词 模型，Petri网，连接，行为.
+THE BEHAVIOR RELATION IN CONNECTION PROCESS
+FOR THE PETRI NET MODEL
+JIANG Changjun
+(Inst.of Infor.Eng.,Tongji Univ.,Shanghai 200092)
+(Inst.of Infor.Eng.,Univ.of Hefei Sci.& Tech.,Hefei 230063)
+(Dept.of Comp.Sci.,Shandong Inst.of Min.& Tech.,Shandong,Taian 271019)
+WANG Huaiqing LIAO Shaoyi
+(Dept.of Infor.Syst.,City University of Hong Kong,Kowloon,Hong Kong)
+Abstract Existing research on the synthesis of Petri net models focuses on preserving system properties,such as liveness,reachability,and reversibility.Such research overlooked the importance of system behavior relation preservation models.In this paper,we discuss three important connection operations:self

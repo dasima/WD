@@ -1,0 +1,54 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1998年 第24卷 第4期 Vol.24 No.4 1998
+
+
+
+
+基于分形理论的一种图象分割方法1)
+刘文萍　吴立德
+摘　要　介绍了一种基于分形特征进行人造目标分割的方法.它是用分形模型描述自然场景，基于人 造目标和自然背景在分形特征上的差别，并利用概率松弛的思想增强这种差异，从而自适应分割出目标图象.实验结果验证了这种方法的有效性和可行性.
+关键词　分形，图象分割，概率松弛.
+A METHOD FOR IMAGE SEGMENTATION BASED ON FRACTAL THEORY
+
+LIU WENPING WU LIDE
+(Dept.of Computer Science,Fudan University,Shanghai 200433)
+Abstract Based on fractal characters,a method for segmenting man－made objects is presented,in which fractal model is used to describe the n atural background.The difference between man－made objects and the natural scene in fractal characters is enhanced by using the probabilistic relaxation,and the difference is also employed to segment man－made objects adaptively.Experiments have shown the effectiveness and feasibility of the approach.
+Key words Fractal,image segmentation,probabilistic re laxation.
+1　引言
+　　图象分割是图象处理中的关键技术，目前的分割方法大都利用人造目标及自然背景之间的 灰度及几何特性上的差异，从自然景物中提取目标.但由于实际成象条件和环境等因素的影响，通常所摄取的图象中上述特性发生了变化，基于这些差别进行分割，势必会造成较高的错分率和漏检率.因此，如何在不同的自然环境下分割出人造目标，仍然是人们不断探索的课题.
+　　分形理论的创立为图象分割技术开辟了新的途径［1］，但由于实际环境变化、不同目标类型等因素的影响，传统的基于分形理论的图象分割方法，用于实际图象所取得的效果并不理想.本文在基于分形特征用于人造目标图象分割的基础上，利用松驰法改善分割性能，获得了较好的实验结果.
+2　分形模型及特征参数提取
+　　本文选择一种公认较好的描述自然背景的模型--分数布朗随机场 FBR［1］，下面先对有关概念作一简述［1，2］.
+　　定义1.　设 0＜H＜1,b0为任意实数，随机过程满足
+
+称BH(t)为分数布朗运动(Fractional Brownian Motion,简记为 FBM).H为分形参数，H=0.5时为通常的布朗运动，b0为初始值.FBM是一个非平稳的自仿射随机过程，即对c,BH(ct)-BH(0)≈cH｛BH(t)-BH(0)｝.
+　　TH定律.　设 BH(t)为分数布郎运动(均值为0)，则其满足
+E｜［BH(t+T)-BH)］｜=CHTH,
+E｜［BH(t+T)-BH(t)］2=CHT2H,
+其中 CH 为一常数.该定律表明 FBM 场增量的一、二阶绝对矩具有各向同性.
+　　定义2.　如果对任意t,T,随机函数 B(t)满足
+
+称B(t)为分形布朗随机函数，F(y)为零均值随机变量的分布函数.
+　　分形模型满足性质
+A(r)～r2-D,　　(1)
+其中D为分维数，A(r)是尺度为r时分形布朗函数的表面积.
+　　Mandelbrot基于性质(1)提出了一种计算分形维数的思想［3］，将图象视为一座山丘，高度为图象的灰度值，在距该表面为ε的两侧形成了一厚为2ε的毯子(图1)，表面积
+A(ε)=Fε2-D,　　(2)
+则　　　　　　　　　　　logA(ε)=c1 logε+c0，　　　　　(3)
+其中 c1=2-D 为图2拟合直线的斜率，并进而求出分形维数D.具体算法如下：
+　　设毯子的上、下表面分别为uε,bε，灰度函数为g(i,j),u0(i,j)=b0(i,j)=g(i, j)，对所有ε=1,2,3，…，定义
+
+式中 d(i,j,m,n)为点(i,j)和(m,n)之间的距离.
+
+
+图1　“毯子”示意图
+
+
+图2　直线拟合求D
+　　毯子的体积,表面积A(ε)=(vε-vε-1)/2，求不同ε对应的表面积 A(ε)，再由(3)式得拟合直线斜率2-D，进而得到分形维数D.
+3　分形用于图象分割及其改进方法
+　　基于分形特性的图象分割方法的步骤如下：
+　　1)对一幅 N×N 的图象，从图象的起点开始，沿水平和垂直方向滑动--M×M的窗口，计算窗口内图象的分形维数作为窗中心点处图象的分形特征值.利用上述算法，求取输入的灰度图象中各点的局部分形维数，得到分维数分布图象，简称分形图象.
+　　2)由于自然背景符合DFBR场模型，有2＜D＜3；人造目标不具有统计意义上的自相似性，不满足分形模型，所得的分形维数可能小于2，利用这种分形特征差异来区分自然背景和人造目标，是基于分形理论分割人造目标的基本思想.
+　　实际的自然景物并不是完全自相似的理想分形体，加上图象采集装备和采集过程中各因素 的影响，仅根据分形维数区分目标和景物并不可靠，还需做进一步的处理.将分维数 D 图象 归一化后影射成分形灰度图象 

@@ -1,0 +1,84 @@
+计算机应用
+Computer Applications
+1999年 第19卷　第8期 Vol.19　No.8 1999
+
+
+
+基于Petri网的超媒体模型HPN*
+张　苓
+　　摘　要　本文提出一个基于Petri网的超媒体形式化模型HPN。它采用层次组织，各层由一个扩展Petri网、若干对象以及Petri网与对象之间的映射表示，通过Petri网结构和执行语义说明超媒体的链接机制、浏览和媒体表现，具有刻画超媒体主要性质的能力。文中给出了HPN模型的形式化定义并举例说明其用途。
+　　关键词　超媒体，形式化模型，Petri网，令牌
+A PETRI NET FORMAL MODEL OF HYPERMEDIA（HPN）
+Zhang Ling
+College of Computer Science and Technology, Wuhan University, Hubei.Wuhan 430072
+　　Abstract　This paper presents HPN, a Petri-net formal model of hypermedia. It has three layers, each is represented with an augmented Petri net , several sets of objects and the mapping of the Petri net and the objects. HPN use the structure of Petri net and execution semantics to specify the linking, browsing and rendering of hypermedia. It has the ability to describe the main properties of hypermedia systems. We mainly give the formal definition of the model and an illustration.
+　　Keywords　Hypermedia, Formal model , Petri net, Token
+1　引言
+　　超媒体系统是一种新型的复杂信息管理系统，它将多媒体信息组织成非线性、非顺序的结构，提供比传统系统更加直观、灵活和快速的信息访问与查询。超媒体形式化模型是对超媒体系统的抽象，从本质上刻画超媒体，得到独立于应用的、统一的超媒体抽象机制，为系统的设计、分析和比较提供基础。
+　　基于Petri网理论［1］的模型在超媒体系统的描述方面具有广泛的前景。原因在于Petri网能方便、自然地表示为二部有向图，适合于说明超媒体的链接机制；同时它是一种具有并行执行语义的自动机，可以表达超媒体系统中的动态执行语义，解决并发浏览、存取控制和版本问题。而且Petri网具有说明基于严格同步关系的实时进程交互的能力，满足描述多媒体表现的需要［2］。
+　　超媒体又称作多媒体超文本，从某种意义上说是多媒体与超文本的综合。在基于Petri网的超文本和多媒体建模方面，Trellis［3］是典型的超文本形式化模型，OCPN［2］很好地刻画了多媒体的表现时序，两者在某种程度上存在着性能上的互补，可以结合起来统一刻画超媒体。超媒体系统具有较大的规模和众多的相关因素，在一个Petri网中表达往往使网络变得十分庞大，超媒体文档结构及各成员的关系含混复杂，给浏览语义的说明以及系统的分析和验证带来相当的难度。
+　　根据以上考虑，本文提出一个基于Petri网的超媒体形式化模型HPN。
+2　HPN模型
+2.1　HPN模型的形式化定义
+　　HPN模型分为三层：顶层的链接层，中间的复合层和底层的原子层。复合层中的每一个Petri子网都对应于链接层Petri网中的库所，复合层Petri网中的每一个库所则与底层的Petri子网相关联。HPN模型形式化定义为：
+定义1.　HPN = < LPN，CPN，BPN >。其中，
+CPN = < CPN1，CPN2，…，CPNn> 
+是LPN的子网的集合。
+BPNi = < BPNi1，BPNi2，…，BPNim> 
+是CPNi的子网的集合，i ∈n。
+　　链接层定义超媒体文档的链接结构。其中，库所表现为通过链相连的节点或复合节点，变迁表现为节点或复合节点之间的语义联系。超媒体的动态行为由标识刻画。链接层Petri网（LPN）的形式化定义为：
+定义2.　LPN=<PL,TL,FL,ML0,N,CN,I,L,W,ALl>
+其中，
+(1) PL：库所的有限集，PL={PL1，PL2，PL3 }；
+　　PL1：抽象库所集，抽象库所对应复合层中的CPN网，类型为空；
+
+
+　　图1
+PL2：导航控制库所集，包含历史、索引两种类型的库所，分别与历史、索引节点相对应；
+PL3：存取控制库所集，，p0用于存取控制或版本管理［3］。
+(2) TL：变迁的有限集，TL={TL1，TL2，TL3，TL4，TL5}；
+(3) FL：库所与变迁之间的流关系集合，FL={FL1，FL2，FL3，FL4，FL5}；
+：普通流关系；
+，
+：同一存取库所间以及与其余库所的关系；
+，
+：导航控制库所与其余库所的关系；
+(4) ML0：PL→N+为LPN的初始标识；
+标识表示超媒体浏览时的状态，不同的状态转换代表不同的浏览路径。标识超媒体的浏览模型由Petri网的执行语义提供。
+(5) N = { N1，N2，…，Nn } ( n≥0 ),为节点对象集合；
+(6) CN = {CN1，CN2，…，CNk }( k≥0),为复合节点对象集合；
+(7) I = { I1，I2，…，Ip } ( p≥0 ),为输入对象的集合；
+(8) L = { L1， L2，…，Lm } ( m≥0 ),为链接对象的集合；
+(9) W是窗口的集合；
+(10) ALl是LPN的逻辑联系,ALl=<APLl,ATLl,WLl>
+这里，
+逻辑联系ALl提供LPN成员与系统对象之间的映射，v为空值。函数APLl建立库所与节点对象和复合节点对象的映射；ATLl建立链对象和输入对象与变迁的映射；WLl将每一个抽象库所映射到一个逻辑窗口。
+　　复合层描述复合节点内的节点间或节点内成员间的链接结构，该层库所可以是原子或复合类型，即库所可以与同层的子网相关联，描述复合节点的层次组成。复合层Petri网（CPN）形式化定义为：
+定义3.　CPNi = <PC，TC，FC，MC0，MB，L，I，R，ACl >。其中，
+(1) PC、TC、FC：分别表示库所、变迁和流关系的有限集。
+(2) MC0：PC→N+为CPN的初始标识。
+(3) MB = {MB1，MB2，…，MBk }( k≥0 )为复合块对象集合;
+(4) L = { L1， L2，…，Lm } ( m≥0 ) 为链接对象的集合；
+(5) I = { I1，I2，…，Ip } ( p≥0 ) 为输入对象的集合；
+(6) R是窗口内区域的集合；
+(7) ACl是CPN的逻辑联系,ACl=<APCl,ATCl,RCl>这里，
+
+函数APCl建立库所与多块对象或CPN子网的联系；ATCl建立链对象和输入对象与变迁的映射；RCl建立库所与窗口内区域的映射。
+　　原子层定义各成员内部媒体间的时序关系，库所类型与所包含媒体的类型一致，每一个库所与一个实数相联（演播时间），变迁表示同步点。原子层Petri网（BPN）形式化定义如下：
+定义4.　BPNi = <PB，TB，FB，MB0，B，S，T，La，ABl >。其中，
+(1) PB：库所的有限集，PB = { PB1，PB2}，这里，
+PB1：媒体库所集，库所类型与其中媒体类型一致；
+PB2：同步库所，类型为空，不包含媒体内容，仅用于同步；
+(2) TB：变迁的有限集；
+(3) FB：库所与变迁之间的流关系集合；
+(4) MB0：PB → N+为BPN网的初始标识，当库所中有令牌时，表示该库所有资源，该库所中的内容被装载。
+(5) B={B1，B2，…，Bn }(n≥0)为块对象的集合；
+(6) S={S1，S2，…，Sm }(m≥0)为同步对象的集合；
+(7) T是库所到实数（时间延迟）的映射。
+(8) La是窗口内层的集合；
+(9) ABl是BPN的逻辑联系，ABl=<APBl,TBl,LaBl>，这里，
+
+函数APBl建立库所与块对象和同步对象的联系；TBl将库所映射到实数，表示库所令牌在库所中的滞留时间；LaBl将库所映射到窗口某区域的层次。
+2.2　变迁点火
+　　变迁的点火由点火规则控制。在定义各层次Petri网的点火规则之前，我们引入激活集和开始/结束变迁两个概念。
+定义5.　设集合SP1，SP2，…，SPn，若

@@ -1,0 +1,22 @@
+信息与控制
+INFORMATION AND CONTROL
+1999年 第28卷 第3期 Vol.28 No.3 1999
+
+
+
+
+实际意义下n-D单边矩阵方程有解的充要条件
+吕振肃　摆玉龙　年晓红
+　　摘要：本文在讨论n-D矩阵方程求解条件的基础上，针对由Agathoklis等人提出的具有实际意义的n维（n-D）离散系统，给出了判定n-D矩阵方程是否有解的充要条件，并给出了判定系统是否具有实际意义稳定性的方法，以算例加以说明．
+　　关键词：n-D系统，矩阵方程，实际意义
+　　中图分类号：TP11　　　　　　文献标识码：A
+NECESSARY AND SUFFICIENT SOLVABILITY CONDITIONS OF N-D
+UNILATERAL MATRIX EQUATION IN PRACTICAL SENSE
+LU Zhensu　BAI Yulong　NIAN Xiaohong
+(Department of Electronics and Information Science, Lanzhou University, Lanzhou,730000)
+　　Abstract　In the light of n-D discrete systems in the practical sense which was introduced by Agathoklis in 1983,we first discuss the solvable condition of n-D unilateral matrix equations．Simple and constructive necessary and sufficient solvability conditions are derived．A new method to determine the stability of a n-D discrete systems in practical sense is presented． All the obtained result is illustrated by a example of 2-D systems．
+　　Key words　n-D systems，matrix equation，practical sense
+　　1　引言
+　　众所周知，讨论一个多输入-多输出(MIMO)系统的特征多项式配置和稳定性问题都可归结为在特定的多项式环上求解一定的单边矩阵方程，即
+　　　　　　　　　　　　　　　　　　　　　　　(1)
+式中，D(z1,z2,…zn)∈Rr×r[z

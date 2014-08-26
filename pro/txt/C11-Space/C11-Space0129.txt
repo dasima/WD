@@ -1,0 +1,32 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+卫星间光通讯系统中比特率等主要
+参量对最大通讯距离的影响*
+马　晶　谭立英　周毅刚　耿完桢　金恩培
+(哈尔滨工业大学应用物理系*哈尔滨*150001)
+　　摘　要　文中讨论了在保证卫星间光通讯系统的通讯质量前提下,系统的各个主要参量之间的相互制约关系,最大通讯距离受各参量影响的情况。通过分析各个参量对通讯距离影响的大小,找出了增大通讯距离的较好途径。
+　　主题词　卫星间光通讯　通讯距离　参量分析
+THE INFLUENCE OF BIT RATE AND 
+OTHER MAIN PARAMETERS ON MAXIMUM 
+COMMUNICATION DISTANCE IN A SYSTEM 
+OF INTERSATELLITE OPTICAL COMMUNICATIONS
+Ma Jing　Tan Liying　Zhou Yigang　Geng Wanzhen　Jin Enpei
+(Harbin Institute of Technology*Harbin*150001)
+　　Abstract　In this paper,it is discussed that relations of limited each other between the main parameters of the system on the premise of assuring the communication quality of the system of intersatellite optical communications,it discusses mainly in the case of the maximum communication distance influenced by the parameters.The better way for increasing the communication distance is found by means of analyzing the influence of parameters upon the communication distance.
+　　Key words　Intersatellite optical communication　Communication distance　Analysis of parameters
+1　引言
+　　在受到人们越来越重视的卫星间光通讯中,由于受到卫星载体的限制,装于卫星上的光通讯系统在体积和重量上都不可过大,这就使得光通讯系统的发射功率、发射及接收天线的大小等都受到很大的制约。对于一定的空间链路,应当根据实际情况选择适当的发射功率以及适当大小的天线,使得整个系统在性能上既能满足要求,又不至于使系统有过大的余量。
+　　文中探讨了卫星间光通讯系统在保证通讯质量的情况下,最大通讯距离随通讯系统的其它参数(如系统的发射功率、接收灵敏度、比特率、天线的半径等)变化的规律。通过计算分析,找出了在保证通讯质量的前提下,增加卫星间光通讯系统通讯距离的途径。
+2　卫星间光通讯系统主要参量的关系分析
+　　卫星间光通讯系统的主要参数有发射数据的比特率Rb、误码率BER、发射功率P(此处为发射天线的辐射功率)、接收天线的横向半径a(接收天线为圆形孔径)、接收系统的灵敏度S以及系统所能达到的最大通讯距离z(即发射天线到接收天线的距离)等。其中接收系统的灵敏度S可用系统正常工作时接收天线上所需的最小接收功率Preq来代替,显然Preq越小,S越高。而且以后的推导中总是认为系统工作在最小接收功率下。
+　　下面主要分析最大通讯距离z与其它参量的关系。
+　　卫星间光通讯所用的光源为激光器,故由发射天线发射出的光束为高斯光束。若接收天线处高斯光束的光斑半径为w(z),接收天线的孔径面积为Ar,显然有Ar=πa2。为简单起见,假定在光束横截面内能量分布是均匀的,光束外能量为零［1］,则天线接收到的功率为
+(1)
+从而有
+(2)
+根据高斯光束在自由空间传输的规律,有［2］
+(3)
+其中f=(πw20)/(λ),w0为高斯光束的腰斑半径。在本文的分析中,假定卫星间光通讯系统中发射光束的发散角θ是在考虑了瞄准问题之后确定的,并保持θ不变。由于θ=2λ/πw0［2］,所以w0为一常量。
+　　对于一个确定的光通讯系统,当探测器确定后,探测器的灵敏度Preq随着系统所传输数据的比特率Rb变化而变化。当选用APD探测器、误码率BER=10-9时,有Preq∝R

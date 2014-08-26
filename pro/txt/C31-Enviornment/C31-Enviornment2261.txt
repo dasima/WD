@@ -1,0 +1,29 @@
+环境科学学报
+ACTA　SCIENTIAE　CIRCUMSTANTIAE
+1998年2月第18卷第2期科技期刊
+久效磷对海洋微藻毒性机理的初步研究*
+III.超氧化物歧化酶和过氧化物酶活性的变化
+唐学玺　李永祺
+(青岛海洋大学海洋生命学院，青岛 266003)
+
+摘要　报道了久效磷对3种海洋微藻细胞内2种清除活性氧的关键性酶――超氧化物歧化酶和过氧化物酶活性的影响.结果显示：1.在久效磷的胁迫下，扁藻和三角褐指藻细胞的超氧化物歧化酶(SOD)活性均表现出下降的总变化趋势，而叉鞭金藻细胞的SOD活性时而上升，时而下降，在整个胁迫过程中呈现出无规律性的变化.2.随着久效磷胁迫时间的延长，3种微藻细胞的过氧化物酶活性均逐渐下降，表现出相同的变化规律性.这说明不同的藻种，久效磷对其细胞内酶活性的影响不尽相同.推测超氧化物歧化酶和过氧化物酶(POD)活性的降低是微藻细胞内过量产生活性氧，进而引起藻细胞膜脂过氧化伤害的主要原因之一.
+关键词　超氧化物歧化酶；过氧化物酶；久效磷.
+A PRELIMINARY STUDY ON TOXICITY MECHANISM OF 
+MONOCROTOPHOS ON MARINE MICROALGAE 
+Ⅲ.CHANGES OF ACTIVITY OF SUPEROXIDE DISMUTASE AND PEROXIDASE
+
+Tang Xuexi, Li Yongqi
+( Ocean University of Qingdao, Qingdao 266003)
+
+ABSTRACT　This paper reports the effect of monocrotophos stress on the activity of superoxide dismutase (SOD) and peroxidase (POD) which are two key enzymes to eliminate active oxygen in algal cell. Results showed that: 1. SOD activity on Platymonas sp. and Phaeodactylum tricornutum decreased under moncrotophos stress, and fluctuated irregularly in Dicrateria sp. during the whole period of stress; 2. POD activity of three marine microalgae decreased gradually with the prolonging time of stress. Therefore, the mechanism to eliminate active oxygen is different in various marine microalgae. It is one of the main causes for activity decline of SOD and POD to lead to the excess production of active oxygen and cell damage of lipid peroxidation.
+Keywords　superoxide dismutase (SOD),peroxidase(POD), monocrotophos.
+
+
+　　
+1　前言
+　　虽然有关石油、重金属及有机氯农药污染对海洋微藻的影响已有大量的文献报道［1］，但有机磷农药污染对海洋微藻影响的报道较少［2，3］.已有的研究资料也大多局限于对微藻的种群结构、微藻的生长及繁殖的影响，而有关其对海洋微藻毒性机理的研究至今未见报道.本文以扁藻、叉鞭金藻和三角褐指藻为材料，继续探讨久效磷对它们的超氧化物歧化酶(SOD)和过氧化物酶(POD)活性的影响，这对于揭示有机磷农药对海洋微藻的毒性机理，保护海洋生物资源有重要意义，并为探索监测海洋有机磷农药污染的生物指标提供依据.
+　　
+2　材料和方法
+2.1　藻种的选择　选用本院微藻培养室提供的扁藻(Platymonas subcordiformis Hazen)、叉鞭金藻(Dicrateria zhanjiangensis Hu.var.sp.)和三角褐指藻(Phaeodactylum tricornutum).
+2.2　培养方法及条件　培养液选用f/2营养盐［4］配方，原配方中的FeCl3和EDTA以20μg/mL的柠檬酸铁代替，扁藻的培养液需另加尿素至10ppm.海水取自青岛鲁迅公园附近海滨，经孔径0.45μm滤膜抽滤煮沸消毒，冷却后配制培养液.用于微藻培养的三角瓶，预先在1mol/L的盐酸中浸泡3日，再分别用含有相应久效磷浓度的培养液预平衡二次，每次平衡时间为1天，以清除实验过程中容器壁对久效磷的吸附作用.
+　　3种海洋微藻的培养条件是：光照强度为32―40μmol/(s.m2)，光暗比为14

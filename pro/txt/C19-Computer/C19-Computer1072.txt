@@ -1,0 +1,23 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1998年 第24卷 第5期  Vol.24  No.5 1998
+
+
+
+Kalman-Yakubovich引理与不确定性
+系统的鲁棒稳定性分析1)
+陈阳舟　　刘家琦　陈善本
+关键词　Kaman-Yakubovich引理，不确定性系统，二次稳定性，频率判据.
+KALMAN-YAKUBOVICH LEMMA AND ANALYSIS OF ROBUST
+STABILITY FOR SYSTEMS WITH UNCERTAINTIES
+CHEN YANGZHOU　　LIU JIAQI　　CHEN SHANBEN1)
+(School of Astronuatics,1） School of Material Science and Eng.,
+Harbin Institute of Technology, Harbin　150001)
+Key words　Kalman-Yakubovich lemma, systems with uncertainties, quadratic stability, frequency criterion.
+1　引言
+　　众所周知，频率域方法和时间域方法是控制系统研究中同等重要的两个基本方法，在不确定性系统的鲁棒稳定性分析与设计中也被广泛采用.而这两种方法的互相渗透和联合使用促使人们希望建立起它们间的联系.例如，文献［1］从几种典型的频率条件(如有界实性条件和正实性条件等)出发通过构造相应的二次型Lyapunov函数来确定使系统鲁棒渐进稳定的不确定性类的结构.另一个典型例子是Kalman－Yakubovich引理(或称频率定理)［2］.此引理已成为联系系统状态空间模型与频率条件的强有力工具.本文的目的正是应用这个工具来讨论文献［1］中的类似问题.
+2　问题的建立和一般结果
+　　考虑由如下状态空间模型描述的不确定性系统
+　　(1)
+这里A，B，C，D为给定的适当维数的矩阵，x∈Rn,ξ∈Rm，y∈Rl，Δ为从y到ξ的任一传递算子，其结构由给定的不确定类U确定，假定U由时变非线性连续算子φ(.,t)组成，而φ(y,.)对任给的y∈Rl为Lebesque可测函数，且使得(x,ξ,=φ(y,t))满足二次型约束G(x,ξ)x*G0x+2x*gξ+ξ*Γξ≤0.本文的问题是：寻找系统(1)关于U二次稳定的条件.系统(1)关于类U二次稳定性如通常所定义：存在正定二次型V(x)=x*Hx使得对类U中任意算子所确定的非零的(x,ξ)有dV／dt：=2x*H(Ax+Bξ)＜0.
+　　由二次稳定性定义和S-过程定理［3］知系统(1)二次稳定当且仅当存在正定二次型V(x)=x

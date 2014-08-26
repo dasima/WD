@@ -1,0 +1,77 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1997年　第23卷　第6期　Vol.23　No.6　1997
+
+
+
+
+应用无源性分析研究时变非线性系统的稳定性
+冯纯伯
+　　摘要　应用反馈系统的无源性分析研究一类时变非线性系统的稳定性，给出寻找连续衰减的充要条件的方法， 并证明对于线性系统这种方法给出的结果和Routh判据完全一致. 
+　　关键词　稳定性，无源性， 时变非线性系统. 
+STABILITY ANALYSIS FOR TIME-VARYING NONLINEAR
+SYSTEMS VIA PASSIVITY ANALYSIS
+FENG CHUNBO
+(Research Institute of Automation, Southeast University, Nanjing 210018)
+Abstract　 An approach to stability analysis for time-varying nonlinear systems via passivity analysis is presented in this paper. The necessary and sufficient conditions for continuous dissipation can be obtained. As for linear time-invariant systems the obtained result coincides with the Routh criterion.
+Key words　Stability, passivity, time-varying nonlinear systems.
+1　引言
+　　设有一般性的动态系统
+F(s,x,t)x=[sn+fn-1(x,t)sn-1+…+f0(x,t)]x=0. 　　　　　　　　　　　(1)
+其中;fi(x,t)有界、光滑、一定阶次的微分均存在，它可以是x的某些导数的函数. 通常用Lyapunov函数法研究这类系统的稳定性，但对于一般时变非线性系统，构造合适的Lyapunov函数十分不易，而且一般只能得到稳定的充分条件，这种充分条件的保守性也很难估计. 
+　　本文将利用反馈系统的无源性分析来研究系统(1)的稳定性. 若F(s,x,t)为稳定算子， 则可找到某一稳定的算子B(s,x,t)，使得F-1(s,x,t)B(s,x,t)为严格无源；反之，若F(s,x,t)不是稳定算子，则这样的B(s,x,t)不存在. 根据这一原理可以找出分析系统(1)连续衰减应满足的条件.
+2　预备知识
+　　考察图1所示反馈系统， 对该系统以下引理成立. 
+
+图1
+　　引理1.　图1所示系统中u｜→x严格无源的充要条件是H(s,x,t)为严格无源. 
+　　证明.　根据无源性的定义［3］， 有
+〈u｜x〉T=〈(v+e)｜x〉T=〈v｜x〉T+〈e｜x〉T,　　　　　　　　　(2)
+已知
+　　　　　　　 (3)
+(3)式表明e｜→x是输入无源的，但不是严格无源的，按文献［1，2］对无源度的定义，它以输入e表示的无源度为零. 当H(s,x,t)为严格无源时，有
+　　　　　　　　　(4)
+其中β为一常数，δx＞0. 由(3)，(4)式可得
+　　　　　　　　　　(5)
+(5)式表示u｜→x的输出无源度δx可用系统输出x表示出来，令δx＞0, u｜→x的增益有界，因此u｜→x以输入u表示的无源度也存在且为正. 由此可见，u｜→x输入严格无源的充要条件是H(s,x,tk)严格无源. 文献［2］中曾证明直输回路的正的严格无源度可以补偿反馈回路的无源度，若综合后的无源度为正，则全系统为严格无源的. 此处直输回路仅是无源，并非严格无源，其无源度为零，因此，当且仅当反馈回路的无源度大于零时全系统才是严格无源的. 　　　证毕. 　　引理2.　若H(s,x,t)是严格无源的，k(x,t)≥δ＞0,t0,则k(x,t)H(s,x,t)也是严格无源的. 
+　　根据无源性的定义，引理2显然成立. 
+　　注1.　k(x,t)和H(s,x,t)是不可交换的，k(x,t)H(s,x,t)严格无源并不能保证H(s,x,t)k(x,t)也严格无源. 
+3　多重反馈系统的一般特性
+　　从最简单的反馈系统开始研究. 对图2所示系统用H1(s,x,t)表示u｜→x的算子，得
+H1(s,x,t)u=x,　　　　　　　　　　　　　　　(6)
+H1(s,x,t)=[s+k1(x,t)]-1.　　　　　　　　　　(7)
+
+图2
+根据引理1，当且仅当k1(x,t)≥δ1＞0, H1(s,x,t)严格无源. 
+　　记
+H1(s,x,t)=A-11(s,x,t)B1(s,x,t),　　　　　　　　　　　　(8)
+A1(s,x,t)=s+k1(x,t),　　　　　　　　　　　　　　　　(9)
+B1(s,x,t)=1.　　　　　　　　　　　　　　　　　　　(10)
+　　进一步考虑图3所示系统，有
+H2(s,x,t)u=x,　　　　　　　　　　　　　　　　　　(11)
+H2(s,x,t)=A-12(s,x,t)B2(s,x,t),　　　　　　　　　(12)
+A2(s,x,t)=A1(s,x,t)2(x,t)s+B1(s,x,t)=[s+k1(x,t)]2(x,t)s+1,　　　　(13)
+B2(s,x,t)=A1(s,x,t)2(x,t)=[s+k1(x,t)]2(x,t),　　　　　　　(14)
+
+图3
+　　　　　　　　　　　　　(15)
+根据引理1，H2(s,x,t)严格无源的充要条件是k1(x,t)≥δ1＞0和k2(x,t)≥δ2＞0,t0.以上反馈递次连续进行下去，经过n重反馈可得
+Hn(s,x,t)=An(s,x,t)-1Bn(s,x,t).　　　　　　　　　　　(16)
+其中An(s,x,t)和Bn(s,x,t)可用递推公式求得， 即
+Ai(s,x,t)=Ai-1(s,x,t)i(x,t)s+Bi-1(s,x,t)
+　　　　　　　　　　　　　　　=Ai-1(s,x,t)i(x,t)s+Ai-2(s,x,t)i-1(x,t),　　　　(17)
+Bi(s,x,t)=Ai-1(s,x,t)i(x,t),　　　　　　　　　　　　(18)
+i(x,t)=k-1i(x,t).　　　　　　　　　　　　　 (19)
+根据引理1，Hn(s,x,t)严格无源的充要条件是ki(x,t)≥δi＞0,,t0. 通过以上分析可得以下重要结果. 
+　　定理1.　若An(s,x,t)算子可以通过(17)式递推求得， 则系统
+An(s,x,t)x=0　　　　　　　　　　　　　　　(20)
+全局一致连续衰减的充要条件是
+　　　　　　　 (21)
+　　证明.若An(s,x,t)可以通过递推求得，且(21)式满足，则必可得到严格无源的Hn(s,x,t).根据引理1，(21)式是Hn(s,x,t)严格无源的充要条件，因此根据严格无源系统所具有的性质，它也是系统(20)全局连续一致衰减的充要条件.　　　　　　　　　　　　　　　　　　　　　证毕. 
+　　注2.根据网络理论， 一个严格无源的网络中的动态过程将是连续衰减的，因此在定理1中称系统(20)是全局一致连续衰减的. 对于时变系统， 若在某一有限时间区间内(21)式中的某些条件暂时不能满足，而系统(20)仍可能是Lyapunov意义下稳定的. 
+4　时变非线性系统的稳定性
+　　现在来讨论系统(1)的稳定性. 采用(17)式所规定的递推算法可求得算子An(s,x,t)，将它和算子F(s,x,t)等同，可以得到fi(x,t)和φj(x,t)之间的关系式，利用已知的fi(x,t),可求得j(x,t),j∈,于是也就求得了(1)式全局一致连续衰减的充要条件了. 以下讨论n=2,3的具体条件. 
+　　(1) n=2. 此时
+　　　　(22)
+其中.于是对于系统
+F2(s,x,t)x=[s

@@ -1,0 +1,20 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年　第36卷　第11期　Vol.36　No.11　1999
+
+
+
+容错机制测评中的故障注入模型及应用算法
+孙峻朝　王建莹　杨孝宗
+摘　要：故障注入(FI)是一种有效的测试和评价容错机制 (FTM)的方法, 可被普遍应用于容错计算机系统开发过程的各个阶段中. FI技术正确的和更 广泛的应用依赖于对FI原理的一致理解. 文中首先详细讨论了FI的应用对象即FTM在测评中 所表现出来的若干特征, 在此基础上提出了六元组描述的FI模型, 并对各组成元的属性进行 了深入分析. 同时, 作为FI模型的具体应用过程, 文中给出了FI独立试验算法(FI-IEA), 并讨论了该算法具体实现中的关键问题.
+关键词：容错机制,故障注入,测试,评价
+中图法分类号：TP302.8
+A FAULT INJECTION MODEL AND ITS APPLICATION
+ALGORITHM FOR TESTING AND EVALUATION OF FTM
+SUN Jun-Zhao, WANG Jian-Ying, and YANG Xiao-Zong
+(Department of Computer Science and Engineering, Harbin Institute of Technology, Harbin 150001)
+Abstract　Fault injection(FI) is a powerful method for the test ing and evaluation of fault-tolerance mechanisms(FTMs), which may widely be used during all phases of the development of fault tolerant computer systems. The technique of FI cannot be applied correctly and widely unless it is based on a consistent understanding of FI philosophy. FTM is the application object of FI and its characteristics as seen in testing and evaluation processes are discussed in detail. And then an FI model is described as a 6-tuple. The attributes of each factor are deeply analyzed. As the actual application process of the FI model, an FI independent experiment algorithm(FI-IEA) is presented at the same time, and some key problems on how to implement the algorithm are discussed.
+Key words　fault-tolerance mechanism(FTM), fault injection, testing, evaluation
+1　引　言
+　　容错计算机系统开发中的一个重要问题是如何对所采用的容错机制(FTM)进行测试和评价.故障注入(FI)技术是测评FTM的有效方法［1］.通过人为产生故障并引入系统中,FI加速了系统发生故障和失效的过程.利用对系统在注入故障后反应信息的监测和分析,可实现测试和评价FTM的目标,获得期望结果.与其它如形式证明、解析模型和基于测量等方法相比,FI作为一种基于试验的测评技术,具有应用范围广、结果精确度高、时间花费少等优点,已引起众多工程设计者和研究人员的重视.
+　　目前对FI的研究已有很多成果,许

@@ -1,0 +1,15 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年　第36卷　第10期　Vol.36　No.10　1999
+
+
+
+基于神经网络结构学习的知识求精方法
+刘振凯　贵忠华 蔡青
+　　摘　要　知识求精是知识获取中必不可少的步骤.已有的用于知识求精的KBANN(knowledge based artificial neural network)方法，主要局限性是训练时不能改变网络的拓扑结构.文中提出了一种基于神经网络结构学习的知识求精方法，首先将一组规则集转化为初始神经网络，然后用训练样本和结构学习算法训练初始神经网络，并提取求精的规则知识.网络拓扑结构的改变是通过训练时采用基于动态增加隐含节点和网络删除的结构学习算法实现的.大量实例表明该方法是有效的.
+　　关键词　知识求精，人工神经网络，结构学习，规则提取
+　　中图法分类号　TP18
+A KNOWLEDGE BASE REFINEMENT METHOD BASED
+ON STRUCTURAL LEARNING OF NEURAL NETWORKS
+LIU Zhen-Kai, GUI Zhong-Hua*, and CAI Qing*
+(School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an 710049)

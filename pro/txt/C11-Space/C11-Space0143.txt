@@ -1,0 +1,49 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年4月  第19卷  第2期科技期刊
+
+
+战术导弹的块对角控制器
+赵国荣 张福恩
+(哈尔滨工业大学*哈尔滨*150001)
+顾文锦
+(海军航空工程学院*烟台*264001)
+摘  要　　本文定义了非线性系统的块对角模型，基于这类模型，借助于反馈
+线化方法，提出了一种被称作块对角控制器(Block Diagonal Controller―下文简称
+BDC)的设计方法。使一类非线性系统的线性化设计能够简单地被实现。设计的
+结果已经被一战术导弹的数学仿真所证明。
+
+主题词  反馈线性化  飞行控制系统  控制器
+
+
+BLOCK DIAGONAL CONTROLLER OF THE
+TACTICAL MISSILE
+Zhao Guorong Zhang Fuen
+(Harbin Institute of Technology*Harbin*150001)
+Gu Wenjin
+(Naval Aeronautical Engineering Acadimy・*antai*264001)
+Abstract  In this paper,a block diagonal form about nonlinear system is defined.Based on 
+the definition,a design method called block diagonal controller(BDC)is proposed via 
+feedback linearization.Thus,a linearization design of a class of nonlinear system can be 
+simply realized.The result of design has been proved by mathematical simulation of a 
+certain anti-ship missile.
+
+Key words  Feedback linearization  Flight control system   Controller
+
+1  引言
+
+　　G.Meyer［1~3］等人将直升机运动描述成一个块三角系统，使之有别于一
+般的仿射非线性系统。迄今为止，块三角系统已经被证明可精确线性化，这
+就解决了工程人员在应用几何理论时碰到的第一个问题――被控对象能否线
+性化?第二个问题――怎样找到这种变换?G.Meyer等人根据块三角结构的特殊
+性，构造了WT-映射而使这一问题迎刃而解。作者在研究导弹运动方程时，
+发现该被控对象具有比块三角结构更简单的形式，本文称之为块对角结构。
+进一步研究发现，具有这种结构的被控对象，采用块对角控制器可以使线性
+化设计简单、直观，而且所设计的系统是渐近稳定的。
+
+2  精确线性化的标准形
+
+定义1如果非线性系统
+(1)
+通过微分同坯
+Z=T(X)=［h1(X)，…，L

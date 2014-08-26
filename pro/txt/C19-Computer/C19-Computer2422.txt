@@ -1,0 +1,54 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年　第36卷　第11期　Vol.36　No.11　1999
+
+
+
+基于分布对象的冗余服务模型
+钱　方　邹　鹏　陈　渝　黄　杰
+摘　要：针对现有的分布计算模型不能充分描述冗余服务的特点，文中基于分布对象的观点，提出一个面向冗余服务的计算模型HORIS.它利用类和实例的概念定义了冗余服务，并将状态服务和无状态服务区分开来，同时还刻画了分布计算环境中的请求和主机的概念.在HORIS的基础之上，文中创建了一个冗余服务的管理框架AMA，并在CORBA平台上进行了实现.与其它冗余服务的管理框架相比，它具有接口开放、适应性强、能管理异构服务以及可扩展性强等优点.
+关键词：分布对象，客户/服务器，分布计算模型，冗余服务，CORBA
+中图法分类号；TP311
+A REDUNDANT SERVER MODEL BASED ON
+DISTRIBUTED OBJECTS
+QIAN Fang, ZOU Peng, CHEN Yu, and HUNAG Jie
+(Department of Computer Science, State Key Laboratory for Parallelism and Distribution,National University of Defense Technology, Changsha 410073)
+
+Abstract　In consideration of the drawbacks of the current distributed computing models, distributed object technologies are adopted in the present paper to provide a computing model HORIS for redundant servers. Redundant servers are definitely defined through the concepts of class and instance, and stateful servers are distinguished from stateless servers. Furthermore, the concepts of requests and hosts are abstracted from distributed computing environment in the model. Based on HORIS, management architecture AMA is created for redundant servers and its implementation is developed on the CORBA platform. Compared with other management architectures of redundant servers, AMA possesses the advantages of openness, adaptability, heterogeneity, and scalability. 
+Key words　distributed objects, client/server, distributed computing model, redundant servers, CORBA
+1　引　言
+　　随着分布计算技术的发展，客户/服务器计算模式逐渐成为分布计算的主流.由于单个服务器的分布计算环境存在着性能瓶颈和可用性问题，越来越多的系统［1～4］采用服务器冗余技术.然而，现有的计算模型不能充分描述含有冗余服务的分布计算环境：如文献［5］通过状态机来描述分布计算环境，它引入了复制和状态一致性，但没有采用对象的观点；Core Legion对象模型［6］虽然完全采用面向对象技术建模，但它基于Legion系统，而且没有引入冗余服务的概念；ROMANCE模型［1］引入了复制对象，但它只是对数据进行封装，实现的是被动(passive)对象；在Arjuna系统［2］中对象可以嵌套调用，但它只实现了有状态的服务，而且没有对冗余服务进行明确的定义；在文献［3］和文献［4］中分别对对象组(object group)和对等服务(equal service)进行了定义，但它们不能充分涵盖冗余服务的特点.
+　　综上所述，现有的分布计算模型存在着以下问题：第1，对冗余服务没有明确的描述和定义；第2，所描述的服务器大都是状态服务器(stateful server)［7］；第3，虽然有一些系统采用了面向对象的观点，但实现的是被动对象.针对上述问题，本文基于分布对象的观点，提出一个面向冗余服务的分布计算模型HORIS.并在此基础之上，在CORBA(Common Object Request Broker Architecture)［8］平台上实现一个面向冗余服务的管理框架AMA.
+2　冗余服务模型
+2.1　设计思路
+2.1.1　主动对象
+　　由于对象具有封装、可重用和继承等特性，因此被许多分布计算模型所采用.但现有的对象模型［1～3］大都只对数据进行封装，实现的是被动对象，只能接受读写请求而不能访问其它对象.这些系统中对象的复制只实现了数据冗余，没有实现计算冗余，因而系统的可用性和性能仍然是瓶颈.因此，本文采用主动(active)对象描述分布计算环境，它们不但向用户提供状态信息，还向用户提供计算服务.
+2.1.2　状态服务和无状态服务
+　　状态服务将系统状态封装在内部实现，冗余的服务器之间要对状态进行一致性维护［2，3，5］.随着客户/服务器3层模型的流行，越来越多的中间层服务器只封装了应用逻辑，即实现的是无状态服务器(stateless server)［7］,它们的状态由第3层的数据服务器实现（如图1所示）.本文将服务定义为有状态和无状态两类：一是为了符合日益流行的3层客户/服务器结构；二是因为状态服务和无状态服务的管理策略大不相同.冗余的状态服务器之间，要对状态进行一致性维护；而无状态服务器则无需状态一致性维护开销，但它们必须互斥地访问共享的外部状态，并且一个请求只能被执行一遍.
+
+
+图1　客户/服务器3层模型
+2.1.3　冗余服务
+　　现有的分布计算模型常常将冗余服务和对等服务、复制(replicated)服务混淆.复制服务和冗余服务的区别在于：无论服务状态、接口和实现代码，复制服务都是完全相同的；而冗余服务虽然能够向用户提供相同功能的服务，但它们可以有不同的实现，因此可以从一定程度上避免软件错误［9］.文献［3］、［4］将对象组和对等服务定义为具有相同接口的服务，然而接口相同并不一定是冗余服务.例如局域网A中的名字服务器，虽然和局域网B中的名字服务器具有相同的服务接口，但它们是为不同的目标环境创建的，因而不是冗余服务.综上所述，冗余服务应具有以下几个特性：① 等效性，无论如何实现的，冗余服务所提供的功能相同；② 从属性，等效的服务并不一定是冗余服务，它们应当属于同一目标环境.冗余服务的等效性可以用服务接口的一致性来描述，但从属性很难确切地定义.本文利用类和实例的概念，可以对冗余服务的这一难以描述的特性进行定义.
+　　在HORIS模型中，每个客户可见的服务对象是一个抽象类，它们有多个实例.同一个服务对象的多个实例互为冗余服务：它们继承相同的接口，因此能提供相同功能的服务；它们是某一特定服务对象的实例化，因而具有从属性.如图2所示，服务对象A和B分别是局域网A和B的名字服务器，它们继承同一名字服务器，接口相同且对客户可见.其中，服务对象A有两个实例A1和A2，它们互为冗余服务，对客户透明.服务对象B的实例B1虽然和A1，A2具有相同的服务接口，但它们是不同服务对象的实例，因此不是冗余服务.
+
+
+图2　名字服务器
+2.1.4　请求
+　　本文用请求来划分客户和服务器的概念：当一个对象向其它对象发出请求时，它是客户；当它接受其它对象的请求时，它成为服务器.因此，分布计算环境中的客户/服务器模型可抽象成请求和对象之间的调度.而且，作为客户方发送给服务方的消息，请求具有时间特征.现有的计算模型通常用发送请求和接收结果两个事件来刻画请求，然而要维护冗余服务（尤其是状态服务）的状态一致性，只需满足agreement和order两个要求［5］，即保证各个冗余服务以相同的顺序接收请求即可.因此，本文将请求在接收方定义和排序，这简化了原有的分布计算模型.
+　　除此之外，为了描述服务的负载特征，在HORIS模型中还定义了主机的概念.因为服务器的负载状况是由所在主机节点的负载状况决定的，而且各个主机之间的通信开销很大程度上决定了服务器响应客户请求的速度.
+2.2　概　述
+　　基于上述的设计思路，本文从分布计算环境中抽象出5个概念：主机(host)、服务对象(server object)（简称服务、对象）、请求(request)、服务对象实例(server object instance)（简称对象实例、实例）和状态(state)，构造成HOIRS模型，用它来描述含有冗余服务的分布计算环境（如图3所示）.它采用Core Legion对象模型［6］中父类和子类的继承关系kind_of，以及类和实例之间的实例化关系is_a，定义对象之间的关系.系统有唯一的基类Object，Object有3个子类：Server Object, Host和Request，分别对应于系统中的服务对象、主机和请求.其中，服务对象有两个子类：Stateful Object和Stateless Object，分别对应于系统中的状态服务和无状态服务.状态服务有一个特殊的子类：State Object，它相当于以前的计算模型中的被动对象.Stateful Object, Stateless Object和State Object都可以进行实例化，同一个子类的实例互为冗余服务.
+
+
+图3　HORIS对象模型
+2.3　模型定义
+　　假设系统基于可靠通信，每个节点上每种服务对象的实例最多只有一个.而且每个节点上有局部时钟，可以对请求进行排序.
+　　(1) 主机：Host={Oi|1≤i≤n}
+　　Host为系统中所有主机的集合. Hi∷=〈host_name, max_load, current_load〉，host_name为主机的唯一标识，max_load为主机的负载阈值，current_load为主机的当前负载值.
+　　(2) 服务对象：Object={Oi|1≤i≤m}
+　　Object为系统中客户可见的所有服务对象的集合.Oi∷=〈object_name, attributes, methods〉，object_name是服务对象的唯一标识；attributes是对象的属性，methods是对象的方法，它们构成服务对象的接口.
+　　(3) 服务对象实例：
+　　INSTANCE是系统中所有服务对象的实例的集合.其中，驻留在节点Hi上所有实例的集合，Insti={Iiik|1≤k≤mi}；服务对象Oj所有实例的集合，Instj={Ijjk|1≤k≤nj}. Iji是驻留在主机Hi上服务对象Oj的实例，Iji∷ =〈Hi, Oj, Shared-State, Private-State〉.Shared-State是同一服务对象的实例（即冗余服务）所共享的状态，如服务对象的属性等；Private-State是各个实例的私有状态，如实例的负载状况和地址等.
+　　(4) 状态：
+　　State是系统中所有服务对象状态的集合，Si是服务对象Oi的状态.对无状态服务而言（如图4(a)所示），Si是由各个实例所共享的外部状态对象实现的，因此，

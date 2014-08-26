@@ -1,0 +1,15 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+溢油多环芳烃模糊指数的研究
+徐恒振　周传光　尚龙生　马永安　李　洪
+摘要：通过用氧化铝柱层析和等梯度(甲醇:水=85%:15%)反相高效液相色谱(C18硅烷柱)紫外检测器254nm,测定30多种油品和我国海洋环境油类样品中的多环芳烃(PAHs),建立了溢油PAHs模糊指数.结果表明,油类PAHs响应因子和相对保留值的变异系数分别在8.4%～16.5%和0.00%～5.4%之间,回收率在74.6%～111.2%之间,精密度和准确度较好;海洋环境油类的多环芳烃模糊指数值(0.00383～0.01839)与润滑油类的值(0.00106～0.00942)接近,较石油及其它产品油的值(0.06983～1.00000)低;用润滑油类作为标准油,PAHs模糊指数作为溢油芳烃类监测的指示物(指标),可提高监测海洋环境油类的代表性和可靠性.
+关键词：溢油监测；多环芳烃；模糊指数
+中图分类号：X145 文献标识号：A
+Study on fuzzy indexes of PAHs in spilled oils.
+XU Heng-zhen, ZHOU Chuan-guang, SHANG Long-sheng, MA Yong-an, LI Hong
+(Institute of Marine Environmental Protection, SOA, Dalian 116023,China) .China Environmental Science. 1999,19(6)：510～ 513
+Abstract：By determining from eluting alumina column absorption chromatography of polycyclic aromatic hydrocarbons(PAHs) in more than 30 kinds of oil and several kinds of extractive oil from sea water in our country with benzene or dichloromethane by high performance liquid chromatography (HPLC), with ultraviolet (UV) detector at 250nm of fixed 

@@ -1,0 +1,33 @@
+环境科学学报
+ACTA SCIENTIAE CIRCUMSTANTIAE
+1999年 第19卷 第5期 Vol.19 No.5 1999
+
+
+
+紫外线辐射对小麦和燕麦竞争性平衡的影响
+――小麦和燕麦生物量结构与冠层结构*
+岳　明　王勋陵
+摘要　在模拟15%臭氧层减薄条件下讨论了紫外线辐射增强对大田中小麦和燕麦在单独种植与混合种植时的生物量结构和冠层结构的影响.紫外辐射使两物种的生物量减少，使节间缩短，叶片着生高度下降，但使根冠比和单株有效穗数增加.两物种在单种和混种时对紫外辐射的反应有所不同，种间竞争有时加强紫外辐射的影响，但有时则又能抵消其作用.紫外辐射使竞争性平衡向有利于小麦的方向发展，这一改变可以部分地由两物种的生物量及冠层结构对紫外辐射反应的不同来解释.结果还暗示单独生长的植物对紫外辐射的反应并不能用来预测其在多种群的群落中对紫外辐射的反应和表现.
+关键词　紫外辐射；小麦；燕麦；竞争性平衡；生物量结构；冠层结构.
+Effect of enhanced ultraviolet radiation on Competitive balance of wheat and oat-the structure of biomass and canopy
+YUE Ming,WANG Xunling (Department of Biology,Northwest University,Xian 73000)
+Abstract　The structure of biomass and canopy of wheat (Triticun aestivum) and oat　(Avena sativa) in monoculture and mixture under supplementary UV radiation(approximately a 15% ozone layer depletion) were studied.The dry weight,internode length and leaf insection height were reduced,while the Root Shoot Ratio(RST) and eat numbers per plant were increased by enhanced UV radiation. The response of these two species to UV radiation were different between monocilture and mixture.Interspecific competition could alter the effects of UV radiation on wheat and oat.The competitive balance of these two species was shifted in favor of wheat by supplementary UV radiation based upon biomass production.The change of competitive balance could be interpreted partially by the different morphological responses of wheat and oat to UV radiation.The results also implied that the response of a species to UV radiation in monoculture or planted separately could not always be used to predict its response in mixtures to UV radiation.
+Keywords　ultraviolet radiation,wheat,oat,competition,biomass structure,canopy structure.
+　　近二十年来，由平流层臭氧层减薄导致的地表紫外辐射增强(主要是UV-B,280―315nm)及其对植物的影响，引起了人们极大的兴趣.预测这种全球性变化的生态学后果是一个困难而必要的课题［1］.虽然紫外辐射增强可以导致一些农作物产量下降［2］，但其产生的一些间接影响，如对种间竞争性平衡的影响被认为是一种更重要的潜在后果［1］.已有一些研究证明紫外辐射引起了一些种对(Species pairs)间竞争性平衡的变化［3,4,5］.对这些试验中的许多物种来说，紫外辐射增强并未对其在单独种植时的生物量产生抑制影响.因此一些研究者认为，这种竞争性平衡的改变是由于紫外辐射诱导植株形态变化，进而改变了物种间对光的竞争能力而引起［5,6］.Barnes等(1988)［5］报道了小麦(Triticum aestivum)和野燕麦(Avena fatua)的植株形态和冠层结构在UV-B辐射处理后的一些变化，但处理时间较短，缺少地下部分及经济器官产量等方面的资料.本文主要讨论春小麦与燕麦(Avena sativa)在竞争与非竞争条件下，其生物量结构及其动态变化，以及冠层结构受UV-B辐射的影响，以期为评价增强的UV辐射对农业生态系统中作物与杂草竞争性平衡的影响及其机制提供依据.
+1　材料和方法
+　　试验选用春小麦(品种为80101)和燕麦(巴燕三号).试验在兰州大学生物园大田条件下进行.两种植物按400株.m-2总密度进行单独播种和1∶1混合播种.小区面积1m×1m，各小区土壤与水分状况一致，小区随机排列.两物种于4月12日同时出苗，一周后开始紫外辐射处理直至成熟.处理时间为每日9时―16时，阴雨天暂停.
+　　试验设对照组(C)和处理组(T).对照组即为自然光照，处理组在此基础上以紫外灯来增加紫外辐射.辐射强度在整个生长季中保持在76.2mW.m-2(在波长297nm处测定，并按文献［7］的方法换算为生物有效辐射)，相当于兰州地区(海拔1500m，北纬36°)，夏至前后晴天平均UV-B辐射增加30%，即模拟臭氧层减薄15%.该模拟值与联合国环境规划署的臭氧层减薄预测值一致［8］.每个处理各设4组重复.
+　　本试验中两物种的生育期基本一致.每小区划分为0.5m×0.5m的4个亚区，以供拔节前期(5月6日)、拔节后期(5月14日)、孕穗期(5月26日、5月29日)及成熟期(7月23日)4次取样，每亚区随机抽取10株进行有关指标测定.按10cm一层分层分器官进行生物量测定.地下部分取0―20cm土层中之根系.所有植物材料在70℃烘干48h.叶面积以面积-质量法求得.
+　　用相对拥挤系数k(RCC)来表示物种的相对竞争能力［5］.按以下公式计算：
+
+　　式中kW-O为小麦(W)对燕麦(O)的相对拥挤系数.XW和XO分别为小麦和燕麦在1∶1混种时的生物量或籽粒产量.MW和MO分别为小麦和燕麦在单种时的生物量或籽粒产量.
+　　平均相对生长速率R按以下公式求得［9］：
+
+　　x1和x2分别是时刻t1和时刻t2的生物量.
+2　结果与分析
+2.1　竞争平衡的变化
+　　以单株生物量、单株籽粒数、单株籽粒重为依据分别计算了kW-O值(表1).所有kW-O值大于1，说明小麦对燕麦有一定的竞争优势.以生物量为依据的kW-O值在紫外辐射处理后升高(5月6日除外)，反映出紫外辐射增强了小麦对燕麦的竞争优势.以籽粒数及籽粒重为依据的kW-O值在紫外辐射处理后也未从根本上改变小麦对燕麦的竞争优势(kW-O值仍大于1)，但它们的kW-O值低于以生物量为依据的kW-O值，这可能与紫外辐射对两物种同化产物分配的影响不同有关.
+2.2　生物量动态及结构
+　　紫外辐射对两物种的生物量在各生育期都有不同程度的抑制作用(图1)，这种抑制是通过降低其生长速率来实现的(表2).越到后期，处理与对照的生物量差异越大.反映出紫外辐射对植物生长的影响有积累效应.但就平均相对生长速率而言，紫外辐射对早期生长的抑制影响要大的多(表2).紫外辐射对单种与混种时两物种生物量动态的影响没有显著的不同.
+表1　不同辐射处理kW-O值
+Table 1 kW-O values depending on radiation treatment,calculation basis and sampling date(Means followed by different letter indicat significant differences at 0.05 level according to Duncan

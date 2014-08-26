@@ -1,0 +1,16 @@
+信息与控制
+INFORMATION AND CONTROL
+1999年 第28卷 第6期 Vol.28 No.6 1999
+
+
+
+具有不等式约束的H∞控制及其在
+证券投资问题中的应用
+
+黄小原 钟麦英
+　　摘　要：本文应用动态对策理论研究具有不等式约束的离散动态系统的控制问题，推导并得到了具有不等式约束的控制算法；进一步研究了在证券投资问题的应用，并进行了案例计算．
+　　关键词：控制，不等式约束，证券投资
+　　中图分类号：TP29　　　　　　文献标识码：B
+H∞CONTROL WITH INEQUALITY CONSTRAINT AND ITS 
+APPLICATION TO PORTFOLIO INVESTMENT
+HUANG Xiao-yuan ZHONG Mai-ying

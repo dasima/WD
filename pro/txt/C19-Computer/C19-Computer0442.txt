@@ -1,0 +1,30 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+2000　Vol.26　No.1　P.68-73
+
+
+
+基于HM非线性模型的滚动时域H∞控制
+耿晓军 席裕庚
+摘 要 基于HM (Heterogeneous Model)非线性系统模型，提出并研究了滚动时域H∞控制器的设计.给出了基于H∞性能指标的最优控制律和其存在的充分性条件，该控制律可以保证系统稳定和干扰衰减增益不超过某一上限.然后，为了减少计算量,设计了有上述相同性能保证的次优控制器.
+关键词 滚动时域控制，H∞控制，非线性系统，预测控制.
+RECEDING HORIZON H∞ CONTROL BASED ON HM
+NONLINEAR MODEL
+GENG Xiaojun XI Yugeng
+(Institute of Automation, Shanghai Jiaotong University, Shanghai 200030)
+Abstract This paper concentrates on the problem of receding horizon H∞ control for a family of nonlinear systems that can be represented by a heterogeneous model (HM). Under H∞ performance index, the sufficient conditions arederived for the optimal controller which guarantees the stability with disturbance attenuation. Then, in order to reduce the computational burden, a suboptimal controller which can guarantee the same system performance is designed.
+Key words Receding horizon control,H∞ control, nonlinear systems, predictive control.
+1 引 言
+　　70年代末Kwon等［1］针对线性时变系统，提出了一种稳定的控制策略――带终端约束的滚动时域控制(CRHC).90年代以来，Mayne等［2］将其思想扩展到非线性系统，并证明在一定假设条件下系统闭环稳定.在要求控制系统稳定的同时，人们往往还希望系统性能优良.H∞控制正是如此，它要求控制输出对扰动输入的增益能够不超过某个上界.结合滚动时域控制和H∞控制，本文提出并研究了一类有扰动非线性系统的滚动时域H∞控制.
+　　本文内容共分4节，在第2节中将给出系统的模型和问题的描述.第3节是本文的主要工作部分，首先基于H∞性能指标给出滚动时域H∞最优控制律及其存在的充分性条件，然后为了求解方便，利用HM非线性模型的特点，得到了该问题的次优控制器.该控制器同最优控制器一样可以保证系统稳定和干扰衰减增益小于某一上限的性能要求.第4节是结束语.
+2 问题描述
+2.1 非线性系统HM模型
+　　实际系统的全局数学模型常常难以得到.本文采用由如下一系列局部模型集结而成的HM近似非线性模型［3］
+　(1)
+其中Rl表示第l个局部区域，为系统(1)的第l个子系统，x(t),u(t),w(t),z(t),yl(t)分别为第l个子系统的状态、输入，扰动、输出和量测变量，w(t)∈L2［0,∞).令GT［F G］=［0 I］.
+　　系统的全局近似模型表示如下：
+（2）
+这里其余类似，为特征基函数，μ∈M,M为特征基函数的集合，且
+　　下面引入标称模型系统(2)重写为
+　(3)
+这里 其余

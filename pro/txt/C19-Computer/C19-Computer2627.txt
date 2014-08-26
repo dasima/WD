@@ -1,0 +1,17 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第10卷 第7期　No.7 Vol.10 1999
+
+
+
+基于扩展的因果理论的鉴别诊断
+欧阳丹彤　姜云飞
+　　摘要　许多学者将因果关系这一概念应用于基于模型的诊断领域.然而,他们的研究只局限于简单因果理论.该文提出的扩展的因果理论则包容了更多的信息,指出了扩展的因果理论的诊断空间小于等于相应简单因果理论的诊断空间.另外,还将扩展的因果理论用于测试领域,证明了对于封闭的扩展的因果理论,溯因鉴别诊断等于基于一致性鉴别诊断.这一结果可应用于测试选择的策略.
+　　关键词　简单因果理论,扩展的因果理论,基于模型的诊断,测试,鉴别诊断.
+　　中图法分类号　TP18
+Differential Diagnosis Based on Generalized Causal Theory
+OU-YANG Dan-tong1 JIANG Yun-fei2
+1(Department of Computer Science Jilin University Changchun 130023）
+2(Institute of Computer Software Zhongshan University Guangzhou 510275）
+　　Abstract　Many researchers have applied the concept of causation to model-based diagnosis. However, their researches are limited to simple causal theory. In this paper, the concept of generalized causal theory that contains more information is proposed. It is pointed out that the diagnostic space of a generalized causal theory is smaller than or equal to that of the corresponding simple causal theory. Furthermore, generalized causal theory is applied to the area of test. It is demonstrated that for closed generalized causal theory, the abductive differential diagnosis is equivalent to the consistency-based differential diagnosis.
+　　Key words　Simple causal theory, generalized causal theory, model-based diagnosis, test, differential 

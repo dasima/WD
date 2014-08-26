@@ -1,0 +1,19 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　No.19　No.1　P.10，36
+
+
+
+
+用VRML语言构造动态虚拟现实模型
+张宁　袁宏春
+摘 要： 用VRML2．0语言构造动态虚拟现实模型的几种方法，针对每种方法给出了VRML语法实例，并着重介绍了插值器在制作对象动画中的重要作用。 
+关键词： 插值器 路由 虚拟现实模型 VRML语言
+　　在虚拟现实技术中，建模--构造虚拟现实模型是最基础也是最重要的一个环节，只有在1个生动逼真的虚拟世界中，用户才能愉快地进行人机交互、世界漫游等活动。VRML（Virtual Reality Markup Language）语言就是为了在WWW上构造虚拟现实模型而诞生的，它是1个3D Web标准。到目前为止VRML有2个版本：VRML 1．0和VRML2．0。这2个版本最大的不同在于，VRML 1．0没有包括高级交互和动画性能，因此它展现的仍然是一个静态的世界，而VRML2．0在这方面获得了重大突破，它把目前为止的各项多媒体技术融合进去，使构造出的三维虚拟世界具有声音、动画、人机交互等功能，从而使计算机生动逼真地模拟了真实的世界。VRML2．0提供了多种构造动态虚拟现实模型的方法，以下将予以介绍。（在实现中所举例子读者可以在机器上自己实验，可用如Microsoft的WordPad编辑器创建VRML文件，文件必须以．wrl作为扩展名，只要所用浏览器Netscape Navigator或Internet Explorer安装了VRML的插件，双击自己的文件，就能显示出所构造的虚拟现实环境）。
+1 构造动态虚拟现实模型的几种方法
+　　1．使用插值器改变对象
+　　插值器节点有很多种，各自完成不同的功能，如改变对象在场景中方向的OrientationInterpolator节点，用于移动的PositionInterpolator节点，用于变体的CoordinateInterpolator节点，还有ColorInterpolator可以修改Material节点的颜色，NormalInterpolator可以改变法向节点中的值等等。另外，ScalarInterpolator是1个基本的构造模块，由它可以建造其它许多插值。使用插值器改变对象的原理大致是相同的，这里以OrientationInterpolator节点实现旋转对象为例。
+　　下面是OrientationInterpolator节点的定义：
+　　OrientationInterpolator｛
+　　eventIn　　　　SFFloat　　　　set_fraction
+　　exposedField　MFFloat　　　key　　　　　　　[]

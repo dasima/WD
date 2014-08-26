@@ -1,0 +1,34 @@
+环境科学学报
+ACTA　SCIENTIAE　CIRCUMSTANTIAE
+1998年1月第18卷第1期科技期刊
+NO，N2气体中电晕放电高能电子密度分布的光谱实验研究*
+王文春　吴　彦
+(大连理工大学静电与特种电源研究所，大连　116024)
+李学初　沈关林
+(中国科学院大连化学物理研究所分子反应动力学国家重点实验室，大连　116023)
+
+摘要　利用目前在等离子体特性诊断方面较为先进实用的发射光谱法，在常温常压下测量了正脉冲电晕放电NO(A2+→X2)发射光谱相对强度沿线-筒式反应器的径向分布以及O2对NO(A2+→X2)发射光谱强度的影响.由此得到了正脉冲电晕放电等离子体中高能电子(≥5.5eV)的电子密度沿线-筒式反应器的径向分布情况.随径向距离增大高能电子密度呈非线性递减，对于不同放电电压这种递减规律相同.高能电子密度随加入氧量按指数规律衰减，对氧的作用作了初步解释.
+关键词　发射光谱；电晕放电；等离子体；烟气脱硫脱硝.
+ELECTRONIC DENSITY DISTRIBUTION PRODUCED IN CORONADISCHARGE OF NO+N2 MIXTURE ALONG THE RADIAL OF LINE-CYLINDER REACTOR
+
+Wang Wenchun Wu Yan
+(Institute of Static Electricity and Special Power Dalian University of Technology,Dalian 116024)
+Li Xuechu Shen Guanlin
+(State Key Laboratory of Molecular Reaction Dynamics,Dalian Institute of Chemical Physical,CAS,Dalian 116023)
+
+ABSTRACT　The diagnosis of plasma produced through positive pulse corina discharge in a line-cylinder reactor by measuring the emission intensity of NO(A2+→X2) in a mixture of N2 and NO along the radial of reactor is presented.The influence of oxygen quantity on the NO(A2＋→X2) emission intensity was investigated.The results show that the electronic density decreased nonlinealy with the increase of radial distance.The decreasing rates were the same for different discharge voltages.The electronic density presents the exponential decreasing with increasing the oxygen quantity in the mixture of NO+N2.
+Keywords　emission spectrum,corona discharge,plasma,deSO2/deNOx.
+
+1　引言
+　　脉冲电晕放电等离子体活化法是80年代发展起来的一种干法烟气脱硫脱硝新技术，颇具发展前途和应用前景.它的基本原理是：利用脉冲电晕放电过程中产生的高能电子(也称活化电子，5―20eV)把烟气中的SO2、NOx、H2O、O2、N2等分子激活、电离甚至裂解，产生强氧化性的活性粒子和自由基，如O3、OH、HO2、N、O等.这些活性物种引发的化学反应首先把气态的SO2和NOx转变为高阶氧化物，然后形成H2SO4和HNO3，在有氨注入的情况下生成硫氨和硝氨等细粒气溶胶.产物由常规方法(ESP或布袋)收集，完成从气相中的分离［1］.显然，O3、OH、HO2、N、O等活性物种的产生与线-筒式反应器内高能电子(5―20eV)的电子密度分布密切相关.通过对电晕放电等离子体中高能电子密度在线-筒式反应器内径向分布的测量，就能使我们了解线-筒式反应器内自由基和O3的产生及分布情况.已有实验结果表明，在脉冲电晕法(包括电子束辐射法)烟气脱硫脱硝中起主要作用的是非平衡等离子体中产生的各种自由基和O3.在线-筒式反应器内哪一位置自由基和O3产生最多，哪一位置化学反应就最快.这样就可以以此为依据对电源及反应器进行优化设计，从而降低能耗，提高脱除率.
+
+2　实验装置
+　　本实验所用的装置分为4部分，即配气系统、脉冲电源、反应器和光谱测量系统(见图1).脉冲电源为纳秒级，能产生前沿陡峭、上升沿为20ns、脉宽200ns左右的高压脉冲.重复频率10―200Hz可调.脉冲电源包括充电回路和放电回路，主要由直流高压电源、脉冲形成电容和旋转火花隙等组成.反应器采用线-筒式电极结构，筒中央为4×4mm的星形电晕线，有效长度为710mm,外筒为内径55mm的不锈钢圆筒.反应器的气体入口及出口均接有玻璃真空阀门，反应器两端的有机玻璃法兰与反应器间由橡胶圈密封.两法兰上分别开设直径为30mm的石英玻璃窗口，在石英玻璃窗口处沿反应器径向共开设4个孔径为3mm的圆孔，每个孔中心距反应器中心轴线距离分别为10、15、20和25mm.为降低噪音，提高信噪比，反应器两端面及导光管内壁均涂成黑色，吸收杂散光以及防止与导光管非平行的光线进入接收系统.为了减小放电对测量系统及其它仪器设备的干扰，反应器和脉冲高压电源均置于双层屏蔽网内，反应器与屏蔽网分别牢固接地.为保证信号积分平均器(BOXCAR，SR265)与放电脉冲信号同步触发，必须将脉冲电源与反应器分别单独接地，信号积分平均器外触发线要接在反应器地端.实验测量光谱范围为200―330nm.光路由He-Ne激光器准直.光信号经由反应器端面上的石英玻璃窗口、导光管(300mm)、会聚透镜(焦距f=170mm)到MODEL ASI-50SG光栅单色仪(光栅1200条/mm、闪耀波长500nm)、光电倍增管(9558QB)，再经由信号积分平均器取样平均，最后由计算机采集处理.9.96%的NO(化学工业部光明研究所)经氮气(99.9%)稀释成1.6×103ppm的混合气充入反应器足够长时间，将反应器完全封闭，接通脉冲高压电源放电.气体总压为1.013×105Pa.
+
+
+图1　脉冲电晕法脱硫脱硝光谱实验装置示意图
+Fig.1 Sketch map showing spectrum experiment setup of
+deSO2/deSOx by pulse corona discharge
+
+3　实验结果与讨论
+3.1　正脉冲电晕放电NO(A2

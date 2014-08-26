@@ -1,0 +1,26 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+2000　Vol.26　No.1　P.111-115
+
+
+
+涨落复杂性在EEG时间序列分析中的应用
+陈仲永　钱鸣奇　伍文凯　童勤业
+摘 要 给出了涨落复杂性定义，并应用在精神分裂症患者的EEG时间序列分析中.通过实验分析表明，涨落复杂性能够用来区分精神患者和正常人之间的EEG，从而有可能为临床脑电分析提出新的量化指标，为精神分裂症等患者的临床诊断提供新的科学方法.
+关键词 复杂性，时间序列，EEG.
+THE APPLICATION OF FLUCTUATION COMPLEXITY IN
+ANALYZING EEG TIME SERIES
+CHEN Zhongyong QIAN Mingqi WU Wenkai
+(Dept. of Biomedical Engineering,Zhejiang University,Hangzhou 310027)
+TONG Qinye
+(Research Center for Nonlinear Theory and Application,Hangzhou 310027)
+Abstract This paper describes the definition of fluctuation complexity. It is used to analyze the time series for schizophrenics and normal persons EEG. Through a number of experiments, we have found that this complexitycan reflect the character of the EEG, and can be used as a feature classifying the schizophrenic patient and normal person.
+Key words Complexity, time series, EEG.
+1 序言
+　　现有的时间序列处理方法如相关分析、回归分析、频谱分析和统计平均叠加等都是属于线性的处理方法.线形方法的特点是稳定、平衡、有序和一致性.然而，随着科学技术的发展，人们又发现了另一类时间序列信号，它表现出来的特性是看起来十分“乱”而类似于噪声，但是其内部却包含着一定的规律.这一类时间序列表现出非线性的特征.非线性是以不稳定、不平衡、无序和非一致性为其特征的.如何刻划和分析这种看来很“乱”而实际又有内在规律的时间序列，这一问题越来越被人们关注.一门新的非线性时间序列分析学科正在蓬勃地发展起来.本文以脑电EEG信号为处理对象，讨论涨落复杂性分析方法.
+2 对脑电EEG性质的讨论
+　　脑电EEG信号表面看来是十分混乱的，但是其中包含了大量有规律的信息.脑活动的本身是一非平稳过程.人从生长发育到衰老死亡也是一个非平稳过程.按文献报道：人的注意力集中最多也不会超过四秒钟.人脑可以说时时刻刻在改变着自身的运动状态.不同的脑功能状态就会有不同的EEG特性.因此可以说EEG是一个典型的非平稳过程.
+　　正因为有以上特点，决定了EEG信号不能用线性方法处理.长期以来 EEG研究的进展远落后于心电图ECG的研究，这也说明了线性分析方法的局限性.目前对非线性时间序列分析和处理有很多方法，如李雅普诺夫方法，分数维分析，熵分析和复杂性分析.对以上方法我们都作了一定的分析，经比较后本文决定采用复杂性分析方法.
+3 涨落复杂性
+　　复杂性分析方法有很多［1～3］.本文采用涨落复杂性方法来分析EEG信号.
+　　一维离散时间动力系统，从闭区间A到自身的映射F

@@ -1,0 +1,31 @@
+信息与控制
+Information and Control
+1999年　第28卷　第1期　Vol.28　No.1　1999
+
+
+
+具有多个时变时滞的不确定系统
+的时滞相关稳定性
+杨　斌　　潘德惠
+
+　　摘　要　研究了具有多个时变时滞的不确定系统的 稳定性问题, 利用Razumikhn定理与向量不等式的方法, 给出了不确定时滞系统稳定的充分 条件. 所得的条件与时滞相关, 在很大程度上降低了现有结果的保守性. 文末给出了一个应 用的算例, 并与已有的结果作了比较.
+　　关键词　时滞相关稳定性, 时滞系统, Razumikhn定理
+DELAY-DEPENDEN STABILITY FOR UNCERTAIN SYSTEMS WITH
+MULTIPLE TIME-VARYING DELAYS
+YANG Bin
+(Huazhong University of Science and Technology, Wuhan　430074)
+PAN Dehui
+(Northeastern University　Shenyang　110006)
+Abstract　In this paper sufficient conditions for the stabili ty of uncertain systems with multiple time-varying delays is presented, Razumik ihn theorem and vector inequality are employed to derive the conditions. The obt ained criterion is delay-dependent criteria . Also an illustrative example is g iven to show that the obtained criterion is better than the existing one in lite rature.
+Key words　delay-dependent stability, time-delay systems , Razumikihn theorem
+
+1　引言
+　　时滞系统在化工处理、柔性机器人、神经网络、最优控制等领域具有广泛的背景, 时滞的存 在使得稳定性的检验变得更加复杂, 经过国内外许多学者的努力, 迄今为止, 已有很多检验 稳定性的方法[1～7]. 现有的稳定性准则大致可分为两类: 其一为时滞独立准则[1～6],它不含时滞的任何信息; 其二为时滞相关准则[7], 它与滞后的大小有关. 由于缺少了时滞的信息, 时滞独立准则必然会使其稳定性准则具有保守性, 尤其是滞后量较小的情况. 近年来不确定时滞系统的鲁棒性问题得到了广泛的重视. 文[8～11]研究了单滞后不确定时滞系统的稳定性，其中文[8～9]给出了系统鲁棒稳定的时滞独立准则 ， 文[10～11]则给出了系统鲁棒稳定的时滞相关准则.
+　　本文基于Razumikhn定理与向量不等式的方法, 导出了具有多个时变时滞的不确定系统 的时滞相关准则.算例表明, 与现有的准则比较, 本文结果不仅降低了保守性而且宜于应用. 
+　　本文将使用如下符号:xT与MT分别表示向量x∈Rn与矩阵M∈Rn×n的转 置. λmax(M)与λmin(M)分别表示矩阵M最大特征值与最小特征值.
+
+
+2　主要结果
+　　本文研究由下述微分-差分方程描述的时滞系统
+　　　　　　(1)
+这里x∈Rn为系统的状态向量,A1∈Rn×n, 

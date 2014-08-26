@@ -1,0 +1,44 @@
+地质灾害与环境环境
+JOURNAL OF GEOLOGICAL HAZARDS AND ENVIRONMENT PRESERVATION
+　1999年　第10卷　第4期　Vol.4　No.12 1999
+
+
+
+二郎山公路隧道岩爆
+岩石X射线粉晶衍射成分分析
+徐林生　王兰生　李天斌
+摘要：通过X射线粉晶衍射成分分析，结合岩石点荷载强度试验研究，查明国内外首次发现的此隧道部分砂质泥岩发生岩爆活动的内在原因。
+关键词：二郎山公路隧道；岩爆；砂质泥岩；X射线粉晶衍射分析
+中图分类号：U451+．2；TU456
+文献标识码：A
+文章编号：1006-4362(1999)04-0077-04
+X-RAY DIFFRACTION ANALYSIS FOR
+THE SANDY MUDSTONES AFFECTED BY ROCKBURST IN
+ERLANG MOUNTAIN HIGHWAY TUNNEL
+Xu Linsheng　Wang Lansheng　Li Tianbin
+(Chengdu University of Technology, Chengdu　610059)
+Abstract：Through the X-ray diffraction analysis and point loading strength test, intrinsic causes for the rockburst in some sandy mudstones in Erlang mountain highway tunnel has been ascertained. This kind of rockburst phenomenon is first discovered at home and abroad.
+Key words：Erlang mountain highway tunnel; rockburst;sandy mudstone;X-ray diffraction analysis
+　　川藏公路二郎山隧道，是“九五”期间国家投资正在施工的长约4 161 m，最大埋深超过760 m的隧道。隧道处于深埋高地应力条件下，穿越浅海相碳酸盐岩―碎屑岩建造的志留系、泥盆系单斜地层和11条断层(图1)，地质条件较为复杂，其中，高地应力与岩爆问题是本隧道主要的工程地质问题。
+
+
+图1　二郎山公路隧道地质剖面略图
+Fig.1　The geological section of Erlang mountain highway tunnel
+1. 地层代号；2.断层及编号；3.实际岩爆段；4.地应力测点及编号；5.钻孔及编号
+1　岩爆岩石X射线粉晶衍射成分分析
+　　在隧道中部高地应力区，施工过程中部分砂质泥岩发生了轻微、中等岩爆活动［1］，这在国内外尚属首次发现。为了查明这类特殊岩石发生岩爆的内在原因，开展了岩石X射线粉晶衍射成分分析研究，研究结果见图2至图4和表1。表1中同时还列出了岩石点荷载强度试验结果，以便对比说明问题。
+
+
+图2　WC1试样X射线粉晶衍射分析谱线
+Fig.2　The X-ray diffraction analysis pattern of WC1 sample
+
+
+图3　EC1试样X射线粉晶衍射分析谱线
+Fig.3　The X-ray diffraction analysis pattern of EC1 sample
+
+
+图4　EC2试样X射线粉晶衍射分析谱线
+Fig.4　The X-ray diffraction analysis pattern of EC2 sample
+表1　研究区砂质泥岩X射线粉晶衍射成分分析
+Table 1　 The results of X-ray diffraction analysis for the sandy mudstones
+样号位　置岩爆烈度岩石点荷载强度试验值矿物成分测试结果(%)

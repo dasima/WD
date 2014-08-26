@@ -1,0 +1,56 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年 第36卷 第8期 Vol.36 No.8 1999
+
+
+
+运动估计芯片中降低局存与脉动阵列数据宽度的设计方法
+傅宇卓　胡铭曾　方滨兴
+摘　要　文中针对运动估计芯片中极为重要的存储器的结构设计，提出了一种降低局存与运算阵列端口数的设计方法，使局存的控制结构得到极大简化.文中应用这种方法，对AB2，AS2结构进行改造，得到两种具有工程实用性的新型结构.端口数的降低会带来运算阵列计算效率的下降，为此又推导了一个平衡端口数与计算效率的公式.本文研究来自于实现运动估计芯片的工作中，对研究MPEG-2视频编码器的VLSI实时实现有一定的参考价值.
+关键词　FBMA，运动估计，动态存储器，脉动阵列
+中图法分类号　TP302.1
+A METHOD OF DECREASING DATA WIDTH BETWEEN CACHEAND SYSTOLIC ARRAY ON MOTION ESTIMATION CHIP
+FU Yu-Zhuo, HU Ming-Zeng, and FANG Bin-Xing
+(Department of Computer Science and Technology, Institute of Harbin Technology, Harbin 150001)
+Abstract　Aiming at cache design, which plays an important role in motion estimation(ME) chip, a design method of decreasing data width between cache and systolic array, which simplifies design of cache control. Two new architectures on AB2 and AS2 are constructed by using the novel method. Decreasing the port number will bring about the problem of low efficiency. A formula which shows connection between port number and computing time can give a tradeoff. The research result coming from the work of ME chip's realization, is beneficial to the work of studying MPEG-2' encoder.
+Key words　FBMA, motion estimation, dynamic memory, systolic array
+1　引　言
+　　实时运动估计芯片作为MPEG-2压缩编码的关键部分，其研究随着通信、存储、广播、高清晰度电视的发展，已经越来越多地为世界各大公司所重视.继ST公司推出三片型的STi3220［1］之后，IBM最近又推出单片型ME芯片MPEGS422［2］，与此同时，SONY也有像CXD1922Q［3］这样的主打产品.
+　　全搜索算法(full search block match algorithm，简称FBMA)是运动估计中的基础算法，从理论上讲，它是匹配效果最好的算法［4］.在FBMA中，已传输的图像称为先前帧，将要传输的帧为当前帧.每帧图像划分成N×N的宏块，当前帧的每一个宏块(称为参考块：reference block)与先前帧中对应搜索区域的宏块(称为候选块：candidate block)进行匹配计算，找出最佳匹配块，输出其行列坐标(称为运动向量：motion vector).
+　　按照S. Y. Hung提供的数据相关图的设计方法［5～6］，Thomas. Komark已经描述了一族基于FBMA脉动阵列结构［7］.在工程中，为了达到具体应用的估计时间、外存存取时间等指标，结构设计者除了寻找一种易于VLSI实现的运算阵列之外，一个更为重要的问题：进行与结构密切相关的局部存储器结构及控制的复杂性的考虑.
+　　对于脉动阵列的结构选择，十分重要的一点是送入阵列的数据流能否便于实现.由于大部分脉动阵列［7］是通过多端口送入数据的，这就要求局存的设计也要满足这一特征，若数据流的次序与存储器顺序性特征差别过大，则对存储器要求更多、调度也更复杂.
+　　局存数据从单端口灌入阵列是一种控制简单的方案. S. Y. KUNG在讨论把二维相关图映射到一维信号流图时，曾提出一种消除位于中间节点I/O边的方法［5］，这种方法只能用在二维相关图中.对于更高维的相关图，这种映射方法是不能将I/O边映射到边界的某一点上的.为此，需要为I/O再做一次单独映射.
+　　本文第2节形式化描述这一映射方法并证明这种映射方法的正确性；第3节应用这一方法改造AB2，AS2结构［7］并给出平衡数据宽度和运算时间的公式；第4节概述局存和延迟寄存器的动态存储器实现方案.
+2　降低局存与运算阵列数据宽度的方法
+　　我们用表示一个具有两输出端口的模型在时刻i的端口输出，且端口1输出数据为m，端口2输出数据为n.其中，D为输入数据的定义域，Δ为无效数据.有了这种表示方法，我们就可以描述降低端口数的过程.为了说明变换后的端口模型能够起到和原模型一样的作用，我们首先做两个定义：
+　　定义1. 对于两输出端口模型A，若存在一段连续时刻的输出序列：
+　，有mp,np至少有一个不等于Δ，则称这一序列为A的有效输出.
+　　定义2. 两输出端口模型A，B的有效输出分别为
+
+如果存在下述对应关系：
+　　如果mi≠Δ则mi=xi;否则xi为D∪｛Δ｝中任意值；
+　　如果ni≠Δ则ni=yi;否则yi为D∪｛Δ｝中任意值，则称B可以完成A.
+　　定理1. 两输出端口模型A的有效输入为(见图1(A))
+
+则通过变换有效输入(见图1(B))得到的两输出端口模型B可以完成A，其中L=n-Ω.
+　　证明. 我们只考虑输入端口数据都有效的情况，其他几种情况类似.
+　　对于模型A有效输入中的；在模型B中，当αi出现于端口1时，出现于端口2的数据βj′的下标关系为，因此为模型B有效序列中的元素.
+　　推论. 两输出端口模型A的有效输入为(见图2(A))
+
+
+
+
+图1　第一类映射方法
+则通过变换有效输入(见图2(B))得到的两输出端口模型B可以完成A，其中L=n-Ω.
+
+
+图2　第二类映射方法
+其证明与上一个定理的证明类似，不再赘述.
+　　事实上，我们正是通过这种方法来改造AB2，AS2结构的.另外，端口数的降低必须导致数据输出时间的增加，因此时间增加率τ成为评价结构改造的指标之一.
+
+　　其中，ΔT为映射后增加的运算时间；T为数据流完成输入的时间.m,n,Ω见图2，l表示数据流输入中去除延迟和公用数据后完成输入所需时间.
+　　我们总是期望τ尽可能小，因此公式(1)告知了一个变换准则：① 选择数据扭斜大(Ω大)的端口作映射；② 选择公用数据多(m大)的端口作映射.
+　　由于脉动阵列的数据输入中端口间可重用数据多，数据扭斜输入即m,Ω较大，使用推论所描述的方法可以带来较好的性能提高.
+3　以AB2结构为例的改造过程和效率分析
+3.1　AB2结构的改造
+　　对于图3(图3、图4中令N=3,p=2,N为宏块的尺寸，p为搜索区域的尺寸)结构来说，从A

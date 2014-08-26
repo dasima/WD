@@ -1,0 +1,24 @@
+航空材料学报
+JOURNAL OF AERONAUTICAL MATERIALS
+1999年　第19卷　第1期　Vol.19　No.1　1999
+
+
+
+DD402单晶合金及其Ⅰ级单晶
+涡轮叶片的组织稳定性
+燕　平　单　熙　赵京晨　师燕渝　黄乾尧　孙家华　何继绥
+
+摘要： 对DD402(CMSX-2)单晶合金标准热处理状态组织及850℃下500h时效、1500h时效和3000h时效后的组织进行了显微组织观察和比较，测定了长期时效后的高温持久性能，并检查了拉断后试棒的显微组织。DD402单晶合金的应用对象是某涡轴发动机Ⅰ级涡轮叶片，解剖分析了经800h考核试车后的叶片组织。结果表明，在本文试验范围内，试样及叶片组织中均未发现TCP相，γ′形态稳定，仅在一定时间的高温和足够高的应力综合作用下，γ′才发生筏形变化。
+关键词： 单晶高温合金； 单晶涡轮叶片； 组织稳定性； DD402
+中图分类号： TG113.12　　文献标识码：A　　　文章编号： 1005-5053(1999)01-0006-07
+
+Microstructural stability of single crystal superalloy
+DD402 and its 1st stage turbine blades
+YAN Ping　　SHAN Xi　　ZHAO Jing-chen　　SHI Yan-yu
+HUANG Qian-yao　　SUN Jia-hua　　HE Ji-sui
+(1.Central Iron and Steel Research Institute, Beijing 100081, China;2.South China National Aeromotive Company, Zhuzhou 412002， China)
+Abstract： The microstructure was inspected and compared for DD402 single crystal superalloy under different conditions:standard heat treatment,850℃/500h aging,850℃/1500h aging and 850℃/3000h aging.The high temperature stress-rupture properties for the specimens after long time aging and the microstructure of the ruptured specimens were examined.Also,the microstructure of DD402 single crystal turbine blade was analyzed after 800h engine test.The results showed that there was no TCP phase in the microstructure either in the long time aging specimens or in the tested blades and the shape of γ′ was stable.The γ′ rafts formed just under a certain time with combinative effect of high temperature and sufficient stress.
+Key words: single crystal superalloy; single crystal turbine blade; microstructural stability; DD402
+　　DD402单晶合金属于第一代单晶合金，已经成功地应用于某发动机的Ⅰ级涡轮叶片［1］。为使我国航空发动机赶上世界先进发动机的水平，钢铁研究总院和南方航空动力机械公司共同开展了DD402单晶合金及其Ⅰ级单晶涡轮叶片的研制工作。目前，叶片已通过800h考核试车，正在参加试飞。因为动叶材料的组织稳定性直接影响发动机的可靠性和寿命，本文所进行的合金组织稳定性研究是整个项目中的重要内容。对DD402单晶合金的组织与性能的研究较多［2～6］，但对其组织稳定性，特别是对试车叶片的解剖分析研究尚未见报道。为此，本文用试样无应力长期时效的方法，并直接解剖分析了经800h试车后的叶片组织，以获得对DD402单晶合金组织稳定性的准确认识。
+1　试验方法
+　　用IS5Ⅲ型真空感应炉熔炼DD402母合金，其化学成分(wt%)为：Al5.56,Co4.66,Cr7.90,　Mo0.55,Ta5.89,　Ti1.03,W7.86,Ni余量。采用螺旋选晶法拉制［001］取向的单晶试棒和单晶叶片。试样和叶片的热处理制度为：1315℃/3h，空冷+1080℃/6h，空冷+870℃/20h，空冷(以下称标准热处理)。对经标准热处理后的试样分别进行850℃下保温500h，1500h和3000h的长期时效。试样尺寸为

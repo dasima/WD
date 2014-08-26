@@ -1,0 +1,61 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年 第36卷 第8期 Vol.36 No.8 1999
+
+
+
+GLCA算法的收敛性分析
+李晶皎　张　俐　姚天顺
+摘　要　模糊聚类分析算法能够通过目标函数准确地用公式表述聚类准则，从而较好地解决分类问题.GLCA算法与具有代表性的模糊聚类分析算法FCM相比较其特点是：不需要选择权指数，并把概率密度扩充到模糊测度.本文对GLCA算法进行了收敛性分析，证明了GLCA算法的不收敛性，同时给出了GLCA算法不收敛的例子.
+关键词　GLCA算法， 收敛性， 目标函数
+中图法分类号　TP391
+CONVERGENCE ANALYSIS OF THE Gλ CLUSTERING ALGORITHM
+LI Jing-Jiao, ZHANG Li, and YAO Tian-Shun
+(School of Information Science and Engineering, Northeastern University, Shenyang 110006)
+Abstract　The clustering methods can exactly describe clustering criterion with formulations by the objective function. The classification problem can be better solved. In comparison with the representative fuzzy C-means (FCM) algorithm, the advantage of the gλ clustering algorithm (GLCA) is that the selection of weighting exponent is not required and it extends the probability density to the fuzzy measure. In the paper here the convergence analysis of the gλ clustering algorithm is conducted, the divergence of the gλ clustering algorithm is proved, and the non-convergent example is presented.
+Key words　GLCA algorithm, convergence, objective function
+　　在各种聚类分析方法中,目标函数方法能够较准确地用公式表述聚类准则,而应用模糊理论可以使一些聚类问题得到较合理的解决.因此，许多学者从事模糊聚类分析算法的研究［1,2］,其中具有代表性的算法是Bezdek的FCM［3］聚类分析算法.由于模糊聚类分析算法能够较好地解决分类问题，因而在图像识别、矢量量化和语音识别［4］等方面得到应用.
+　　由波兰学者 Leszczynski［5］ 发表在“Fuzzy Sets and Systems”的GLCA算法(the gλ clustering algorithm(简称GLCA)) 使用Sugeno的gλ测度的性质进行聚类分析，将该算法与Bezdek提出的FCM算法相比较，GLCA算法的优点是：不需要选择权指数，并把概率密度扩充到模糊测度.
+　　我们在使用GLCA算法对一些样本集进行聚类分析时发现GLCA算法有不收敛的问题.因此本文从理论上证明GLCA算法的不收敛性，并给出了不收敛的例子.首先简单地介绍一下GLCA算法.
+1　GLCA算法
+　　Leszczynski利用Sugeno的gλ测度的性质完成模糊聚类分析.
+　　定义1. GLCA算法的目标函数.
+
+其中G={gij}是模糊密度矩阵，n是样本数，k是聚类中心个数，dij是从样本xj至第i类中心的距离，gij是xj对第i类中心的隶属程度，它满足下列条件：
+
+　　为了求解J(G，V)的最小值，我们引入了Lagrangian乘子集合{αj}, 则Lagrangian函数为
+
+由式(3)和，我们得到
+
+
+其中
+由式(2)和式(5)，可以得到λj的约束条件是
+
+　　GLCA算法如下：
+　　① 给定每个样本xj的初始值，设置G=｛gij｝的初始值，迭代次数收敛阈值e;
+　　② 用式(4)计算vi；
+　　③ 根据式(6)调节λj；
+　　④ 用式(5)计算G；
+　　⑤ 如果那么结束；否则L=L+1并转向②；如果xj满足,则xj属于第i类.
+2　GLCA算法的收敛性分析
+　　为了证明GLCA算法不满足收敛性条件，我们用类似于Bezdek证明FCM算法［6］收敛的方法(zangwill定理［7］)来证明GLCA算法不满足收敛性条件.
+　　如果GLCA算法是收敛的，那么GLCA算法应满足zangwill定理的3个条件，其中zangwill定理第一个条件是J(G，V)是下降函数；若J(G，V)是下降函数，则下面的命题应该成立.
+　　命题：如果GLCA算法收敛，那么对于给定的V，L(G)=J(G,V),当且仅当用式(5)计算是L的严格局部极小点.
+　　如果GLCA算法不收敛，那么命题将不成立，且不能满足收敛条件.
+　　证明. 为了去掉不等式约束0≤gij≤1，令
+　　　因此gij≥0且有gij≤1
+　　我们可以重写Lagrangian函数：
+
+　　如果是L的极小点，0那么有
+也就是
+　　(1) 
+　　(2)　由(1)和(2)可得
+　　(3) 
+同乘并用式(3)，可得
+　　(4) 
+消去变量l并再使用式(3)，可得
+　　(5) 
+由(4)可得
+　　(6)
+将(5)代入(6)，得到
+因此G

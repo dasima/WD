@@ -1,0 +1,53 @@
+环境科学学报
+ACTA　SCIENTIAE　CIRCUMSTANTIAE
+1998年2月第18卷第2期科技期刊
+若干典型岩性区域沉积物金属元素
+地球化学特征比较研究*
+张朝生1　章　申2　王立军2　王丽珍2
+(中国科学院地理研究所，1.资源与环境信息系统国家重点实验室 2.化学地理室，北京　100101)
+
+摘要　研究了4种成片分布的典型岩性(页岩、石灰岩、花岗岩、黄土)区域沉积物金属元素(Li,Na,K,Ca,Sr,Ba,Ti,V,Cr,Mn,Fe,Co,Ni,Cu,Zn,Al等共16种)总量与形态特征.结果表明：这4种岩性区域沉积物金属元素含量与形态均有显著的差别.与其它岩性相比，黄土地区易迁移元素含量高，而重金属含量显著较低；其金属元素残渣态含量高，而有机态、铁锰氧化物态和可交换态含量低.石灰岩地区重金属含量较高，而易迁移元素如Na,Sr等含量则较低；其重金属元素残渣态含量不偏低，表明经风化作用释放出来的重金属参与了次生矿物的形成过程而得以富集.花岗岩地区重金属含量居中，而Fe和Al含量较高；其金属元素残渣态含量不偏高则与风化作用较强有关.页岩地区元素含量与形态均居中，代表了各种岩性的平均水平.
+关键词　沉积物；金属；地球化学；形态；岩性.
+COMPARISON OF GEOCHEMISTRY OF METALS IN SEDIMENTS FROM SOME TYPICAL ROCK AREAS
+
+Zhang Chaosheng1, Zhang Shen2, Wang Lijun2 Wang Lizhen2
+(1LREIS,2Dept of Chemical Georgraphy,Institute of Geography,Chinese Academy of Scienes, Beijing 100101)
+
+ABSTRACT　Total contents and speciation of metals (Li,Na,K,Ca,Sr,Ba,Ti,V,Cr,Mn,Fe,Co,Ni,Cu,Zn,Al) in sediments from four typical rock areas of shales,limestone,granite,and loess were studied.Both the contents and speciation in sediments are different among the rock areas.Compared with the other rock areas,sediments in the loess area have high contents of mobile elements,but low contents of immobile elements.Metals in sediments of the loess area reside mainly in residual form,while the contents of organic,oxide,and exchangeable forms are relatively low.Contents of heavy metals in sediments from the limestone area are high,but those of immobile elements,such as Na and Sr,are low.The residual fractions of metals in sediments from the limestone area are not low,showing that the metals released by weathering have taken part in the formation of secondary minerals,and thus being enriched.Heavy metal contents in sediments from the granite area are moderate,but Fe and Al contents are rather high.Contents of the residual forms of metals in the granite area are not high,which is related with strong weathering forces.Contents and speciation of metals in sediments from shales area are moderate,showing average state of all rock areas.
+Keywords　sediments,metals,geochemistry,speciation,rock type.
+1　研究意义
+
+
+图1　典型岩性区域沉积物采样点分布图
+(C：页岩区；D：石灰岩区；
+E：花岗岩区；F：黄土区)
+Fig.1 Sampling locations of sedimentsfrom typical rook areas
+(C:shales;D:limestone;E:granite;F:loess)
+近年来，沉积物中金属元素的地球化学特征受到了广泛的关注［1，2］.但大多集中在重金属上［3，4］，因为重金属污染问题在全世界普遍存在，对其进行研究具有重要的环境意义，而对其它金属的研究则相对较少.本文作者曾将长江中下游沉积物与悬浮物金属元素总量与形态扩展到碱金属、碱土金属，以及研究较少的元素如Ti,V,Y,Zr等［5，6］，并与黄河干流进行了对比，获得了具有地球化学意义的结论.
+　　许多研究表明，区域内地质岩性是决定沉积物和土壤元素含量的重要因素之一.为深入探讨这一问题，本研究特从页岩、石灰岩、花岗岩和黄土等典型岩性区域内采集了沉积物样品进行研究，以期详细了解地质岩性对沉积物金属元素含量和化学形态的影响.
+
+2　样品采集与实验分析
+　　页岩区沉积物于1993年4月27日―5月2日在四川盆地采集(C1,C2,C3)；石灰岩区沉积物于1993年5月28日―6月2日在贵州高原采集(D1,D3,D5);花岗岩区沉积物于1994年3月11―13日在湖北省东北部采集(E1,E2,E3);黄土区沉积物于1994年4月6―9日在陕西省采集(F1,F2,F4).样点分布见图1.采样点尽量设计在小流域内岩性纯净、无污染的地方.页岩区域内混杂有少量砂岩，页岩与砂岩呈夹层分布，但以页岩为主.样品采集于细粒沉积物易于沉积的河流弯曲处，尽量采集新鲜泥状样品，装于500mL塑料瓶中，送回实验室，风干保存.为消除粒度对分析结果的影响，全部采用过240目筛的细粒样品(＜63μm)［7］，形态分析也采用此细粒样品.
+　　金属元素形态的连续提取采用Tessier法［8］，将元素形态分为：Ⅰ可交换态、Ⅱ碳酸盐态、Ⅲ铁锰氧化物态、Ⅳ有机质|硫化物态以及V残渣态共5种形态.残渣态和沉积物中元素总量均采用HF|HClO4|HNO3进行消化.各形态上清液和消化后溶液用ICP-AES进行测定，所用仪器为美国BAIRD公司2070型ICP.所分析元素包括Li,Na,K,Ca,Sr,Ba,Ti,V,Cr,Mn,Fe,Co,Ni,Cu,Zn,Al等共16种.残渣态和总量的分析测试过程采用沉积物标样GSD|3进行质量控制.仪器分析结果与标样数据相符.
+
+3　结果与讨论
+3.1　几种典型岩性区域沉积物金属元素总量
+　　分析了页岩、石灰岩、花岗岩和黄土地区各3个典型沉积物样品元素含量，并列于表1中.各类型沉积物元素含量平均值由图2表示.
+表1　典型岩性区域河流沉积物中金属元素含量(单位：mg/kg)*
+Table 1 Metal contents in sediments from typical rock areas (mg/kg)
+
+No.LiNaKCaSrBaTiVCrMnFeCoNiCuZnAl
+C152.50.592.183.751645100.3286.767.69663.5515.641.532.790.67.17
+C248.50.812.252.321375030.4089.378.68723.7618.245.928.394.77.31
+C347.81.101.960.641034220.4588.475.18073.8217.742.250.999.17.31
+D145.90.392.020.34454860.3596.174.99563.4817.840.539.9180.87.19
+D371.70.451.633.811573620.80164.598.014874.9632.462.8100.4177.06.91
+D548.30.471.872.65656370.3488.572.19133.6618.540.885.7256.56.22
+E132.41.081.770.831295950.47101.374.813004.2825.435.726.979.97.46
+E230.51.591.581.622505800.50110.089.616125.1814.045.1105.3105.38.77
+E318.30.981.393.552356530.4178.759.915833.6321.926.398.898.86.52
+F131.41.271.723.352053850.3166.050.25132.5412.126.156.956.95.19
+F226.51.401.712.961873720.2858.249.64882.2010.822.650.850.85.20
+F431.81.431.723.171893890.2558.350.94842.1610.626.058.658.65.30
+
+　　

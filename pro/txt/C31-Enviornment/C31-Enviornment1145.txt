@@ -1,0 +1,50 @@
+环境科学学报
+ACTA　SCIENTIAE　CIRCUMSTANTIAE
+1998年1月第18卷第1期科技期刊
+活性污泥法的多变量最优控制*
+Ⅱ.限制有机物(BOD)的排放总量
+彭永臻　王宝贞　王淑莹
+(哈尔滨建筑大学市政环境工程学院，150008)
+
+摘要　着重研究了在限制有机物排放总量时，使其运行费用最低的最优周期控制问题.通过增加新的状态变量和用补偿函数法，将本课题的有约束条件问题化为无约束条件问题，并提出了最优步长参数的动态搜索法来修改传统的梯度法，从而较完善地解决了多变量最优周期控制的计算问题.研究中还发现了不同初始条件下最优控制所需要的运行费用也大不相同，进而提出了最优初始状态下最优周期控制的新概念，这对保证出水质量的同时进一步降低污水处理成本来说具有更重要的意义.本文还强调指出：对于尚不具备实现最优控制条件的处理系统，可根据最优控制的研究结果实现具有广泛实用价值的准最优控制.
+关键词　活性污泥法；最优周期控制；BOD排放总量.
+MULTIVARIABLE OPTIMAL CONTROL OF ACTIVATED SLUDGE PROCESS:Ⅱ.LIMITATION OF TOTAL SUBSTRATE(BOD) DISCHARGE MASS
+
+Peng Yongzhen, Wang Baozhen, Wang Shuying
+(Department Environment and Municipal Engineering,Harbin University of Architecture and Engineering,150008)
+
+ABSTRACT　Optimal periodic control with the lowest operational cost by limiting total substrate discharge mass was studied.Through adding new state variable and using supplement functions,the problem with restriction conditions was converted into nonrestriction problem.In addition,the dynamic searching method of optimal step coefficient was developed to modify the conventional gradient method,consequently the calculation problem of the multivariable optimal periodic control was able to be resolved better.It was found that the operational costs of optimal control under various initial states are distinctly different.A new concept of optimal control under optimal initial state was presented.It is pointed out emphatically that to the treatment system without optimal control condition,the suboptimal control with extensive practical value can be realized according to the results of optima control.
+Keywords　activated sludge process, optimal periodic control, BOD total discharge mass.
+　　
+1　前言
+　　前文［1］已经证实污泥排放量Qw和溶解氧浓度DO是活性污泥法运行中的两个最重要的控制变量，它们既能控制出水水质又能改变运行费用.而且，在满足某一出水质量的前提下，在不同的定常Qw和DO控制下，其运行费用也不同，大约在DO为0.9mg/L时运行费用最低.但是，这并不是最优控制，本文研究的最优控制问题是在限制有机物(底物)排放总量的约束下，寻求使运行费用最省的最优控制变量Qw和DO的变化规律.最优控制变量主要取决于三个因素：一是进水水质水量的变化情况；二是满足规定的出水水质；三是性能指标表达式及所要达到的目标.
+　　由于各国与各地区的经济发展水平、水污染状况以及受纳水体的功能不同等多方面原因，各地的污水排放标准与污水处理厂出水水质要求都有所不同［2，3］.例如，限制污水处理厂出水中有机物排放的总量、或要求出水有机物浓度不超过某一标准、或同时限制出水中平均和最高有机物浓度分别不超过规定的指标等.限制出水中有机物排放总量属于污染总量控制，是一种常用的排放标准，尤其对于工业废水的排放.本文在研究限制有机物排放总量的最优控制模型与计算方法的基础上，通过对该问题的求解，来讨论与本课题有关的理论问题.
+
+2　最优控制数学模型与计算方法
+2.1　建立最优控制数学模型
+　　应当指出，本课题是比较复杂的有约束条件最优控制问题.其约束条件有三：一是要求满足有机物排放总量的限制；二是要求状态变量每日的末值与初值相同，三是控制变量Qw和DO只能在一定范围内取值，例如DO必须大于零而小于其饱和值，Qw也不能为负值等.满足了第二个约束条件后，在进水水质水量呈周期变化的情况下，状态变量每日也呈周期变化，进而可实现最优周期控制(以下也简称量优控制).显然研究污水处理系统最优周期控制更有实际意义，否则每日进水水质水量呈周期变化而每日的最优控制变量却无规律变化，这样的最优控制既无实际意义也难于实现.本文通过增加状态变量并用补偿函数法在求解过程中使前两条约束条件得到满足，第三条可以用庞特里亚金(Pontryagin)的极大值原理来解决.
+　　为了满足有机物排放总量的限制条件，在状态方程中增加一个状态变量Z(t),Z表示每日内出水中排出的有机物总量随时间t的变化，则有
+Z(t)=∫t0QSdt(1)
+新状态变量Z对时间的导数为
+(2)
+由于Z的初值Z(0)=0，则其末值Z(1)就表示每日排放的有机物总量
+Z(1)＝∫10QSdt(3)
+这样，上述前两条约束条件都是状态变量的末值约束条件，可表示为
+
+(4)
+式中X0,S0――分别为状态变量X，S的初值，已知数；
+Zs――每日允许排放的有机物总量，首先取Zs=150kg(BOD)/d，相当于平均出水BOD为15mg/L.
+　　由于最优控制问题的数值计算方法――梯度法只能求解无约束条件问题，因此，采用补偿函数法［4］，在计算过程中取消式(4)的末值约束条件，作为补偿在性能指标式(文献［1］中式(18))中引入一个反映末值约束条件受破坏程度的函数，使之变为无约束条件问题，得到一个新的性能指标J：
+
+(5)
+式中G1、G2和G3为足够大的正数，等式右端的前三项为补偿函数.显然G1、G2和G3的值不断增大，约束条件式(4)受破坏的程度越小，通过计算求出使新的性能指标J为最小值的最优控制，即能使运行费用JC最省同时又满足了式(4)给出的末值约束条件.
+　　由新状态变量Z的导数式(2)与基本状态方程(文献［1］中式(6))联立，组成一个新状态方程：
+
+(6)
+根据最优控制的计算方法［4］，还需引入拉格朗日(Lagrange)乘子λ1、λ2和λ3，它们是时间的未知函数，也称伴随变量.再由新性能指标式(5)中的被积函数与状态方程式(6)中3个微分方程的右端项分别乘以λ1、λ2和λ3之和，构成求解所必需的哈密顿(Hamilton)函数H.
+
+(7)
+再通过H函数对3个状态变量的偏导数-H/X,-H/S和-H/Z，得出求解最优控制所必需的伴随方程式(8)：
+
+(8)
+　　最优控制理论指出，使H函数取得最小值的最优控制Qw和DO也能使新性能指标J取得最小值.如果控制变量Qw和DO的取值范围不受约束，最优控制应当是由式(6)、式(8)和

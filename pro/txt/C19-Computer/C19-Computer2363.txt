@@ -1,0 +1,35 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年 第36卷 第8期 Vol.36 No.8 1999
+
+
+
+文档处理中消除线噪声的研究
+胡钟山　娄　震　杨静宇　LIU Ke
+摘　要　文中讨论了在文档处理中对表格型文档图像处理的一种预处理方法.由于表格型文档的框线会和文档中字符粘连或交叠，这将会降低OCR系统识别模块的性能，从而影响系统整体性能.文中首先针对这种情况提出了去除文档图像中线噪声的一个通用基本模型，给出了该基本模型消除线噪声的具体算法.然后在此模型的基础上对一些具体应用时遇到的情况提出了一些扩展方法.最后通过实验验证了这些方法.
+关键词　文档处理，光学字符识别, 线噪声消除，表格处理
+中图法分类号　TP391
+LINE-STYLE NOISE REMOVAL IN DOCUMENT IMAGE PROCESSING
+HU Zhong-Shan, LOU Zhen, YANG Jing-Yu, and LIU Ke*
+(Department of Computer Science, Nanjing University of Science and Technology, Nanjing 210094)
+*(Center of Pattern Recognition and Machine Intelligence, Concordia University, Montreal, Canada)
+Abstract　A pre-processing method for table-form document image in document image processing is discussed in this paper. Because the box frame in the table-form document touches or overlaps the characters in the box frame, which will affect the distinguishability of an OCR system, the performance of the total system drops. In order to solve this problem, a basic and general model of line-style noise removal and its detailed algorithm are proposed. Based on this model, some extended methods are also proposed for special applications. Some experiments are also given to show the effectiveness of these methods.
+Key words　document processing, OCR, line-style noise removal, form processing
+1　引　言
+　　随着计算机技术的飞速发展，文档分析以及自动处理的实用化越来越成为研究的热点，引起了人们的广泛兴趣［1，2］.各种各样的表格在实际中被广泛而大量使用，如信用卡申请表、普通发票等，其它一些非表格文档在某些区域往往也具有表格型的特征，如各种支票的金额区域、邮政编码区域等，它们的共同特征是有由横、竖直线段组成的框线围成一个区域，人们在此区域内填写相关信息.对于自动文档处理系统以及OCR系统，这种比较简单的直线结构对于文档处理系统的自动定位分割提供了强有力的帮助，系统能利用这些信息容易地定位到所需信息并进行分割［3］.但在随后的OCR识别过程中，由于字符往往与这些线段有粘连或交叠，对待识别字符产生较大干扰，这样会使得OCR系统的性能下降，造成系统产生许多的误识和拒识.因此如何减少这些框线对系统的影响成为一个实用OCR系统的一个重要环节［4］.对于这个问题可以有两种解决方案：一种是提高OCR系统本身对这些线段噪声的容忍能力使其对这些噪声不敏感.由于噪声的强弱与具体应用密切相关，例如有些应用中线噪声只会出现在字符的底端，而有些会出现在字符的任意位置，还有些应用中线噪声较粗，而有些则很细，如果采用这种方式可能会使得OCR系统不能与具体应用相对独立，将使参与训练的样本模式数量大量增加，同时也会对系统可靠性产生影响，降低系统性能；第二种方法是在分割阶段结束后，从图像上除去这些线噪声，然后送OCR系统去识别.这样提高系统的预处理能力，使图像在预处理阶段消除这些噪声而不是在识别阶段去容忍这些噪声.本文就是试图从第二种方案着手解决此类问题.在文中我们建立了一个去除线噪声的基本模型，为使该模型尽量通用，要求该模型对图像先验知识要求甚少，例如它不要求事先知道笔画的粗细等.在这个基本模型之上，针对具体情况提出了一些精细方法.
+2　去线噪声基本模型的构造
+　　下面我们构造一个比较通用的模型以适合一般情况.模型建立在以下两个基本假设下：① 线噪声直线方程可测；② 对于某一条线噪声，其宽度一定.对于文档中印刷的直线绝大多数满足这两个假设.此外从本节开始，未经特殊说明的图像均指二值图像，背景点为黑点（blackpoint）.
+　　设线噪声的直线L为：ax+by=c, (为讨论方便，设|a|≤|b|）, L宽度为δ.设集合为与直线L的连通域，为集合D(L)的边界点集合，即.对于直线上任一点，沿直线L′:求点，使得，且线段,若,则将线段标记为可擦除线段，否则将其标记为可疑线段.
+　　以上模型是在理想情况下实现，针对图像，其具体实现算法如下：
+　　步骤1. 在图像上求直线方程.
+　　　利用Hough变换，可以求得直线方程：
+　　　　　ax+by=c
+　　　做计数器Counter［］［］；
+　　　　for (all points)
+　　　　　if (point(x,y)！= blackpoint)
+　　　　　　for (all θ)
+　　　　　　　{ρ=xcosθ+ysinθ;
+　　　　　　　　Counter［θ］［ρ］++;
+　　　　　　　　}
+　　最后求计数器Counter最大值对应的θ和ρ,a=cosθ,b=sinθ,c=ρ.
+　　步骤2. 为在实际使用中比较方便，我们可以认为直线L近似水平.由于已经得到了直线方程，总可以将图像旋转一角度，使得直线L水平.但由于实际处理中直线L方程不一定严格准确，可能会存在一个小的误差（其中的一个主要原因由是θ和ρ的量化造成）.因此只能认为旋转后直线L近似水平.这时直线L方程为：y=εx+C, (ε

@@ -1,0 +1,42 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1998年 第24卷 第5期  Vol.24  No.5 1998
+
+
+
+扩展Hough变换及其在主动
+视觉中的应用
+汪　威　胡占义　马颂德
+摘　要　讨论了Hough变换的直线扩展参数化形式成立的几个充分条件，并提出了利用扩展参数化形式模拟人类视觉系统中视网膜上视锐度空间分布的具体方法，进而将该方法运用于主动视觉中的注视点轨迹控制问题，取得了较为满意的结果.
+关键词　扩展Hough变换，直线参数化形式，主动视觉，注视点轨迹控制.
+THE EXTENDED HOUGH TRANSFORM AND ITS
+APPLICATIONS IN ACTIVE VISION FIELD
+WANG WEI　　HU ZHANYI　　MA SONGDE
+(National Laboratory of Pattern Recognition,Institute of Automation,
+The Chinese Academy of Sciences,Beijing　100080)
+Abstract　　In this paper,the extended Hough transform(EHT)is investigated.It is shown that it is impossible to give the necessary conditions of being an EHT.Two sufficient conditions,however,are introduced.In addition,the EHT is used to simulate a human vision system for the study of gaze control,a problem actively pursued in the active vision field currently.
+Key words　Extended Hough transform,line parameterization,active vision,focus of attention control.
+1　引言
+　　Hough变换［1，2，3］自从被提出以来，由于具有受随机噪声影响小，对部分遮挡现象不敏感而且适合于并行处理等优点，因此在计算机视觉与模式识别等领域得到了广泛的应用.随着大规模集成电路技术的飞速发展，Hough变换的硬件实现逐渐成为可能，这种方法也越来越受到人们的重视.
+　　Hough变换的参数化形式对其性能有着至关重要的影响［4，5］，为此，针对不同的应用场合文献中已提出多种直线参数化形式［6，7］，而且越来越多的新参数化形式也在不断出现.针对这些参数化形式，文献［8，9］中提出了评价和设计直线参数化形式的若干准则.
+　　主动视觉［10，11］是计算机视觉领域一个非常重要的研究方向，它强调视觉过程中观察者和环境的动态交互过程，并研究给定任务情况下对外部可感知世界所刺激的动态行为的发展.注视点轨迹控制则是主动视觉中一个重要研究课题［12］，有效的注视点轨迹控制对主动视觉中许多概念的实现有着极其重要的意义.
+　　扩展直线参数化形式［13］是一类范围很广的直线参数化形式，它包含文献中已报道的所有主要的直线参数化形式，并具有更一般的形式，但是其性质与应用尚未得到深入研究.本文基于文献［6］中提出的唯一性、有界性和均匀性准则，提出扩展参数化形式构成直线参数化形式的若干充分条件，探讨它们在主动视觉尤其是在注视点轨迹控制方面的应用.
+2　Hough变换的直线扩展参数化形式
+2.1　扩展参数化形式
+　　Koshimizu等人［13］提出，直线的扩展Hough变换(EHT――Extended Hough Transform)的基本形式为
+g(μ,ξ)=x.f1(μ,ξ)+y.f2(μ,ξ),　　(1)
+其中μ，ξ是直线的两个参数.并且，只要满足以下三个条件，即可以把(1)式作为EHT的一个参数化形式
+　　条件1.f1(μ，ξ),f2(μ，ξ),g(μ，ξ)是关于变量μ、ξ的单值连续函数，且满足f21(μ，ξ)+f22(μ，ξ)≠0.由于f21+f22≠0，方程(1)可被替换为方程(2)，(3).
+　　(2)
+R(μ，ξ)=x.cosΦ(μ，ξ)+y.sinΦ(μ，ξ).　　(3)
+　　条件2.R(μ，ξ)，Φ(μ，ξ)分别关于变量μ，ξ单调递增(或递减)，即满足下面方程(4)
+Rμ＞0(或＜0)，　　Φξ＞0(或＜0).   (4)
+(这里记下同)
+　　条件3.设变量μ，ξ有界，且各自的界限为ξk,ξ0与μL，μ0.此外设B为标准直线参数化形式［2］下参数ρ的范围，则方程(5)必须得到满足
+｜Φ(μ，ξK)-Φ(μ，ξ0)｜=π，　　对于μ，　(5a)
+R(μ，ξK)-R(μ，ξ0)=0，　　对于μ，　(5b)
+R(μL，ξ)-R(μ0，ξ)=B，　　对于ξ.　(5c)
+　　事实上，上述3个条件既不是直线参数化形式的充分条件，也不是必要条件.因为作为一个直线参数化形式，它至少应满足唯一性条件［8］，即设(P1，P2)为一直线参数化形式，则任意的一对参数(p1,p2)可以确定唯一的一条直线，且任意一条直线都对应于唯一的一对参数(p1,p2)1).而上述三个条件并不能保证唯一性条件成立.
+　　根据唯一性条件和EHT形式，易得
+　　结论1.形如方程(3)的直线参数方程，满足唯一性条件的充要条件是：设定义空间内函数Φ(μ，ξ)的等值点集合Ω=｛(μ，ξ)｜Φ(μ，ξ)=c｝2)，则对于(μ1，ξ1),(μ2，ξ2)∈Ω，如果(μ1，ξ1)≠(μ2，ξ2)，有R(μ1，ξ1)≠R(μ2，ξ2).
+　　上述结论是很明显的，这是因为对于形如方程(3)的直线参数方程，若给定一对参数(r,

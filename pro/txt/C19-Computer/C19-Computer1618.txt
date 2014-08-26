@@ -1,0 +1,43 @@
+信息与控制
+Information and Control
+1999年　第28卷　第5期　Vol.28　No.5　1999
+
+
+
+一种求解离散LQ问题的遗传算法
+魏　鹏　林家恒　耿　宝
+
+　　摘　要：提出了一种实用的求解离散LQ问题的改进型遗传算法，给出了状态反馈阵K取值范围的确定方法，设计了一种变异概率可变的变异算子，大大提高了算法的优化速度．仿真结果表明了该算法的有效性，并且改进后的算法明显优于简单遗传算法．
+　　关键词：离散LQ问题, 遗传算法, 参数空间映射
+　　中图分类号：TP13　　　　　　文献标识码：B
+
+A GENETIC ALGORITHM FOR SOLUTION OF THE
+DISCRETE LQ PROBLEM
+WEI Peng1 LIN Jia-heng2 GENG Bao2
+(1. Shandong Power Transmisson Co., Jinan 250022; 2. Dept. of Auto, Shandong University of Technology, Jinan 250061)
+Abstract　In this paper,a kind of improved genetic algorithm is proposed for solution of the discrete LQ problem.A method to get the definite scope of the state feedback matrix K is presented.The genetic algorithm in whic h the mutation probability can vary is designed.This approach can improve optimi zation speed of the algorithm greatly.The results of the computer simulation sho w its validity and the improved algorithm is superior to the simple genetic alg orithm evidently.
+Key words　discrete LQ problem, genetic algorithm, parameter s pace map
+
+1　引言
+　　离散LQ问题是最优控制理论中的一类典型问题，在实际控制工程中应用广泛．求解此类问题的经典方法是通过求解矩阵代数Riccati方程获得最优状态反馈矩阵，而求解Riccati方程比较复杂，且计算量较大.
+　　遗传算法是一种基于自然选择和自然遗传学机理上的随机搜索算法[1]．由于遗传算法仅要求所优化的问题是可计算的，无可微性及其它要求，适用范围极广，并且具有全局收敛、鲁棒性好、计算简单等优点，因此该算法近年来引起了人们的普遍重视，在组合 优化、机器学习、模式识别、参数辩识及最优控制等诸多领域获得了成功的应用．文[2]采用遗传算法求解线性多变量系统输出反馈特征结构配置问题，文[3]针对自动交会控制器设计,应用遗传算法求解最优状态反馈阵K．但在这些论文中,都没有解决遗传算法所必需 的状态反馈阵K的取值范围确定问题，K阵的取值范围都是根据具体问题来假设的，同时所采 用的方法都是简单遗传算法SGA(Simple genetic algorithm)，算法的计算时间较长， 因此这些算法缺乏实际的应用价值．
+　　本文在文[4]的基础上,从“良好稳定区”的概念出发，利用参数空间映射关系，提出 了一种状态反馈阵K的取值范围的确定方法，并设计了一种改进型遗传算法IGA(Improved genetic algorithm)．仿真结果表明IGA明显优于SGA．
+2　K阵取值范围的确定
+　　设线性定常可控离散系统:
+X(k+1)=AX(k)+BU(k)　　　　　　　　　　　　　(1)
+其中X(k)∈Rn, U(k)∈Rm, A和B分别为对应维数的常数矩阵．求状态反馈矩阵K ，K∈Rn×n使最优控制规律
+U(k)=-KX(k)　　　　　　　　　　　　　　　(2)
+且线性二次型性为
+　　　　　　　(3)
+其中Q∈Rn×n, R∈Rm×m,且Q≥0,R＞0.
+对于上述离散LQ问题，K阵可由下面一组递推公式求出：
+　　　　　(4)
+可见由式（4）推出K阵，计算复杂，计算时间很长．此问题也可用遗传算法求解，但必需首先确定K阵的取值范围，并且其取值范围越小，遗传算法的计算时间越短． 因此如何确定一个合适的K阵取值范围，对遗传算法求解此类问题来说，至关重要．
+2．1 良好稳定区
+　　为保证闭环系统稳定且具有良好的时域特性，闭环极点在根平面上所分布的区域，称为 良好稳定区．对于离线LQ最优控制，良好稳定区应是Z平面单位圆内的ΓL域 ， 如图1（a）所示[4]．考虑到闭环极点若位于Z平面左半单位圆内时，相应的暂态分量的振荡频率较高，故闭环极点不宜配置在左半单位圆内．同时考虑到参数映射计算方便起见，故选取Z平面右半单位圆内，以(1/2,0)为圆心，半径为1/2的圆域ΓG为良好稳定区，如图1（b）所示．
+
+图1 离散LQ问题的良好稳定区
+
+　　良好稳定区ΓG的确定，不仅可保证离散线性最优控制所需的极点配置，而且可大大 缩小遗传算法的参数搜索空间，有效地提高算法的求解速度，使遗传算法真正具有实用价值 ．
+2．2 参数空间映射
+　　对于受控系统（A,b），状态反馈阵K=[k

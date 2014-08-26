@@ -1,0 +1,48 @@
+软件学报
+JOURNAL OF SOFTWARE
+2000　Vol.11　No.3　P.346-362
+
+
+
+
+电子商务安全协议的逻辑验证
+陈庆锋　王驹　白硕　张师超　隋立颖
+摘要　作者在以前所做的工作中,已对电子商务安全(secure electronic transactions,简称SET)中抽取的片段进行了证明,也对SET中可能存在的问题进行了初步探讨.该文在此基础上,对SET的整个业务流程进行了严格的逻辑验证,通过形式化逻辑方法的验证,发现了SET协议中存在的一些问题,并对如何解决这些问题进行了初步的探讨.
+关键词　信息安全,逻辑验证,防抵赖性,可追踪性.
+中图法分类号　TP309
+Logical Verification of Secure Electronic Transactions Protocol
+CHEN Qing-feng　BAI Shuo　SUI Li-ying
+(National Research Center for Intelligent Computers Beijing 100080)
+CHEN Qing-feng　ZHANG Shi-chao
+(Department of Mathemetics and Computer Science Guangxi Normal University Guilin 541005)
+WANG Ju
+(Institute of Software The Chinese Academy of Sciences Beijing 100080)
+Abstract　In the previous work,some segments of secure electronic transactions (SET) are verified,and some potential problems in SET are also discussed.Based on these,all transactions in SET are strictly logically verified in this paper.Though this formal logic verification,certain problems are found to do exist in SET.Solutions to these problems are also discussed.
+Key words　Information security,logical verification,accountability,traceable.
+　　近年来,越来越多的组织和个人通过国际互联网Internet发送和接收信息,而且据统计数字表明,随着社会经济的发展,它仍在呈上升趋势.对于这些在网上传输的信息,大家都关注着同一个问题――信息安全.针对这一问题,产生了很多保障信息安全的防范措施.
+　　目前世界上比较流行的有关信息安全领域的研究大体可以分为如下几类.首先是比较传统的做法,即用数学手段对加密算法进行改进,达到所需要的目标,它具有严密、不易被攻破的特性,但它同时也比较抽象、难懂,且无法防范通过非法手段获取信息的行为.对于一些金融业务,这是一个不可忽视的环节.其次是一些新科技的应用,例如日本的高科技研究所信息科学系的Kenichi HAYASHI,Eiji OKAMOTO和Masahiro MAMBO［1］根据每个人使用鼠标的习惯,设计了一个模式识别系统,用鼠标就可以辨认出每个人的身份,但它只能作用于访问控制,而无法解决信息在传递过程中的安全问题.美国军方海军实验室的LiWu Chang和Ira S.Moskowitz［2］采用声音隐藏技术把要传输的信息隐藏于宿主信息中通过各种电子媒体如电话线、E-mail、打包的方式传递,根据这一特点,它更适合于通信领域.还有一种在金融上比较广泛研究的Agent技术［3］,通过采用一些安全的Agent自动分析信息,并代替雇主进行交易.这些方法各有优点,但它们都要使用额外的外设,在金融业务中,这会增加成本开支,而且一旦设备崩溃,就会造成无法挽回的后果.安全协议的出现,在一定程度上祢补了这些不足之处,但协议本身相当复杂,它是否无懈可击,无法凭直观来检测,因此产生了形式化逻辑验证方法［4,5］,其中文献［6］中对NDL逻辑框架的扩展,已经成功地验证了电子商务安全(secure electronic transactions,简称SET)［7］中的部分流程.总的看来,形式化逻辑验证方法以其严谨、简洁的特点在安全协议的验证上起着重要作用.
+　　本文在文献［6,8］工作的基础上，在第1节中对SET协议的整个付费流程进行验证.第2节初步探讨了在证明中发现的问题.最后一节对本文进行总结.
+1 SET协议的逻辑验证
+　　在文献［6］中我们只列举了SET的3个范例,用扩展后的NDL逻辑框架对它们进行了逻辑验证.下面将给出SET付费业务流程的5个阶段的全面证明.
+　　首先我们给出两个定理:
+　　定理3.Know(x,CertS(y))→Know(x,Spb(y)).
+　　证明:
+　　(1) Know(x,CertS(y))
+［前提］
+　　(2) Know(x,Sign(CA,〈y,Spb(y)〉))
+(1)［定义］
+　　(3) Know(x,〈〈y,Spb(y)〉,S(H(〈y,Spb(y)〉),Spv(CA))〉)
+(2)［定义］
+　　(4) Know(x,〈y,Spb(y)〉)
+(3)［6-1］
+　　(5) Know(x,Spb(y))
+(4)［6-1］
+　　(5)即为所求.
+□
+　　定理4.Know(x,CertK(y))→Know(x,Kpb(y)).
+　　证法同定理3.
+1.1 SET协议中的持卡人注册流程验证
+　　已知:
+P={Know(CA,CertS(CA)),Know(CA,CertK(CA)),Know(C,Acct(C)),Know(C,Spb(CARoot)),
+Know(C,Kpb(CARoot))},
+α=Generate(C,InitReq)

@@ -1,0 +1,9 @@
+计算机应用研究
+APPLICATION RESEARCH OF COMPUTERS
+2000　Vol.17　No.2　P.4-5
+
+
+
+面向对象的通信软件设计工具ObjecTime
+胡亮　程文青
+摘 要 以一种新型的面向对象的通信软件开发工具

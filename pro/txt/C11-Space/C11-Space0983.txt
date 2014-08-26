@@ -1,0 +1,38 @@
+航空材料学报
+JOURNAL OF AERONAUTICAL MATERIALS
+1999年　第19卷　第3期　Vol.19　No.3　1999
+
+
+
+喷射沉积Ni3Al-Mo合金的位错结构分析
+米国发　　罗治平　　田世藩　　李庆春
+
+摘要： 利用多功能雾化沉积装置制备了Ni-Al-Mo系Ni3Al基高温合金。拉伸性能测试表明，喷射沉积Ni3Al-Mo合金的屈服强度具有明显的“R”特性。利用TEM位错结构分析，阐明了合金微观结构与屈服强度之间的关系，研究结果表明，试验合金所具有的屈服强度随温度的变化规律主要是由不同温度下γ′及γ相内的位错缠结状况、位错对的形态及数量和六面体滑移系的开动程度决定的。
+关键词： Ni3Al-Mo合金； 拉伸性能； 位错结构
+中图分类号： TG113　　　文献标识码：A　　　文章编号：1005-5053(1999)03-0019-08
+
+Dislocation structure of spray deposited Ni3Al-Mo alloy
+MI Guo-fa1　　LUO Zhi-ping1　　TIAN Shi-fan1　　LI Qing-chun2
+(1.Institute of Aeronautical Materials,Beijing 100095,China; 2.Harbin Institute of Technology,Harbin 150001,China)
+Abstract： A Ni3Al-based superalloy of Ni-Al-Mo system has been successfully prepared by using the multifuctional spray atomization and deposition plant.Testing for tensile properties indicated that the spray deposited Ni3Al-Mo alloy possesses “R” characteristic in the yield strength.Analysis of dislocation structure by TEM has revealed the relationship between the microstructure and yield strength.The results show that the yield strength changing with temperature for the alloy is determined by the dislocation winding condition、pattern and quantity of the dislocation pair and starting degree of the hexahedron slide system inside γ′ and γ phases.
+Key words: Ni3Al-Mo alloy； tensile properties； dislocation structure
+
+　　L12型Ni3Al金属间化合物合金，由于其屈服强度具有相对温度的反常现象而成为发展高温合金的基础。大量的研究表明，在峰值温度以下，开动的主要滑移系为{111}〈110〉，而在峰值温度以上则为六面体滑移系{010}〈110〉［1］。目前已趋于认为，位错从{111}面交滑移至{100}面而导致不可动位错的产生是材料发生温度反常效应的原因，并提出了多种理论结构模型［2～4］。
+　　对于(γ+γ′)两相结构材料的变形行为研究较少。显然，其变形方式有别于单相的L12型材料。喷射沉积Ni3Al-Mo合金属典型的两相LI2型结构。本文通过对合金变形后的位错结构分析，揭示了微观结构与宏观力学性能之间的内在联系。
+1　试验研究方法
+　　试验合金的成分及其制备工艺见文献［5～7］；拉伸性能试验在Instron万能试验机上进行，拉伸试验温度分别为20℃，650℃，760℃，800℃和870℃，夹头移动速度为8.33×10－3mm/s；制备TEM样品时，先在拉伸断裂后的试样上轴向切取0.2mm厚薄片，再机械减薄至0.05mm，然后进行电解双喷减薄，电解液采用15%高氯酸甲醇溶液，样品在电解双喷减薄时，应尽量使穿孔薄区靠近断口。
+2　试验结果及讨论
+2.1　拉伸性能与温度的关系
+　　图1给出了喷射沉积Ni3Al-Mo合金屈服强度随温度的变化规律。由图可见，与单相LI2型金属间化合物的变形行为相似，具有明显的“R”特性，从室温开始，随温度升高，屈服强度值不仅没有下降，反而上升，到760℃时达到峰值，再随后屈服强度随温度上升而下降。
+
+图1　喷射沉积材料的屈服强度随温度的变化曲线
+Fig.1　Yield strength of spray deposited materials νs temperature
+
+2.2　位错结构分析
+2.2.1　室温变形后的位错结构
+　　经室温变形后，γ及γ′相内均出现了位错缠结结构，尤其是在γ相内位错密度很高(图2)。由于γ比有序的γ′相软，初始变形总是发生在γ相内，将产生运动的〈110〉点阵位错［7～10］。这种点阵位错运动到γ/γ′界面时，直接切割γ相将产生高能的反相畴(APB)，但也可与后续的〈110〉点阵位错发生反应生成〈110〉型超点阵位错而切割γ′相［7］。在室温下，初始位错与超点阵位错均在八面体滑移系的｛111｝面间发生了交滑移，因而呈现了位错缠结结构，并不是平面状的位错结构。
+　　室温下变形时，在γ相内发现了精细孪晶结构(图3)。观察到倒易矢11垂直于图像中孪晶的迹线方向，分析确定孪晶面为(11)。相应地，根据其晶面变换矩阵标定了孪晶衍射图(图3c)。由于精细片状孪晶形状效应，衍射斑点在垂直于孪晶面方向被拉长，并且由于二次衍射效应，在穿过透射斑点且具有公共斑点的一列衍射斑的上下两层，均出现了孪晶斑点。
+
+图2　室温变形后的位错结构
+Fig.2　Dislocation structures after deformation at room temperature　
+(a) bright field (BF)；(b)/3

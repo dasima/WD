@@ -1,0 +1,53 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+　　压电桁架结构动力学建模与振动控制*
+聂润兔　邵成勋
+(哈尔滨工业大学*哈尔滨*150001)
+邹振祝
+(石家庄铁道学院*石家庄*050043)
+　　摘　要　考虑叠层压电陶瓷主动杆件的机电耦合效应,建立了压电桁架结构机电耦合有限元动力学模型。给出结构系统检测方程,并分析其动态特性,除位移模态外,得到了系统电势模态。采用独立模态空间控制方法对结构振动进行控制,并进行压电主动杆件的多目标最优配置,除控制能量最小化外,对非控模态的控制溢出和观测溢出最小化是另外两个优化配置目标函数。算例表明分析方法的有效性和可行性。
+　　主题词　桁架　压电元件　建模　振动控制　优化优置
+DYNAMIC MODELING AND VIBRATION CONTROL
+OF PIEZOELECTRIC TRUSS STRUCTURES
+Nie Runtu　Shao Chengxun
+(Department of Astronautics Mechanics,Harbin Institute of Technology*Harbin*150001)
+Zou Zhenzhu
+(Department of Transportation,Shijiazhuang Railway Institute*Shijiazhuang*050043)
+　　Abstract　Considering the mech-electric coupling properties of the stack-shaped piezoelectric ceramic actuators/sensors,the finite element formulas are presented for modeling the dynamic response of piezoelectric truss structures with integrated piezoceramic actuators/sensors subjected to both mechanical and electrical loadings.The dynamic characteristics of the structure systems are analyzed.In addition to the sensing equations,the displacement and electric potential modes of the structure systems are derived as well.Optimal placement strategies developed in conjunctiion with the independent modal space control of vibration are used to find the optimal placements of piezoceramic actuators/sensors.In addition to minimization of control effort,the minimization of control and observation spillover energy into uncontrolled modes are two additional obiectives which can be taken into account by optimization procedure.A simple numerical example is given to show the validation of the analysis methods.
+　　Key words　Truss　Piezoelectric actuators/sensors　Dynamic modeling　Vibration controlOptimal placement
+1　引　言
+　　压电桁架结构以多层压电陶瓷薄片叠合精制而成的主动杆件为其重要组成部分,起到承载、检测变形和控制结构静/动态特性等多重作用,可满足未来航天工程对结构系统的高性能要求［1-4］。
+　　准确建模是压电桁架结构静/动态分析和控制的基础。目前,大多数文献如［5～7］均把桁架主动杆伸缩长度作为控制量来进行结构形状、振动控制以及主动杆件和被动阻尼杆件的最优配置研究,而没有考虑主动杆压电元件的机电耦合性质。Lammering［8］考虑了这种耦合性质并进行了压电作动元件的最优配置研究,但把元件视为两端敷有电极的压电材料均质杆,没有考虑到元件的实际叠合情况,这样由于电场边缘效应会使电势线性分布假设失真,必然影响到分析结果。
+　　因此,本文视压电陶瓷元件为多层叠合体,考虑其机电耦合性质,建立压电桁架结构的机电耦合动力学模型,并进行振动控制中结构压电主动杆件的多目标最优配置研究。
+2　结构系统机电耦合动力学建模
+
+
+
+图1　压电元件及其薄片单元简图
+轴向伸缩压电元件及其薄片单元如图1所示,各单元极化沿轴向厚度方向,在准静态电场条件下,其等效线性压电本构方程可写为:
+D3=e33S3+ε33E3
+(1)
+T3=c33S3-e33E3
+(2)
+　　方程(1)、(2)分别描述材料正、逆压电效应,其中D3、E3分别为电位移(C/m2)和电场强度(N/C或V/m)轴向分量;S3、T3分别为轴向应变和应力(N/m2)分量;e33、ε33及c33分别为材料等效压电系数(C/m2)、介电系数(C/m*V)和弹性刚度系数(N/m2)。
+　　压电元件在机械和电载荷作用下,其机电耦合动力学方程可用Hamilton原理表述为:
+
+(3)
+
+
+
+图2　元件位移、电势分布示意图
+其中Ki、Ui和δ′Wi分别为薄片单元i的动能、势能及对应载荷所作虚功。
+　　整个元件均匀变形,位移线性分布。元件各薄片单元内具有相同的匀强电场,电势线性分布并设单元下表面电势为零,如图2所示。通过引入位移和电势的线性分布模式,由方程(3)可以得到压电元件机电耦合动力学方程:
+(4)
+［kwφ］T{w}-kφφφb=q　　　　　　　(5)
+其中{w}、{p}为元件端部的位移和外力列阵;φb为薄片单元上表面电势;q为元件总自由电荷量;各系数阵:
+
+分别为元件质量阵、机械刚度阵、耦合刚度阵及介电刚度系数,式中m为元件质量,A为元件横截面积,N为薄片单元数,l为元件总长,lt为薄片单元厚度。
+　　当外载q为零时,电势与元件相对变形成正比,从而可用来检测元件变形。
+　　压电桁架由含有压电元件的主动杆件和普通杆件铰接而成,考查其整体平衡,得到结构系统机电耦合动力学方程:
+
+(6)
+［KWφ］T{W}-［Kφφ］{

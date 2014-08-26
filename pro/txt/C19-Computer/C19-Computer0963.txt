@@ -1,0 +1,45 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+2000　Vol.26　No.1　P.1-6
+
+
+
+受非完整约束移动机器人的跟踪控制
+董文杰　霍伟
+摘 要 讨论受非完整约束移动机器人运动学模型和动力学模型的跟踪控制问题.通过把它们化成统一的标准型，提出了新的动态跟踪控制器.这些控制器具有维数低和没有奇异点的优点.仿真结果表明了所提出控制方法的有效性.
+关键词 轮式移动机器人，跟踪控制，非完整控制系统.
+TRACKING CONTROL OF MOBILE ROBOTS WITH NONHOLONOMIC CONSTRAINT
+DONG Wenjie HUO Wei
+(The 7th Res.Div.,Beijing Univ.of Aero.& Astro.,Beijing 100083)
+Abstract This paper investigates the tracking problem of kinematic and dynamic models of wheeled mobile robots with nonholonomic constraints.New tracking controllers are designed with the canoincal form.Our controllers are dynamic and have virtues of low dimensions and no singular points.Simulation results show effectiveness of the controllers.
+Key words Wheeled mobile robot,tracking control,nonholonomic system.
+1 引言
+　　近年来，受非完整约束移动机器人的跟踪控制得到了广泛研究.文献［1］用动态反馈线性化的方法讨论了这类移动机器人的跟踪控制问题，设计出了动态跟踪控制器.该方法的不足之处是控制器具有奇异点且维数较高.针对这些缺点，本文提出了新的跟踪控制方案，设计出了新的一维动态跟踪控制器，因而克服了文献［1］中控制器维数较高和有奇异点的缺陷，解决了受非完整约束移动机器人的跟踪控制问题.
+2 跟踪问题描述
+　　讨论文献［1］中除(3，0)类外的四类受非完整约束移动机器人，其运动学模型可统一
+简写为
+　(1)
+其动力学模型可简写为
+　(2)
+式(1)和(2)中各符号的定义及含义见文献［1］.
+给定满足
+　(3)
+的二次可微轨迹X*，本文的运动学模型跟踪问题是设计控制律u使得limt→∞(X(t)-X*(t))=0和动力学模型跟踪问题是设计控制律v使得limt→∞(X(t)-X*(t))=0和
+表1 四类移动机器人运动学方程的标准型及相应变换
+类状态变换q=φ(X)输入变换σ=ψ-1(X)u标准型奇异点
+无
+
+　　
+
+　　为讨论上述跟踪控制问题，取状态变换q=φ(X)和输入变换σ=Ψ-1(X)u(见表1［2］)，系统(1)可化为标准型
+　(4)
+或
+　(5)
+取状态变换q=φ(X), σ=Ψ-1(X)u和输入变换v=Ψ-T［ΨTΨw+ΨTσ］,方程(2)可化为系统(4)
+或(5)的扩展形式
+　(6)
+或
+　(7)
+令对应系统(4)和(5)两种情况，变换后的期望轨迹
+q*(t)可由虚拟参考系统
+　(8)

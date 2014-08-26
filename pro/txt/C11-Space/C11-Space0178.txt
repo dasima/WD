@@ -1,0 +1,33 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+　弹性机翼对机载导弹子惯导系统
+导航精度的影响分析
+崔乃刚　林晓辉
+(哈尔滨工业大学345信箱*哈尔滨*150001)
+田鸿堂　徐伯夏
+(天津8357所*天津*300141)
+　　摘　要　弹性机翼的振动及杆臂效应会引起机载导弹加速度计输出中的附加干扰加速度,从而引起导弹子惯导系统的导航参数误差。本文通过建立机翼弹性振动模型及惯导误差传播模型,从理论上分析了机翼弹性振动及杆臂效应对子惯导系统导航精度的影响,并进行了计算机仿真研究。
+　　主题词　惯导系统　误差分析　弹性振动　杆臂效应
+ANALYSIS ON INFLUENCE OF ELASTIC WING 
+ON ACCURACY OF INERTIAL NAVIGATION 
+SUBSYSTEM IN AIRBORNE MISSILE
+Cui Naigang　Lin Xiaohui
+(Harbin Institute of Technology*Harbin*150001)
+Tian Hongtang　Xu Boxia
+(Tianjin 8357 Institute*Tianjin*300141)
+　　Abstract　The Vibration and lever arm effects of elastic wing cause an additional interference acceleration existed in the output of an accelerometer mounted in the airborne missile,and can lead to navigation errors of inertial subsystem.In this paper,by modelling the elastic-wing vibration and inertial navigation error transmission equations, the influence of vibration and lever arm effects of the elastic wing on the accuracy of inertial navigation subsystem is analysed theoretically.The simulation results are given.
+　　Key words　Inertial navigation system　Error analysis　Elastic vibration　Lever arm effect
+1　引　言
+　　惯导系统应用于空射战术导弹时,载机和导弹间存在多方面的信息交连。由于载机主惯导系统和弹上子惯导系统中各类误差的存在,特别是由于导弹悬挂在弹性机翼上,且挂弹点与载机质心间存在一定的距离,载机机翼的弹性振动及杆臂效应都将引起子惯导系统导航参数误差,从而严重影响载机与导弹间信息交连的数据精度。
+　　本文以歼击机加挂空地反辐射导弹为研究背景,通过建立歼击机机翼弹性振动模型和惯导系统误差传播模型,并通过计算机仿真研究,分析了机翼弹性振动及杆臂效应对子惯导系统导航参数的影响,为动基座惯导系统初始对准研究提供一定基础。
+2　惯导基本方程
+　　研究飞行器的运动首先需选定导弹坐标系,本文取东北天坐标系(指北方位系统),在该系内导航基本方程可写为［1］［2］:
+
+(1)
+
+(2)
+
+(3)
+　　式中的fdx、fdy、fdz为比力在导航坐标系中的分量;Vdx、Vdy、Vdz为载机速度矢量在导航坐标系中的分量;h为载机飞行高度;

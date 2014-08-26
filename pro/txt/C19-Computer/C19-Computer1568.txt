@@ -1,0 +1,42 @@
+信息与控制
+INFORMATION AND CONTROL
+1999年 第28卷 第2期 Vol.28 No.2 1999
+
+
+
+语音动力学系统的神经网络建模方法研究*
+郑会永　肖田元　韩向利　刘华强　戴冠中
+　　摘要　人工神经网络(ANN)方法是非线性动力学系统建模的有效方法．本文针对多层ANN结构，运用递推预报误差(RPE)算法对离散非线性动力学系统进行了建模研究，并将之运用于语音非线性动力学系统的动态建模，估计出了语音非线性动力学系统稳态吸引子的维数，为了解语音和实用化的语音识别提供了良好的基础．
+　　关键词　人工神经网络(ANN)，递推预报误差算法(RPE)，混沌吸引子，分维
+RESEARCH ON MODELLING VOICE NON-LINEAR DYNAMIC SYSTEMS
+ZHENG Huiyong　XIAO Tianyuan　HAN Xiangli　LIU Huaqiang　DAI Guanzhong
+(Dept. of Automatic Control,Northwestern Polytechnical University,Xi'an,710072)
+　　Abstract　This paper presents,the use of recursive prediction error algorithm(RPE) of training multilayered artificial neural neural(ANN) networks in discrete time non-linear dynamic system identification. As an example,the nonlinear voice dynamic system is modelled based on RPE algorithm. The results provide a good foundation to understand and identify voice model. 
+　　Key words　ANN,recursive prediction error algorithm(RPE),chaotic attractor,fractal
+　　1　引言
+　　以前，根据测量信号建立系统模型常常采用试验改进、再试验再改进的“炒菜”方式(Trial and Error)，耗时、耗力，盲目性很大．降低消耗、少做试验并达到预期目的是人们梦寐以求的愿望．随着计算机科学、智能技术尤其是人工神经网络(ANN)的发展，使得实现这种愿望成为可能，并已在混沌的研究与开发中取得了重要进展．ANN以实验数据为基础，经过有限次迭代计算，就可获得一个反映实验数据内在规律的数学模型．因此，探讨和研究ANN建模方法是非常有意义的．目前这方面已有一些新的进展，如Billings等人将传统的参数估计预报误差方法(RPE)运用于多层ANN的学习训练，以取代反向传播BP算法，该算法收敛速度快、预报精度高\[1\]．文献\[2\]运用该方法对实际工业过程进行了建模研究，也取得了良好结果．
+　　本文分析了语音非线性动力学系统的非线性特性，应用RPE算法对该系统进行了建模研究，估计出了语音稳态吸引子的分维．计算表明，语音系统运行于低维混沌吸引子上，而且ANN方法比传统系统辨识方法能更准确、更有效地揭示和逼近过程的输入输出关系．
+　　2　多层ANN及系统状态空间重构
+　　一般说来，描述一个实际系统(如语音动力学系统)的数学模型是非常复杂的，其确切形式也是未知的．实际系统的建模必须依赖于一组已知的函数集合．这种函数集合可以任意精度逼近实际系统．从数学上讲，这就要求该集合在连续函数空间上是致密的．多层ANN的一个显著特点就是可以用来实现某些复杂非线性函数．理论上已严格证明了单隐藏层ANN可以唯一地逼近任何一个连续函数．图1给出了ANN结构示意图，它由输入层、隐藏层和输出层组成，整个网络的特性取决于相邻层间神经元的联结权值以及隐藏层中神经元的阈值．
+
+
+图1　神经网络结构示意图
+　　当实际系统进入稳定状态即达到稳态吸引子后，由于人们的知识仅限于测量时间序列，不能得到系统的真实吸引子，而只能利用Takens状态空间重构理论\[3\]来得到拓扑同构的、完全反映真实吸引子几何特征的重构吸引子．设重构吸引子所在嵌入空间为Rn0，则重构吸引子状态方程为
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　(1)
+其中，为服从特定分布的噪声向量．非线性向量函数可由多层ANN实现，化为标量形式就是一个多输入多输出网络，其输入、输出分别为
+　　　　　　　　　　　　　　　　　　(2)
+　　　　　　　　　　　　　　　　　　　　　　(3)
+由和分别构成轨道矩阵和输出矩阵．令n0,n1,n2分别是输入层、隐藏层和输出层中神经元的数目．x1i，b1i(i=1,2,…,n1)是隐藏层中第i个神经元的输出值和阈值，wkij是联结第k-1层中第i个神经元和第k层中第j个神经元的权值，网络的(n0+n2+1)n1个参数构成参数向量θ．取隐藏层节点的作用函数为S型函数g(x)．则隐藏层输出x1i和网络输出y(t)为
+　　　　　　　　　　　　(4)
+　　由输入输出的延迟项构成输入向量，设ε(t)为实际输出过程与ANN预报输出之差，可通过某种训练算法在某种准则下得以确定．
+　　3　ANN的RPE算法描述［1］
+　　在参数估计中，预报误差法RPE的准则函数定义为[1]
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　(5)
+式中，ε(t)是预报误差向量，N是轨道矩阵列向量数．RPE算法的基本原理是沿J的Gauss-Newton搜索方向修正未知参数向量，从而使J→min，参数向量按下式修正
+　　　　　　　　　　　　　　　　　　　　　　　　　(6)
+其中是Gauss-Newton搜索方向，而
+　　　　　　　　　　　　　　　　　　　　　　　　　　　(7)
+　　则递推预报误差算法为
+　　　　　　　　　　　　　　　(8)
+这里λ(t)是遗忘因子．为实现自适应算法，迭代初期置λ(t)<1；当t→∞时，取λ(t)→1．按λ(t)=λ0λ(t-1)+(1-λ0)可以达到此目的．λ0和初始遗忘因子λ(0)根据需要设定．
+　　对单隐藏层ANN，由(7)、(8)式可得到Ψ阵的\[n

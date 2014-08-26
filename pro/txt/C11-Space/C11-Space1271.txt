@@ -1,0 +1,23 @@
+航空材料学报
+JOURNAL OF AERONAUTICAL MATERIALS
+1999年　第19卷　第2期　Vol.19　No.2　1999
+
+
+
+NiAl合金基原位复合材料的反应
+热压法制备和拉伸性能
+鲁玉祥　陶春虎　杨德庄　张俊善
+
+摘要： 研究了反应热压技术(包括反应轴向热压(RHP)和反应热等静压(RHIP)法)制备的Ni50Al20Fe30(NiAl(Fe))基原位复合材料的微观组织和拉伸性能。结果表明，反应热压技术制备的NiAl(Fe)基复合材料中原位合成的TiC颗粒细小，分布均匀、弥散，但复合材料不完全致密，孔隙的存在损害了其拉伸性能。二次加工工艺可提高NiAl(Fe)基原位复合材料的致密性和组织均匀性，从而显著改善其力学性能。
+关键词： 金属间化合物基复合材料； NiAl(Fe)； 制备工艺； 拉伸性能
+中图分类号：TG113.25　　　文献标识码：A　　　文章编号：1005-5053(1999)02-0035-08
+Tensile properties of NiAl alloy matrix in-situ composites fabricated
+by reactive hot pressing techniques
+LU Yu-xiang1　TAO Chun-hu2　YANG De-zhuang3　ZHANG Jun-shan1
+(1. Dalian University of Technology Dalian 116024, China; 2. Institute Aeronautical Materials,Beijing 100095, China; 3. Harbin Institute of Technology, Harbin 150001, China)
+Abstract： The room tensile properties and microstructure are investigated in 20vol.%TiCp/Ni50A120Fe30 in-situ composites fabricated by reactive hot pressing processes(including reactive hot axial direction pressing (RHP) and reactive hot isostatic pressing(RHIP) techniques).Results show that Tic in-situ particles are fine and even,however,it is difficult for the composites to be densely fabricated by reactive hot pressing processes,Existence of porosity seriously decreases the tensile properties of the composites.The evenness of microstructure and density of composites are improved by an additional hotrolling process,which obviously increases their room tempreature mechanical properties.
+Key words：intermatallic compound matrix composite;NiAl(Fe);fabrcating process;tensile property
+
+　　NiAl基金属间化合物由于具有熔点高、比重轻(约为镍基高温合金的三分之二)、热导率高(约为镍基高温合金的4～8倍)、抗氧化性能好等一系列的优异性能，很有希望成为航空航天领域下一代优良的高温结构材料［1～2］，但差的室温塑性和低的高温强度严重地限制了其在高温结构材料领域发挥潜力［3］。世界各国针对NiAl的这两个缺点进行了大量的研究［1～6］，发现采用合金化的方法(如加入合金元素Fe等)可显著改善其室温塑性，但其高温强度仍然较低［4］；采用合金化的方法或第二相强化的方法虽然可改善其高温强度，但其室温塑性仍然较低，例如，加入适量的钛可在NiAl基体中析出有序度更高的β1(Ni2AlTi)相，使其高温强度达到甚至超过了现用的高温合金；或者，采用第二相原位陶瓷颗粒的增强作用，使其高温强度成倍增加，但这些合金在室温下几乎表现不出拉伸塑性［1～3，5］。NiAl及其合金存在的这些问题一直阻碍着其实际应用，研究既具有较高高温强度又具有一定室温塑性的NiAl金属间化合物成了目前的当务之急。采用合金化的方法改善其室温塑性，同时采用陶瓷第二相强化的方法提高其高温强度是提高NiAl合金综合力学性能的有效途径之一［6］。本文就是基于这一思想，采用RHP和RHIP工艺制备了TiCp/Ni50Al20 Fe30复合材料，并研究了其微观组织和拉伸性能。
+1　实验方法
+　　将Ni、Al、Fe、Ti和C元素粉末按20vol.%TiCp/Ni50Al20Fe30复合材料的名义成分配料，混合均匀。采用反应热压技术制备复合材料。其中，反应轴向热压(RHP)工艺过程是：把装有混合粉末的高强石墨模具放入真空热压炉(真空度为10-5Torr)内，充入氩气，以10℃/min的升温速率加热，并保持液压压力为10吨，加热到1250℃，保持2小时后，随炉冷至室温，最终得到

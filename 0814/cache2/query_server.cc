@@ -60,6 +60,7 @@ void QueryServer::onMessage(const TcpConnectionPtr &conn)
 void QueryServer::runQuery(const string &s, const TcpConnectionPtr &conn)
 {
     string word = s;
+    //字串长度-2处取后面的两个字符，看是否等于\r\n
     if(word.substr(word.size()-2, 2) == "\r\n")
     {
         word.erase(word.size()-1);//???erase

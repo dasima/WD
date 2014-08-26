@@ -1,0 +1,34 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1998年 第24卷 第5期  Vol.24  No.5 1998
+
+
+
+非线性系统的PD型迭代学习控制1)
+孙明轩　黄宝健　张学智
+关键词　初始条件问题，迭代学习控制，非线性系统.
+PD-TYPE ITERATIVE LEARNING CONTROL FOR 
+A CLASS OF NONLINEAR SYSTEMS
+SUN MINGXUAN　　HUANG BAOJIAN　　ZHANG XUEZHI
+(Xi'an Institute of Technology, Xi'an　710032)
+Key words　Initial condition problem, iterative learning control, nonliear systems.
+1　引言
+　　运用迭代学习控制技术设计控制器时，只需要通过重复操作获得的受控对象的误差或误差导数信号.在这种控制技术中，迭代需从某初始点起进行.初始点指初始状态或初始输出.所谓初始条件是指在每次迭代时，为保证控制系统的收敛性，对系统迭代初始点的重复定位操作所限定的条件.一种常见的初始条件是在每次迭代时，保证迭代初态与期望初态一致［1，2］.但实际的重复定位操作往往会导致迭代初态相对于期望初态产生偏移.目前，在已发表的文献中，没有给出过存在初态偏移情形下D型或PD型非线性迭代学习控制系统的极限轨迹［3，4］.然而，给出其极限轨迹可使人们认识到初态偏移对系统跟踪性能的影响.
+2　主要结果
+　　考虑在重复操作环境中运行的非线性系统
+k(t)=f(xk(t),t)+B(xk(t),t)uk(t),　(1a)
+yk(t)=g(xk(t),t),　　(1b)
+式中t∈［0,T］，下标k记迭代次数；xk(t)∈Rn，uk(t)∈Rr,yk(t)∈Rm分别为系统的状态、控制和输出向量.f:Rn×［0，T］→Rn，B：Rn×［0,T］→Rn×r关于t分段连续，g=［g1，…，gm］T：Rn×［0,T］→Rm关于t,x可微.
+　　采用PD型学习律
+uk+1(t)=uk(t)+Γ(yk(t),t)(k(t)+Lek(t))，　　(2)
+式中ek(t)=yd(t)-yk(t),yd(t)为给定的期望轨迹.Γ(.，.)∈Rr×m，L∈Rm×m为增益矩阵.
+　　引理1.对于x1,x2∈Rn及t∈［0,T］,存在常数ξi∈［0，1］，i=1,2,…,m，使得
+
+　　引理2.实数序列｛ak｝定义为ak+1≤ρak+bk，k=0，1，2，…，其中，｛bk｝为给定的实数干扰序列.若0≤ρ＜1，且
+　　证明.作变换.这样，对于任意的k≥1，有
+
+由于0≤ρ＜1，则
+
+因此，结合sk的定义，可证得结论.
+　　定理1.若由(1)，(2)式描述的迭代学习控制系统满足
+　　A1)　 对于任意给定的初态x0，y

@@ -1,0 +1,55 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1998年 第24卷 第1期  Vol.24  No.1 1998
+
+
+
+用Lagrangian松弛法解化工批处理
+调度问题
+王朝晖　陈浩勋　胡保生
+摘　要　研究基于Lagrangian松弛法的化工批处理过程的调度方法.建立了化工批处理过程调度问题的一种混合整数规划(MILP)模型，并通过松弛离散变量和连续变量共存的约束，将问题分解为一个两层次的优化问题，其中上层是原问题的对偶问题，下层由两个子问题构成：一个与产品批量有关，另一个确定操作时间表，分别用线性规划和动态规划方法解这两个子问题.然后从对偶问题的解构作原问题的可行解.数值试验结果证明了该方法的有效性.
+关键词　Lagrangian松弛法，化工批处理过程，调度，动态规划.
+SCHEDULING FOR BATCH CHEMICAL PROCESSES USING
+LAGRANGIAN RELAXATION-BASED APPROACH
+WANG ZHAOHUI　CHEN HAOXUN　HU BAOSHENG
+(System Engineering Institute,Xi′an Jiaotong University,Xi′an　710049)
+Abstract　In this paper,an approach based on Lagrangian Relaxation to schedule batch chemical processes is presented.The scheduling problem is modeled as a compact MILP formulation.The constraints including both discrete and continuous variables are relaxed and the problem is turned into a two-level optimization problem.The high level is the dual of the original problem,and the low level consists of two subproblems,one for batch-sizing,the other for deciding the time table.Linear programming and dynamic programming methods are used to solve the subproblems.A feasible solution is then constructed based on the solution of the dual problem.Computational results are given to demonstrate the effectiveness of the approach.
+Key words　Lagrangian relaxation,batch chemical processes,scheduling,dynamic programming.
+1　引言
+　　批处理过程是化工生产中一类非常重要的过程.由于连续变量与离散变量共存，这类过程的调度非常复杂，绝大多数是NP完全的［1］.Kondili用状态-任务网(STN)描述批处理过程，并用MILP建立了批处理调度问题的一般框架［2］.但其存在计算复杂性问题.Shah对文献［2］的问题框架提出了四种简化计算的技术［3］，但仍不能从根本上解决计算复杂性问题.
+　　Lagrangian松弛法作为一种近似最优方法，已经成功地应用于制造系统［4］和电力系统调度［5］，陈浩勋运用Lagrangian松弛和动态规划相结合的方法，提出了制造系统的一种更为有效的调度算法［6］.本文以STN作为化工批处理过程的描述方法，建立了一种更为简洁的MILP模型，进而引入Lagrangian松弛法，导出了一种化工批处理过程的次优调度方法.
+
+2　关于STN
+　　STN是一种有向图，它有两种节点：状态节点表示输入原料、中间产品或最终产品；任务节点表示处理操作，该操作将一种或多种输入状态转化为一种或多种输出状态.两种节点分别用圆圈和矩形表示.图1是一个典型的化工批处理过程的STN.
+
+
+图1　一个典型的化工批处理过程的状态-任务网(STN)
+　　描述STN的变量包括：
+　　1)描述操作i的变量
+　　Si――操作i的输入状态集；　　　　i――操作i的输出状态集；
+　　ρis――操作i的输入状态s相对于操作i批量的输入比例，
+　　is――操作i的输出状态s相对于操作i批量的输出比例，
+　　Pis――操作i输出产品到状态s的处理时间；
+　　Pi――操作i的处理时间，　ki――可执行操作i的设备集.
+　　2)描述状态s的变量
+　　Ts――从状态s接受物料的操作集；　　s――向状态s制造产品的操作集；
+　　Smaxs――状态s的最大存贮量.
+　　3)描述设备的变量
+　　Vmaxij――设备j执行操作i时的最大容量；　Vminij――设备j执行操作i时的最小容量；
+　　Ij――可由设备j执行的操作集.
+　　有关STN的详尽描述，可参见文献［2］.
+
+3　问题的提出与建模
+　　本文研究的批处理调度问题(记为P)为：
+　　给定　1)批处理过程的STN及全部相关信息；
+　　　　　2)一个感兴趣的时间段，该时间段可分为H个单位时间段(1，2，3，…H)，假定任何事件只能开始于某个时间段的起始时刻，以下将时间段t(1≤t≤H)开始时刻简称为“时刻t”；
+　　　　　3)用户订单信息及原料到货信息；
+　　　　　4)其它资源(如水、电、汽)的消费信息.
+　　求　每台设备上各操作的批量及相应的开始时间，使得生产总效益最大.
+　　首先定义以下变量：
+　　Bijt――t时刻操作i在设备j上开始的批量；Dst――t时刻关于产品s的需求；
+　　Rst――t时刻s产品(状态s)的到货量；cs――单位产品s的价值；
+　　ss――单位产品s单位时间的存贮费用；Sst――t时刻状态s中的存贮量；
+　　cUut――时间段t上消耗单位资源u的费用；Uut――时间段t上资源u的总需求量；
+　　U――其它资源集；　I――操作集；　Oijt――t时刻在设备j上开始的操作；
+　　Ej――可在设备j上执行的所有相邻操作对的集合，Ej={(Oijt,Oi′jt′)，

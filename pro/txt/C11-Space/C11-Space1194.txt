@@ -1,0 +1,18 @@
+航空工艺技术
+AERONAUTICAL MANUFACTURING TECHNOLOGY
+1999年　第4期　No.4
+
+
+
+
+TIG焊外加间歇交变纵向磁场的数值计算
+Numerical Calculation of the External Intermittent and 
+Alternative Longitudinal Magnetic Field in Stainless Steel TIG Welding
+罗　键　贾昌申　　罗　乾
+　　［摘要］　针对奥氏体不锈钢TIG焊接，采用无瑕点单积分磁场的数学模型，对外加间歇交变纵向磁场进行了数值计算，并在此基础上讨论了该间歇交变纵向磁场的分布、均匀性及其纵向分量与横向分量的比率等规律。
+　　关键词： TIG焊　纵向磁场　数值计算　不锈钢
+　　［ABSTRACT］　non_singular single integral mathematical model is adopted to calculate the external intermittent and alternative longitudinal magnetic field in austenitic stainless steel TIG welding. The distribution, equalisation and ratio of traverse and axial branch of the external magnetic field are discussed on the basis of the numerical calculation.
+　　Keywords: TIG welding　Longitudinal magnetic　Numerical calculation　Stainless steel
+　　近年来，电磁作用电弧焊技术得到了极大的发展，应用日益广泛。在TIG焊接时，外加间歇交变纵向磁场可以改变熔池金属的结晶状况，细化焊缝的一次结晶组织，减小化学不均匀性，提高焊缝金属的塑性和韧性，降低结晶裂纹和气孔的敏感性，全面改善焊接接头的质量，在航空、航天、冶金、机械等领域具有广阔的应用前景［1～3］。
+　　TIG焊的外加间歇交变纵向磁场一般是采用与电极同轴的单个空心圆柱线圈在双向脉冲矩形励磁电流作用下产生的。间歇交变纵向磁场可以促使电弧周期性、间隙地正反向旋转，改变电弧等离子流力和电流密度的径向分布，驱动熔池中液态金属流动，影响母材熔化和焊缝成型［2，3］。
+　　对外磁场的认识是彻底掌握外加间歇交变纵向磁场TIG焊技术的关键之一。但是，到目前为止，国内外学者对电磁作用TIG焊外加磁场(包括外加间歇交　　

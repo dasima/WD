@@ -1,0 +1,36 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第2期 No.2 Vol.18 1998
+科技期刊
+
+广州市气溶胶中多环芳烃分布、
+季节性变化及来源判识指标*
+成　玉　陈立民　(复旦大学环境科学与工程系，上海 200433)
+盛国英　闵育顺　傅家谟　(中国科学院广州地球化学研究所，广州 510640)
+邵　波　(中国科学院兰州地质研究所，兰州 730000)
+　　文　摘　多环芳烃(PAH)具致癌特性，研究气溶胶中的PAH在不同功能区中的分布、变化及来源，具有重要意义。使用大流量总悬浮颗粒采样器，在广州市区5个代表性功能区采集季节性气溶胶样品共25个。用GC-FID、GC-MSD定量和半定量分析PAH组份。研究区气溶胶中检测出23种母核PAH，50多种烷基PAH。优先控制的PAH含量随功能区和季节而变化，其秋、夏季平均浓度具工业区>商业区>交通区>化工区的分布特征，秋季优控PAH浓度高于春、夏季。根据荧蒽/芘和间四联苯/荧蒽比值等指标判别，区内PAH主要来源于油、煤类等燃料的不完全燃烧。
+　　关键词　多环芳烃　分布　季节变化　来源判识　气溶胶
+Distribution,seasonal change and source identifications of polycyclic aromatic hydrocarbons in aerosols from Guangzhou.Cheng Yu，Chen Limin（Department of Environmental Science and Engineering, Fudan University,Shanghai 200433);Sheng Guoying，Min Yushun，Fu Jiamo(Guangzhou Institute of Geochemistry,Chinese Academy of Sciences,Guangzhou 510640);Shao Bo(Lanzhou Institute of Geology,Chinese Academy of Sciences, Lanzhou 730000).China Environmental Science.1998,18(2):136～139
+Abstract― Twenty-five aerosol samples were collected from 5 representative function zones of Guangzhou in 3 seasons by using high-volume TSP samplers. Polycyclic aromatic hydrocarbon (PAH) fractions in aerosols were quantitatively and semi-quantitatively analyzed by capillary columns GC/FID and GC/MSD. Twenty-three kinds of parent PAH and more than 50 kinds of alkyl PAH were detected in the aerosols from this area. The study indicated that the concentrations of precedent controlled PAH (PCPAH) in aerosols were changed with function zones and the seasons. The average concentrations of PCPAH in industrial zone was higher than in commercial zone. This concentration in traffic zone was higher than in chemical industry zone and lower than in commercial zone. As season changes, the concentrations in aerosols in autumn were higher than in spring and in summer. The ratio of fluoranthene to pyrene and m-quarterphenyl to fluoranthene could be used as identifications of sources and indicated that PAH in the study area was mainly from the uncompleted combustion of oil and coal.
+Key words: PAH　distribution　seasonal change　source identifications　aerosols
+　　多环芳烃(PAH)是广泛分布于环境中的有机污染物，其中一些苯并芘类的稠环芳烃有致癌特性〔1〕。美国环保局(U.S.EPA)于70年代公布的16种优先控制PAH，其中大部分具致癌性，有的为怀疑具致癌性物质。PAH主要来源于含碳物质不完全燃烧产物〔2〕，主要分布于气溶胶中〔3〕。国外关于气溶胶中PAH的组成〔4,5〕、分布〔6,7〕、污染源〔8,9〕等方面的研究已比较深入。而关于城市不同功能区气溶胶中PAH的浓度分布、季节性变化和污染源判识指标等方面的研究还比较薄弱。
+　　作者选择经济发达的广州市作为研究区，着重研究区内工业、商业、交通等5个功能区气溶胶样品中PAH的组成、分布、季节性变化规律及来源判识指标。
+1　采样与实验
+1.1　采样
+　　使用流速为1.05m3/min±大流量总悬浮颗粒(TSP)采样器连续采集样品24h，分别于1994年4月、7月和11月在广州市内5个功能区进行准同步采样。采集了25个样品，分析了其中17个样品。这些功能区分别为：荔湾工业区(广雅中学、陈家祠)、 荔湾商业区(西来西小学)、化工工业区(员村)、交通繁忙区(天河路)、市内清洁区(麓湖)(图1)。
+1.2　实验
+　　将滤纸剪成细条带状，用二氯甲烷超声抽提气溶胶样品中的可溶有机质，抽滤液过滤后经硅胶层析柱分离出饱和烃、多环芳烃、酯类及极性物质4个组分。多环芳烃组分经GC-FID、GC-MSD鉴定和定量、半定量分析〔10〕。 空白实验表明，在采样和实验流程中分离的多环芳烃馏份中未检测到PAH〔10〕。
+
+图1　广州市气溶胶样品采集分布位置
+Fig.1　The location of aerosols sampling in Guangzhou
+表1　广州市气溶胶中多环芳烃组成及其致癌特性
+Table 1　The composition and carcinogenio properties of PAH in aerosols from Guangzhou
+
+化合物　　　　　　　　　　　分子量致癌性化 合 物　　　　　　　　　　分子量致癌性
+萘●128±荧蒽●202±
+C・1-萘132　芘●202
+C2-萘(4个异构体)156　11H-苯并(b)芴216
+C3-萘(5个异构体)170　11H-苯并(a)芴216
+C4-萘(8个异构体)184　C1-芘/荧蒽(3个异构体)216
+二甲基联苯168　苯并(a)蒽●228+
+苊●152±

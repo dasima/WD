@@ -1,0 +1,27 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年 第36卷 第9期 Vol.36 No.9 1999
+
+
+
+路由芯片中的微流水设计
+章永兴
+摘　要　微流水技术是异步电路中实现流水线设计的有效方法，而路由芯片是高速通信网络中的重要硬件部件.文中首先介绍了微流水设计的基本结构和控制，然后介绍了采用蛀洞机制的路由芯片的工作机理，并给出了利用微流水实现ASIC路由芯片的具体应用，该芯片达到了简单、高效、可靠的设计目标，文中的最后还给出了在较复杂的电路系统中实现微流水所需要进一步研究的问题.
+关键词　异步电路,微流水，路由芯片，蛀洞机制，Verilog硬件描述语言
+中图法分类号　TP301
+THE DESIGN OF MICROPIPELINES IN ROUTER CHIP
+ZHANG Yong-Xing
+(National Research Center for Intelligent Computing System, Institute of Computing Technology,Chinese Academy of Sciences, Beijing 100080)
+Abstract　Micropipeline is an efficient way for pipeline design in an asynchronous circuit, and router chip is the key technology in high-speed communication networks. In the paper here, the basic structure and control of micropipeline are introduced, and then the application in ASIC router chip with micropipeline is given. The router chip achieves the goal of simplicity, efficiency and reliability. Finally some issues to be researched further in more a complex circuit system are pointed out.
+Key words　asynchronous circuit, micropipelines, router chip, wormhole routing, Verilog HDL
+1　引言
+　　异步电路设计一直是人们热衷研究的一个领域，异步电路设计不需要全局统一的时钟驱动,而是采用某种握手协议来保证操作的正确性,与同步电路设计相比,采用异步设计具有硬件系统容易组织构造、降低功耗、稳定性好和电路升级方便等好处.目前，异步电路设计已有很多理论和方法，包括 Huffman电路、burst-mode、微流水、I-Net和STG图等［1］.其中微流水设计是基于事件驱动的可伸缩的流水线设计方法，是由Ivan Sutherland首先提出的，它是在异步电路中进行流水线设计的有效方法［2］.在MPP大规模并行处理机和机群系统中，高速通信网络是关键技术之一，而路由芯片是高速通信网络的重要硬件部件.在文中的路由芯片设计中，采用了微流水技术，达到了简单、高效、可靠的设计目标.
+2　微流水设计的结构及控制
+　　微流水在结构上由数据通路和控制电路两部分组成,如果数据通路不进行任何数据处理,也就是一个简单的FIFO结构.如图1所示，REG是流水线的数据存储单元，以4级为例，它们构成了微流水的数据通路；Muller C器件和延时单元构成了微流水的控制电路部分，Muller C器件用与门并且在其中标上字母C来表示，其功能是当两个输入端的逻辑值相同时，输出端保持不变；当两个输入端的逻辑值相反时，将左边的输入信号值输出.作为数据存储单元的REG有两个输入的事件控制端，C（capture)和P(pass),两个输出的事件控制端，Cd(capture done)和Pd(pass done)［2］.
+
+图1　微流水的基本结构示意图
+数据传送操作过程如下(前两级为例):
+　　(1) Rin=1,A1=0，有请求,但还没有应答,发captureREG1；
+　　(2) REG1锁存数据,发Cd=1；
+　　(3) Ain=1,向上一级发应答;且R1=1,往下一级发请求；
+　　(4) R1=1,A(2)=0，发captureREG2; 同时,发pass

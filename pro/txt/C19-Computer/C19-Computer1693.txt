@@ -1,0 +1,40 @@
+软件学报
+JOURNAL OF SOFTWARE
+2000　Vol.11　No.4　P.461-467
+
+
+
+
+分布式虚拟环境综述
+潘志庚　姜晓红　张明敏　石教英
+　摘要　在分布式虚拟环境中,位于不同物理位置的多个用户或多个虚拟环境通过网络相互联结,进行信息共享和交互.该文结合作者的研究工作,从分布式虚拟环境的产生、需求和特征、模型和结构以及系统关键技术这几个方面对分布式虚拟环境的研究情况进行综述,讨论了存在的问题和进一步的发展方向.
+　关键词　虚拟现实,分布式虚拟环境,可扩展性,网络通信,虚拟现实建模语言.
+　中图法分类号　TP393
+Distributed Virtual Environment: An Overview
+PAN Zhi-geng　JIANG Xiao-hong　ZHANG Ming-min　SHI Jiao-ying
+（State Key Laboratory of CAD & CG　Zhejiang University　Hangzhou　310027）
+Abstract　　In DVE (distributed virtual environment), multiple users or environments located in different places connect to each other by network. Users can share information and perform interaction. Based on their studies, the authors give an overview of the research work done in the field of DVE in this paper, including its origin, requirements and features, model and architecture, typical systems and key techniques. Finally, some existing problems which need the further study and the further development of DVE are discussed.
+Key words　Virtual reality, distributed virtual environment, scalability, network communication, VRML (virtual reality modeling language).
+　　随着计算机和通信等技术的飞速发展,人类正向高度信息化的社会迈进.目前的研究成果和发展趋势表明,有两项技术将对未来信息社会产生重要影响,并最终改变人类的生活和工作方式,这就是虚拟现实(virtual reality,简称VR,也称为虚拟环境(virtual environment,简称VE)和网络［1］.虚拟环境代表着未来的计算机交互界面.这是一种完全沉浸式的交互界面,用户就好像真的处在计算机生成的世界里,无论是看到的、听到的、还是感受到的,都像是在真实世界里一样,并且用户还可以用完全自然的方式向计算机发出命令.目前，虚拟环境技术已在医学、军事、航空、机器人及制造业、建筑、教育及娱乐等众多领域得到成功的应用.今天,国际互联网Internet将世界上的人紧密地联系在一起,通过网络越过地理上的分隔,人们可以共享资源,互通信息或就特定的问题进行讨论、协作.
+　　分布式虚拟环境(distributed virtual environment,简称DVE)就是把这两项技术结合在一起,在一组以网络互联的计算机上同时运行VE系统的技术.这样,“在网络上漫游”就不再是一个比喻,而是一种真实的生活.人们可以真正“进入”计算机,通过网络到达地球的任何一个角落,甚至是通过想像或者仿真创造出来的那些实际上并不存在的世界,与任何人进行逼真的远程会面,完成协同工作.
+　　DVE的研究开发工作可以追溯到80年代初.近年来,网络技术的飞速发展更进一步地推进了DVE的研究和开发［2］.下面，简要介绍DVE系统的产生和发展过程.
+　　美国国防部是最早支持研究及开发DVE的单位,资助的一个典型项目为SIMNET［3］.该项目的目标是开发一个供军事训练用的、低价格的、联网的分布式军用虚拟环境,该系统的研制成功,为后来DVE的开发奠定了基础.基于这一项研究成果,在SIMNET协议基础上制定了DIS协议,最终成为DVE的一项标准(IEEE 1978).网络游戏是DVE的一个比较成功的应用领域.Gary Tarolli在1984年开发了SGI工作站上的网络飞行模拟演示程序Flight.Doom是另一个成功的网络VR游戏.其他分布式网络VR游戏还有运行在Macintosh机器上的Marathon以及运行在Appletalk上的坦克游戏Bolo等.到了90年代,随着VR设备的发展,DVE才得到较大的发展,出现了一系列工具和应用.
+　　DVE系统应具有以下5个方面的特征［2］：(1) 共享的虚拟工作空间；(2) 伪实体的行为真实感；(3) 支持实时交互,共享时钟；(4) 多个用户以多种方式相互通信；(5) 资源信息共享以及允许用户自然操纵环境中的对象.
+　　 DVE系统有4个基本组成部件：图形显示器、交互控制设备、处理系统和数据网络.DVE系统是分布式系统和VR系统的有机结合,其需求可从以下两个方面来阐述：VR本身需求和分布式系统的需求，见表1.
+Table 1　Requirements of DVE systems
+表1　DVE系统的需求
+
+　　　　　　Requirements of VR①Requirements of distributed systems②
+Rendering in various forms (graphics, audio, text)③Naming service④
+Low latency, high updating rate⑤Service-Request matching⑥
+Capability to process different input devices⑦Resource finding and location⑧
+Collision detection⑨Distributed storage of data⑩
+Navigation and viewpoint controllingDynamic load balancing
+Construction of virtual worldSecurity management
+Management of scene databaseMulticast
+Complex behavior modelingSupport for continuous media
+
+①VR的需求,②分布式系统的需求,③多种形式的绘制(图形、声音、文字等),④命名服务,
+⑤低延迟、高更新速率,⑥需求-服务匹配,⑦处理多种输入设备的能力,⑧资源查找及定位,
+⑨碰撞检测,⑩数据的分布式存储,导航和视点控制,动态负载平衡,虚拟世界构造,
+安全性管理,场景数据库管理,组播通信,复杂行为建模,

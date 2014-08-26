@@ -1,0 +1,88 @@
+宇 航 学 报
+JOURNAL OF ASTRONAUTICS
+1998年4月  第19卷  第2期科技期刊
+
+10°尖锥气动特性边界层转捩
+诱导量的测定研究
+楼洪田
+(北京空气动力研究*所北京7201信箱1分箱*100074)
+摘  要　　本文用风洞实验的方法在国内外首次测出了10°尖锥气动特性的
+转捩诱导量，包括转捩诱导法向力及其作用点，转捩诱导俯仰力矩和尖锥压
+心的转捩诱导量。研究结果表明，这些转捩诱导量随Re数的变化趋势合理，
+具有确定的规律性。研究认为，这些转捩诱导量产生的原因是细长锥边界层
+转捩的不对称性。利用这些结果，可以很好地解释边界层转捩何以对细长锥
+的气动静稳定性和气动稳定性产生极为显著的影响以及静、动稳定性转捩诱
+导量之间的相关现象。此外，这个研究结果还有助于证明边界层转捩将影响
+物面的压力分布。
+
+本研究是在M=5,α=0°的流场中完成的，实验的Re数范围为ReL=2.8×106~13.8×106。
+
+主题词   细长锥　边界层转捩　雷诺数　气动特性　风洞试验
+
+
+
+MEASUREMENT STUDY OF TRANSITION INDUCED
+AERODYNAMICS ON 10° SHARP CONE
+Lou Hongtian
+(Beijing Institute of Aerodynamics*Beijing*100074)
+Abstract In this paper,the aerodynamics induced by boundary layer transition on sharp cone 
+were measured experimentally,on the condition when M=5,α=0°，θc=10° and ReL=
+(2.8~13.8)×106.Results show that,the asymmetric transition between leeward and windward 
+of 10° sharp cone will produce on the cone a transition induced normal force,whose direction 
+is in opposition with that of the normal force of non-viscous flow and its acting point is 
+allocated shortly behind the transitional belt.This induced normal force will cause obvious 
+variation of pressure center of the sharp cone along with Reynolds number,total amount of 
+movement can reach up to 3.2%.
+
+　In this paper,curves of aerodynamic coefficients of transition induced normal force to 
+Reynolds number are given out,such as its moment coefficients to cone nosetip,its acting 
+point and transition induced variation of pressure center,Also this paper proves that boundary 
+layer transition will cause pressure variation on body surface.
+
+　Key words  Slender cone   Boundary layer transition  Reynolds number  Aerodynamic 
+characteristics  Wind tunnel test
+
+1　引言
+
+　　边界层转捩对细长锥气动特性的影响一直是一个人们十分关注的课题。
+原因是多方面的。首先，细长锥是大气高速再入飞行器的典型气动外形，这
+种外形的飞行器在再入大气时曾观测到明显的运动异常现象，而且与转捩有
+关［1］；其次，边界层转捩对物面压力的影响一直是一个存有争议的问题，
+而研究转捩对细长锥气动力特性的影响，可以简接回答这个重要的理论问题。
+
+　　围绕这个课题国外已发表了大量的论文，主要涉及三个内容。一是细长
+锥边界层转捩的形态以及转捩位置随Re数的变化，证实了细长锥边界层的转
+捩是不对称的［2］；二是转捩对细长锥静、动稳定性和压心的影响，证实这
+种影响是显著的［3，4，5］；三是转捩对细长锥气动特性影响的机理，这方面
+的研究结果很少，只见到Ericsson提出的转捩诱导法向力的概念［3，4］，但
+未看到任何实验结果。Ericsson认为，由于转捩的出现，将导致物面压力的
+变化，形成转捩诱导法向力，正是它引起细长锥静、动稳定性的变化，并最
+终影响飞行器的再入运动。
+
+　　作者对这个问题在国内首先开展了长达18年的研究，获得了一系列的成
+果［6，7，8］。其中，转捩对细长锥静、动稳定性的影响的研究结果比国
+外的同类结果具有更好的规律性，并证实这种影响确是边界层的不对称转捩
+形成的；证明了静、动稳定性的转捩诱导量之间存在着负相关关系，而这些
+转捩诱导量又都可归纳为转捩诱导法向力的导出量。因此，剩下的关键问题
+是证实这种转捩诱导法向力的客观存在,及其随Re数的变化规律。
+
+　　为了用实验证实转捩诱导法向力的存在，并从粘性气动力中将它分离出
+来，作者及国内的其他研究人员曾做过努力，其结果见文献［9］。该结果表
+明，转捩诱导法向力是确实存在的，利用它能很好解释边界层的不对称转捩
+对细长锥气动特性的影响及其随Re数的变化规律，但是由于数据点少，分散
+度较大，因此难以把它从粘性气动力数据中分离出来。
+
+　　为了测定边界层转捩的诱导气动特性，包括转捩诱导法向力，它的作用
+点，转捩诱导俯仰力矩，转捩对压心的影响，作者设计了一个更精细的实验
+方案，并终于得到了满意的结果。本文的重点就是介绍这项实验研究及其结
+果。2  研究方案、实验设备与实验条件
+
+　　采用高速风洞实验研究的方法，名义M数为5；模型用半锥角为10°的尖
+锥，称10°尖锥，攻角α在0°附近。这样做的原因是在风洞条件下，M=5
+附近最容易实现转捩边界层；而这些实验条件又与国外的研究相同，实验结
+果便于比较。
+
+　　风洞选用北京空气动力研究所的FD-02风洞，该风洞M=3.5~8，风洞的
+总压可在0.3~8.0兆帕的范围内变化。风洞配有蓄热式加热器，可以保证风
+洞流场不发生冷凝，在本实验中，T0维持在373K。在M=3.5~6时，喷管的出
+口面积S=0.2m×0.2m,M=7与8的喷管，出口直径为

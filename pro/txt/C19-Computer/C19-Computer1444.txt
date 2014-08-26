@@ -1,0 +1,28 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1997年　第23卷　第6期　Vol.23　No.6　1997
+
+
+
+
+基于磁通观测器的转差频率型
+异步电机矢量控制系统
+李汉强
+　　摘　要　从异步电机数学模型出发，提出以磁通观测器为基础的控制电流源驱动转差频率型异步电机矢量控制系统的数学模型与结构图.控制系统数学仿真与实验说明，本方案可以改善电机定、转子电阻随运行温度变化时的动、静态特性.
+　　关键词　磁通观测器，异步电机，矢量控制，数字仿真.
+A FLUX OBSERVER BASED SLIP FREQUENCY TYPE VECTOR
+CONTROL SYSTEM FOR INDUCTION MOTOR
+LI HANQIANG
+(Department of Computer & Automation,Wuhan Transportation University,Wuhan　430063)
+Abstract　In this paper,according to the mathematical model of induction motor,the author provides the mathematical model and structure diagram for a flux observer based vector control system of controlled current source-fed slip frequency type induction motor.Simulation of this control system is given.Finally the author proves that this method improves the transient and stationary characteristic of the resistance value of motor's stator and rotor when it varies with working temperature.
+Key words　Flux observer,induction motor,vector control,digital simulation.
+1　引言
+　　近年来，异步电机转差频率型矢量控制作为高性能的力矩控制已在很多产业部门得到广泛应用.但是，这种控制方法在计算机控制器中转子磁通ψ*rd与转差频率ω*s运算中含有转子项参数［1］，因此系统对参数变化敏感度强，尤其是随运行温度变化使控制系统力矩不能获得所期望的性能.在电机控制领域中，应用现代控制理论，采用磁通观测器的异步电机矢量控制系统可以改善系统在电机参数变化时的静、动态特性.
+2　控制系统的数学模型
+2.1　异步电机数学模型
+　　在旋转坐标d-q轴系下的异步电机电压方程式为
+　　　　　　(1)
+转子磁通方程式为
+　　　　　　　　(2)
+2.2　控制器数学模型
+　　控制器内电机参数用

@@ -1,0 +1,27 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第4期 No.4 Vol.18 1998
+科技期刊
+
+粗滤慢滤工艺去除氨氮的实践与机制*
+吕锡武　马　春　(东南大学环境工程系，南京 210018)
+陈　俊　(中国石化总公司扬子石油化工公司水厂，南京 210048)
+文　摘　为寻求改善乡村微污染饮用水水质的有效方法,结合粗滤慢滤工艺研究的实践,阐述了该工艺氨氮的去除规律以及与溶解氧的关系,提出需氧量的估算方法。研究结果表明,粗滤慢滤工艺具有良好的去除NH3-N能力,其效率主要受溶解氧的限制,实用工艺中,停留时间及水温对其影响不大。该工艺可直接应用于乡村饮用水的处理。
+关键词　粗滤　慢滤　氨氮　给水处理　乡村水厂
+Practice and mechanism of ammonium-nitrogen removal by roughing filtration and slow-sand filtration process.Lu Xiwu, Ma Chun(Department of Environmental Engineering, Southeast University, Nanjing 210018)；Chen Jun(Yangzi Petro-chemical Corporation Water Plant,China Petrochemical Corporation,Nanjing 210048).China Environmental Science.1998,18(4):319～323
+Abstract―To find an effective process of improving drinking water quality in rural area,it was made to investigate into the process of roughing filtration and slow-sand filtration.This paper presented the mechanism of ammonium-nitrogen removal and the relationship between removal efficiency and dissolved oxygen;also put forward a method of determining the oxygen demand. The results indicate that roughing filtration and slow-sand filtration can remove NH３-N effectively；DO affects the rate of NH３-N removal；and meanwhile, HRT and water temperature have slight influence on practical process. This process is a preferable choice for countryside water treatment plants.
+Key words:roughing filtration　slow-sand filtration　ammonium-nitrogen　water supply　countryside water plant 
+
+　　在我国乡镇企业发达的农村地区,饮用水水源污染程度往往甚于城市。氨氮是污染水源中的主要污染物之一。目前,我国的城市常规水处理工艺对氨氮尚无有效的去除方法。而在乡村地区,由于水厂规模小,设备简陋,管理技术不足,氨氮的去除更为困难。
+　　粗滤慢滤工艺是一项由国际供水和卫生咨询中心与一些发展中国家合作,新近开发的水处理技术。这一技术既具有工艺简单、技术要求低、管理方便、适合于乡村水厂使用的特点,还有良好的去除有机污染物的能力。本文试就从事该项技术的研究实践,对粗滤慢滤工艺去除氨氮的特点和机制进行探讨。
+1　氨氮硝化的生物化学原理
+　　对给水水源而言,有机物浓度不高,且总存在一定量的无机碳酸盐(碱度),这种水质条件有利于自养型细菌生长。此时,如溶解氧充分,自养型细菌―硝化细菌将很容易培养成优势菌种,氨氮硝化过程是很容易完成的。
+　　在好氧条件下,水中氨氮的去除通过硝化过程实现,即氨氮先由亚硝化细菌氧化成亚硝酸氮,再由硝化细菌将亚硝酸氮氧化成硝酸氮。按硝化过程的化学计量,1mg NH3-N完全氧化成NO-3-N需氧4.57mg。由于硝化细菌对少量氨氮的同化作用减少需氧量约2%〔1〕,。另外在硝化的同时,若还存在异养细菌去除BOD5,则也会利用氨氮合成细胞。根据异养微生物细胞组成比例BOD5∶N=100∶5,亦即异养菌合成细胞耗氮量为0.05△BOD5。所以,粗滤池去除每单位氨氮耗氧量关系应该是:
+4.57×(1-0.02)×［△NH3-N-0.05△BOD5］(1)
+包含有机物去除的需氧量计算式为:
+4.57×(1-0.02)×［△NH3-N-0.05△BOD5］+△BOD5 (2)
+式中:△NH3-N为氨氮去除量;△BOD5为BOD5去除量。
+　　废水处理场合,因有机物浓度高,硝化作用一般不发生,或者因氨氮浓度低,硝化需氧量所占比例很小。但在饮用水处理场合,往往硝化需氧量占主导地位,式(2)的理论和实用意义就显得很重要。
+2　材料与方法
+2.1　试验设计
+　　试验地点为南京八卦洲北支江段的扬子石化水厂。长江原水经自然沉淀池和垂直流粗滤池降低浊度后,经30cm高度跌水,进入一级水平流粗滤池,该池长1m,装有高度0.7m的

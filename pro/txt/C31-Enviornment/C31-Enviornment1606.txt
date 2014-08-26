@@ -1,0 +1,29 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1999年 第2期 No.2 1999
+
+
+
+我国轻型汽车污染物排放因子的测试研究
+邓顺熙　史宝忠
+　　摘要：采用底盘测功机按ECE-15规程测试了我国13辆(12种)正在使用的轻型汽车的CO、HC和NOx的排放量分别为87.25 ± 56.31、11.36± 5.13和8.20± 6.68g/test；在相同测试条件下,测试了其中11种轻型车在不同车速匀速行驶时的CO、HC和NOx排放因子.测试结果表明,轻型汽车污染物排放因子随车速的变化有良好的规律性.用统计方法拟合了轻型汽车污染物排放因子的车速变化系数的计算公式.当车速<90km/h时 ,轻型车CO、HC排放因子随车速的增加而减小,当车速>90km/h时 ,又略有增加,而NOx排放因子随车速的增加而增大.
+　　关键词：轻型汽车；汽车污染物；排放因子；底盘测功机
+　　中图分类号：X511　　文献标识码：A　　文章编号：1000-6923(1999)02-0176-04
+An experimental study on pollutant emission factors of light duty vehicles in China.
+DENG Shun-xiSHI Bao-zhong
+(1.Environmental Engineering Division, Xi'an Highway University, Xi'an 710064, China；2.Department of Environmental Engineering, Xi'an University of Architecture and Technology, Xi'an 710055,China).China Environmental Science. 1999,19(2)：176～179
+Abstract：The emission quantities of CO, HC and NOx of 13 light duty vehicles, measured using the ECE-15 driving cycles on chassis dynamometer, were 87.25 ± 56.31,11.36 ± 5.13 and 8.20± 6.68 g/test,respectively.Meanwhile, the pollutant emission factors of 11 vehicles at the different average driving speeds were measured. The measured data showed that the relationship between emission factors of these vehicles had the same change trend with the car speeds. The statistical formulas for calculating the coefficients of the pollutant emission factors vs. vehicle speeds were developed. When the speeds of vehicles were less than 90 km/h, the both CO and HC emission factors decreased with the raising vehicle speeds;while the speeds were more than 90 km/h, they slightly increased with the raising speeds. However, the emission factor of NOx increased with raising car speeds.
+Key words：light duty vehicles；vehicular pollutant；emission factors；chassis dynamometer
+　　汽车污染物排放量和排放因子是计算道路机动车污染物排放源强的关键参数[1-3],在汽车空气污染研究[4]、汽车控制装置的研制等方面有广泛的应用.在城市市区交通中,轻型汽车(质量＜3.5t)占有很高的比例.经西安市城市汽车的分类调查表明,轻型汽车占城区汽车的85%以上.鉴于国内有关城市汽车污染物排放特性的测试研究工作较少,本文选取13辆(12种)国内有代表性的轻型汽车采用底盘测功机对其尾气污染物排放特性进行了较系统的测试和分析.给出了代表汽车在有红绿灯街道上行驶时,即车速由怠速、加速、均速、减速组成的工况行驶条件下污染物排放量和代表汽车在畅通、无平面交叉道路上匀速行驶时污染物排放因子.其研究结果可供在计算城市道路汽车污染物排放源强和汽车尾气防治技术研究和开发等工作中参考使用.
+1 测试方法及规程
+1.1 测试方法
+　　采用底盘测功机测试法测定各轻型汽车在给定规程和匀速行车条件下汽车尾气中CO、NOx和HC排放量(g/test)(按图2工况行驶195s为一次试验或test)和排放因子(g/km.ven).测试方法如图1所示.
+
+
+图1 汽车尾气测试过程示意
+Fig.1 Schematic diagram of measuring vehicular pollutants
+1.2 测试设备及分析仪器
+　　测试汽车运行的设备为日本小野公司产CD-1535-HD型汽车底盘测功机.使用等容采样法(CVS)采集被测汽车的尾气.使用日本堀场公司产MEXA-8420型汽车排气分析仪分析尾气中CO、HC和NOx浓度.该仪器的分析原理为采用非色散红外分析(NDIR)法分析CO成份；使用氢火焰离子化(VZD)法分析HC；使用化学发光分析法(CLD)分析NOx.
+1.3 测试汽车 
+　　上海-SANTANA1,Audi-100,北京-130,金杯(GMC)S10,解放(CA6440),捷达CL,Citraen zx,红旗CA630C,Nission Cabstar,Tflay(DAEWO-O),D-ODGE 600SE, MAZDA-E180,上海-SANTANA2.
+2 结果及分析

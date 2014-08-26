@@ -1,0 +1,16 @@
+航空制造技术
+AERONAUTICAL　MANUFACTURING　TECHNOLOGY
+1999年　第5期　no.5　1999
+
+
+
+
+等离子喷涂熔滴扁平过程数值模拟
+李长久　李京龙
+　　［摘要］　采用PHOENICS流体动力学计算软件，结合Marker-And-Cell技术，模拟研究了等离子喷涂熔滴碰撞基体后的扁平过程。结果表明，熔滴沿基体表面的最大铺展速度主要和碰撞速度有关；初始碰撞压力与熔滴的密度及碰撞速度的平方成正比；熔滴的扁平率随熔滴的密度和碰撞速度的增大而增大。
+　　关键词： 等离子喷涂　扁平率　碰撞压力　数值模拟
+Numerical Simulations of Droplet Flattening in Plasma Spraying
+　　［ABSTRACT］　Droplet flattening after impact on flat substrate in plasma spraying is numerically studied by using PHOENICS code and Marker-And-Cell technique. The results show that the peak velocity of droplet flow along substrate surface after impact is mainly affected by impact velocity. The initial impact pressure is directly proportional to droplet density and square impact velocity. The flattening degree grows with the increase of droplet density and impact velocity.
+　　Keywords: Plasma spraying　Flattening degree　Impact pressure　Numerical simulation
+　　等离子喷涂作为一项高效、低成本的实用技术已在包括航空在内的许多领域获得成功应用。然而，由于喷涂中涉及到的现象的复杂性，使得研究工作长期滞后于技术应用的发展，至今无法理解涂层与基体结合率不高、粒子间内聚结合率低等制约等离子喷涂技术应用的因素。许多试验结果表明，熔滴碰撞基体前、后的状态和行为决定了涂层的结构和性能及涂层与基体的结合强度，而熔滴在喷涂过程中的扁平化和冷却凝固过程可以认为是独立的［1，2］，因此，单一熔滴与基体的相互作用的阐明就成为等离子喷涂的重要课题。
+　　由于从开始碰撞到完全冷却凝固的整个过程只有几微秒到几十微秒［2］，对于喷涂熔滴和基体的相互作用，很难直接进行观察，因此，数值模拟方法成为这类研究的重要手段。研究人员曾对熔滴的扁平化行为进

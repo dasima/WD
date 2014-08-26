@@ -1,0 +1,37 @@
+环境科学研究
+RSEARCH OF ENUIRONMENTAL SCIENCES
+1999年 第12卷 第1期  Vol 12 No.1 1999
+
+
+
+一种耐酚菌种及其固定化细胞降解
+含酚废水性能的比较研究
+孙　艳　李　京　谭立扬
+摘　要　通过对土壤及污水的采样、分离、纯化，得到了一种降解苯酚的菌种，经过一系列驯化实验，使其苯酚耐受能力达915 mg/L。在此基础上，利用正交实验，确定了该菌种固定化细胞制备的最优操作条件。之后，对游离细胞和固定化细胞的降解苯酚过程进行了动力学分析与比较。结果表明，2种类型细胞的降解苯酚过程均符合Monod模型，并且固定化细胞的降解效果明显高于游离细胞。
+关键词　苯酚　固定化细胞　正交实验　Monod模型
+Study and Comparation of a Kind of Microorganism and Its
+Immobilized Cells for Phenol Degradation
+SUN Yan1)　LI Jing2)　TAN Liyang2)
+( 1)National Laboratory of Protein Engineerign, College of Life Sciences, Peking University, Beijing 100871;
+2) Department of Chemical and Environmental Engineering, Beijing Polytechnic University, Beijing 100022)
+Abstract　In this work, a strain of bacteria isolated form sewage and soil nearby coking plant has been reported. The strain uses phenol as sole carbon source and degrades phenol up to the concentration of 915mg/L. Optimal preparation condition of the strain immobilization is carried out by the cross-test experiments.Going further into the kinetic study of biodegradation for both free and immobilized cells proceeds in the simulated wastewater. Results obtained from degradation experiments agree fairly well with the Monod model. The final experimental results show that the degradation efficiency of immobilized cells is apparently superior to that of free cells.
+Keywords　Phenol; Immobilized cells; Cross test; Monod model
+
+　　随着工业生产中苯酚需求量的增加，相应地产生了大量的含酚废水，这种废水不经处理任意排放，会对环境造成严重危害［1］。含酚废水处理方法有多种，目前普遍使用的是活性污泥生物处理法，但由于这种方法存在着生物浓度低，微生物菌体易流失，产生大量的污泥易造成二次污染，占地面积大等不足之处，目前国际上一直致力于固定化技术进行废水生物处理的研究［2］。
+　　所谓固定化技术，是指通过化学或物理手段，将酶或微生物细胞加以固定(分别称为固定化酶或固定化细胞)，使之成为不溶于水但仍具有生物活性的衍生物［2］。其中微生物细胞被固定化后，细胞内酶系保存完整，相当于一个多酶生物反应器，可使反应更加充分、彻底，所以固定化细胞技术得到了更为广泛的应用。
+　　文中从北京焦化厂所排放含酚废水中分离纯化出一种降解苯酚的细菌，经驯化实验后使其苯酚耐受能力达到915 mg。L-1，大大高于活性污泥中微生物的苯酚耐受极限；同时又通过正交实验，探讨了包埋法制备该菌种固定化细胞的最优操作条件。并对游离细胞和固定化细胞降解含酚废水的过程进行了动力学分析与比较。
+1　实验部分
+1.1　菌种的采样分离
+　　取活性污泥样品，倒入已灭菌的锥形瓶中，同时加入无菌玻璃珠，振荡1～2 h使菌胶团打散，之后用无菌水将上层清液稀释不同浓度，涂布于以苯酚为唯一碳源的选择性培养基上，恒温培养12 h后再进行划线分离。如此重复，直至镜检时菌体、菌落形态一致，挑取单菌落，接入试管斜面后置于冰箱保存。分离得到的实验用菌种，暂命名为SY号，该菌种的具体生物学特性参见文献［3］。
+1.2　苯酚含量及降解率的测定
+　　参照文献［4］的4－氨基安替比林比色法测定苯酚含量，苯酚降解率的测定参照文献［5］。
+1.3　菌种固定化细胞的制备
+　　以普遍使用的海藻酸钠为载体，采用包埋法制备固定化细胞。具体实验装置及操作方法参见文献［6］。
+1.4　主要试剂及仪器
+　　苯酚、4－氨基安替比林均为分析纯，海藻酸钠、硅藻土、己二胺和戊二醛均为化学纯，721型分光光度计，TZ－2AG型台式振荡器，模拟含酚废水参照文献［7］配制。
+2　结果与分析
+2.1　菌种的驯化与降解苯酚实验
+　　挑取SY菌单菌落，接种至以苯酚为唯一碳源的培养液中，过夜培养后，以1∶10的比例接种入新鲜培养液中，培养3～4 h后得到对数生长期菌体，离心后向湿菌体中加入由低到高不同浓度的模拟含酚废水，对菌种进行驯化实验，以提高其苯酚耐受能力。定时测定残留苯酚浓度，求得降解率及平均降解速度，结果见表1。
+表1　SY菌游离细胞降解苯酚的效果
+
+ρ

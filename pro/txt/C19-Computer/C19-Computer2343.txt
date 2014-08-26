@@ -1,0 +1,49 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999　Vol.36　No.7　P.859-864
+
+
+
+基于属性等价的多数据源互操作模式合并
+许学标　刘宏亮　王轶彤　顾宁　施伯乐
+摘　要：在涉及多个异构数据源的互操作处理中，跨数据源模式合并是提供形式一致、概念统一的数据查询/操纵界面和应用程序接口的主要途径.长期以来，对此很少有完善的指导性理论.文中从模式构成的最小单位――属性特性着手，在对象模型的基础上，先自底向上地定义不同种类的属性等价和类等价的概念，然后自顶向下地给出了利用等价类、等价属性进行合并的基本方法，从而为创建跨数据源的一致化对象视图模式探索了新途径.
+关键词：现实世界状态，多数据源互操作，属性/类等价，模式合并
+分类号：TP311.13
+SCHEMA MERGING FOR MULTIPLE DATA SOURCES
+INTEROPERATION BASED ON ATTRIBUTE-EQUIVALENCE
+XU Xue-Biao
+(Department of Computer Science, Fudan University, Shanghai 200433)
+LIU Hong-Liang
+(Department of Computer Science, Fudan University, Shanghai 200433)
+WANG Yi-Tong
+(Department of Computer Science, Fudan University, Shanghai 200433)
+GU Ning, and SHI Bo-Le
+(Department of Computer Science, Fudan University, Shanghai 200433)
+Abstract：In the interoperation processing concerning multiple heterogeneous data sources, schema merging spanning them is one effective aspect in providing both the data querying/manipulation and the application program interfaces in a consistent, unified style. Until now there has been no perfect directive theory relevant yet. In this paper, on the foundation of object data model, the authors tackle the problem by setting forth from the features of attribute, the minimal unit in schema construction. The different attribute/type equivalencies are defined first in a bottom-up way, and then the basic schema merging methodologies based on them are presented in a top-down way, which explores a new approach to creating a consistent object view schema over multiple data sources.
+Key words：real world state, interoperation of multiple data sources, attribute/type equivalence, schema merging▲
+1　引言
+　　计算机、网络和多媒体技术的发展，特别是Internet/Intranet的日新月异和数据库的广泛应用，使基于多种异构数据源如文件系统、遗产数据库、RDB/OODB/ORDB、空间和历史等多媒体数据库上的互操作需求越来越多.其基本目标之一是为用户提供形式一致、概念统一的集成数据查询/操纵界面及应用程序接口(API)，这就要求支撑的互操作平台能提供跨数据源的模式合并，从而对不同数据源中含相同内容的异构实体进行合并.过去，模式合并属数据库设计问题，常根据设计者经验确定，很少有成熟的理论指导，这为模式合并的实现及其特性的进一步研究带来困难.而在实际应用中，遗产数据源的模式合并和数据库设计情形仍有相当差距，如模式合并时出现的命名、单位、结构和抽象层次等多种冲突，就无法全盘照搬模式设计的经验.研究表明，在众多互操作系统中，模式合并的基本构架如属性等价、关联等价和类等价等可最终归于属性等价［1～3］.本文根据多数据源模式合并的这一特点，基于公共对象模型，从定义对象属性的等价着手，研究了不同数据源成员对象虚模式特性间的相互关系，并给出了相应的合并方式.
+2　公共对象模型简介
+　　跨数据源模式合并要求下层的多个异构数据源经转换后能共同遵循某一公共的数据模型.考虑到对象模型具有语义丰富、方法功能强大、映射方便及无缝集成性好等优点，这里采用与ODMG2.0［5］和OMG CORBA互操作对象模型［4］相兼容的公共对象模型(common object model，COM)［4］.在此仅对与模式合并相关的基本概念加以说明.
+　　COM最基本的原语是对象和文字，每个对象有唯一的对象标识oid，并通过特性和行为表示其状态和操作.文字与对象相并列，它只有值，没有oid.
+　　对象状态通过它所携带的一组特性值来定义.这些特性可以是对象自身属性，也可以是不同对象间的关联.对象取值可随着时间而变化.对象行为通过可在对象上执行或由对象执行的一组操作(方法)来定义.对象和文字按照类型方式进行组织.类型分为文字类型和对象类型.文字类型实例是蕴涵存在的，而不是由应用程序显式生成的；对象类型是通过用户定义的，其实例是应用程序生成的现实世界的特定实体.类型成员在状态范围上有相同的属性、关联和方法.COM中的对象类是指具有相同属性和关联的实体集，对象类型通过定义可用层次表示的超子类进行继承和共享.如果对象类型A是对象类型B的子类，则A类型除继承B类型的所有特性和方法外，还可有区别于B的属性、关联和方法.本文主要对类型及其上的属性、关联等的等价进行定义，以便能根据不同的分类准则采用不同的模式合并算法.
+3　多数据源上的对象属性、关联、类型间的等价
+　　属性是构造模式的最小单元.为了实现多数据源转换后的对象类型模式向统一对象模式的合并，本文从对象属性的基本特征描述着手，定义强/弱属性等价和类型等价的概念.这里，对象类指的是各数据源经转换处理后合法的“虚”对象类，而属性、关联和方法指的则是“虚”对象类上的属性、关联和方法.
+3.1　属性特征、值集和基本等价特性
+　　下面给出为属性等价而定义的属性特征描述和属性值集概念.
+　　定义1. 属性特征描述：对于对象类C，它的某一属性a的特征描述有7部分构成，分别为：
+　　(1) 属性类型域：对象类C的各实例中属性a允许取值的集合，记为DOM(a)；
+　　(2) 允许的操作集: 在属性a的类型域中允许操作的方法集合,记为OP(a)；
+　　(3) 语义说明: 属性a取值的语义解释和含义.对于数值属性，则是指测量所用的单位，记为SCALE(a)；
+　　(4) 语义完整性约束：指的是属性a涉及的与其它属性间的静态约束以及属性变化时所必须遵循的动态完整性约束表达式的集合，记为SIC(a)；
+　　(5) 安全性约束：指的是对属性值使用存取权限的约束说明，记为SEC(a);
+　　(6) 取值个数范围限制：是指允许在对象类实例中表示的属性a值的最多和最少个数，我们用一对整数(UB(a), LB(a))表示.
+　　(7) 唯一标志：是指能唯一标定对象类实例的属性的集合,记为KEY(a).
+　　这里的属性类型域DOM可以是整数、字符串、日期等文字类型，也可以是库中定义的抽象对象类型ADT以及由set，bag，list，array等汇集构造子生成的新类型；允许的操作集OP除包含在类型定义中涉及的特定属性的方法外，还包括允许在该属性上使用的公共聚类函数如sum，average，count，max，min等.语义说明SCALE指的是属性值所使用的度量衡含义，例如身高属性可以用米来度量，也可以用厘米来度量，二者虽然值不同，但它们之间存在着可逆的对应关系，这在属性等价时可使用映射函数表达；但有些属性的度量不存在可逆的对应关系，如学生成绩有些科目是用百分制表示的，而有些是用等级(如优、良、中和及格等)来表示的，从前者到后者的函数映射是有意义的，而从后者到前者则是不可逆的，因此无法定义一一关系.
+　　语义完整性约束(SIC)包括属性间的函数依赖、存在依赖以及唯一性、非空等与其它类型或属性间的静态关系，以及对象状态改变时在属性上的约束，如雇员对象不能加在已删除的部门中等动态依赖关系集合.安全性约束(SEC)是为自治和安全考虑而给出的控制约束(如不可见、可查询和可更新等)，例如一般用户只能查看学生成绩，而不能修改它.因此，可把SEC(a)看作是涉及到属性a的安全约束表达式的集合.属性的取值个数范围通过上下限表示.取值0表示属性a可为空值，而大于1的上限表示属性a可取值的个数.唯一标志(KEY(a))相当于公共对象模型中的类型特性KEY，它通过oid及一或多个属性描述.用作KEY的属性将用于类等价的判定.
+　　定义2. 属性值集.在t时刻对象类C中属性a的值集VALUE(a,t)，指的是在t时刻C上所有实例中属性a的取值集合；全部数据库时刻点上VALUE(a,t)的并集称为类C的数据库状态下的属性a的值集，记为VALUES(a)，即
+　　定义3. 基本等价特性.令ai为对象类A的属性, bi为对象类B的属性，设Di为DOM(ai)的最大非空子集，Ri为DOM(bi)的最大非空子集，可定义一个函数fi: Di→Ri及其逆函数f-1i:Ri→Di，称下面5点为需满足的基本等价特性：
+　　(1) fi是同构和可逆的，即在Ri和Di间存在一一对应关系；
+　　(2) 对每一OP(ai)中的允许操作g，在OP(bi)中必须有一个对应的允许操作g′，使得fi.g=g′.fi，即应用g在DOM(ai)的某一值x后再应用操作fi所得的结果等于先在x上应用fi，然后在fi(x)上应用g′所得结果；
+　　(3) 在fi和f－1i映射下保持所有相关的语义完整性.令f1,…,fn是与属性a1,…,an相关联的映射函数.则在SIC(ai)中涉及的属性为a1,…,an的约束必须可以通过把ai用fi(ai)替换后所得到的SIC(bi)中的约束蕴涵，反之亦然；
+　　(4) 所有的安全约束在fi和f-1i映射下互为保持，即SEC(ai)

@@ -1,0 +1,51 @@
+软件学报
+Journal of Software
+2000 Vol.11 No.1 P.110-115
+
+
+
+一种基于形状的图像信息检索方法
+刘继敏　史忠植
+摘　要　该文把一幅图像看成是由一些区域构成的,这些区域在其内部有着颜色或纹理等方面的相似性,图像的形状由这些区域的边界线及其空间关系来描述.要根据图像中所包含的物体或场景在形状方面的特征进行检索,关键问题是形状相似性的度量及其空间关系的表示与匹配.文章应用变形模板匹配技术,提出了较为合理的简单形状相似性计算方法,而这些简单形状之间的空间关系则由二维集合串来表示.文章还给出了空间关系匹配算法,在检索方法上,将整个检索过程分为初级检索、检索求精与空间关系匹配3个阶段.实验表明,此方法既有较高的检索速度,又有较高的检索精度.
+关键词　相似性,二维集合串,基于形状的检索,图像库.
+中图法分类号　TP311
+A Shape-Based Image Information Retrieval Method
+LIU Ji-min　SHI Zhong-zhi
+(Institute of Computing Technology　The Chinese Academy of Sciences　Beijing　100080)
+Abstract　An image can be considered as a combination of regions, which have some intrinsic homogeneities in color or texture, etc. The shapes in an image are described by the boundaries of these regions and their spatial relations. To retrieve image by shape, it is a key problem to measure the similarity among shapes and match their spatial relations. Adopting template-matching technique, the authors present a computation method for simple shape similarity. Based on the two-dimensional set string representation of the spatial relation of these simple shapes, a spatial relation match algorithm is also presented. The whole retrieval process is divided in three stages, i.e., the rough stage, the refining stage and the spatial relation matching stage. The experiment shows this method is rapid and accurate.
+Key words　Similarity, 2D set string, shape-based retrieval, image database.
+　　基于形状的图像信息检索是基于内容的图像信息检索的一个十分重要的方面.目前,已有不少基于内容进行检索的实用系统,如QBIC,Photobook,VisualSeek等.这些系统在根据颜色与纹理等信息进行检索时,所得到的检索结果与所期待的结果较为接近.在根据形状信息进行检索时,它们是用形状所具有的特征,如周长、面积、矩不变量等来描述形状,并由此建立索引,进行检索.文献［1,2］也是采用类似的方法.这种根据索引进行检索的方法,检索速度快.但是,形状的特征描述仅仅是在一定的程度上体现了人们对形状的感知,给人感觉到完全不同的形状可能有相同的特征量,因而,这种方法的检索结果与用户想要得到的结果往往会相差很大.而且,在实际中,特征量的提取都会有不同程度的误差,这势必进一步影响到检索的精度.
+　　与此相反,在文献［3,4］中,应用了变形模板技术,把用户提供的形状看作模板,并与图像库中的形状进行匹配.这一方法是直接把两个形状进行比较,而不是比较其特征量,因而有较高的精度.但是在检索时,由于是将模板与每一个图像进行匹配,而且每一次匹配都有很大的计算量,因而,这一方法的检索速度慢.
+　　为了既提高检索速度,又保证较高的检索精度,我们的做法是：对每个存储在图形库中的图像,提取其具有显著形状特征的区域,每个区域的边缘是一个简单形状,或由几个简单形状构成(这里,简单形状是指平面上的简单闭曲线),图像的形状由这些区域的边界线及其空间关系来描述,如图1所示.
+
+
+Simple shape 1, 2, 3 are boundaries of the regions that have notable features. The shape of the original image is represented with the three simple shapes and their relationship.
+简单形状1,2,3是从原始图像中提取的具有显著形状特征的区域的边界,我们用这3个简单形状及其空间关系来描述原始图像所具有的形状特征.
+Fig.1　Shape representation
+图1　形状的描述
+　　我们将这些简单形状保存起来,同时将其周长、面积等形状特征存入特征库.在进行检索时,用户直接画出一个或几个简单形状,作为其查询要求,如图2所示.
+
+
+In order to retrieve the original image in Fig.1, the user can directly draw one or more simple shapes which he concerns as research query, e.g.
+为了从图像库中检索出图1中的原始图像,用户只要直接画出他所关心的1个或几个简单形状,作为其查询要求,如(a),(b),(c).
+Fig.2　The submission of the research query
+图2　查询要求的提交
+　　系统根据各简单形状的特征量,进行初次检索,检索出包含所有这些简单形状的图像,再用变形模板匹配技术［5］进行检索求精,排除相似度较小的图像,最后,如果用户提交的是多个简单形状,还要根据其隐含的空间关系,对检索出的图形进行空间关系匹配,排除空间关系不匹配的图像,并把最后剩下的图像按相似度从大到小返回给用户.系统流程图如图3所示.
+
+Fig.3　System flow chatr
+图3　系统流程图
+　　本文第1节讨论形状相似性的度量.第2节讨论空间关系的表示及其匹配问题,提出了用二维集合串表示简单形状之间空间关系的方法,并给出了空间关系的匹配算法.第3节讨论基于形状的图像检索算法.第4节就有关问题进行了进一步的探讨. 
+1　形状相似性的度量
+　　假设我们能计算出简单形状的n个特征量f1,f2,...,fn,这些特征量可以是面积、周长、矩等,具体计算方法本文不再叙述,可参考通常的图像处理方面的文献,如文献［6］.用X=｛fX1,fXn,...,fXn｝表示简单形状X的n个特征量为fX1,fXn,...,fXn.对A=｛fA1,fAn,...,fAn｝与B=｛fB1,fBn,...,fBn｝而言,我们可以用如下的特征距离disf(A,B)来刻画相似度Similarf(A,B)：
+
+其中ωi(i=1,...,n)为预先确定的常数,反映了每个特征量的重要程度.disf(A,B)越小,表示Similarf(A,B)越大.
+　　我们认为,简单形状之间的相似性度量是形状相似性度量的关键.上述方法是用特征量之差来度量相似度.基于特征的检索方法,一般都是用与此类似的方法.但是,我们很难找到刻画形状本质的特征量,在我们所选取的特征量中,不可避免地会出现不同的形状具有几乎相等的特征量的情况,因而上述度量方法有时会有较大的误差.为得到较为精确的Similarf(A,B),我们再提出基于模板形变的方法,该方法是对文献［5］中的方法的简化,其步骤如下：
+　　(1) 将简单形状A用样条曲线来表示,并选取适当的能量公式.一个简单的方法是,将A等距分
+割,将分割点作为样条曲线的控制点.假定其控制点为ck(k=1,2,...,l),记C=(c1,c2,...,ck),由C所决定的样条曲线相对弧长S的参数方程表示为Γ(C,S),其长度为L(C).把曲线Γ(C,S)作为模板,假设其能量为
+
+其中α,β为能量权值,为Bend能;E1与E2构成模板的内能;Ext(C,S)dS为外能.这里,我们取Ext(C,S)=e-Kd2(C,S)其中d(C,S)为Γ(C,S)上的点到简单形状B的距离,K为预先确定的常数.上述的能量公式是我们对文献［7］中的能量公式作了很大的改进之后得到的.关于样条曲线,参见文献［8］.
+　　(2) 对A作任意平移与适当的旋转,选取使E3最大的位置作为A开始形变的初始位置.
+　　(3) 调节参量C,对A作拟相似形变,使E(C)达到极小.
+　　(4) 把E3/L(C)作为匹配的相似度.详细算法及有关实验结果参见文献［5］.
+2　空间关系的表示与匹配
+　　为了描述简单形状集合Ω=｛A1,A2,...,An｝的空间关系,我们将各简单形状的重心向X轴与Y轴投影,在X轴与Y轴上分别得到两个集合串XΩ1XΩ2...X

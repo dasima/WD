@@ -1,0 +1,47 @@
+环境科学学报
+ACTA　SCIENTIAE　CIRCUMSTANTIAE
+1998年2月第18卷第2期科技期刊
+活性污泥法的多变量最优控制*Ⅲ.限制最高和同时限制平均与最高出水BOD浓度
+彭永臻　王宝贞　王淑莹
+(哈尔滨建筑大学市政环境工程学院，哈尔滨　150008)
+黑田正和
+(群马大学工学部建设工学科，桐生市376，日本)
+
+摘要　在前文的基础上，进一步研究了更常用的在限制最高和同时限制平均与最高出水有机物浓度两种排放标准的约束条件下，使其运行费用最省的最优周期控制问题.计算结果都表明，最优控制变量QW和DO的变化规律都尽可能使其满足约束条件和节省运行费用，但是，当进水负荷变化幅度非常大时，任何控制也难于使出水水质达标，而运行费用还会大幅度增大.相对而言，同时限制平均与最高出水BOD浓度是更合理的排放标准，它既有利于污水处理厂的运行管理又能有效地保护受纳水体.初始状态S(0)对最优控制的影响不大.而X(0)的影响较大，在本研究中，X(0)的最优值在2400―2600mg/L范围内.
+关键词　活性污泥法；最优控制；出水BOD浓度.
+MULTIVARIABLE OPTIMAL CONTROL OF ACTIVATED SLUDGE PROCESS
+Ⅲ.THE COMPARISON OF LIMITING AVERAGE AND/OR MAXIMUM BOD EFFLUENT CONCENTRATION
+
+Peng Yongzhen,Wang Baozhen, Wang Shuying
+( Dept Of Environ and Municipal Eng, Harbin Univ of Achitec and Eng, Harbin 150008)
+Masao Kuroda
+(Dept of Civil Eng, Gunma Univ, Kiryu 376,JAPAN)
+
+ABSTRACT　On the basis of previous papers, this paper further studies the optimal period controd for the least cost operation under two different discharge standardsm, i.e., limiting average and/or maximum effluent organic concentration. Calculatiion results showed that the variation of optimal variables Qw and DO are trying the best to satisfy its restrictive conditions and to save operation costs. However, when the influent load changes drastically, any control measure is not possible to reach the standard and the operation costs will be greatly ncreased. Comparatively, limiting the average and maximum BOD concentration of effluent simultaneously is a more reasonable discharge standard. It not only benefits the operation and management of the sewage plant, but also protects the receiving water body more effectively. The influence of initial value S(0) on the optimal control is little while the influence of X(0) is significant. In this study, the optimal value of X(0) should be in the range of 2400―2600 mg/L.
+Keywords　activated sludge, optimal control, effluent BOD concentration.
+
+
+1　概述
+　　前文［1，2］已经简要地介绍了活性污泥法多变量最优控制的一些理论问题、计算方法与应用问题，其中包括建立基本状态方程与表示运行费用的性能指标泛函表达式.研究了溶解氧浓度(DO)对运行费用的影响，以及限制出水有机物(BOD)排放总量约束条件下的最优控制及其计算方法.介绍了通过增加新的状态变量和补偿函数法，将有约束条件化为无约束条件的最优控制问题.提出了用最优步长参数的动态搜索法来修改传统的梯度法进行最优控制的计算；根据计算结果分析，还提出了最优初始状态下最优周期控制的新概念.强调了根据最优控制变量的变化规律，实现准最优控制的现实意义.
+　　应当看到，除了前文［2］所研究的限制有机物排放总量情况外，世界各国对城市污水处理厂出水的要求更多地采用限制最高出水有机物浓度，或同时限制平均与最高出水有机物浓度的排放标准.本文着重研究在这样两种出水水质约束条件下的最优控制问题.显然，其研究结果对今后的污水厂真正实现最优控制与暂时实现准最优控制都具有更重要的意义.
+　　本文仍以一日为一运行周期，同时限制状态变量X、S和控制变量DO的初值与末值相同，以便实现最优周期控制.在计算时，除了和0之外，处理系统(见前文［1］图1)的动力学常数及其它参数仍按前文［1］的表1取值.除了另有说明外，所有符号都相同，不再赘述.
+
+2　限制最高出水BOD浓度的最优控制
+　　这是指限制出水中有机物(BOD)最高浓度在任何时刻都不允许超过某一规定的排放标准.包括我国在内的许多国家都采用这一排放标准.无疑，这种排放标准大大制约了处理系统出水水质的波动，减轻了受纳水体的冲击负荷.
+2.1　最优控制的数学模型与计算方法
+2.1.1　用补偿函数法化为无约束条件的最优控制问题　限制一日内最高出水BOD浓度可表示为状态变量S具有下列不等式约束方程：
+Sst-S(t)≥0, t∈［0,1］
+(1)
+式中，Sst为出水有机物最高浓度限定值，即排放标准(mg/L).因为处理系统每日排放的BOD总量Z(1)不能超过进水总量与Sst的乘积Zs，再考虑最优周期控制的要求，因此仍沿用前文［2］中的状态方程(式(26))和初始条件(式(29))，只将状态变量的末值约束条件改为式(2)即可.
+
+(2)
+这里仍采用补偿函数法来满足式(1)和式(2)的约束条件，作为补偿在性能指标式(18)［2］中引入反映这些约束条件受破坏程度的函数，使之成为无约束条件问题，得到新的性能指标J:
+
+(3)
+式中，G3和G4均为阶跃函数，即
+
+(4)
+
+(5)
+式中，K3和K4分别为足够大的正数［3］.至此，限制最高出水有机物浓度的最优控制也变成了无约束条件问题.
+2.1.2　限制最高出水有机物浓度最优控制的数学模型与计算　由于新的性能指标式(3)的被积函数中增加了G4(S

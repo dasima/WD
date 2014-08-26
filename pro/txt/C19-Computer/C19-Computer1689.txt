@@ -1,0 +1,25 @@
+软件学报
+JOURNAL OF SOFTWARE
+2000　Vol.11　No.3　P.416-420
+
+
+
+基于模拟退火机制的多种群并行遗传算法
+吴浩扬　常炳国　朱长纯　刘君华
+摘要　模拟退火和多种群并行遗传进化是两种较好的改进遗传算法性能的方法.将这两种思想有机地结合起来,提出了一种基于模拟退火机制的多种群并行遗传算法.仿真结果表明,该算法不仅能增强算法的全局收敛性,还能加快遗传进化速度,得到满意的全局最优值.
+关键词　遗传算法,模拟退火,多种群,并行算法.
+中图法分类号　TP18
+A Multigroup Parallel Genetic Algorithm Based on Simulated Annealing Method
+WU Hao-yang　ZHU Chang-chun
+(Department of Microelectronic Engineering School of Electronic Information Engineering Xi'an Jiaotong University Xi'an 710049)
+CHANG Bing-guo　LIU Jun-hua
+(Department of Automation Engineering School of Electrical Engineering Xi'an Jiaotong University Xi'an　710049)
+Abstract　Simulated annealing and multigroup parallel evolution are two helpful methods which can improve the performance of genetic algorithm.These two ideas are well combined in this paper,and a new algorithm is derived,that is the multigroup parallel genetic algorithm based on simulated annealing method.Simulation results show that this method not only quickens the computation,but also improves the convergence efficiency,thus produces more satisfactory results.
+Key words　Genetic algorithm,simulated annealing,multigroup,parallel algorithm.
+　　遗传算法(genetic algorithm)是一种借鉴生物界自然选择思想和自然遗传机制的全局随机搜索算法.它把问题的可能解组成种群,把每一个可能的解看作种群的个体,运行时，算法在整个种群空间内随机搜索,按一定的评估策略(或称适应度函数)对每一个体作评价,不断使用选择、交叉、变异这3种遗传算子,使问题的解不断进化,直至产生最优解.因为遗传算法在解决大空间、非线性、全局寻优等复杂问题时具有传统方法所不具备的独特的优越性,所以它自从70年代由美国学者J.H.Holland提出以来,已经得到了广泛的研究和应用.
+　　然而，传统的遗传算法有两个严重的缺点，即容易过早收敛，以及在进化后期搜索效率较低.这使得最终搜索得到的结果往往不是全局最优解,而是局部最优解.由于传统的遗传算法不能有效地克服过早收敛现象,因此，现在大量的研究集中于如何改进传统的遗传进化思想.目前，各种改进方法层出不穷,已经取得了大量成果.近年来,模拟退火和多种群并行遗传进化思想分别被引入遗传算法中［1～3］,显现出良好的应用前景.本文将这两种思想有机地结合起来,提出基于模拟退火机制的多种群并行遗传算法.仿真实例表明,该算法不仅能增强遗传算法的全局收敛性,还能加快进化速度3～5倍.
+1 模拟退火思想简述
+　　模拟退火算法起源于统计物理学中对固体退火过程的模拟［4］.它采用Boltzmann接受准则接收新解,用一个称为冷却系数的参数控制算法进程,使算法在多项式时间里给出一个近似最优解.求解过程如下：
+　　(1) 初始化退火温度Tk(令k=0),产生随机初始解X0;
+　　(2) 在温度Tk下重复执行如下操作,直至达到温度Tk的平衡状态：
+　　① 在解x的领域中产生新的可行解x

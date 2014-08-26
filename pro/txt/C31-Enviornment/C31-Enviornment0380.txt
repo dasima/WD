@@ -1,0 +1,13 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1999年　第19卷　第1期 Vol.19 No.1 1999
+
+
+
+生物滤池与固定―悬浮填料复合式生物膜反应器脱臭
+郭　静　黄焱歆　王　召　李　敏
+摘要：为了探讨生物法处理含H2S恶臭气体的效率及酸积累问题,利用两种生物反应器进行了处理H2S的试验研究.结果表明,生物滤池脱臭效率高,但液相H2SO4积累明显, pH值低.复合式生物膜反应器装有固定一悬浮填料,集生物过滤和生物吸收为一体,当容积负荷Nv≤190 gH2S/m3.d时,具有很高的去除能力,液相pH≥6.
+关键词：生物滤池；复合式生物膜反应器；H2S；脱臭效率；H2SO4积累
+中图分类号：X70 文献标识码：A 文章编号：1000- 6923(1999)01- 0059- 04
+The odor control using trickling filter and complex biofilm reactor packed with fixed-suspended medium.
+GUO Jing,HUANG Yan-xin,WANG Zhao,LI Min(Department of Environmental Engineering, Tianjin University, Tianjin 300072,China). China Environmental Science. 1999,19(1)：59～62

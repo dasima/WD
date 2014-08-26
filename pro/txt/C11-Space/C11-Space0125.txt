@@ -1,0 +1,34 @@
+宇航学报 
+JOURNAL OF ASTRONAUTICS
+1998年 第19卷 第1期 No1 Vol.9 1998科技期刊
+
+雷达对再入机动目标跟踪算法研究
+崔乃刚　林晓辉
+(哈尔滨工业大学345信箱*哈尔滨*150001)
+奚　敏
+(航天工业总公司一院14所*北京*100076)
+　　摘　要　采用广义Kalman滤波方法,通过在北天东雷达直角坐标系内建立相应的再入目标状态及雷达观测方程,再入目标的机动特性用一阶高斯马尔科夫过程描述,并增广到状态方程组之中,根据获得的带有测量误差的雷达测量信息对再入机动目标弹道进行估计,得到了满意的结果。
+　　主题词　目标跟踪　卡尔曼滤波　弹道估计　再入机动目标
+THE RESEARCH OF RADAR TRACKING ALGORITHM 
+TO REENTRY MANEUVERING TARGET
+Cui Naigang　Lin Xiaohui
+(Harbin Institute of Technology*Harbin*150001)
+Xi Min
+(The 14 institute of the first research institute,CASC*Beijing*100076)
+　　Abstract　In this paper,the state and radar measurement equations of reentry maneuvering target are established in the north-zenith-east coordinate system.The maneuvering model of target is described by a Gauss-Markov process and augmented into the state equations.Then,on the basis of all above,the kalman filter is used to estimate the trajectory of the reentry maneuvering target in terms of the radar measurement information influenced by errors.The simulation results show the effectivity of the method.
+　　Key words　Target tracking　Kalman filter　Trajectory estimation　Reentry maneuvering target
+1　引言
+　　随着预警系统的完善和发展,需根据雷达测量信息对再入来袭目标进行搜索跟踪,对其弹道进行实时估计,并根据弹道估计结果进行必要的弹道预报,为地面防御系统确定最佳截击点,做出正确拦截决策提供依据。
+　　弹道估计准确性是影响弹道预报结果可信性的重要因素。对于非机动的再入目标弹道估计问题,国外在60年代末便已开展研究,我国学者在80年代亦开展了相应研究工作［1］-［3］。采用的方法一般都是应用Kalman滤波理论,通过在不同坐标系内建立再入目标状态及雷达测量方程,根据获得的雷达测量信息对再入来袭目标弹道进行估计,结果均令人满意。
+　　在这类弹道估计问题中所要解决的难点在于未知的弹道系数(质阻比)对弹道估计精度的影响。一般将其做为未知数增广到状态向量之中,与要估计的目标运动状态同时进行在线估计。弹道系数的变化可采用分段函数或加入状态噪声的形式予以补偿,效果是令人满意的。
+　　随着攻防对抗的加剧,为增强武器系统突防能力,先进的再入弹头多采用机动措施,因此对于再入机动目标的弹道估计更显重要。70年代中后期,国外文献做过相应报导 ［4］,都是针对再入机动过载较小的情况,采用的方法也是Kalman滤波,对目标机动特性的描述多采用增广目标加速度做为状态变量,其变化用高斯白噪声予以补偿。但相应研究工作在国内公开发表的文献中还未见报导。
+　　本文应用广义Kalman滤波理论,在北天东雷达直角测量坐标系内建立相应的再入目标状态及雷达观测方程,对目标机动特性采用适当模型予以描述并增广到状态方程组之中,根据获得的带有误差的雷达测量信息对大过载(30～40g)再入机动目标的弹道进行了估计。
+　　机动模型的选取是机动目标跟踪的关键问题,选取原则是即要尽可能贴切机动实际,又要便于数学处理。国内外不少学者致力于机动模型的研究,提出了如Singer模型、半马尔科夫模型、Noval统计模型等。我国学者周宏仁也提出了“当前”统计模型 ［6］。但上述模型的缺陷在于机动时间常数需凭经验预先选取。
+　　本文采用一阶马尔科夫过程做为再入目标的机动模型,由于选定的机动模型合理,通过对滤波器参数适当调节,仿真结果证明可实现对大过载(30～40g)再入机动目标较准确的跟踪。
+2　滤波所需状态及观测方程的建立
+2.1　状态方程
+　　再入目标动力学方程是状态方程的主体,本文将动力学方程建立在北天东雷达直角测量坐标系O-XYZ之中。坐标原点O取在雷达站,其高程、经度、大地纬度分别为h,λ,B(如图1)。建模时做如下假设:　　
+　(a)不计地球公转;(b)忽略其它星体引力摄动;(c)地球模型采用标准椭球模型,大气模型采用美国标准大气模型。
+　　则有如下动力学矢量方程式:
+(1)
+　　其中

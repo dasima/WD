@@ -1,0 +1,66 @@
+环境科学学报
+ACTA　SCIENTIAE　CIRCUMSTANTIAE
+1998年6月第18卷第6期科技期刊
+中国高等环境教育办学情况与特征分析
+刘大银　胡亨魁　周才鑫　柯贤文
+刘先利　吴风林　樊苏平
+(黄石高等专科学校环境工程系，黄石　435003)
+
+摘要　在深入调查研究，分析调研资料的基础上，对中国高等环境教育的办学特征进行了研究.研究表明，中国高等环境教育的专业设置以污染控制和生态保护类为主体，符合我国国情；专业点的地域分布基本适应了发达地区经济的发展；拥有一支实力强的师资队伍和一定的实验装备条件，取得了人才培养和科研的丰硕成果；中国高等环境教育的办学过程和发展对中国高等教育提出了新的要求，丰富了中国高等教育的学科内涵.同时指出了有关存在的问题.
+关键词　中国高等环境教育；办学情况；特征.
+ANALYSIS OF SITUATION AND CHARACTERISTICS OF RUNNING SCHOOLS IN CHINA’S HIGHER ENVIRONMENTAL EDUCATION
+
+Liu Dayin, Hu Hengkui, Zhou Caixin, Ke Xianwen, Liu Xianli, Wu Fenglin, Fan Suping
+(Environmental Engineering Department of Huangshi Polytechnic College,Huangshi 435003)
+
+ABSTRACT　Based on in-depth investigations and analysis of the facts,this paper attempts to discuss the teaching and its characteristics of China's higher environmental education,it has shown that composed mainly of pollution control and ecological protection,the courses offered in environmental education in China's colleges accord with China's national situation;distribution of environmental teaching bases in different districts is basically suited to the economic development in developed regions;with a group of high quality teachers and well-equipped laboratories,the above-mentioned education has yielded a great number of spcial personnel for environmental protection and made great achievements in scientific research,the development of China's higher environmental education has set high demand on China's higher education and enriched the connotation of the latter.Furthermore,the paper lists some problems in China's higher environmental education.
+Keywords　China's higher environmental education, situation of running schools, characteristics.
+　　近二十年来，中国高等环境教育得到了迅速发展，据统计［1］，我国共有212所高校开设各类不同层次(含大专、本科、硕士、博士、博士后)的环境专业点.总结中国高等环境教育的办学情况，归纳研究其办学特征，对于帮助决策部门指导我国高等环境教育的健康发展和进行面向21世纪的教学改革，部署中国高等环境教育的发展战略，具有重要价值和现实意义.为此，在总结中国高等环境教育发展历程和体系的基础上，我们对各类环境专业、不同层次、不同隶属关系、不同地区的院校进行了大量的调查研究，取得了丰富的资料和来自环境教育第一线的翔实数据，并对此进行了认真的分析与研究，归纳出中国高等环境教育在专业设置、专业点的地域分布、师资队伍与人才培养、中国高等环境教育对中国高等教育的贡献等方面的特征，并同时发现了中国高等环境教育存在的某些问题.本研究资料汇总截止日期为1995年12月底，资料不含港、澳、台地区.
+
+1　以污染控制和生态保护类为主体的专业设置
+　　中国高等环境教育专科、本科、硕士、博士、博士后的各专业设置及在校人数及毕业生人数见文献［1］.从文献统计资料可以看出，中国高等环境教育已形成了门类较为齐全、覆盖面较广的多层次专业体系.通过多种多样、形形色色的专业名称，可以归纳出中国高等环境教育的专业设置呈现出以污染控制和生态保护类为主体的特征.各种专业名称中，开设比例最高的前六名(以本科为例)依次是：环境工程(占开设院校的38.5%)，植物保护(占28.1%)，环境学(占11.1%)，资源环境区划与管理(占9.6%)，森林保护(占8.9%)，生态学(占8.1%).研究生教育开设最多亦为生态学、环境工程、森林保护等专业.从我国的环境状况及可持续发展对人才的需要来看，这个特征和规律大体符合我国国情.这一认识从以下几个方面体现：
+　　(1) 中国目前环境污染严重，急需大量环境治理方面的工程技术人才.目前我国85%的城市污水、80%的工业废水(尚不含乡镇企业)、90%以上的固体废弃物未经处理而直接排放；以煤炭为主的能源结构形成了我国严重的大气污染［2］，二氧化硫的排放量居世界第一，二氧化碳的排放量仅次于美国，酸雨危害面越来越大.这些状况决定了我国在相当时间内还需要大量末端治理工程技术人才.当前，我国正实施跨世纪绿色工程规划，要求所有工业污染源2000年达标排放［3］，目前，已向“三河”(淮河、辽河、海河)、“三湖”(太湖、巢湖、滇池)的水污染开战，进行了防治大气污染的“两控区”(二氧化硫、酸雨控制)严格管理，对环境治理专业人才的需求甚为迫切.因而，开设众多的环境工程专业是正常趋势.就连美国这样的发达国家也十分重视对末端治理高级人才的培养，472所设有环境类专业的本科院校中，环境控制技术专业是开设量多的五个专业之一；对34所著名大学研究生(博士、硕士)部设置的53个环境类专业进行统计分析，环境工程专业设置数名列榜首.
+　　(2) 目前我国生态环境破坏严重，生物多样性锐减［4］，对生态保护方面人才的需求已是必然趋势.因此，植物保护、森林保护、生态学、环境学、资源环境区划与管理等专业的较多开设可符合可持续发展对人才的需求.通过对学科专业体系特征的分析研究，同时可以发现存在专业设置较为混乱(尤其是专科和研究生专业)［1］，专业口径过窄等问题，必须研究解决.
+
+2　专业点的地域分布与发达地区经济的发展相适应
+　　中国高等环境教育专业点按地区分布统计见表1.占中国高等环境教育绝对优势的本科环境教育专业点按地区分布见表2.
+　　从表1、表2可归纳出：
+表1　各层次专业点按地区分布情况统计表
+Table 1 Distribution of environmental teaching and research bases at different level in different districts
+
+序号省、市、自治区开设单位数，个专业点总数，个不同层次专业点
+专科本科硕士博士博士后
+1北京市 368001443203
+2天津市　51434511
+3河北省　10124620
+4山西省　8132740
+5内蒙古自治区6156621
+6辽宁省　8196751
+7吉林省　92001181
+8黑龙江省82148531
+9上海市　16334111431
+10江苏省　1846719164
+11浙江省　41817721
+12安徽省　5126420
+13福建省　6105230
+14江西省　474300
+15山东省　1229871121
+16河南省　6133820
+17湖北省　1529611102
+18湖南省　5122550
+19广东省　12215880
+20海南省　131110
+21广西壮族自治区353110
+22四川省　1339815142
+23贵州省　574210
+24云南省　5132641
+25陕西省　92769102
+26甘肃省　4142642
+27青海省　110100
+28宁夏回族自治区232100　
+29新疆维吾尔自治区582321　
+30西藏自治区000000　
+合计　　241544106193189488
+
+
+

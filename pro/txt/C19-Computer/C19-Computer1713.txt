@@ -1,0 +1,30 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第1期 No.1 1999
+
+
+
+线性序约束关系的无损连接分解*
+范志新　施伯乐
+　　摘要　对线性序约束数据库中的数据依赖和无损连接分解进行了研究.介绍了线性序约束数据库的一些基本概念,提出了线性序约束关系中多区域存在依赖和分组多区域存在依赖的概念,证明了变量集满足变量独立和多区域存在依赖是进行模式无损连接分解的充要条件.探讨了变量集在坐标线性变换下保持良性分解的情形.
+　　关键词　线性序约束数据库,无损连接分解,多区域存在依赖,变量独立,分组多区域存在依赖.
+　　中图法分类号　TP311
+Lossless Join Decomposition in Dense Linear Order Constraint Databases
+FAN Zhi-xin SHI Bo-le
+　　Abstract　In this paper, the data dependencies and lossless join decomposition in dense linear order constraint databases are studied. Several concepts of the dense linear order constraint databases are introduced. The concept of the multi-region existence dependencies is defined and studied. It is proved that the lossless join decomposition of constraint relational scheme preserves if and only if they satisfies variable independence and multi-region existence dependencies. Another dependency――partitioned multi-region existence dependencies is given. The issue of variable set under linear transformation is also proposed.
+　　Key words　Dense linear order constraint database, lossless join decomposition, multi-region existence dependencies, variable independence, partitioned multi-region existence dependencies.
+　　约束数据库是Kanellakis,Kuper和Revesz于1990年提出来的.［1］它综合了关系数据库、约束逻辑程序设计、空间数据库、辅助决策系统等多个领域的研究成果.其核心思想是将约束表达式作为数据来处理,为模式与约束、数据查询相结合的一致表达提供了一种有效方法.例如,把关系数据库中的每个元组看成一个等词约束合取式,如,关系R(A,B)中的元组(a,b)看作((A=a)∧(B=b));在空间数据库中,把平面矩形内部区域描述为((a1＜x＜a2)∧(b1＜y＜b2)).约束数据库模型支持对空间、时间等密序量的表达和操作,也支持对不完全信息的处理.［2～4］
+　　目前,对约束数据库中的密序约束类研究较多［2～7］,在线性序约束类方面主要集中于查询的可表达性［6,8］,对模式设计的研究很少.文献［5］提出密序约束保持无损连接分解的充要条件是在其规范表示的各个分块里能够进行无损连接分解,这只是一个计算问题,并没有给出约束模式进行无损连接分解所应具备的性质;文献［9］给出了密序约束中的函数依赖概念,并把它和变量独立合起来作为保持无损连接的一个充分条件,但这个函数依赖与变量独立在概念上是有交叉的,对无损连接分解来说不是必要条件.
+　　本文提出了多区域存在依赖的概念,结合Chomicki等人提出的变量独立概念［2］,得到线性序约束下保持无损连接分解的充要条件,讨论了坐标线性变换下线性序约束的转换,还给出了分组多区域存在依赖等概念.第1节介绍了线性序约束数据库的一些基本概念;第2节提出了多区域存在依赖、分组多区域存在依赖等概念,得出模式无损连接分解的充要条件;第3节探讨了坐标线性变换下线性序约束的一些问题.
+1 线性序约束数据库的基本概念
+　　按照Kanellakis等人的观点［1,3,4］,约束关系可以用无量词的一阶逻辑公式表示.下面,我们先给出线性序约束的一些基本概念.
+　　定义1.1. 线性序约束CLO是指形如的约束,其中xi为实数变量,ai和c为实常数,θ∈{＜,≤,=,≠,≥,＞}.
+　　线性序约束的无量词一阶逻辑公式是一个析取范式,其中每个析取项是由线性序约束组成的合取式.令cx=,由于cx≤c等价于((cx＜c)∨(cx=c)),cx≠c等价于
+((cx＜c)∨(cx＞c）),cx≥c等价于((cx=c)∨(cx＞c)),((cx＞c1)∧(cx＜c2))等价于c1＜cx＜c2,这样可使每个合取式只包含c1＜cx＜c2和cx=c两种形式（对于cx＞c1或cx＜c2,只存在其中之一的合取式,可令c1=-∞和c2=+∞）.我们假定经过上述处理得到的范式中不含多余的析取项和合取项.
+　　定义1.2. 变量集X={x1,...,xn}上的n元线性序约束元组是一个约束合取式ψ＝,其中是线性序约束.
+　　定义1.3. 变量集X={x1,...,xn}上的n元线性序约束关系R是X上约束元组的集合,其对应的逻辑表达式为ΦR=.设D为实数域,unr(R)={(x1,...,xn)｜(x1,...,xn)∈Dn且使得ΦR(x1,...,xn)为真}.这里的unr(R)取自文献［1］中的“unrestricted relation of R”.
+　　定义1.4. 设R和S是变量集X上n元线性序约束关系,若unr(R)=unr(S),则称R与S等价.
+　　定义1.5. 设R是定义在变量集X上的线性序约束关系,则称R(X)是R的线性序约束关系模式,R是R(X)的一个实例.
+　　定义1.6. 线性序约束关系数据库是由有限个线性序约束关系组成的集合.
+一个n元线性序约束元组表示n维空间上的一个凸集.［10］如果其中所有常数都是有限的,则其所表达的凸集在Euclid空间中就是有界的.可以定义基于代数的线性序约束查询语言.［5,7］这里给出两个将要用到的操作.
+　　定义1.7. 设R是变量集X上的n元线性序约束关系,Y

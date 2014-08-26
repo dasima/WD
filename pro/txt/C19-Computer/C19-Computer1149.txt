@@ -1,0 +1,37 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1999年 第25卷 第6期 Vol.25 No.6 1999
+
+
+
+一种基于扩张原理的模糊模型
+及其辨识方法1)
+陈怡欣　萧德云
+摘　要　提出一种新的基于LR型模糊数及其运算的模糊模型结构――扩展的TSK模型(ETSK模型).借助于LR型模糊数隶属函数图形的面积和重心横坐标这两个“数字特征”，导出了ETSK模型的输入输出解析表达式，并证明了ETSK模型与变权TSK模型的等价关系，同时给出一种对ETSK模型规则后件的参数辨识方法.仿真辨识实验结果表明，ETSK模型的辨识效果和预报精度更优.
+关键词　模糊辨识，LM模型，TSK模型，ETSK模型.
+AN EXTENSION-PRINCIPLE-BASED FUZZY MODEL
+AND ITS IDENTIFICATION ALGORITHM
+CHEN Yixin　XIAO Deyun
+(Department of Automation,Tsinghua University,Beijing　100084)
+Abstract　An extended TSK model――ETSK model,based on LR type fuzzy numbers and their extended operations,is proposed in this paper.The input-output analytic expression is proved and a parameter identification algorithm is also constructed to identify the areas and gravity centers of the membership functions of LR type fuzzy numbers.A kind of variable weight TSK model which is equivalent to the ETSK model is also deduced.Simulation shows that the ETSK model can give out more accurate long-range predictions than an LM model and a TSK model.
+Key words　Fuzzy identification,LM models,TSK models,ETSK models.
+1　引言
+　　模糊模型是模糊集与模糊逻辑在系统建模中的一种应用［1］，它为一些复杂、不确定性的系统提供了一种有效的建模方法.从模型结构上说，模糊模型可分成两类：基于规则描述的模糊模型和不基于规则描述的模糊模型.前者主要有语言模型(Linguistic Models,LM)［2］和Takagi-Sugeno-Kang模型(TSK模型)［2］；后者包括模糊回归模型(Fuzzy Regression Models)［3］和模糊神经网络模型(Fuzzy Neuor-Network Models)［4］.
+　　LM模型是用一组由模糊谓词构成的IF-THEN规则来描述一个系统的，规则的后件与前件都是模糊集，对不确定性的描述能力比较强；TSK模型也称作局部回归模型(Local Regressive Model),其规则的后件一般为某种函数表达式，是输入变量的确定函数.TSK模型较LM模型精度更高.
+　　本文基于LR型模糊数［5］及其扩张运算的扩展，构造一种新的模糊模型结构，它既具有LM模型对不稳定性的描述能力，又具有TSK模型的精度，称这种模型为ETSK模糊模型(Extended TSK model),它是LM模型和TSK模型的扩充和综合.
+2　扩展的TSK模型――ETSK模型
+2.1　ETSK模型的基本框架
+　　称规则描述如下的模糊模型
+　　(1a)
+　　(1b)
+为扩展的TSK模型，简称ETSK模型.其中xj∈R1为ETSK模型的输入变量，Y为ETSK模型的模糊输出，Aij为输入论域上的模糊集，aij为LR型模糊数(i=1,…，m;j=1,…,n),分别表示基于扩张原理的模糊数的数量积和加法运算.
+　　从形式上看，ETSK模型是TSK模型的直接扩充，它把规则后件线性函数中的系数扩展成了模糊数，从而使每条规则的后件成为模糊线性函数.这一扩充带来了实质性的变化，使ETSK模型可以兼蓄LM模型和TSK模型的优点.
+　　如果模型(1)的规则后件采用模糊ARMA描述，则可得到如下的ETSK模型，它可用于描述一个动态系统.
+　　(2a)
+　　(2b)
+上式中y(k-1),…,y(k-p),u(k),…,u(k-q)∈R1为ETSK模型的输入变量；Y为模糊集，是ETSK模型的模糊输出；Aij和Bit为输入论域上的模糊集；aij和bit为LR型模糊数(i=1,…,m;j=1,…,p,t=0,…,q);分别为模糊数的数量积和加法运算.
+2.2　ETSK模型的解析描述
+　　对于式(1)所描述的ETSK模型，可以证明如下定理及推论.
+　　定理1.给定一个模糊系统F：Rp+q+1→R1，其规则描述如式(2).若规则后件中的模糊数aij和bit(i=1,…，m;j=1,…,p;t=0,…,q)均为LR型模糊数，采用重心法清晰化，则其输入输出解析式为
+　　(3)
+上式中y(k)为k时刻输出值，它是总模糊输出Y的重心；h=［y(k-1),…,y(k-p),

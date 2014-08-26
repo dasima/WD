@@ -1,0 +1,12 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000 Vol.19 No.2 P.29-30
+
+
+
+
+Multicast技术及其应用
+师军
+摘 要： 一种基于Internet的先进通信技术--Multicast技术，探讨了Multicast的基本结构、工作原理和通信模式，并提出了有待进一步研究的问题。
+关键词： 直播 广播 选播 Multicast结构
+　　如何有效地利用Internet上的信息资源以及在Internet上进行快速、可靠、安全的通信，一直是人们研究的重要课题。早期网络上的通信主要采用的是点对点直播(Unicast)方式和点对多点广播

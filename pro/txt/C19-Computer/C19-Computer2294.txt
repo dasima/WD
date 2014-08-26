@@ -1,0 +1,25 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年 第36卷 第5期 Vol.36 No.5 1999
+
+
+
+一种基于等价的联盟演化机制
+徐晋晖　石纯一
+摘要　联盟是多Agent之间一种重要的合作方法.多数方法没有考虑联盟的演化问题，难以避免大量的计算；而且对于联盟值是已知的假设也是不实际的.文中给出了联盟问题的等价性和相应的联盟演化机制，不通过对联盟值预先计算，可求得联盟问题的解，可以降低计算复杂度.与Shehory & Kraus的工作相比引入了联盟的等价和演化，放松了对联盟值已知的假设限制.
+关键词　联盟，联盟值，等价，演化
+中图法分类号　TP18
+A MECHANISM OF COALITION EVOLVEMENT 
+BASED ON EQUIVALENCE
+XU Jin-Hui and SHI Chun-Yi
+(Department of Computer Science, Tsinghua University, Beijing　100084)
+Abstract　Coalition is an important cooperative method in multi-agent systems. Most of the methods don't consider evolvement of coalition, so it is difficult to avoid a mass of computation, and assumption about coalition value known isn't realistic. In the paper here, equivalence of coalition and mechanism of evolvement are presented, which can obtain solution of coalition by non-computing of coalition value and may reduce computational complexity. The work of the paper introduces equivalence and evolvement of coalition, and releases restriction of assumption about coalition value known, compared with the work of Shehory & Kraus.
+Key words　coalition, coalition value, equivalence, evolvement
+1　引　　言
+　　自1993年文献［1］到文献［3］提出联盟方法以来，已取得了一定的进展.通过联盟可以提高Agent求解问题的能力，获得更多的报酬，因而联盟是多Agent系统(MAS)的重要合作方法.
+1.1　问题的描述
+　　设Agent集N={A1,A2,…,An}，资源集Q={(q1,q2,…,qn)}，其中qi=(q1i,q2i,…,qkii)，qji表示Ai第j种资源的数量；任务集T={T1,T2,…,Tn}，其中Ti={t1i,t2i,…,tmii}是Ai的任务集，tji是Ai的第j个任务，对每一个任务有对应的资源需求说明；每一个Agent开始都持有一定的资源.
+　　MAS的合作是如何在Agent之间进行资源和任务的重组，使得每一个Agent既能完成任务，又能节省资源取得满意的报酬？这可通过联盟方法来完成.
+　　一个联盟C可以用〈Nc,qc,Q′c,Tc,T′c,V(c),Uc〉来描述，其中Nc是N的子集，qc是C拥有的资源，Q′c是资源分配的结果，Tc是C的任务集合，T′c是任务分配的结果，V(c)是联盟的值，Uc=(u1,…,u|c|)是V(c)对C成员的一个分配.
+　　联盟问题是求一个满足稳定性要求的{U,CS}，(U,CS)为问题求解的一个中间状态或最后结果，其中联盟结构CS={C1,C2,…,Cp}是N的一个划分，U=(u1,u2,…,un)是每个Agent所得报酬的描述.
+　　函数V是2N→R的映射，如果对N的子集S，T，当S∩T=

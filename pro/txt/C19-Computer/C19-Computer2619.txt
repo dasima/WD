@@ -1,0 +1,49 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第10卷 第7期　No.7 Vol.10 1999
+
+
+
+基于规则面向属性的数据库归纳的无回溯算法
+周生炳　张　钹　成　栋
+　　摘要　该文提出了基于规则的面向属性知识发现方法的无回溯算法.把背景知识理解为特殊的逻辑程序,并把它的子句展开为完全归结子句，然后按照用户要求,定义并确定每个属性的恰当层次.每个属性的多个值归纳为恰当层次中的值,只需一遍扫描,因此无需回溯.
+　　关键词　知识发现,概念层次,无回溯算法.
+　　中图法分类号　TP181,TP311
+A Nonbacktracking Algorithm for the Rule Based 
+Attribute-oriented Database Induction Approach
+ZHOU Sheng-bing1　ZHANG Bo2　CHENG Dong3
+1（Air Force Telecommunication Engineering Institute Xi'an 710077）
+2（Department of Computer Science and Technology Tsinghua University Beijing 100084）
+3（Business School　Renmin University of China　Beijing　100872）
+　　Abstract　In this paper, a nonbacktracking algorithm is presented for the rule based attribute-oriented database induction approach. The background knowledge is considered as a limited logic program, and every clause of it is expanded as a complete resolution clause. Then, the concept of exact level for an attribute in the concept hierarchies is defined and specified according to its threshold required by the users. The values of each attribute are inducted as ones in its exact level by only one pass without backtracking.
+　　Key words　Knowledge discovery in databases, concept hierarchies, nonbacktracking algorithm.
+　　自从第一本有关知识发现（knowlegde discovery in databases,简称KDD）的文集［1］出版以来,有关KDD或数据采掘（data mining）的研究得到广泛的关注［2～4］.J.Han等人提出了面向属性（attribute-oriented)的概念提升方法(简称AO方法）.其后,他们围绕AO方法进行了一系列深入的工作［5～11］.在文献［5］中,他们将AO方法推广为基于规则（rule-based)的AO方法(简称RBAO方法）,其主要特点是根据规则对数据库进行两遍扫描以提升概念.我们提出,背景知识可看成是特殊的逻辑程序,在把每个规则展开为完全归结后,可以根据用户要求,确定每个属性概念提升的恰当层次,从而进行一遍扫描即可完成概念提升,避免了回溯.下面首先介绍RBAO方法,然后讨论它的无回溯算法.
+1　基于规则的AO方法
+　　AO方法的关键在于用概念层次表示的领域专家提供的背景知识.最常用的概念层次是概念树或概念格［6,7,12］,其中概念提升是无条件的.但是,在某些情况下,用户可能希望表达有条件的概念提升,即除了依赖概念本身外，还依赖于别的概念.例如,在城乡居民经济状况调查中,600元的月收入对农民是高收入,但对城市居民则是中等收入,对某些城市的居民甚至是低收入.鉴于此,W.D.Cheung等人把AO方法推广为基于规则的AO方法,加强了AO方法的表达和归纳能力［5,13］.
+　　在基于规则的AO方法中,背景知识由一组泛化规则表示.泛化规则形如
+　　　　　　　　C(x)←A(x)&B(x).
+它的意思是,对元组x,某个属性a的概念（属性值）A可以推广到概念C（更高级的属性值）,如果x满足条件B.B形如B1&...&Bn,Bi是不同于属性a的某个属性bi的概念,或表示算术比较关系.基于规则的AO方法（简称RBAO方法）分为两步进行.我们以一个例子来说明.
+　　第1步. 从初始关系到主关系
+　　尽可能地按属性阈值和泛化规则提升概念,合并相同的元组,得到的广义关系叫做主关系（prime-relation）.
+
+图1
+　　例：一个大学学生数据库由模式Student(Name,Status,Sex,Age,Birthplace,GPA)组成,学习任务是发现计算机专业学生的特征规则.属性GPA的概念图如图1所示,对应的泛化规则如下,生成的主关系见表1.
+　　R1:　poor←{0.0-1.99};
+　　R2:　poor←{2.0-2.49}&{graduate};
+　　R3:　average←{2.0-2.49}&{undergraduate};
+　　R4:　average←{2.5-2.99};
+　　R5:　good←{3.0-3.49};
+　　R6:　good←{3.49-3.8}&{graduate};
+　　R7:　excellent←{3.49-3.8}&{undergraduate};
+　　R8:　excellent←{3.9-4.0};
+　　R9:　weak←{poor};
+　　R10:　weak←{average}&{senior,graduate};
+　　R11:　strong←{average}&{freshman,sophomore,junior};
+　　R12:　strong←{good};
+　　R13:　strong←{excellent}.
+　　　　表1
+
+StatusSexAgeBirthplaceGPAVote
+UndergraduateM16～25CanadaAverage40
+UndergraduateM16～25CanadaGood20
+UndergraduateF16～25CanadaExcellent10

@@ -1,0 +1,22 @@
+信息与控制
+Information and Control
+1999年　第28卷　第4期　Vol.28　No.4　1999
+
+
+
+变参数PID控制器
+
+钟庆昌　谢剑英　李　辉
+
+　　摘　要: 在分析PID控制基本原理的基础上，提出了一种改进的PID控制器――变参数PID控制器 ．该控制器根据控制偏差的大小通过非线性函数在线改变PID三个控制参数的大小，以获得 满意的控制性能．本文给出了该控制器的三种结构，将这三种结构与常规PID控制器进行了 对比仿真实验，结果表明这三种结构的性能均优于后者．本文还就该控制器的抗干扰性能、 鲁棒性能、对非最小相位系统的适用性进行了仿真．仿真结果表明，该控制器性能良好． 
+　　关键词: PID控制，非最小相位系统，变参数，增益函数
+　　中图分类号：TP13　　　　　　文献标识码：B
+PID CONTROLLER WITH VARIABLE ARGUMENTS
+ZHONG Qingchang　XIE Jianying　LI Hui
+(Dept. of Automation, Shanghai Jiaotong University　200030)
+Abstract: This paper presents a PID controller with variable arguments (shortened as VAPID), in which the nonlinear functions are employed t o change the PID parameters on-line according to the system error. Three kin ds of VAPID, of which the performance is all better than that of the ordinary PI D controller, are provided. It also shows better performance of disturbance-rej ecting and robustness, and can be applied to the non-minimal phase system.
+Key words: PID control, non-minimal phase system, variable argu ment, gain function
+
+1　引言
+　　PID控制是工业控制中应用最广泛的一种控制规律．实际运行经验和理论分析均表明，将这种控制规律用于大多数工业对象能够得到比较满意的结果．但是，由于许多控制对象存 在着大惯性、非线性、大纯滞后、强干扰等特性，用一组事先整定的PID参数实施控制 难以达到很好的控制效果，尤其当对象参数变化超过一定的范围时，系统性能会明显变差， 甚至超出许可范围．
+　　为了进一步提高PID控制的性能，许多学者进行了广泛的研究．文献[1，2]提出了一种自校正控制器，其实质与常规自校正控制器相同，即在线辨识对象模型，根据辨识模型按照经验公式来校正PID参数．该方法需要在线辨识对象模型，计算量大．文献[3]提出 了一种基于模糊推理的自校正PID控制器，在Ziegler

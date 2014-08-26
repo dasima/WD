@@ -1,0 +1,22 @@
+　自动化学报
+ACTA AUTOMATICA SINICA
+1997年 第23卷 第3期 vol.23 No.3 1997
+
+
+
+多层感知器的局部化设计1）
+许　力
+　　摘　要　结合前馈网络的全局化设计和局部化设计的各自特点，提出一种由多个既独立又关联的同构子网络构成的局部化多层感知器.仿真结果表明，该网络对复杂非线性系统具有良好的学习性能，并适用于学习控制的直接逆模型法和远程学习法.
+　　关键词　多层感知器，局部化设计，CMAC网络.
+A LOCAL DESIGN FOR MULTI-LAYER PERCEPTRON
+XU LI
+(Department of Electrical Engineering, Zhejiang University, Hangzhou 310027)
+　　Abstract　By syncretizing the global design and local design of feedforward neural networks, this paper proposes a localized multi-layer Perceptron (LMLP), which is constructed by a set of distributively associated subnets with the same structure. Simulation results show that this network has strong learning capacity for complex nonlinear systems, and is applicable for real-time learning control, by using either direct inverse modeling or distal learning strategy.
+　　Key words　 Multilayer perceptron, local design, CMAC network.
+　　1　引言
+　　全局化设计和局部化设计是前馈网络的两种不同的设计方法.作为全局性网络的典型代表，多层感知器(MLP，又称BP网)的输出受所有权值的影响，因而学习缓慢，较适合于对固定样本集的学习；局部性网络以CMAC［2,3］为代表，其输出在任何时刻只与部分权值即一个子网络相关，所以有较快的学习速度，较适合于实时控制［1］.另一方面，尽管MLP能逼近任意Borel可测函数［7］，但当样本在局部区域存在较大差异时，网络的训练通常变得非常困难［8］；CMAC虽能较好地处理学习的局部性问题，但因其输入只是用来确定各子网络存贮单元的地址，而与输出值无直接关系.这样，CMAC对每个输入子空间中的信号进行“多到一”的映射，因而存在着所谓“分辨率”的问题［10］.同时，这种映射使得输出误差难以反向传播到输入端，所以不能用于远程学习控制［6］.从理论上讲，一种得益于这两种设计方法的混合型结构是存在的，但其具体实现有待研究［1］.
+　　这里提出的局部化多层感知器(Localized Multi-Layer Perceptron, LMLP)融合MLP与CMAC的各自特点，是对文献［12］提出的初步设想的一种完善.文中着重研究该网络在复杂非线性系统的在线学习控制中的应用.
+　　2　局部化的多层感知器
+　　2.1　LMLP的结构和原理
+　　设计的基本思想是，由N个输入变量(x1,x2,…，xN)构成的输入空间S被剖分为n个输入子空间(S1,S2,…，Sn)，不同的子空间用不同的子网络来处理，而每个子网络均采用MLP或其类似形式.整个网络就由这n个既相互关联又相对独立的子网络(SN1，SN2，…，SNn)构成.
+　　在图1和2所示的原理图中，LMLP具有N个输入单元、m个隐单元和M个输出单元.每个隐单元只能处于两种状态之一：“激活”或“禁止”.每个子网络占用m*个隐单元，不同子网络的差异仅在于其m

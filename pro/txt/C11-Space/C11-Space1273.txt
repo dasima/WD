@@ -1,0 +1,27 @@
+航空材料学报
+JOURNAL OF AERONAUTICAL MATERIALS
+1999年　第19卷　第3期　Vol.19　No.3　1999
+
+
+
+TiAl基合金离心铸造过程中的
+层流临界值分析
+盛文斌　郭景杰　苏彦庆　丁宏升　贾　均
+
+摘要： 分析了金属型离心铸造TiAl基合金排气阀的充型过程，得出了离心铸造过程中充型速度V与充型长度之间的关系，以及转台的最大转动角速度ω0 max(r/min)的选择依据。结果表明，离心铸造过程中，合金液的充型速度是充型长度的函数，随充型长度的增长而增大；熔体的层流长度随转台最大允许旋转角速度的增大而减小。
+关键词： 金属型； TiAl基合金； 充型过程； 离心铸造
+中图分类号： TG27　　　文献标识码：A　　　文章编号：1005-5053(1999)03-0001-07
+Analysis of laminar flow critical value for TiAl
+based alloy during centrifugal casting process
+SHENG Wen-bin　　GUO Jing-jie　　SU Yan-qing　　DING Hong-sheng　　JIA Jun
+(Harbin Institute of Technology, Harbin 150001， China)
+Abstract： In this paper,the filling process for TiAl based alloy melt poured in permanent mould during the process of centrifugal casting has been analyzed.The relation between the filling speed V and the filling length,as well as the choosing rule of maximum allowing angular velocity ω0 max(r/min) has been obtained.Results show that the filling speed is the function of the filling length during the process of centrifugal casting,and increases with the increase of the filling length.The laminar flow length decreases with the increase of maximum allowing angular velocity.
+Key words: permanent mold; TiAl based alloy; filling process; centrifugal casting
+
+　　TiAl基合金具有高的比强度和比模量，以及良好的抗蠕变、抗氧化和抗氢脆能力［1～5］，是一种最具潜力的轻型高温结构材料，受到了人们的普遍关注。
+　　F.H.Froes［6］等人就TiAl合金性能、应用和成形方面进行了系统的阐述，总结了目前应用于TiAl基合金的各种成形方法。P.E.Jones［7］等人在金属型中铸造了Ti-47Al-2Cr-2Nb(at%)合金汽车排气阀，并对静态铸造、压铸、喷射和离心铸造进行了实验比较。他们认为，综合来看，金属型离心铸造最有可能成为将来批量生产TiAl基合金铸件的成形方法。在国内，中南工业大学在粉末冶金方面做了大量工作［8，9］。哈尔滨工业大学在金属型铸造方面也进行了研究［10，11］。
+　　通过对实际铸造得到排气阀的分析可以知道，阀体出现因铸型导热快而浇注不足的情况并不多，主要问题是铸件内部出现的气孔。根据气孔的形成方式，可将铸件内气孔分为三类：反应性气孔、析出性气孔和卷入性气孔［5］。TiAl合金凝固区间较窄(仅为10℃左右)，金属型的导热能力较强，使得合金的凝固速度非常快。这样，若在充型过程中卷入气体，将无法及时从排气孔或浇口内排出，最终在铸件内形成分散性气孔或体积较大的汇聚型气孔。TiAl合金/金属型界面处熔体的凝固是非常迅速的，仅存在一个2μm厚的反应区，P.E.Jones［7］等人对这个问题做了阐述。因此，在界面处反应生成气体并侵入到铸件内形成皮下气孔的可能性极小。对于感应凝壳熔炼(ISM)熔炼过程，炉料中所吸附的气体大部分在熔化之前就已被真空泵抽出；熔炼过程中，真空室内压力可达10－5mbar(约0.01Pa)，使得熔体内的N，H和O的含量很低，最终无法在铸件内形成气孔，或所形成的析出性气孔很少。根据对实际铸件的观察，我们认为，铸件内气孔为卷入性气孔的可能性最大。本文针对金属型离心铸造充型过程中的流速分布进行了分析，以判断形成卷入性气孔的可能性。
+1　过程分析
+　　本文采用感应凝壳熔炼(ISM)方法，在金属型中离心铸造了Ti-48Al-2Cr-2Nb(at%)合金排气阀，浇注时真空度为10－3mbar。将排气阀型腔理想化为长度和半径分别是L和R的圆管，铸型的旋转角速度为ω(rad/s)。对熔体做如下假设：
+　　(1)熔体的充型过程是连续的；
+　　(2)动力粘度系数μ

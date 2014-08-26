@@ -1,0 +1,32 @@
+软件学报
+JOURNAL OF SOFTWARE 
+1999年 第10卷 第5期 Vol.10 No.5 1999
+
+
+
+具有优先次序的多媒体流调度和资源共享
+张占军　杨学良
+摘要　 文章讨论了在分布式多媒体系统中有优先次序约束的任务调度和资源共享问题.通过建立任 务优先次序的偏序关系,定义准正态调度概念,提出了任务调度算法QNES(quasi-normality －EDF－scheduler).该算法基于PCP(priority ceiling protocol)或SRP(stack resour ce policy)协议访问共享资源,具有抢占式、能处理任务的优先次序约束和访问共享资源的特点,适合单机系统多媒体流的任务调度.
+关键词　优先次序任务调度,准正态,资源共享,PCP(priority ceiling protocol),SRP(stack resource policy).
+中图法分类号　TP316
+Scheduling Tasks with Precedence Constraints and Shared Resource for Multimedia Streams
+　ZHANG Zhan-jun　YANG Xue-liang
+Department of Computer Science　Graduate School of Univers ity of Science and Technology of China　Beijing　100039
+Abstract　Some issues of scheduling tasks with precedence constraints and shared resource are discussed in this paper. The authors present the scheduling algorithm QNES ( quasi-normality－EDF－scheduler) by means of defining the notion of quasi- normality and making consistency of precedence constraints among tasks and parti al order on tasks. QNES can access shared resource based on PCP (priority ceilin g protocol) or SRP (stack resource policy) protocols, and has characters of preemption, dealing with precedence constraints among tasks and accessing sh ared resource, and is suitable to uni-processor systems.
+Key words　Scheduling tasks with precedence constraints, quasi-normality, shared resource, PCP (priority ceiling protocol), SRP (stack resource policy).
+　　在分布式多媒体系统中,保证多媒体流的服务质量(quanlity of service,简称QoS)是最基本 和最重要的问题,也是资源管理的目标.多媒体任务调度作为资源管理的重要组成部分,对保 证其QoS至关重要［1］.多媒体任务一般包括音频视频采集、压缩、网络发送、网络 接收、解压缩、播放等等.在单机处理多媒体流的系统中,任务具有优先次序、访问共享资源 的特点［2］.而现有的多媒体调度算法,如最早死线优先(early deadline first,简 称EDF)、单调速率(rate monotonic,简称RM)［3］和多媒体风车调度(distributed m ultimedia scheduling algorithm,简称DMSr)［1］等都是独立性任务调度算法,适合 任务分散在多机系统的环境.解决共享资源访问的方法,如优先级递升协议(priority ceilin g protocol,简称PCP)［4］和栈资源方案(stack resource policy,简称SRP)［5 ］要求任务也是独立的.但是对于像在点对点的多媒体系统中,任务是集中在单机上的,所 以这些算法不合适.在实时系统中能够调度优先次序任务的算法,如MAA(module allocation algorithm)算法［6］、改造的EDF算法和RM算法［7］,都是非抢占式的,因为 非抢占式调度处理有次序关系的任务会使问题变得简单些,但应用到分布式多媒体系统中就 不够灵活,很难保证应用的QoS.本文把任务之间的优先次序同一种偏序关系一致起来,扩展文 献［8］中提及的正态概念到准正态概念,扩展文献［9］中提及的节概念到有优先次序约束 的任务集,给出了基于EDF调度的算法QNES(quasi-normality－EDF－scheduler).它能 处理任务的优先次序约束、访问共享资源,是抢占式算法,适合单机多媒体系统任务调度.
+　　目前,有许多调度算法适合分布式多媒体系统,如,抢占式EDF和抢占式RM［3］、 抢占式DMSr［1］、非抢占式EDF和非抢占式RM［7］等.DMSr算法能产生较小抖 动调度;EDF算法可调度任务的数量虽然较多,但抖动较大;RM算法居它们之间［1］,它 们都是调度独立性任务.Garey将EDF算法扩展到了调度有优先次序的任务［5］,但是, 它是非抢占式调度.K.Nahrstedt在OMEGA系统模型中分析了单机系统调度的任务先后次序,给 出了时间片划分算法［2］,但它也是非抢占式算法.Hu提出的MAA算法［6］用 优先图方式解决任务之间的优先次序调度,但仍是非抢占式调度.关于资源共享问题,Sha提出 了PCP协议［4］,Baker提出了SRP协议［5］,但是,它们只是考虑独立性任务共 享资源情况.对于分布式多媒体流的资源管理,文献［9］给出了基于节方式的资源管理方案, 建立了I/O-缓冲区-CPU-网络带宽之间的资源分配平衡方程,保证稳定的媒体流速率. 
+　　本文首先介绍了单机系统中多媒体任务的优先次序,扩展资源管理节的概念适应优先次 序任务调度；然后将任务的优先次序约束同一种偏序关系一致起来,提出了准正态概念,给出 了算法QNES,分析了算法的计算复杂度；接着介绍了资源共享PCP和SRP协议,证明了EDF调度 的可行性和可调度条件,给出了测试QNES算法的调度性能和可调度条件的实验结果；最后对 全文作了总结.
+1　优先次序任务节
+　　为了有效进行分布式多媒体资源管理,文献［9］定义了节的概念.但是在节的定义中,任务是周期性和独立性的,现在我们扩展它,使之含有优先次序约束的任务.
+　　定义1. 一个分布式多媒体节Si由6个参数组成(λi,Ui,Gi, Bi,di,gi).其中λi,Bi,di,gi分别表示媒体流速率、缓冲区、I/O处理 和网络处理,详见文献［9］.
+　　Ui是在Si节中有m个任务线程集合T1,T2,...,Tm,任务间具有优先次序关系. 每个任务定义为Tj (pj,cj,dj,prj,rj,sj,fj,bj),j=1,2,...,m.pj为 执行周期,cj为最大执行时间,dj为死线,prj为执行时动态赋给的优先级,rj为到达 时间,sj为开始执行时间,fj为结束时间,bj为访问资源最大等待或阻塞时间.因为多媒 体节的任务是周期性的,所以,dj按照pj计算.例如,一个任务pj=30ms,rj=100 ms,sj=100.2ms,则dj=sj+pj=130.2ms.
+　　Gi为单向非循环图,定义了Ui中任务的优先次序.Ui中的任务作为Gi中的节点, 如果Tj先于Tk,则图中存在一条从节点j到节点k的弧.
+　　例如,在视频会议中视频流的处理,Ui中的任务一般包括视频数据采集、压缩、帧打包 、包发送、包接收、包拼装帧、解压缩、视频播放等.数据缓冲区是系统的共享资源.在单机 系统中各任务之间的优先次序如图1所示.如果系统中有n条视频流,就有n个这样相同的节.
+
+　　文献［2］最先指出了在单机系统中,多媒体任务之间存在着优先次序约束.为了说明任 务之间的优先次序调度的重要性,我们以视频帧打包和包发送任务之间的先后次序为例.如图 2所示,打包任务执行时间为14ms,周期为30ms；包发送任务执行时间为4ms,周期为7.5ms. 使用调度独立性任务的EDF,RM或DMSr算法产生调度时序.在没有完成视频帧打包之前就进 行了包发送,这样会使缓冲区中的包发送错误.
+
+2　准正态调度
+2.1　准正态概念
+　　许多处理优先次序任务的调度都基于EDF算法.因为EDF算法比较简单、易行,有很宽松的 可调度条件,即,是动态优先级赋值,容易扩充到优先 次序任务调度上.同样地,我们的研究也是基于EDF算法进行的.在文献［8］中,Garey分析 了具有优先次序约束的任务调度,基于EDF提出了正态(normality)概念.
+　　定义2. 给定一个调度集Ui,任务由有限子任务组成,如果任务Ti ,Tj的所有子任务ti,tj满足Stj＜Sti 

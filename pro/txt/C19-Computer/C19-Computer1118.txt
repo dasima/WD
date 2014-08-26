@@ -1,0 +1,72 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1999年　第25卷　第5期　Vol.25 No.5 1999
+
+
+
+广义LVQ神经网络的性能分析及其改进1)
+张志华　郑南宁　王天树
+摘　要　首先从理论上分析了广义学习矢量量化(GLVQ)网络的GLVQF算法的性能，GLVQF算法在一定程度上克服了GLVQ算法存在的问题.然而，它对获胜表现型的学习具有好的性能，对于其它的表现型，性能却十分不稳定.分析了产生这个问题的原因，直接从表现型的学习率出发，提出了选取学习率的准则，并给出了两种改进的算法.最后，使用IRIS数据验证了算法的性能，改进算法较之GLVQF算法具有明显的稳定性和有效性.
+
+关键词　亏损因子，模糊度因子，学习率，IRIS数据.
+BEHAVIORAL ANALYSIS AND IMPROVING OF
+GENERALIZED LVQ NEURAL NETWORK
+ZHANG Zhihua　ZHENG Nanning　WANG Tianshu
+(Institute of AI and Robotics, Xi'an Jiaotong University, Xi'an　710049)
+Abstract　　In this paper, the performance of GLVQ-F algorithm of GLVQ network is theoretically analyzed. The GLVQF algorithm, to some extent, has overcome the shortcomings that GLVQ algorithm possesses. But, there are some problems in GLVQF algorithm, for example, the algorithm has good performance on the winning prototype, and on other prototypes, its performance is very unstable. In this paper, the reasons of the problem are discussed. The rules of choosing the learning rates are proposed, and two modified algorithms are developed therefrom. Finally, the performance of the modified algorithms is verified with IRIS data, which shows the modified algorithms are more stable and effective than GLVQF algorithm.
+Key words　Loss factor, fuzzy degree factor, learning rate, IRIS data.
+1　引　言
+　　近几年，由于理论上和网络结构上表现出广泛的活力，Kohonen关于聚类算法［1,2］的研究工作变得十分流行.Kohonen的工作［2］主要集中在两方面：一是学习矢量量化(LVQ)算法，二是他的自组织特征映射(SOFM)网络.但是LVQ存在神经元未被充分利用以及输入样本和竞争单元之间的信息被浪费等两个主要问题［3］.SOFM同样也存在两大缺点［4］：一是哪些节点应被考虑；二是每个非获胜节点应怎样发挥影响.Huntsberger和Hjjimarangsee［5］首次把SOFM同LVQ相结合，为试图克服两者上述各自的问题提出了一种新的思路.Pal等［6］在这个思想上提出了一种广义的学习矢量量化(GLVQ)网络.Gonzalez等［8］对GLVQ进行了性能分析，发现它仍然存在一些问题.Karayiannis等［9］修正了GLVQ，提出了GLVQ-F算法.GLVQ-F算法在一定程度上解决了GLVQ算法存在的问题.但同时GLVQ-F算法对于不同的模糊度因子聚类性能不稳定.本文从数学上分析了GLVQ-F算法的性能，并提出了两种改进的算法.
+2　广义学习矢量量化(GLVQ)网络和GLVQ-F算法
+　　记X=｛x1,x2,…,xp｝Rn为输入样本集合，设X中的类数(表现型的个数)为c. GLVQ网络的学习规则是从最优化一个目标函数导出的.该目标函数定义为输入样本x的一个亏损函数 Lx
+　(1)
+其中表现型ν=｛v1,v2,…,vc｝Rn是我们要寻找的矢量量化器，gr是x相对表现型的亏损因子，其不同的定义就会导出不同的学习算法.在GLVQ算法中，由下式定义：
+.　(2)
+　　由于GLVQ算法定义gr为式(2)，在实际应用中，使得算法背离了初衷［7, 8］.为此，文献［8］引入模糊C-均值中的隶属度公式［1］来定义gr，即
+　(3)
+其中m∈（0，1)是一个常数，表示模糊度因子.此时，用梯度下降法求解目标函数Lx的最小值，导出了GLVQF算法，对于输入x，第t次的学习规则是
+vj(t)=vj(t-1)+2α(t).h(j,m).(x-v(t-1)),j=1,…,c,　(4)
+这里把h(j,m)称为学习率
+h(j,m)=gj+F(j,m),j=1,2,…,c,　(5)
+　(6)
+　(7)
+3　GLVQ-F算法的性能分析
+　　为了方便起见，令vi是相对于输入向量x的获胜表现型，即，vl是相对于输入向量x的竞争最小的表现型，即.本文其余部分都作这样假设.现在分析GLVQF的性能.首先
+　　因为δir≤1,δ-1ir-1≥0,r=1,2,…，c,所以F(i,m)≥0,于是有gi+F(i,m)≥gi.
+又δlk≥1,δ-1lk-1≤0,F(l,m)≤0,所以gl+F(l,m)≤gl.
+　　可以看出F(k,m)是个扰动参数（k=1,2,…，c)，对于获胜节点，它加大了学习步长，而对竞争最小节点，它减弱了学习步长.进一步比较h(i,m),h(k,m)(k=1,2,…，c；k≠i)的大小.首先由式(3),(4)经过简单计算，有
+　(8)
+　　定理1.1）h(k,m)≤h(i,m),(k=1,2,…,c;k≠i)；2)F(k,m)≤F(i,m),(k=1,2,…,c,k≠i).
+　　从直观上看，作者希望当‖x-vk‖2≥‖x-vj‖2时，算法也能满足h(k,m)≤h(j,m).然而，遗憾的是该结论即使对于竞争最小的表现型也不能成立.举例说明
+　　例.设,c=3. 令‖x-v1‖2=,‖x-v2‖2=3,‖x-v3‖2=4.
+经过简单计算有显然‖x-v2‖2＜‖x-v3‖2，而.由此例还可见h(k,m)不一定大于零(k≠i). 但当m≥2时，有下述结论成立：
+　　定理2.设m≥2，如果‖x-vk‖2≥‖x-vj‖2，则0＜h(k,m)≤h(j,m).
+　　证明.　因为m≥2,∴.因而当‖x-vk‖2≥‖x-vj‖2，有
+
+又
+
+所以h(k,m)-h(j,m)≤0.于是定理得证.
+　　从另一个角度来分析GLVQ-F算法，即固定δkr，把h(k,m)=gk+F(k,m)当作m的函数进行分析.首先给出一个引理.
+　　引理1［7］.1)2)
+3)
+　　这里给出h(k,m),gk(k=1,2,…，c)关于m的导数：
+　(9)
+　(10)
+　　根据上述两式、引理1和文献［1］，很容易得到下面几个定理：
+　　定理3.gi为m在区间(1,∞)的递减函数，并且
+　　定理4.gl为m在区间(1,∞)的递增函数，并且
+　　定理5.h(i,m)为m在区间(1,∞)的递减函数，并且h(i,m)=1,h(i,m)=
+　　定理5表明h(i,m)有类似定理3的结果，但遗憾的是本文不能证明h(l,m)有类似定理4的结论成立.作者的目标是希望找到满足下述两个条件的h(k,m)：
+　　1)当,h(i,m)为m的递减函数，且h(i,m)=,h(i,m)=1；
+　　2)当k≠i,h(k,m)为m的递增函数，且h(k,m)=h(k,m)=0.
+这样就可以采用类似于文献［9］中的方法，随着学习次数的增加，m由大逐渐减小，即开始时，所有表现型的学习步长都均等，而最后，只有获胜表现型激活，其它表现型逐渐抑制.从直观上看，这是合理的.
+4　GLVQ-F的改进算法
+　　作者的目的是构造满足上述条件的h(k,m)(k=1,2,…，c).文献［8］h(k,m)的构造是从gk着手的.其实在学习时，只需要h(k,m),因而可直接从h(k,m)着手，而不考虑gk.
+　　h(k,m)是gk加上了一个扰动项F(k,m)，对于获胜表现型它增大了其激活程度；而对于竞争最小的表现型它增大了其抑制程度；但对其它的表现型，F(k,m)这个扰动量有时会产生很差人意的效果（正如上节的例子所分析的）.略去F(k,m)，直接令
+h(k,m)=gk,　(11)
+对于获胜表现型和竞争最小的表现型来说，降低了它们的激活或抑制程度，但对于其它表现型，稳定了其效果，故整个算法相对而言要稳定些.由定理3和定理4，可知h(k,m)满足上面的条件1)，但条件2)只是对竞争最小的表现型成立.我们把基于式(11)导出的算法简称改进算法1.
+　　下面讨论另一种改进（简称改进算法2）.令
+　(12)
+由上式首先可得　　h(k,m)＜gk(k=1,2,…,c).
+因为
+所以　

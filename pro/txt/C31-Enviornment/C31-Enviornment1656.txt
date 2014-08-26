@@ -1,0 +1,14 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1999年　第19卷　第4期　Vol.19　No.4　1999
+
+
+
+不同菌源的微生物对邻苯二甲酸二异丁酯(DIBP)生物降解性的比较
+曾 锋　傅家谟　盛国英　杨惠芳
+摘要：为有效地解决邻苯二甲酸酯类化合物的环境污染问题.从处理石化厂废水的活性污泥中分离出1株邻苯二甲酸酯降解菌FS1和处理焦化厂废水的活性污泥中分离出2株邻苯二甲酸酯降解菌FS2、FS3.研究了邻苯二甲酸酯降解菌FS1、FS2、FS3对邻苯二甲酸二异丁酯的最适降解条件,并比较其降解特性.邻苯二甲酸酯降解菌FS1、FS2、FS3最适酸度分别为pH 6.5～ 8.0、7.0～ 8.0和7.0～ 8.0;温度为20～ 35℃、15～ 35℃和15～ 35℃.邻苯二甲酸酯降解菌FS1、FS2、FS3对邻苯二甲酸二异丁酯的降解反应符合一级动力学特征,其半寿期：FS1 < FS2 < FS3.邻苯二甲酸酯降解菌FS1是一株高效的邻苯二甲酸二异丁酯降解菌.
+关键词：邻苯二甲酸二异丁酯；微生物；生物降解；降解动力学
+中图分类号：X172 文献标识码：A 文章编号：1000- 6923(1999)04- 0322- 04
+The comparative study of biodegradability of diisobutyl phthalate (DIBP) by microorganisms from different bacteria sources. 
+ZENG Feng1,FU Jia-mo1,SHENG Guo-ying1,YANG Hui-fang2 (1.State Key Laboratory of Organic Geochemistry,Guangdong Key Laboratory of Environmental Protection and Resources Utilization,Guangzhou Institute of Geochemistry,Chinese Academy Sciences,Guangzhou 510640,China；2.Institute of Microbiology, Chinese Academy Sciences,Beijing 100080,China). China Environmental Science.1999,19(4)：322～ 324
+Abstract：The microbial degradation characteristics of diisobutyl phthalate (DIBP) were investigated by strains FS1,FS2 and FS3 isolated from the activated sludge at a petrochemical factory and pyrochemical factory. The optimum pH values of the strains FS1,FS2,FS3 for degrading DIBP are 6.5～ 8.0,7.0～ 8.0 and 7.0～ 8.0 ;the temperatures are 20～ 35℃,15～ 35℃and 15～ 35℃ respectively.The degradation of DIBP by the strains FS1,FS2,FS3 can be described by the first

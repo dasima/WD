@@ -1,0 +1,99 @@
+环境科学学报
+ACTA SCIENTIAE CIRCUMASTANTIAE
+1999年 第19卷 第3期 Vol.19  No.3 1999
+
+
+
+河流沉积物重金属污染质量控制基准的研究
+Ⅱ.相平衡分配方法(EqP)*
+刘文新　栾兆坤　汤鸿霄　
+摘要　以重金属污染严重的江西乐安江表层沉积物为对象，利用热力学相平衡分配法(EqP)和相 关基础数据库，研究探讨了该流域沉积物中重金属污染的数值型质量控制基准(SQC).结果表明，铜矿采矿活动导致某些江段沉积物中铜实际污染程度远高于相应的SQC水平.另外， 由于沿江中、小工矿企业废水的随意排放，同样造成附近沉积物中铅、锌、铬等重金属含量不同程度地超出各自的基准数值.此SQC的建立为制订该流域沉积物质量管理标准(SQS)及污染治理措施提供科学依据.
+关键词　沉积物质量基准；相平衡分配法；重金属；乐安江.
+Sediment quality criteria for heavy metal pollution in the Lean River Ⅱ. Equil ibrium partitioning approach
+LIU Wenxin,LUAN Zhaokun,TANG Hongxiao 
+SKLEAC,Research Center for Eco-Environmental Sciences,Chinese Academy of Sciences,Beijing 100085
+Abstract　Based on equilibrium partitioning approach (EqP) and CERP-DBMS database, the preliminary surface sediment quality criteria (SQC) for heavy metals in the Lean River were developed. The numerical SQC indicated that mining activities of Dexing Copper Mine caused the level of copper contamination much higher than the corresponding SQC value within the specific sections along the Lean River. In addition, release of wastewater from some factories anong the bank also led to increases in concentrations of lead, zinc and chrome, superior to their SQC to different extent. Therefore, it is urgent to link the SQC with the feedback from local economic conditions and social benefits, so that the sediment quality standards (SQS) can be established, and remediation program can be performed. 
+Keywords　sediments quality criteria,equilibrium partitioning,Le an River,heavy metal pollution.
+1　前言
+　　沉积物质量基准(SQC)是评价水生态环境质量的重要基准之一，它既可以弥补水质基准(WQC) 的不足，又是评价沉积物污染及其生态效应的基础.基于异相间热力学稳态交换的平衡分配法(EqP)是建立数值型SQC的代表性方法之一，适用于逐类化学污染物(chemi cal-by-chemical)［1，2］.尽管已提出建立国家级沉积物质量基准的概念，但从可操作和实用角度看，重点仍然是建立特定区域(或特定情形)沉积物质量控制基准［3］.比较而言，数值型SQC直观、明确，针对性强，便于行政管理和资源规划部门人员的理解和掌握.
+　　在我国，区域性SQC尚处于初步探索阶段，亟待深入开展实地研究.乐安江毗邻江西境内的大型德兴铜矿，矿区超负荷废矿水大量排入乐安江，造成沉积物中重金属严重污染并导致流域生态系统的破坏.本文在乐安江相关基础数据库支持下，利用当前流行的相平衡分配法(EqP)和实测数据的计算公式，初步研究探讨了建立乐安江沉积物质量控制基准，藉以指示该河流各断面沉积物重金属污染程度及分布格局，为制订符合当地实际沉积物质量标准奠定技术基础，同时亦为提高国内区域性污染沉积物的质量评价和管理水平提供科学依据.
+2　材料与方法
+2.1　样点位置
+　　本文采用CERP计划所设置的站位，沿乐安江上游至下游站位分布见文献［4］.
+2.2　相平衡分配系数KP的求算
+　　EqP法的关键在于求算化学污染物的相平衡分配系数KP.KP是一系列因素的复杂函数值，涉及沉积物“指纹特征”(Fingerprints)和沉积物/水界面的各种环境因素［4］，其计算方式包括：(1) 利用现场测试数据直接计算［5］；(2) 通过数理模式与模拟实验相结合的间接推算，例如氧化型沉积物的三相吸附模型［2］和近年流行的表面络合模式(SCM).SCM主要有恒定容量模式(CCM)、扩散层模式(DLM)和三层模式(TLM)；求解过程包括图解外推法和应用FITEQL、MINTEQ等软件［6］.模式计算通常较为复杂，参数的主观选择会造成结果不稳定或不确定性［7］，而且模拟实验对实际情形的反映存在一定局限性.因此，本文选择基础数据库CERP-DBMS中原始数据直接计算，基本公式如下：
+(1)
+SQC=KP.WQC+[Me]AVS+[Me] R　或　SQC* =K*P . WQC+[Me] AVS +[Me]R　　(2)
+　　式中CS、CIW、CW分别代表表层沉积固相(深度5-10.cm)、孔隙水相和上覆水相中重金属的溶解浓度(<0.45μm，浓度测定采用AAS、ICP技术)，K*P作为孔隙水样品缺乏时的补充参考，WQC为水质基准，[Me]AVS代表与酸可挥发性硫化物(AVS)相结合的金属，而[Me]R则代表沉积物中残渣态金属含量.
+表1　USEPA依据水质硬度制定的部分重金属慢性 生物毒性淡水水质基准［8］
+Table 1 Protective WQC of some heavy metals regulated 
+by USEPA for aguatic life in freshwater
+
+重金属基准浓度，mg/L
+Cuexp(0.8545×(ln(水质CaCO3硬度)-1.465)/1000
+Pbexp(1.2730×(ln(水质CaCO3硬度)-4.705)/1000
+Zn0.047(24.h)
+Cdexp(0.7852×(ln(水质CaCO3硬度)-3.490)/1000
+As0.19
+Cr0.011
+
+　　注：适于淡水水质条件下低硫氧化型沉积物，慢性毒性，pH=6.5-9.02.3　水质基准WQC的确定
+　　由于我国目前尚没有有关河流重金属慢性生物毒性水质基准，因此本文主要采用美国国家环 保局(USEPA)依据水生生物对重金属的最终慢性毒性水平(FCV)和水质硬度制订的淡水水质基准［8］(参见表1)作为确定乐安江水质基准(WQC)的基础，同时还采用中国地表水环境质量标准所规定的五类水质标准(GB3838-88)中的重金属部分作为参考基础［9］ .
+3　结果与讨论
+3.1　酸可挥发性硫化物和重金属形态分布对SQC的影响
+　　研究表明，沉积相中硫化物含量和金属形态分布对金属的生物可给性具有重要影响［10，11］，因此，建立旨在保护水生环境的SQC需要考虑修正.近年来，通常利用酸可挥发性硫化物(AVS)与同步提取各金属含量(∑SEM)的比值关系判断金属的生物效应和校正SQC计算［12］.沉积物中金属的形态分布与其生物可给性存在密切联系，原生相中的金属(残渣结合态)一般不参与相间的平衡分配.依据化学稳定性和改进的逐级提取技术，遵循简化分类原则，乐安江表层沉积物中重金属的形态分布可划分为生物易利用态(包括水可溶态、阳离子交换态)、中等利用态(包括碳酸盐结合态、Fe/Mn氧化物结合态、有机/硫化物结合态)和惰性态(残渣结合态)［13］.
+　　因乐安江表层沉积物属于氧化型低硫沉积物，AVS含量普遍很低，∑(SEM/AVS)通常大于1，因而金属生物活性相对较高［12］，AVS校正作用可忽略.这与乐安江沉积物中重金属形态分布以生物易利用态和中等利用态为主的结果相一致［13］.鉴于乐安江沉积物中重金属残渣态(即生物惰性态)占总量的比例很低，故本文在建立乐安江沉积物质量基准时也忽略残渣态的影响，采用如下简化计算公式：
+SQC=KP*WQC　或　SQC*=K*P*WQC　　　(3)
+表2　乐安江部分样点表层沉积物中AVS，∑SEM，∑(SEM/AVS)及其pH［13］
+Table 2 AVS,∑SEM,∑(SEM/AVS) and pH of surface sediments along the Lean R iver［13］
+样点名称AVS,μmol/g∑SEM，μmol/g∑SEM/AVSpH
+沽口A040.013.82382.3ud
+中洲A050.047.66191.45.66
+戴村A070.987.878.036.78
+接渡A080.133.8629.6ud
+蔡家湾A130.255.1320.56.64
+黄龙庙A141.461.641.1ud
+
+　　ud--因条件限制未能测定
+3.2　乐安江表层沉积物中重金属污染的初步质量控制基准(SQC)
+　　依据USEPA水质基准(表1)和实测水质参数，计算求得乐安江上覆水水质基准(WQC)如表3所示，再由公式(2)初步建立乐安江流域表层沉积物中重金属污染质量控制基准，结果见表4.
+表3　乐安江上覆水水质基准WQC(USEPA依硬度参数的最终慢性标准FCV)
+Table 3 Water quality criteria for heavy metals in surface water of the Le an River(USEPA's FCV)
+样点名称水质总硬度(CaCO3),mg/LCu,mg/LPb,mg/LZn,mg/LCd,mg/LAs,mg/LCr,mg/L
+海口A01102.30.0120.0030.0470.0010.1900.011
+沽口A04317.30.0320.0140.0470.0030.1900.011
+中洲A05189.30.0200.0070.0470.0020.1900.011
+戴村A07143.30.0160.0050.0470.0020.1900.011
+虎山A08179.10.0190.0070.0470.0020.1900.011
+接渡A09163.70.0180.0060.0470.0020.1900.011
+蔡家湾A13133.00.0150.0050.0470.0010.1900.011
+黄龙庙A1497.20.0120.0030.0470.0010.1900.011
+龙口A1680.20.0100.0020.0470.0010.1900.011
+
+表4　EqP法建立的乐安江表层沉积物中重金属污染初步质量控制基准SQC(USEPA's FCV)
+Table 4 Initial EqP-based SQC for heavy metals in surface sediments deriv ed from USEPA-WQC
+
+SQCA(CS/C\{IW\})Cu,mg/kgPb,mg/kgZn,mg/kgCd,mg/kgAs,mg/kg Cr,mg/kg
+海口A011925873910ud26
+沽口A04usususususus
+中洲A05887452513ud61
+戴村A07806258262730ud75
+虎山A08983282322240ud72
+接渡A0953017052815ud46
+蔡家湾A1371815599220ud47
+黄龙庙A143826552610ud41
+龙口A163331667565ud49
+SQC*A(CS/C\{W\})Cu,mg/kgPb,mg/kgZn,mg/kgCd,mg/kgAs,mg /kgCr,mg/kg
+海口A012619542640732
+沽口A04255741592128101
+中洲A0555551318343750
+戴村A0719391263288751
+虎山A089346172541235122
+接渡A095301702646133073
+蔡家湾A131050233893492357
+黄龙庙A144202585263551131
+龙口A163331664201110257
+
+　　us/ud--因当地条件限制未能采集样品/或未能加以测定
+3.3　讨论
+　　图1是乐安江表层沉积物中部分重金属实测数据与部分相应数值型SQC基准的对比.图中SQCA和SQC*A分别表示基于USEPA's FCV基础建立的初步质量控制基准(表4)，SQCB和SQC

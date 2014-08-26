@@ -1,0 +1,50 @@
+环境科学学报
+ACTA SCIENTIAE CIRCUMSTANTIAE
+1999年 第19卷 第6期 Vol.19 No.6 1999
+
+
+
+双阳离子有机膨润土吸附水中有机物的特征及机理研究*
+朱利中　陈宝梁　李铭霞　张孙玮
+摘要　研究了双阳离子有机膨润土吸附水中对硝基苯酚、苯酚、苯胺的特征及机理.结果表明，双阳离子有机膨润土对水中有机物的等温吸附曲线符合Langmuir和Freundlich吸附等温式，是分配作用(partition)和表面吸附(adsorption)共同作用的结果.首次定量描述了分配作用和表面吸附在双阳离子有机膨润土吸附有机物中的相对贡献率；它们均为浓度的函数，在低浓度时，双阳离子有机膨润土对有机物的吸附作用以表面吸附为主；在高浓度时，则以分配作用为主.
+关键词　有机膨润土；阳离子表面活性剂；有机物；吸附；分配.
+The characteristics and mechanisms for dual-cation organobentonites to sorb organic compounds from water
+ZHU Lizhong, CHEN Baoliang, LI Mingxia, ZHANG Sunwei (Department of Environmental Science,Zhejiang Univesity,Hangzhou 310028)
+Abstract　A series of dual-cation organobentonites are synthesized by replacing the metal ions in bentonite with both long-chain alkyl or aryl quaternary ammonium cations,such as dodecyltrimethylammonium (DTMA),tetradecyltrimethylammonium (TPA),cetyltrimethylammonium (CTMA),octadecyltrimethylammonium (OTMA),and short-chain alkyl or aryl quaternary ammonium cations,such as tetramethylammonium (TMA).The optimal conditions and the properties for dual-cation organobentonites to sorb p-nitrophenol,phenol and aniline from water are investigated.The mechanisms and characteristics of the interactions between organic pollutants and the organic phase of the bentonite in water system are also discussed.The interlayer spacings,organic carbon contents and sorption properties of dual-cation organobentonites are related to the ratio of long- to short-chain quaternary ammonium cations,and the length of alkyl-chain of large quaternary ammonium cations exchanging on bentonite.The sorption of organic compounds to dual-cation organobentonites is also related to the properties of organic compounds.Sorption isotherms of p-nitrophenol,phenol and aniline are typically nonlinear,and the isotherms fit closely to Freundlich or Langmuir equation.Both adsorption and partition occur to the sorption of organic compounds to dual-cation organobentonites.The separate contributions of adsorption and partition to the total sorption of organic compounds to dual-cation organobentonites are analyzed mathematically;the relative effect is a function of the equilibrium concentration of the organic compounds.
+Keywords　organobentonite,quaternary ammonium cation,organic pollutant,adsorption,partition.
+　　近年来，对有机膨润土吸附水中有机物的特征、机理及规律的研究逐渐增多［1―5］，其中探讨最多的是将单一阳离子表面活性剂改性的有机膨润土用于吸附处理水中的非极性有机物.研究表明［1―3］，短碳链阳离子表面活性剂改性的有机膨润土对有机物的吸附特征为表面吸附、强的溶质吸收和竞争吸附；而长碳链阳离子表面活性剂改性的有机膨润土则为分配作用、弱的溶质吸收和非竞争吸附.双阳离子有机膨润土对有机物的吸附(sorption)是分配作用(partition)和表面吸附(adsorption)共同作用的结果［5―6］.但至今，没有系统研究过双阳离子有机膨润土吸附水中极性或可离子化有机物的性能、机理及规律，也没有人定量描述过分配作用和表面吸附对有机膨润土吸附有机物的相对贡献率.
+　　本文制备了一系列双阳离子有机膨润土，用于吸附水中极性和可离子化的有机物.研究了双阳离子不同配比及组成对双阳离子有机膨润土吸附特征的影响及规律；重点讨论了双阳离子有机膨润土的吸附(sorption)机理；应用数学模拟方法，首次定量描述了分配作用和表面吸附对有机膨润土吸附有机物的相对贡献率.
+1　实验部分
+1.1　实验材料及仪器
+　　所用原土为钠基膨润土，其阳离子交换容量(CEC)为60meq/100g;溴化十六烷基三甲铵(CTMAB)、溴化四甲基铵(TMAB)、对硝基苯酚、苯酚、苯胺均为分析纯；溴化十二烷基三甲铵(DTMAB，95%)、溴化十四烷基苄基二甲基铵(TPAC，90%)、溴化十八烷基三甲铵(OTMAB，80%)为工业纯，经提纯后使用.主要仪器有THB-82A台式恒温振荡器，电动低速离心机，紫外-可见分光光度仪，LECO CS-344碳硫测定仪，X’PertMPD型X射线衍射仪.
+1.2　测定方法
+　　水中苯酚和苯胺分别用4-氨基安替比林和盐酸萘乙二胺分光光度法测定，对硝基苯酚用紫外分光光度法测定；检测限分别为0.1μg/mL、0.12μg/mL、0.05μg/mL.
+1.3　双阳离子有机膨润土的制备
+　　由短碳链阳离子表面活性剂(TMAB)分别与长碳链阳离子表面活性剂(DTMAB、TPAC、CTMAB、OTMAB)按一定配比混合改性膨润土.具体方法为：将干燥、过100目筛的原土40g倒入400mL一定配比的双阳离子或单一阳离子表面活性剂溶液中，在60―70℃水浴中搅拌2h，产物经真空过滤，用400mL蒸馏水洗涤2次，滤干后，在80―90℃下烘干，再在105℃下活化1h，经研磨，过100目筛，制成一系列双阳离子有机膨润土.
+　　制得的双阳离子有机膨润土用两种相应表面活性剂的英文缩写加一个数字前缀表示，数字代表改性时加入的表面活性剂为CEC的百分数.例如，40TMAB/40DTMAB表示用40%CEC的TMAB和40% CEC的DTMAB共同改性制得的双阳离子有机膨润土.
+1.4　基本实验方法
+　　在100mL碘量瓶中分别加入0.5g单一或双阳离子有机膨润土(或原土)，25mL一定浓度的有机物溶液，盖紧，在25℃、150r/min条件下振荡1h，离心10min后，取上层清液，测定水中有机物的残留量(即平衡浓度)，计算出各种有机膨润土对水中对硝基苯酚、苯酚、苯胺的去除率和吸附量.吸附实验中对硝基苯酚、苯酚、苯胺的挥发率可忽略不计.
+2　结果与讨论
+2.1　双阳离子有机膨润土的有机碳含量和X-射线衍射分析
+　　在25℃和50%相对湿度的条件下，测得双阳离子有机膨润土的层间距和有机碳含量，见表1.
+表1　双阳离子有机膨润土和原土的层间距和有机碳含量
+Table 1 The interlayer spacing and organic carbon contents of original bentonite and dual cation organobentonites
+
+土样原土40TMAB40DTMAB40TMAB/
+20DTMAB40TMAB/
+40DTMAB
+层间距，nm1.2271.3761.6931.3911.436
+有机碳含量，%0.0572.2349.6056.4089.685
+土样40TMAB/
+60DTMAB40TMAB/
+20TPAC40TMAB/
+20CTMAB40TMAB/
+20OTMAB　
+层间距，nm　1.6221.4091.4261.492
+有机碳含量，%12.3358.2858.7849.225
+
+　　由表可见：有机膨润土的层间距和有机碳含量均大于原土；双阳离子有机膨润土的层间距和有机碳含量与改性时双阳离子中长碳链阳离子表面活性剂加入量和链长成正相关，如40TMAB/
+60DTMAB>40TMAB/40DTMAB>40TMAB/20DTMAB>40TMB,40TMAB/20OTMAB>40TMAB/20CTMAB>40TMAB/
+20TPAC>40TMAB/20DTMAB.
+2.2　双阳离子有机膨润土吸附水中有机物的适宜条件
+　　试验了pH、振荡时间和用土

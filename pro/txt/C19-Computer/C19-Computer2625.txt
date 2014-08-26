@@ -1,0 +1,23 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第10卷 第7期　No.7 Vol.10 1999
+
+
+
+多agent系统的一种交互策略模型
+李　毅　罗　翊　石纯一
+　　摘要　在多agent系统(MAS)中,通信交互是agent实现协作的主要途径.文章从语义层的角度对agent间通信交互过程进行分析,将agent的思维状态BDI(belief,desire,intention)模型引入通信交互过程,提出一种交互策略模型,支持在基本交互行为之上的多种类型的协商交互,以解决agent间的信知、行动等方面的冲突.与以往的研究中的辩论协商等方法相比,该策略模型可以实现基于场景的灵活交互,更具实用性.
+　　关键词　多agent系统,交互策略,思维状态,协作,协商.
+　　中图法分类号　TP18
+An Interactive Strategy Model of Multi-agent System
+LI Yi LUO Yi SHI Chun-yi
+(Department of Computer Science and Technology Tsinghua University Beijing 100084)
+　　Abstract　 Interactive communication is the main method to realize cooperation in multi-agent systems. In this paper, from the semantic perspective, the authors investigate the interactive communication procedure of multi-agent systems and incorporate the BDI (belief, desire, intention) model, the agent's mental state mode, into the interactive communication procedure. They present a model concerning the interactive strategy, which supports a variety of arranging interaction on basic interactive action to solve the conflicts of desires or intentions among agents. Compared with former other researches, such as negotiation through argumentation method, this strategy model can realize the flexible interactive communication based on different scenarios, and it is more practical.
+　　Key words　Multi-agent system, interactive strategy, mental state, cooperation, negotiation.
+　　以往对于多agent系统(MAS)中Agent交互的研究可分为通信机制和协商方法两个主要部分,但二者间缺乏联系,缺乏通用性.在MAS系统的设计中,若要使agent能从交换数据中获取语义信息,需对通信交互的内容与方式有新的理解.首先,通信不应是由协议决定的被动的行为,而是在通信所发生的场景中,一个agent要使另一个agent接受某种信知(belief)或某种意图(intention)的行为.对每次通信具体作出什么回答,应该由交互目标、对另一个agent的信知的了解和自身所拥有的各种信知和手段等来综合决定［1］.这样的交互模型可以适用于灵活的交互场景,并为基于目标需求(desire)的通信方式提供手段.其次,交互是按一定的次序来共享双方的信知、了解双方的意图(intention)、调整各自规划,以获取各自的优化解的过程.只要表达出信知、意图和规划调整的传递与询问,就可以表达出相当多的交互过程,其适用范围只受限于agent为达到其目的而采取交互行动的规划能力.基于这些考虑,本文提出了一种多agent系统交互策略模型.
+1 通信交互作用的条件
+1.1 通信的作用
+　　一个agent对环境变化进行预测时,要考虑到其他agent的活动一般是不受自己控制,难于预测的.为了更好地预测环境变迁和增强自身的行动能力、实现自身需求,agent间必须进行通信.通信能力不是理性agent的必要特性,是agent社会性的体现.通信动作也是一种特定的规划行动,是在完成agent需求的过程中预定进行的.从语义层来看,通信交互就是agent间思维状态的传递.
+　　从agent间相互关系的角度看,通信的作用有：
+　　.　预测：当agent a由通信得知agent b的信知后可以推断agent b的行动,尤其是当agent a得知agent b的意图和需求后,可以更直接地了解agent b将进行的动作.
+　　.　控制：将agent a的规划中应由agent b完成的动作意图传给agent b,agent b若接受,则其行动将受到

@@ -1,0 +1,8 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+2000　Vol.26　No.3　P.419-422
+
+
+
+区间系统的离散鲁棒Kalman滤波
+张勇　史忠科

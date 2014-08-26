@@ -1,0 +1,44 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第4期 第10卷 Vol.10 No.4 1999
+
+
+
+Agent思维状态模型
+马光伟　徐晋晖　石纯一
+摘要　文章综述了20世纪90年代以来多Agent系统中Agent思维状态模型的研究结果.从直观分析、形式化模型、结构模型、合作研究和应用方面来介绍Bratman的哲学观点、Cohen和Levesque的意图模型、Rao和Georgeff的BDI模型等重要成果,最后介绍了正在开展的工作.
+关键词　Agent,MAS(multi-agent system),思维状态,信念,愿望,目标,意图,承诺,合作,联合意图.
+中图法分类号　TP18
+About the Mental State Model for Agent
+MA Guang-wei XU Jin-hui SHI Chun-yi
+(Department of Computer Science and Technology Tsinghua University Beijing 100084)
+Abstract　 This paper summarizes the research of mental state model for agent, which is a major subject in the research on multi-agent system. Most references are published after 1990. From different perspectives, covering informal analysis, formal models, architectures, cooperation researches, and applications, many important results are introduced in this paper, such as Bratman's analysis, Cohen and Levesque's intention model, Rao and Georgeff's BDI model, etc. Finally, some prosperous works are introduced as well. We hope that this presentation can help readers deepen their understanding of agent.
+Key words　Agent, multi-agent system, mental state, belief, desire, goal, intention, commitment, cooperation, joint-intention.
+　　在多Agent系统(multi-agent system,简称MAS)中,Agent思维状态模型用来研究如何描述Agent的思维属性和它们之间的关联,以及与感知、规划、行为、协调、合作等活动的关系.从意识立场出发,一般把信念(belief)、愿望(desire)和意图(intention)当作基本的思维属性(简称BDI).Agent的BDI分析不同于人们所熟悉的知识表示和推理,它是对思维过程的一种深层次描述,为的是适应MAS求解过程中环境的多变,在突发事件发生的情况下,保证理性的、一致的合作行为.
+　　Dennett描述了人们看待系统的立场：(1) 物理立场,着眼于系统的物理特性和规律；(2) 设计立场,着眼于系统的设计目标；(3) 意识立场,把系统看做理性Agent,通过信念、愿望和其他意识属性来预测Agent的行为.Singh认为把Agent看做意识系统的好处是：(1) 对设计者和分析者来说,这样是自然的；(2) 对描述复杂系统的行为提供了简洁的表示,便于理解和解释；(3) 不依赖物理实现就可以得到许多Agent行为的规则和模式；(4) 可被Agent自身用来进行互相推理［1］.实践表明,对于许多复杂系统,即使有了详尽的结构和工作机理的描述,也很难从设计立场来预测和解释它的行为,更适合采用意识立场的描述.意识观念是一种抽象工具,为人们描述、解释和预测复杂系统的行为提供了一种方便的方式［2］.
+　　另外,有关Agent模型的研究还有两方面的动力：(1) 控制分布式计算的复杂性；(2) 克服人机界面的局限性.伴随分布式计算的广泛使用,需解决Agent之间互操作的复杂性问题.人们试图使用与人类思维属性相对应的概念,在规划层提供一种类似于对低层通信协议的封装.随着任务复杂性的增加,直接操纵界面的优势正在消失,人们试图用Agent技术来实现一种间接管理风格［1］.目前,Agent思维状态模型是以模态逻辑为工具来描述的,一般知识逻辑用KTD45公理、信念逻辑用KD45公理、目标和意图用KD公理来分析.Agent的逻辑描述还存在一些问题,如：(1) 逻辑全知问题：φBEL(φ),这个要求对资源有限的Agent是不现实的;(2) 无为而治问题：如果Agent认为φ必然总是为真或者必然最终为真,那么它无需把这作为目标或意图;(3) 副作用问题：如果Agent认为φγ必然总是为真并且它也有意图φ,那么也不能强迫它采纳意图γ.
+1 直观分析
+1.1 BDI的直观描述
+　　信念描述了Agent对当前世界状况以及对为达到某种效果所可能采取的行为路线的估计,属于思维状态的认知方面.愿望描述了Agent对未来世界状况以及对所可能采取的行为路线的喜好,属于思维状态的感情方面.Agent可以拥有互不相容的愿望,而且也不必相信它的愿望是可实现的.目标是Agent从愿望中选择的子集,但还没有采取具体行动的承诺.一般Agent相信目标是可实现的.由于Agent资源有限,不能一次去追求所有的目标,所以,Agent选择某个目标(或目标集)来作出追求的承诺,形成意图.Agent的当前意图(或意图结构)是被选的目标集和处理状态,意图属于思维状态的意向方面,其作用是引导并监督Agent的动作.承诺表示从目标到意图的转换,它决定了Agent对于所追求的意图的坚持程度并控制对意图的重新考虑.在MAS中,一般认为社会承诺是多Agent群体的胶合剂,Agent之间的合作、协调等往往归结为建立不同性质的社会承诺.
+信念、愿望、目标和意图的关系［3］：
+　　(1) 意图-信念一致性：Agent应当相信它的意图是可能的,而不相信达不到目标,在正确的条件下,相信会达到目标.
+　　(2) 意图-信念不完全性：Agent有意图达到某种状况,但不必相信这种状况最终一定会实现,也即Agent对其意图持不完全的信念是理智的.
+　　(3) 副作用问题：Agent有意图做α,且相信做α必须要做β,那么也不必要求有意图做β.
+　　(4) 内部一致性：Agent要避免拥有冲突的意图,但允许拥有冲突的愿望.
+　　(5) 手段-目标分析：意图要求Agent在未来某时要思考提出的问题,而愿望则没有必要.
+　　(6) 跟踪成功或失败：意图可被认为是愿望加上行动和实现的承诺,所以,必须对意图的成功或失败进行跟踪,在失败时进行重新规划. 
+1.2 Bratman的理性平衡和行为意图
+　　理性平衡是使理性Agent的行为符合环境的特性,包含各种客观条件和社会团体因素,对Agent的约束表现在：(1) 有限的计算能力和信息资源,Agent不可能在任何时刻都进行计算,也不可能在给定时限内完成任意数量的计算,环境也会经常发生不可预测的变化,关于世界的知识也不可能总是完全的;(2) 协调问题,Agent需要协调现有的活动和将来的活动,还要协调不同Agent的活动.Bratman认为，必须使用意图来描述理性平衡,而且意图不能归结为信念与愿望,必须看成是一个独立的思维属性［4］.
+　　意图分为将来意图和当前意图.当前意图引导立即就要发生的行为,与行为有密切关系,而将来意图不仅引导行为,同时引导将来的意图,与规划联系紧密.行为意图对于Agent行为的制约，一方面表现在自主Agent不可以随意改变自己已有的行为意图,尤其是已经付诸实施的意图；另一方面,自主Agent不能无视环境的变化,坚持不合实际或不再重要的意图［5］.
+1.3 联合意图
+　　Tuomela［6］认为联合意图是社会科学的中心概念,包含了参加者的推理和联合行动的产生.其作用是:(1) 与单Agent的意图一样,提出问题、限制Agent的行为选择；(2) 负责对联合行动的初始、指导和监控；(3) 帮助将个体和群体联系起来；(4) 规范Agent的思考和行动.设Agent集合G的个体A有“We-Intends to do X”的个体意图当且仅当在G中的所有个体同意联合执行X的基础上有：(1) A打算执行它的部分,(2) A有对联合行动的前提成立的信念,(3) A相信G中存在对于联合行动前提成立的相互信念,(4) 使(1)成立，部分是由于(2)和(3).A有“We will do X”的group-intention个体意图,当且仅当在G中的所有个体同意联合执行X的基础上有：(1) A有“We-Intends to do X”,或(2) A形成一个持续的执行X的group-intention,它是“We-Intends to do X”的意向.
+　　有执行联合行动的Joint Intention当且仅当(1) 这些Agent有执行联合行动的group-intention;(2) 对于(1),存在相互信念.
+　　已经形成执行X的联合意图(JIP)当且仅当(1) 每个个体接受联合执行X的规划,(2) 每个个体将他们的接受信息通知其他个体,(3) 由于(1)和(2)在个体之间产生了相互信念,他们联合承诺去执行X,且每个个体承诺完成它的子任务.
+2　BDI模型
+2.1　思维状态模型
+　　Cohen和Levesque的意图模型［7］基于正规模态逻辑的可能世界模型.它以模态连接词定义信念和目标,依据持续目标定义了两种意图,进而导出了一些有实际意义的性质.形式化为：
+　　(1) M,σ,n,v(BEL x α) iff 对所有从n通过信念关系B可达的可能世界都有α为真.
+　　(2) M,σ,n,v(GOAL x α) iff 对所有从n通过目标关系G可达的可能世界都有α为真.
+　　(3) (P-GOAL x p)=def(GOAL x (LATER p))∧(BEL x  p)∧(BEFORE (BEL x p)∨(BEL x p))(GOAL x (LATER p))).
+　　(4) (INTEND1 x a)=def(P-GOAL x［DONE x (BEL x (HAPPENS a))?;a］),a表示一个行为.
+　　(5) (INTEND2 x p)=def(P-GOAL x e(DONE x ［(BEL x e′(HAPPENS x e′;p?))∧　

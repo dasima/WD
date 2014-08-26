@@ -1,0 +1,19 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年 第36卷 第9期 Vol.36 No.9 1999
+
+
+
+可重构造的网孔机器上的k-选择
+许胤龙　陈国良　万颖瑜
+摘　要　对于一个m×n(m≤k)的列有序矩阵，文中在×可重构造的网孔机器上提出了一个并行k-选择算法，其时间复杂度为O(log2m+logmlog2n+log3n)，而对于一般的l元集，文中在相同的模型下提出了一个时间复杂度为O(log2()+log()log2n+log3n+log())的并行k-选择算法.当时l≥O(nlog3n/log logn，该时间复杂度为O(log()).特别地，当l=O(n1+ε)(ε＞0为常数），则时间复杂度为O(logn).此时达到的加速比为n/logn.
+关键词　并行算法， k-选择，可重构造
+中图法分类号　TP301.6; TP338.6
+k-SELECTION ON RECONFIGURABLE MESH
+XU Yin-long, CHEN Guo-Liang, WAN Ying-Yu,and XIONG Shan
+(National High Performance Computation Center,Department of Computer Science and Technology, University of Science & Technology of China,Hefei 230027)
+Abstract　A parallel algorithm of × reconfigurable mesh is proposed in this paper,which selects the k-th element in an m×n(m≤k) matrix with sorted columns.It runs in time O(log2m+logmlog2n+log3n)，Also proposed is a parallel algorithm that selects the k-th element in a general set with l elements on the same model.Its time complexity is O(log2()+log()log2n+log3n+log()).When l≥O(nlog3n/log　logn)，it becomes O(log()).Especially when l=O(n1+ε)(ε＞0 is a constant),it is O(logn) and the acceleration ratio of the algorithm in this situation is n/logn.
+Key words　parallel algorithm,k-selection,reconfiguration
+1　引言
+　　所谓k-选择问题就是从一个全序集中选出其第k个最小（或最大）元素（以下我们假设为第k个最小元），其广泛的应用价值吸引了许多专家学者的注意.无论在串行［1～6］还是在各种并行环境下［7～12］都有许多的研究成果.
+　　本文首先考虑待选的输入集可以表示成列有序矩阵［6］的k-选择问题.这类问题在统计学、运筹学、网络设计等方面［4～6］有着实际的应用.对于一个m×n(m≤n)的列有序矩阵.Frederickson和Johnson给出了一个时间复杂度为O(mlog(2n/m))的串行算法.该算法近乎于最优的且至今为止可能是最好的串行算法.而对于一个m×n的有序矩阵（行列均有序），Shen等［13］则在EREW PRAM上提出了一个时间复杂度为O(logmlog

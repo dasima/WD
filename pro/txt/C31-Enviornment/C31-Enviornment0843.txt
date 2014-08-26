@@ -1,0 +1,17 @@
+环境科学学报
+ACTA SCIENTIAE CIRCUMSTANTIAE
+1999年 第19卷 第2期VOL.19 NO.2 1999
+
+
+
+卤代烃毒性的化学评价法研究
+Ⅰ.吡啶酮卤代烃加合物的FTIR光谱表征*
+徐维并　吴　萼　王淑琴
+摘要　采用气相色谱-付立叶变换红外光谱(GC/FTIR)对2-吡啶酮与11种卤代烃加合物的结构进行研究，并由GC/MS确证.结果表明，吡啶酮与卤代烃发生加合反应，在吡啶酮的环上氮位及环外氧位，生成两种互为同分异构体的加合物――氮位与氧位加合物，所有氧位加合物在气相色谱中的保留时间均比氮位加合物短.不同的卤代烃生成的氧位加合物对吸收峰影响不大，它们的红外光谱在1600―1280 cm-1之间，有位置及峰形相似的4个峰；其氮位加合物的红外光谱也相似，即由1690 cm-1附近的强峰与2个弱峰组成.氧位加合物与氮位加合物之间，红外光谱差别十分明显，容易区分.
+关键词　GC/FTIR；吡啶酮-卤代烃加合物；同分异构体.
+Chemical assessment of mutagenicity of halohydeocarbon: FTIR spectrum characteristics of 2-phridone-halohydrocarbon adduct
+XU Weibing, WU E, WANG Shuqin 
+(Research Center for Eco-Environmental Science, Chinese Academy of Science, Beijing 100085)
+Abstract　The adducts structure of 2-pyridone with eleven halohydeocarbons were characterized by GC/FTIR, and confirmed with GC/MS technique. The results showed that the adduction of 2-phridone with any halohydrocarbon produced two adduct isomers, at O-site and N-site, respectively. The retention time of all O-adducts are shorter than that of N-adducts in GC. The IR spectra are similar among the O-adducts of different halohydrocarbons with 4 peaks between 1600-1280 cm-1 while the N-adducts with a special a strong peak near 1690 cm-1 and two weak peaks at 1615 and 1540 cm-1. The O-and N-adducts differ significantly. So the 2-pyridone adduct tautomers are easy to separate and identify by GC/FTIR.
+Keywords　GC/FTIR, phridone-halohydrocarbon adduct, tautomer.
+目前国际上对污染物的致突变毒性评价除生物毒性试验外还采用稳态DNA加合物生物标识法.DNA碱基鸟膘呤的O6―及腺膘呤的N3―部位的烷基化取代对细胞毒性最大［1―3］，2-吡啶酮具有环上氮及环外氧，与其有类似的内酰胺结构，有相同的

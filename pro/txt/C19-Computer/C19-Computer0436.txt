@@ -1,0 +1,31 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1997年 第23卷 第5期 Vol.23 No.5 1997
+
+
+
+一类DEDS最优调度问题的解法1）
+陈文德
+摘　要　本文提出了带存储器生产线的一类新的最优调度问题，给出了最优调度目标函数的具体形式，指出它不是凸函数；在一个变量时给出了最优调度的公式解，在多个变量时得到了一个迭代寻优的算法。
+关键词　离散事件动态系统(DEDS)，极大代数，最优调度，存储器
+SOLUTION TO A KIND OF OPTIMAL SCHEDULING PROBLEM OF
+DISCRETE EVENT DYNAMIC SYSTEMS
+CHEN WENDE
+(Institute of Systems Science,Academia Sinica,Beijing　100080)
+(Complex Systems Engineering Lab.,
+Institute of Automation,Academia Sinica,Beijing　100080)
+Abstract　In this paper we present a kind of new optimal scheduling problem for production lines with buffers.A concrete form of optimal scheduling objective function is given.We point out that it is not a convex function.Optimal formulation solution is given for one variable and an iterative algorithm is obtained for multivariables.
+Key words　DEDS,max-algebra,optimal scheduling,buffer.
+1　引言
+　　一般的调度与排序问题已有许多研究［1，2］.文献［3］解决了太原钢铁公司三台热轧机生产线提出的一类新的无阻塞最优调度问题(也称为轧制节奏控制问题).文献［4］等提出并解决了n种工件与m台机器的这类问题.但热轧线以外的许多种生产线是允许阻塞的.本文提出更困难的允许有阻塞的这类新的最优调度问题.
+　　问题.有多台机器组成带有限存贮器的串行生产线，进行批量生产，每批加工n种工件.设加工时间均已知，n种工件的加工次序已排定，当第一台机器空出时就投入下一个工件.问如何调度每种工件的数目Mi，使每批共生产个工件，而单位时间的利润指标
+
+(1)
+达到最大?这里λ是生产一批工件所需时间，Wi为第i种工件加工后所增利润.
+　　本文基本上解决了这个问题.
+2　批生产周期λ的公式与函数形式
+　　令　为极大代数，其中R为实数域，分别表示极大代数意义下的和，积.设串行生产线中第r个机器前有串行的br个存贮器组成缓冲区Br.每个存贮器看作加工时间为O的伪机器，机器与存贮器数目(br≥0)的总和为m.xr(k)表示第k批最后一个工件JN离开机器mr的时间，1≤r≤m.Pr(j)表示第j个工件Jj在mr上加工所需的时间.引用文献［5］的结果：
+　　引理1［5］.在上述假设下，令m1空出时就投入下一个工件，则上述串行线批量生产的状态方程可用D中运算列出
+
+(2)
+其中

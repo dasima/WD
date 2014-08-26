@@ -1,0 +1,19 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年　第36卷　第11期　Vol.36　No.11　1999
+
+
+
+用遗传算法构造二元决策树
+吴　菲　黄梯云
+摘　要：决策树的方法是一种优化的过程，遗传算法是模拟自然进化的通用全局搜索算法，文中将遗传算法应用到构造优化决策树，提出了采用遗传算法求解二元决策树的非叶结点的权值矢量，进而构造二元决策树的方法.并讨论了遗传算法的评价函数构造和编码方法，重点说明了如何对遗传算法进行改进，提高算法效率，然后分析了影响二元决策树错误分类率的因素，并用实例验证该方法构造的二元决策树对样本分类具有很高的辨识率.
+关键词：遗传算法，二元决策树，权值矢量
+中图法分类号：TP301；TP18
+CONSTRUCTING BINARY DECISION TREES BY
+USING GENETIC ALGORITHM
+WU Fei and HUANG Ti-Yun
+(Management School of Harbin Institute of Technology, Harbin 150001)
+Abstract　Decision tree is an optimization method. By simulating the nature evolution, genetic algorithm becomes a kind of general-purpose global search algorithm. An approach to construct and optimize decision tree based on genetic algorithm is discussed in the paper here. A genetic algorithm is employed at each nonterminal node of the binary tree to search for weight vector. To achieve high performance, its fitness function and encoding method are discussed in detail, and in particular, much emphasis is put on its operator evolution. The effects of the misclassification rate of the binary tree are discussed and the experiment results show that the binary decision tree constructed based on genetic algorithmcan classify sample-set accurately.
+Key words　genetic algorithm, binary decision tree, eight vector
+1　引　言
+　　遗传算法是一种基于生物学进化原理的搜索算法［1］，它模拟达尔文的遗传选择和自然淘汰的计算模型，通过在求解过程中使群体不断优化，进而找到最优解或准最优解.作为一种有效的全局并行优化搜索工具，遗传算法具有简单、通用、鲁棒性强和适于并行处理的特点，因而在工农业、经济政治、科学研

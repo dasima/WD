@@ -1,0 +1,85 @@
+宇航学报
+JOURNAL OF ASTRONAUTICS
+1999年　第1期　No.1　1999
+
+
+
+　战术火箭/固体火箭发动机一体化
+优化设计
+杨军　陈汝训　赵锡良
+　　摘　要　在综合考虑发动机内弹道性能与火箭外弹道关系的情况下,融内外弹道为一体,系统分析了发动机装药参数、燃烧室设计参数、喷管设计参数、尾翼参数对发动机性能及全弹性能的影响,针对远程战术火箭,建立了火箭总体/固体火箭发动机一体化优化设计的数学模型。在所建模型基础上,以火箭弹总体性能最佳为目标,对总体和发动机设计参数以及药柱几何参数同时进行优选,完成了九个变量的寻优计算,取得了满意结果。
+　　主题词　战术火箭　固体火箭发动机　一体化设计　优化设计
+INTEGRAL OPTIMIZATION DESIGN FOR TACTICAL 
+ROCKET AND IT’S SRM BY UTILIZING THE 
+SYNTHESIS OF INTERNAL BALLISTICS 
+AND TRAJECTORY
+Yang Jun Chen Ruxun Zhao Xiliang
+(P.O.Box 169 Xi'an．Xi'an．710025)
+　　Abstract　Considering of SRM internal ballistic property and rocket trajectory,a set of mathematical models about rocket overall performance and solid rocket motor integral optimization design for the long range tactical rocket are developed.Based on these models,a process of searching for the optimum system property is demonstrated by simultaneous optimization of the rocket frame parameters,motor design parameters and grain configuration para-meters.With 9 variables,optimizing calculations are finished and the results are satisfactory.This paper integrates the SRM internal ballistic parameters and trajectory parameters together and systematically analyzes the effect of grain configuration parameters,chamber and nozzle design parameters,and empennage parameters on the rocket and motor performance.
+　　Key words　Tactical rocket Solid motor Integration design Optimization
+符号说明
+Ab――燃面(mm2)pc――燃烧室压强(MPa)
+At――喉部面积(mm2)pe――喷管出口压强(MPa)
+a――燃速系数(mm/［s。(MPa)n］)qm――质量流率(kg/s)
+CF――推力系数Sm――弹体量大横截面积(mm2)
+Cx――阻力系数ηCF――推力系数因子
+Cαy――升力系数对攻角的导数η*c――特征速度因子
+c*――特征速度(m/s)ηIS――比冲效率
+E――弹性模量(MPa)ρa――空气密度(kg/mm2)
+IS――比冲(N。s/kg)ρp――推进剂密度(kg/mm2)
+n――压强指数μ――泊松比
+Pa――环境压强(MPa)　
+1　引言
+　　目前,火箭总体设计和发动机设计大多都是各自进行优化［1,2,3,4］。火箭、导弹的设计是一个整体,已经优化的发动机应用在火箭、导弹中,不一定是总体性能最优。本文以远程战术火箭为对象,从全弹系统出发,建立数学模型,进行内外弹道一体化优化设计,协调发动机参数与总体性能的关系,以求挖掘系统潜力、提高整体性能。
+　　固体火箭发动机缺点是难以控制推力的大小及工作时间,药柱设计确定,其推力也定了,就不能再人为调节。装药设计对火箭总体及发动机性能有很大影响,药柱几何参数是直接决定内弹道特性的变量,要设计出满足要求的最佳推力曲线,就必须对药柱几何参数进行优化［5］。本文将星型药柱的几何参数引入到优化设计中,同时以药柱固化降温过程不产生裂纹为约束条件。使装药设计的变化可直接反映到火箭总体性能的改变上,以给出实际可行的最佳推力-时间曲线。
+2　优化问题的建立
+2.1　目标函数
+　　以远程战术火箭为研究对象,根据优化对象的特点,其总体优化问题可归结为对于给定的有效载荷及弹体直径,在保证最大射程一定的条件下,全弹起飞质量最轻。
+2.2　设计变量
+　　针对本设计对象及所选取的目标函数,取以下九个参数作为优化的设计变量:
+　　a.发动机圆柱段长度Lc(cm)
+　　b.喷管喉径dt(mm)
+　　c.喷管膨胀比ε
+　　d.喷管扩张半角αn(°)
+　　e.星型装药特征长度l(mm)
+　　f.星型装药角分数ε1
+　　g.星型装药星根半角θ/2(°)
+　　h.星型装药星尖过渡圆半径γ(mm)
+　　i.尾翼面积与弹体最大横截面面积比
+2.3　约束条件
+　　a.射程要求:战术技术要求最大射程60～80km,考虑余量,最大射程不小于85km;
+　　b.能量要求:平均比冲不小于2300m/s;
+　　c.刚度要求:壳体壁厚按强度要求确定,还必须满足在内压作用下,壳体外径增量不大于0.5mm;
+
+　　d.药柱强度要求:固化降温热应变安全系数大于应力集中系数
+
+　　　　εm――推进剂单向拉伸延伸率
+　　　　εθ――星尖处的切向热应变
+　　　　f――安全系数,根据统计规律,一般取f＞2.7
+　　e.体积装填系数不小于75%;
+　　f.稳定性要求:全弹静稳定度在8%～20%。
+3　数学模型
+　　数学模型包括固体火箭发动机及全弹质量计算模型、内弹道计算模型、发动机性能计算模型、气动力计算模型、外弹道计算模型。
+3.1　火箭结构设计和质量计算
+　　火箭弹及其发动机型号种类多、结构复杂,要建立统一的质量模型比较困难。本文从火箭及发动机的结构设计出发,采用标准形体法计算系统质量和转动惯量,将发动机燃烧室、喷管简化后,分解为一系列标准形体,只需输入特征尺寸,就可计算标准形体的体积、质量、质心、转动惯量。这样就可使设计参数与系统质量紧密地联系起来,反映了全弹质量与设计参数的关系。
+3.2　发动机内弹道计算
+　　为了使发动机性能预估比较准确,内弹道计算必须考虑喷管喉径烧蚀、燃烧效率和喷管效率的影响。战术火箭弹发动机长径比大,发动机内流场会产生很强的侵蚀燃烧现象,其影响是不可忽视的。侵蚀燃烧情况下的燃烧室头部压强与非侵蚀燃烧情况下的燃烧室头部压强之间存在一定的比例关系。本文采用零维平衡压强公式计算燃烧室压强［6］,然后乘以压强比得到侵蚀燃烧时的燃烧室压强。
+　　非侵蚀压强:
+　　　　　　　　　　　　　　　　　　　　(1)
+　　侵蚀压强:
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　pcJ=PB.pc　　　　　　　　　　　　　　　　　　　　　　(2)
+　　推力:
+　　　　　　　　　　　　　F=cF．σ(λL)pcJ．At　　　　　　　　　　　　　　　　(3)
+　　质量流率:
+　　　　　　　　　　　　　　　　　　　(4)
+　　压强比:　　　　　　　　(5)
+其中　　　　　　　λ――速度系数,气流速度与气流临界声速之比;
+λ*k――临界速度系数,一般取0.22
+B(λ),r(λ),σ(λ),Z(λ)――气动函数
+3.3　发动机理论比冲计算
+　　计算发动机的理论比冲ISth外插是籍助于函数的泰勒展开式,进行插值时考虑了对比冲影响最大的喷管扩张比和燃烧室压强的变化影响,在热力计算基础上,得到外插公式为:
+
+(7)
+　　理论特征速度外插公式　　　　　
+(7)
+　　喷管出口压强外插公式　　　　　pe=0.33515pc．ε

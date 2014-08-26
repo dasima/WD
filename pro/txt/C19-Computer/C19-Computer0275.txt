@@ -1,0 +1,36 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第19卷 第3期  Vol.19 No.3 1999
+
+
+
+排序合并Join算法的新结果
+孙文隽　李建中
+摘　要　Join操作是数据库中最昂贵和最常用的操作.排序合并Join算法是实现Join操作的重要算法，得到了普遍接受并广为应用.在重新研究了排序合并Join算法后发现，同时对两个Join关系进行外排序是不必要的，会带来很大的额外开销.针对这个问题，提出了一种基于单关系外排序的分治Join算法，并在该算法的基础上提出了基于单关系外排序的并行分治Join算法.理论和实验结果证明，基于单关系排序的分治Join算法高于排序合并Join算法.特别是在并行计算环境下，基于单关系排序的并行分治Join算法的效率远远高于排序合并Join算法的并行版本.
+关键词　Join操作，Join算法，排序合并Join算法.
+中图法分类号　TP311
+Sort-Merge-Join Algorithm Revisited
+SUN Wen-jun LI Jian-zhong
+(Institute of Information Research Heilongjiang University Harbin 150080)
+Abstract　 The Sort-Merge-Join algorithm is an effective and widely used algorithm for implementing the important Join operation in database systems. The algorithm is revisited in this paper. It is discovered that sorting both operand relations externally is not necessary in the algorithm. The cost of the algorithm would be reduced greatly if only one operand relation is sorted externally. In order to overcome the shortcomings of the Sort-Merge-Join algorithm, a new Join algorithm called SDC-Join algorithm, is proposed in this paper. The SDC-Join algorithm is a single-relation-sorting based divide-and-conquer algorithm. A parallel version of the SDC-Join algorithm is also presented in the paper. Theoretical analysis and experiment results show that the performance of the SDC-Join algorithm is much higher than that of the Sort-Merge-Join algorithm in both uniprocessor computer systems and parallel computer systems.
+Key words　Join operation, Join algorithm, Sort-Merge-Join algorithm.
+　　Join操作是数据库系统中最昂贵最常用的操作.在数据库操作算法的研究中，人们一直十分注重Join算法的研究，提出了大量算法［1～6］.文献［2,6］对顺序和并行Join算法进行了全面系统的综述.人们一般认为，Hash-Join算法的效率最高，其次是Sort-Meger-Join算法，最后是Nested-Loop-Join算法.事实上，各类Join算法在不同情况下的优劣不同.Hash-Join算法要求选择高质量的Hash函数，实现起来较困难.Nested-Loop-Join算法和Sort-Merge-Join算法思想简单，容易实现.从效率和实现两方面考虑，Sort-Merge-Join算法在商品化数据库系统中使用最多.
+　　Sort-Merge-Join算法分为3个阶段.第1阶段对第1个Join关系进行外排序；第2阶段对第2个Join关系进行外排序；第3阶段合并两个已经排序的关系，产生Join结果.本文对Sort-Merge-Join算法进行了重新研究，发现该算法对两个Join关系都进行外排序是没有必要的，这会引起很大的额外开销.如果仅对小关系进行外排序，然后使用分治方法进行两个关系的Join操作，能节省大量时间.基于这种思想，本文提出了一种新的基于单关系排序的分治Join算法(简称SDC-Join算法).SDC-Join算法首先对小关系进行完全排序；然后把已排序关系按内存大小划分成一组子集合；其次根据小关系划分情况对大关系进行划分，同时对各页进行内排序；最后进行分组合并，产生Join结果.SDC-Join算法避免了大关系的外排序，节省了大量时间.本文还对SDC-Join算法进行了并行化，提出了并行SDC-Join算法.并行SDC-Join算法简称为PSDC-Join算法.理论和实验结果证明，SDC-Join算法的效率高于Sort-Merge-Join算法.特别是在并行计算环境下，PSDC-Join算法的效率远远高于Sort-Merge-Join算法的并行版本.
+　　下面列出本文经常使用的符号和参数：
+　　R，S：Join关系；　　　　　　　　　NR：关系R的磁盘页数；
+　　NS：关系S的磁盘页数；　　　　　　TR：关系R的元组数；
+　　TS：关系S的元组数；　　　　　　　BP：每个磁盘页的字节数；
+　　TP：每个磁盘或主存储器页的元组数；Tio：一页磁盘读写所需要的时间;
+　　M+1：可用主存储器空间页数（一个主存储器页的容量与一个磁盘页容量相等)；
+　　Tcomm：平均传输一个字节数据所需要的时间.
+1　预备知识
+　　首先我们来讨论顺序Sort-Merge-Join算法及其复杂性.顺序Sort-Merge-Join算法定义如下：
+　　算法Sort-Merge-Join.
+　　输入：关系R和S（R的Join属性为A，S的Join属性为B）.
+　　输出：R和S在连接属性A和B上的连接结果Result.
+　　方法：
+　　　(1) 按照属性A的值排序关系R;
+　　　(2) 按照属性B的值排序关系S；
+　　　(3) FOR R的每个元组r，S的每个元组s DO
+　　　　　IF (r在属性A上的值)=(s在属性B上的值) THEN Result:=Result∪{rs}.
+　　由于I/O时间是顺序Join算法的主要时间开销.本文把磁盘存取时间定义为顺序Join算法的复杂性测度.设Sort-Merge-Join算法的输入主存储器缓冲区容量为M页，输出主存储器缓冲区容量为一页.Sort-Merge-Join算法需要的磁盘存取时间为Cost(Sort-Merge-Join)=Tio［2(NRlogM(NR)+NSlogM(NS))+(NR+NS+U)］,其中2(NRlogM(NR)+NSlogM(NS))为第(1)、(2)步进行M路合并排序所需要存取的磁盘页数，(N

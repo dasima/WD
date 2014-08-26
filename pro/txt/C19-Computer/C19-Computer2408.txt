@@ -1,0 +1,36 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年　第36卷　第11期　Vol.36　No.11　1999
+
+
+
+软件需求工程―方法及工具评述
+卢　梅　李明树
+摘　要：文中从需求工程的基本概念和研究内容出发， 简单介绍了需求工程生命周期和需求规范等概念；比较全面地总结了现有的有代表性的需 求工程开发方法和工具，对其中一些重要的方法及工具作了分类和评述，并指出了需求工 程方法和工具开发与实际领域相脱离等不足之处；最后探讨了需求工程研究现状中存在的一 些主要问题及一些相应的解决方案.
+关键词；需求工程，需求分析，需求规格，需求分析方法，需求分析工具
+中图法分类号；TP311.5
+REVIEW OF METHODS AND TOOLS OF SOFTWARE
+REQUIREMENTS ENGINEERING
+LU Mei　and 　LI Ming－Shu
+(Open Laboratory of Computer Science, Institute of Software, Chin ese Academy of Sciences, Beijing 100080)
+Abstract　Based on the basic concept and research contents of requirements engineering(RE), some concepts of the life cycle of RE and requirements specification are introduced in the present paper. The recent representative RE methods and tools are summarized. Some important tools and methods are classified and reviewed. Finally, some current issues of RE and corresponding solutions are also discussed in the paper.
+Key words　requirement engineering(RE), requirements analysis, requirement specification, requirement analysis methods, requirement analysis tools
+1　引　言
+　　需求工程是随着计算机的发展而发展的.在计算机发展的初期，软件规模不大，软 件开发所关注的是代码编写，需求分析很少受到重视.后来软件开发引入了生命周期的概念 ，需求分析成为其第一阶段.随着软件系统规模的扩大，需求分析与定义在整个软件开发与 维护过程中越来越重要,直接关系到软件的成功与否.人们逐渐认识到需求分析活动不再仅限于软件开发的最初阶段，它贯穿于系统开发的整个生命周期. 80年代中期，形成了软件工程的子领域―需求工程（requirement engineering, RE).
+　　进入90年代以来，需求工程成为研究的热点之一.从1993年起每两年举办一次需求工程国 际研讨会(ISRE), 自1994年起每两年举办一次需求工程国际会议（ICRE），在1996年Springer－Verlag发行了一新的刊物―《Requirements Engineering》.一些关于需求工程的工 作小组也相继成立，如欧洲的RENOIR(Requirements Engineering Network of Internation al Cooperating Research Groups), 并开始开展工作.
+2　需求工程基本内容
+　　需求工程是指应用已证实有效的技术、方法进行需求分析，确定客户需求，帮助分析人员理 解问题并定义目标系统的所有外部特征的一门学科；它通过合适的工具和记号系统地描述待开发系统及其行为特征和相关约束，形成需求文档，并对用户不断变化的需求演进给予支持 .RE可分为系统需求工程（如果是针对由软硬件共同组成的整个系统）和软件需求工程（如果仅是专门针对纯软件部分）.软件需求工程是一门分析并记录软件需求的学科，它把系统需求分解成一些主要的子系统和任务，把这些子系统或任务分配给软件，并通过一系列重复的分析、设计、比较研究、原型开发过程把这些系统需求转换成软件的需求描述和一些性能参数［1］.本文以下如无特别说明，需求工程主要是指软件需求工程.
+2.1　需求工程的阶段
+　　需求工程是一个不断反复的需求定义、文档记录、需求演进的过程，并最终在验证的基础上 冻结需求.80年代，Herb Krasner定义了需求工程的五阶段生命周期［2］：需求定义和分析；需求决策；形成需求规格；需求实现与验证；需求演进管理.近来，Matthias Jarke和Klaus Pohl提出了三阶段周期的说法［3］：获取、表示和验证.综合了几种观点，我们把需求工程的活动划分为以下5个独立的阶段：
+　　(1)需求获取：通过与用户的交流，对现有系统的观察及对任务进行分析，从而开发、捕 获和修订用户的需求；
+　　(2)需求建模：为最终用户所看到的系统建立一个概念模型，作为对需求的抽象描述，并 尽可能多的捕获现实世界的语义；
+　　(3)形成需求规格：生成需求模型构件的精确的形式化的描述，作为用户和开发者之间的一 个协约；
+　　(4)需求验证：以需求规格说明为输入，通过符号执行、模拟或快速原型等途径，分析需求 规格的正确性和可行性；
+　　(5)需求管理：支持系统的需求演进，如需求变化和可跟踪性问.
+2.2　需求规格
+　　IEEE为需求作如下定义［4］：
+　　(1)用户解决问题或达到系统目标所需要的条件；
+　　(2)为满足一个协约、标准、规格或其他正式制定的文档，系统或系统构件所需要满足和 具有的条件或能力；
+　　(3)对上述条件的文档化的描述.
+　　规格就是一个预期的或已存在的计算机系统的表示.它可以作为开发者和用户之间协议的基 础，来产生预期的系统.规格定义系统所有必须具备的特性，同时留下很多特性不做限制.通常，我们要求规格比组成特定系统的实际的软件和硬件更简洁、更全面、更易于修改［5］.
+　　需求工程的主要结果是软件需求规格（software requirement specification, SRS）, SRS 是对外部行为和系统环境（软件、硬件、通信端口和人）接口的简洁完整的描述性文档.项目管理者用它来对项目进行计

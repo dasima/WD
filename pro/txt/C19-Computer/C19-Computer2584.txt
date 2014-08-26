@@ -1,0 +1,34 @@
+软件学报
+JOURNAL OF SOFTWARE 
+1999年 第10卷 第5期 Vol.10 No.5 1999
+
+
+
+数据库中混沌模式的发现和预测
+邓　超　熊范纶
+摘要　在社会和自然现象中存在着大量的混沌模式,相应地,在用来表示这些现象的数据库中同样也存在着混沌模式.一般在KDD中,混沌模式经常出现在确定模式与纯噪声关系之间,表现出很大的随机性,因此都将其作为随机噪声关系而忽略.该文通过使用J.Zytkow的基于统计分析的Forty-Niner方法说明了这一点.通过对混沌模式的分析,提出了一种混沌模式发现的网络方法.该方法不仅能判断数据库中是否存在混沌模式,而且能有效地描述和预测该混沌模式.另外,该算法非常适合处理大型数据库,在当今活跃的KDD研究 领域中具有广泛的应用前景.
+关键词　KDD,模式发现与预测,混沌模式,混沌模式发现网络.
+中图法分类号　TP311
+Discovery and Forecast of Chaotic Pattern in Databases 
+DENG Chao1,2 XIONG Fan-lun1
+1 (Institute of Intelligent Machines The Chinese Academy of S ciences Hefei 230031)
+2(Department of Computer Science University of Science and Technology of Chi na Hefei 230027)
+Abstract 　There exists a lot of chaotic patterns in the natural kingdom and social society. Databases recording this kind of data also c ontain the chaotic patterns. Generally, the chaotic patterns are characteristics of greatly random fluctuation although they often appear between deterministic and stochastic patterns in KDD. Therefore, the chaotic patterns are always treat ed as random fluctuation distributions and are ignored. Such viewpoint illustra ted by J.Zytkow's Forty-Niner is that a pattern discovery platform based on st atistics. A new network method to discover chaotic pattern in databases is propo sed in this paper. This method together with the Forty-Niner can not only disco ver the chaotic pattern, but also forecast it efficiently. In addition, this met hod is very suitable to deal with large databases and has extensive applicable p rospects in the vivid researching fields of KDD.
+Key words KDD (knowledge discovery in databases), pa ttern discovery and forecasting, chaotic pattern, chaotic pattern discovery netw orks. 
+　　近年来,从（大型）数据库中自动发现知识（KDD）已经成为人们关注的热点课题.在各种社 会现象和自然现象中经常碰到由大量数据构成的大型数据库,其中各属性数据经常表现出剧 烈起伏的特点,呈现出杂乱无章的迹象.而大量研究表明,很多社会现象和自然现象的记录数 据（如流行病的生灭、股票价格的升降、气象等）都是无序现象［1］.这些看起来杂 乱无章的数据关系很容易与随机噪声关系混淆,实际上,这里可能蕴藏着由简单非线性系统产 生的混沌关系模式.
+　　KDD所力求发现的知识无论用什么方法进行描述,它所描述的关系都是确定的模式,对于 其他关系则都视为随机噪声关系.然而,在这些被视为随机噪声关系的关系中存在很大的有别 于纯噪声关系的模糊区域,在这里是否存在未知的有用模式呢？混沌学理论表明,在介于确定 关系和纯随机关系之间还存在着大量的混沌关系［2］,即混沌模式.混沌模式是可以 重建为一种低阶非线性动力学系统的时间序列或属性关系,是一种在有序中的无序关系;是自 律地产生动力学信息的系统,是不能用决策论控制的动力学系统.混沌模式既与典型的确定模 式有所区别,又与纯随机噪声关系不同.因此,混沌模式是对现有确定模式的推广,是自然界客 观存在的一类重要的模式.
+　　混沌、分形理论的产生和发展为发现和掌握无序中的有序规律（即混沌关系）提供了有 利的理论根据和手段.通过利用混沌现象的决策论非线性技术,就能够以较高的精度把这种关 系短期预测出来.通过发现混沌模式,可以重构或找出隐藏在混沌模式中的演化规律,并且可 以根据混沌特性找到规律,使现有的数据纳入某种可描述的框架下,为KDD的研究提供了一种 崭新的方法和思路.
+　　对于处于确定模式和噪声关系这二者之间的混沌模式,由于现有方法很难把握,因此都将 其视为噪声关系来处理.众所周知,概率统计方法是目前衡量属性和属性之间关系的一种重要 手段,它发展了一系列模式评价和搜索的方法,对于分析各类关系具有十分良好的效果［ 3］.但是它很难有效地刻画属性和属性之间的这种混沌关系,而是常常把这种混沌关系归 类为随机噪声关系.Zytkow的49er（Forty-Niner)是以统计为主要工具,从DB中发现有用模 式的主要方法之一［4,5］,本文对其进行了简要说明,并用于对新型混沌模式的发现. 但是这些方法对介于确定模式和随机波动模式之间的混沌模式都不能有效发现和描述.
+　　本文提出了一种发现和预测混沌模式的网络方法（chaos pattern discovery networks ,简称CPDN）.该算法结合49er能发现统计方法所不能发现的混沌模式,并能对所发现模式作 出预测.
+1 混沌模式的发现和预测
+　　通常的统计相关分析、逻辑推理和模糊判断等方法在非混沌模式的发现中起着很重要的作用,并经常被用于在KDD中发现有用模式,其中49er,EXPLORA等就是用统计方法来发现有用 模式的方法.本文以49er为例,简要介绍其基于统计方法的主要思想.但是由于混沌模式关系 都表现出杂乱无章的状态,大量研究也表明,混沌模式在统计上类似于白噪声那样的随机模式 ,故常常将其归类于纯随机模式［1］.因此,对混沌模式的发现和预测,我们应寻求其 他方法.非线性关系是产生混沌模式的根本之所在,混沌模式虽外表呈现出一种无序状态,但 它服从一定的规律,它表现出时间序列在时延状态空间中的相关性,这种特性使得属性内或属 性间关系似乎有着某种记忆能力,同时又难以用关系逻辑、符号处理和解析方法把这种规律 表达出来.这种信息处理方式正好是神经网络所具备的优势.鉴于此,本文提出了一种发现混 沌模式的网络（CPDN）方法.该方法能区分混沌模式和完全无序的模式,从而发现混沌模式, 并在一定范围内作出有效的预测.本文主要研究从包含时间序列数据的关系数据库中发现属 性或属性之间的混沌模式.
+1.1 统计方法
+　　49er主要用于从关系数据库中的知识发现问题,并采用REGULARITIES来描述所发现的知 识.它所用的REGULARITIE为如下形式:
+模式（PATTERN） in 范围（RANGE）,
+其中RANGE为DB中所有可能事件空间的一个子集.模式既可以用谓词来描述,又可以用频率表 （contingency table）、公式和逻辑等效等来描述.
+　　49er的基本搜索策略为:首先在所有数据集合上搜索REGULARITIES,然后,将数据划分为 不同的子集,并在子集上进一步搜索REGULARITIES.在每一数据子集内,49er对用户所认可的 属性对组合进行2-D REGULARITIES的检测.49er把充分性（significance）和强度（st rength）的统计检验方法应用于所有假设.如果检验结果超过预定接收门限,则将对应假设作 为REGULARITY.充分性（significance）定义为:由独立变量随机产生的给定模式的概率Q. Q值越接近0,模式的随机性就越小;相反,Q值越接近于1,模式的随机性越大.Q值可根据χ2 统计和频率表的自由度来计算.χ2描述了频率表的实际值和期望值之间的距离:
+  (1)
+其中Aij为频率表的实际分布,Eij为频率表的均值分布,并可表示为
+　　(2)
+其中N为记录总数;nxi,nyj分别为属性X=xi和属性Y=yj的记录数.
+　　49er采用Cramer的V系数来度量频率表的预测强度.对于一个大小为M

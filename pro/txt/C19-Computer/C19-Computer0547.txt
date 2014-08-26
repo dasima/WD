@@ -1,0 +1,16 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1997年　第23卷　第4期　Vol.23　No.4　1997
+
+
+
+CMAC学习过程收敛性的研究
+罗忠　谢永斌　朱重光
+　　摘　要　基于CMAC学习过程等价于求解线性方程组的Gauss-Seidel 迭代这一事实，研究了学习过程的收敛性.利用矩阵分析方法，估计出了收敛的速度.考虑了作为节省存储空间措施的hash编码的不利影响――破坏了收敛性态.从理论上分析了其存在的原因.
+　　关键词　CMAC，收敛性，Gauss-Seidel迭代, hash编码.
+A STUDY OF THE CONVERGENCE OF
+THE CMAC LEARNING PROCESS
+LUO ZHONG
+(Dept. Image Processing,IRSA,CAS,P.O.Box 9718, Beijing 100101)
+XIE YONBIN
+(Dept.Automatic Control,School of Electronic and Informatioin Engineering,Xi

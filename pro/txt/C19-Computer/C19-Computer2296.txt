@@ -1,0 +1,18 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年 第36卷 第5期 Vol.36 No.5 1999
+
+
+
+开放逻辑中基于一优先序的R-重构
+苏开乐
+摘　要　在开放逻辑中，R-重构作为一知识库或信念集修正的结果并不唯一，有时甚至太多而难于明确计算和表示.为此，文中给出了基于一优先序的R-重构的概念.基于一优先序的R-重构往往要比R-重构少得多，不存在上述R-重构的问题，在用户给出的关于一知识库中知识的优先序时，基于该优先序的R-重构可以用来刻画对该知识库的合理维护.文中从开放逻辑中的模型论概念――事实反驳出发，给出了基于优先序的重构的定义，刻画了这类重构的一系列重要性质，如可靠性，存在性，相对于优先序关系的单调性，以及连续性等.
+关键词　逻辑，信念修正，优先序，R-重构
+中图法分类号　TP18
+R-RECONSTRUCTIONS BASED ON A PRIORITY RELATION
+SU Kai-Le
+(Science Center,Shantou University,Shantou　515063)
+Abstract　In open logic the notion of R-reconstruction plays an essential role. However, R-reconstructions can be too numerous to compute and to list out. Based on a priority relation a new notion of R-reconstruction is proposed, which does not have the problem mentioned above. Moreover, the notion is reasonable in characterizing the update of a knowledge base when some priority relation among the pieces of the knowledge base is given. Starting by the model-theoretic notion of rejection by fact in open logic, the definition of R-reconstruction is given based on priority relation. Then proved are a series of important properties about this kind of R-reconstructions, including soundness, existence, monotonicity, and continuity.
+Key words　logic, belief revision, priority relation, R-reconstruction
+　　近10年来人们在人工智能及相关领域提出了许多关于信念修正的理论.从抽象的和哲学的角度，人们主要研究合理的信念修正应该满足什么形式规律，如Alchourron等人提出的AGM理论［1］.在人工智能方面，人们则遵守某种极小变化原则提出了很多信念修正和更新的具体方法，如基于模型的方法［2］，基于语形的方法［3］.我国学者李未提出的开放逻辑［4］，从理想事实反驳等模型论的概念出发，但考虑的修正或变化的单元是知识库中的公式，因而可以看作以上两类方法的结合.此外，开放逻辑还具有以下两个特征：一是开放逻辑中的知识库或假设集Γ不必是一个理论，即有时有Th(Γ)≠Γ；二是明确的考虑多次甚至无限次修正或更新的迭代序列.由于任何知识系统实际上都不可能知道它的所有逻辑推论（即所谓的逻辑全知问题），又由于迭代的修正和更新对于人工智能应用的必要性，以上两个特征成为信念修正理论发展的一个趋势［5,6］.
+　　但是，修正假说或更新知识库时，开放逻辑没有考虑假说或知识库中的公式的优先序，而实际上，用户总是对自己的知识库明确或潜在地确定了这种优先序.本文给出了基于优先序的R-重构的概念，合理地刻画了在以上情况之下的假说的修正和知识库的更新.在开放逻辑中，R-重构作为知识库或信念集修正的结果并不唯一，有时甚至太多而难于明确计算和表示，基于优先序的R-重构往往要比R-重构少得多，不存在上述R-重构的问题.更为重要的是本文所讨论的知识库上的优先序与通常信念修正理论中所谓的认知硬度(epistemic entrenchment)(参见文献［5］,［7］)所不同的地方是：前者仅仅是一个良基关系，完全可以由用户随意给出：而后者必须满足许多难于验证（因涉及到较多的逻辑蕴涵关系

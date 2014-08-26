@@ -1,0 +1,48 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1999年 第25卷 第6期 Vol.25 No.6 1999
+
+
+
+非线性时滞系统的稳定性分析及
+鲁棒稳定性条件1)
+陈东彦　徐世杰　邵成勋
+摘　要　研究非线性时滞系统的稳定性.应用Lyapunov函数，分别讨论确定性和不确定性非线性时滞系统.对于确定性系统，给出其零解渐近稳定的充分条件；对于不确定性系统，给出其零解鲁棒稳定的充分条件.最后通过两个实例说明所给方法的有效性.
+关键词　非线性时滞系统，不确定性，Lyapunov函数，零解渐近稳定.
+STABILITY AND ROBUST STABILITY FOR NONLINEAR
+DELAYED SYSTEMS
+CHEN Dongyan　XU Shijie　SHAO Chengxun
+(Department of Astronautics and Mechanics, Harbin Institute of Technology, Harbin　150001)
+Abstract　 The stability of nonlinear systems with delay is studied. Using Lyapunov function, certain and uncertain nonlinear systems with delay are discussed, respectively. For the certain systems, the sufficient conditions for asymptotical stability of zero solution are presented. For the uncertain systems, the sufficient conditions for robust stability of zero solution is presented. The effectiveness of our methods is showed by two examples.
+Key words　Nonlinear systems with delay, uncertainty, Lyapunov function, asymptotical stability of zero solution.
+
+1　引言
+　　不确定时滞系统的鲁棒稳定性分析已得到了广大研究者的广泛关注，并且已在线性和半线性系统上取得了许多成果［1～6］，其中主要是应用Lyapunov方法，给出相应系统渐近稳定和鲁棒稳定的充分条件.而对于非线性系统的研究则较少，且仅限于无时滞的情况，如文［7，8］等.在实际问题中，线性关系只是对某些特殊系统才存在，或者只是对问题的一个近似描述，非线性关系才是最普遍存在的，才是最符合实际的.所以研究非线性系统的稳定性及鲁棒稳定性是十分必要的.
+　　对于非线性系统
+　　(1)
+给出如下定义及引理.
+　　定义1.［7］系统(1)的零解称为大范围渐近稳定的，如果它本身是稳定的，且当t→∞时，它的每个解都趋于零.
+　　引理1.［7］系统(1)的零解大范围渐近稳定的充分条件是，存在一个定常正定对称矩阵P，使得
+xT［PJ(x)+JT(x)P］　　(2)
+对所有x为负定函数，其中
+　　由引理1知，如果存在定常对称矩阵P，使得
+Q(x)=-［PJ(x)+JT(x)P］　　(3)
+对所有x是对称正定的，则非线性系统(1)的零解大范围渐近稳定.
+　　对于不确定非线性系统
+　　(4)
+给出如下引理.
+　　引理2.［8］假设非线性系统(1)渐近稳定，并且存在两个正定矩阵P和Q(x)使得(3)式成立，则不确定系统(4)在Lyapunov意义下稳定，如果满足条件
+　　(5)
+其中和λmax(.)分别表示矩阵(.)的最小和最大特征值，‖.‖表示向量(.)的范数.
+2　确定性非线性时滞系统的稳定性
+　　考虑非线性时滞系统
+　　(6)
+上式中x(t),x(t-τ)∈Rn是状态向量；f,f1:Rn→Rn均是连续可微向量函数，且f(0)=f1(0)=0;τ>0是时滞.为方便，以下简记x(t)=x.假设‖f1(x(t-τ))‖≤β‖x(t-τ)‖，β>0.
+　　定理1.假设对于系统(6)中的f(x)存在定常正定矩阵P，满足(3)式.如果条件
+β<λmin［W(x)］/2σλmax［P］　　(7)
+成立，则系统(6)的零解渐近稳定，其中
+　　证明.由定理假设，取Lyapunov函数为V(x)=xTPx.其沿系统(6)对t的导数为
+　　(8)
+注意到,并结合(3)式及引理2，则有
+　　(9)
+由于xTW(x)x≥λmin［W(x)］‖x2‖，且由Razumikhin［11］，假设对任意q>1，有不等式

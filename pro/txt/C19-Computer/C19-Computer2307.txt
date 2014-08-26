@@ -1,0 +1,17 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年 第36卷 第5期 Vol.36 No.5 1999
+
+
+
+联机手写体汉字识别后处理技术的研究
+徐志明　王晓龙　张凯　关毅
+摘　要　文中提出了一种规则和统计相结合的计算语言模型应用于联机手写体汉字识别后处理的技术，把基于统计的大词表Markov语言模型与语言规则量化模型，通过词网格技术集成在一个语言解码器.这种后处理方法由3个阶段组成：词网格生成、语言解码、基于Cache的自学习机制.语言解码器采用Viterbi搜索算法求解最优语句候选.该项技术已应用于HPC(手持机)手写电脑的联机汉字手写体识别系统中，汉字识别率为91.3%.
+关键词　Markov语言模型，词网格，联机手写体汉字识别 
+中图法分类号　TP391.4
+A POST PROCESSING METHOD FOR ONLINE HANDWRITTEN
+CHINESE CHARACTER RECOGNITION
+XU Zhi-Ming, WANG Xiao-Long, ZHANG Kai, and GUAN Yi
+(Department of Computer Science and Technology,Harbin Institute of Technology, Harbin　150001)
+(Department of Computer,The Hong Kong Polytechnic University,Hong Kong)
+Abstract　Proposed in the paper here is a new post processing method integrating the rule-based grammar and the Markov language model for online handwritten Chinese character recognition. The Markov language model and the quantification rules model are bound to a linguistic decoder by word lattice. The post processing kernel engine consists of three stages: word lattice formation, linguistic decoder,and cache-based self-learning mechanism. The linguistic decoder adopts Viterbi search algorithm to search the best sentence hypothesis. The introduced technique has been applied to HPC

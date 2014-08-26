@@ -1,0 +1,20 @@
+航空动力学报
+JOURNAL OF AEROSPACE POWER
+1999年　第14卷　第1期　VOL.14　No.1　1999
+
+
+
+民用通风机气动设计新特点
+及设计方法的新发展
+　　李秋实　陆亚钧　冯毓诚　于　清
+摘要：本文通过对一种新型高性能矿用局部通风机的设计、制造及试验全过程的综述，展现了新的先进设计体系在民用通风机上的成功运用，其研制特点是：(1)在叶片气动设计中为了降低叶根及叶尖区二次流损失，采用可控涡扭向规律设计，样机实测的高性能验证了这种方法的可行性和高效性；(2)在设计方法中采用较精确的数值反验算，获取最优设计方案，大大提高设计的准确性和成功率，并缩短了设计试制周期；(3)在设计过程中发展了计算机辅助三维叶片造型新方法，可以根据设计需要简便快捷地对叶片进行“前倾”、“倾掠”或“弯掠”造型，这些造型对减小各种二次流损失、扩大稳定工况范围和控制叶轮机气动噪声源起到了非常好的作用。
+主题词：风机　气动　设计　三维　叶片造型
+分类号：TH38.43
+A NEW PROGRESS
+IN AERODYNAMIC DESIGN OF DRAFT FAN
+Li Qiushi,Lu Yajun,Feng Yucheng,Yu Qing 
+（4th Dept.Beijing University of Aeronautics and Astronautics,Beijing　100083）
+ABSTRACT　A new aerodynamic design system developed by authors for draft fan with enhanced efficiency,suppressed noise,enlarged flux and high load.The new design system features:A twist regulation for vortex control is employed in designing to lessen the secondary flow loss in the blade tip and hub;The feasibility and high efficiency of this procedure has been verified by the tests of the prototype fan;A new computer-aided 3D blading is used to optimize the blade;Numerical inverse checking is adopted to enhance accuracy in designing and cut down the period of the designing and production.This design system can make the optimized blade with 'forward inclination ', 'inclining sweep ','bending sweep ',to minimize the various secondary flow losses,to expand the steady working range of the fan,and to suppress the aerodynamic noise source.
+Key　Words　Fan　Aerodynamics　Design　Three-dimensional　Blading
+1　引　言
+　　北航承担研制的这种新型通风机要在以下几方面达到或超过国内外目前的一流水平：(1)设计工况点流量450，全压450 mm H2O；(2)全压效率不低于85%；（3）噪声水平不高于85+3db(A)。为了达到这个“大容量、高负荷、低噪高效”的设计要求，经过众多方案的反复筛选，最终确定采用轴流对旋式，叶轮外径定为

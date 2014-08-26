@@ -1,0 +1,8 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000 Vol.19 No.3 P.33-34,40
+
+
+
+分布式容错时间同步化系统的误差分析
+欧阳

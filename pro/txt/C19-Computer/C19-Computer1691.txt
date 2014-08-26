@@ -1,0 +1,33 @@
+软件学报
+JOURNAL OF SOFTWARE
+2000　Vol.11　No.4　P.427-434
+
+
+
+
+基于形式化方法的因特网路由协议的一致性测试
+毕军　吴建平
+摘要　 并发数表组合表述法(并发TTCN)是可以描述并发测试行为的测试表述法.该文提出一种基于并发TTCN的分布式路由协议的测试方法.首先讨论路由协议实体的测试结构，然后给出基于并发TTCN测试系统的设计.最后介绍了测试集的设计.
+关键词　一致行测试，分布式系统，路由协议，因特网，并发数表组合表述法.
+中图法分类号　TP393
+　A Formal Approach to Conformance Testing of Internet
+Routing Protocols 
+BI Jun　WU Jian-ping
+　（Department of Computer Science and Technology　Tsinghua University　Beijing　100084）
+　Abstract　　Concurrent TTCN (tree and tabular combined notation) is a test notation that can handle concurrent test behaviors. This paper proposes an approach to the conformance testing of distributed routing protocols based on concurrent TTCN. It first discusses the test architecture for the routing protocol entity, and then the concurrent TTCN based test system design is presented. Finally, this paper introduces the test suite design. 
+　Key words　Conformance testing, distributed system, routing protocol, internet, concurrent TTCN. 
+　　OSPF now is the most important routing protocol and is widely used in the Internet. The quality of the OSPF products would influence the stability of networks and it is really necessary to give the conformance test assessment of OSPF routers. However, the routing functions are realized by the cooperation of distributed routers. Then how to formally specify and test the concurrent behaviors of OSPF router is a challenge to the traditional protocol test methods and test systems. In Refs.[1,2], some problems of conformance testing in distributed systems were studied. The entity in distributed systems is more complex and general than traditional peer-to-peer protocol entity. An entity in distributed systems is associated with a set of interaction points and a set of concurrent behaviors at these interaction points. In this paper, we present a specification model called concurrent external behavior expression (CEBE) to specify the entity. CEBE could directly specify the concurrent external behaviors at different interaction points of an entity and reduce the internal states, actions and data. Therefore it is an ideal model to formally specify the entity in a complex distributed system and to generate concurrent TTCN (C-TTCN) test suite. Moreover, we formally define test system based on C-TTCN operational semantics. The above methods have been put into practice by using an integrated test system PITS and an automatic test generation tool TUGEN to test CISCO 4700 router. 
+　　The rest of this paper is organized as follows. In Section 1, we give out the abstract test architecture. Then we discuss the test system design and test suite generation in Sections 2 and 3 respectively. Finally, we conclude this paper in Section 4.
+1　Abstract Test Architecture
+　　The Tree and Tabular Combined Notation (TTCN) is recommended by ISO to describe abstract test suite. C-TTCN is an extension of TTCN, that allows the test system to execute a test case by several test components (TCs) running in parallel. A tester consists of exactly one main test component (MTC) and any number of parallel test components (PTCs). TCs are linked by coordination points (CPs) capable of conveying coordination messages (CMs). Communications of TCs with the environment are through the points of control and observation (PCOs). C-TTCN is very suitable for the specification of a system consisting of several testers, while this is the common case in routing testing. The test architecture is a description of the environment in which IUT (Implementation under Test) is tested. For a router entity, there are k concurrent behaviors which happen at interaction points. If and only if all these behaviors conform to the behaviors of its specification, it is a conformance implementation. Then the test architecture should deal with these concurrent behaviors at several interaction points. We construct the abstract test architecture according to this feature. It consists of a test system, an entity under test, a test context, several PCOs and several interaction points. The test system is the implementation of a test suite written in C-TTCN. It carries out the experiments by executing test cases and observing results. The interactions of the IUT with its environment take place at interaction points (IPs). The test system communicates with the IUT indirectly: through the test context. The points, where the tester communicates with the test context and in this way indirectly controls and observes the IUT, are called the Points of Control and Observation (PCOs). Execution of a test case starts with the execution of MTC. It is the concern of MTC to set up all PTCs, and to manage all PCOs and CPs to be connected to. PTCs can be created by MTC on demand. A ‘create’ operation associates a PTC with a behavior tree. The newly created PTC starts execution of its assigned behavior tree concurrently with MTC. MTC may explicitly terminate a PTC by executing a ‘down’ operation.
+2　C-TTCN Based Test System 
+2.1　Preliminaries
+　　Definition 2.1. A Labeled Transition System (LTS) is a 4-tuple 〈S,L,T,s0〉. (1) S is a countable, non-empty set of states. (2) L is a countable set of observable events. (3) TS×(L∪{τ})×S is a set of transitions, where τ denotes an unobservable event. Element (s,u,s′) in T can also be written as:where s, s′∈S, u∈L∪{τ}. (4) s0∈S is the initial state. 
+　　 We use LTSs(L) to denote the set of all possible labeled transition systems over L. Trace is a common concept in LTS, Definition 2.2 gives out its definition and some useful notation. 
+Definition 2.2. Let 〈S,L,T,s0〉 be an LTTS. L′=L∪{τ} contains all observable and unobservable events. s,s′, s1,s2,...,sn,sn+1∈S, u1,u2,...,un∈L′. Let σ=u1。u2。．．．。un be a sequence of labels in L′. ‘。’ denotes concatenation, then σ is said to be a trace over L′. L′* denotes the set of all possible traces over L′. We further have the following notations:
+　　。
+　　。 if is the concatenation of zero or more τ;
+　　
+　　In LTS model, events in L are treated in the same way no matter what they mean. In order to distinguish input events from output events, a kind of LTS called input-output transition system is introduced.
+Definition 2.3. An Input-Output Transition System (IOTS) p is an LTS in which the set of events L is partitioned into input events Li and output events Lo, where elements in Li are events accepted by this LTS from its environment, and elements in Lo are events sent to its environment by this LTS. IOTS p satisfies: p∈LTSs(L), L=Li∪Lo and Li∩Lo=Φ. IOTSs(Li,Lo) represents the set of all possible input-output labeled transition systems over input events Li and output events Lo. IOTSs(Li,Lo)LTSs(Li∪Lo).
+　　Definition 2.4. Input-queue operator is a unary operator ［。］σi:IOTSs(Li,Lo)→IOTSs(Li,Lo), where σi∈L

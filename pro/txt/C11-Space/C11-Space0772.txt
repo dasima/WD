@@ -1,0 +1,28 @@
+导弹与航天运载技术
+MISSILES AND SPACE VEHICLES
+1999年 第2期　No.2 1999
+
+
+
+空间飞行器柔性附件动力学建模方法研究
+阎绍泽　黄铁球　吴德隆　范晋伟
+　　摘要　论述了采用传统动力学建模方法建立空间飞行器柔性附件动力学方程时过早线性化的问题，揭示了这种方法建立动力学方程的缺陷，即失去了一些重要的刚柔耦合项。采用Kane方法建立动力学方程的一般公式，并确定了采用传统动力学方法建立动力学方程所失去的项。进一步探讨了基于构件小变形的空间飞行器柔性附件动力学的建模方法，并进行了仿真和实验研究，证明了理论分析的正确性。
+　　主题词　航天器，柔性体，动力学，数学模型,线性化法。
+Study on Dynamics Modeling of a Flexible Appendage 
+of Spacecraft
+Yan Shaoze
+(Qinghua University,100084)
+Huang Tieqiu　Wu Delong
+(Beijing Institute of Astronautical Systems Engineering, 100076)
+Fan Jinwei
+(Beijing Polytechnic University, 100022) 
+　　Abstract　The premature linearization in modeling dynamics of a spacecraft flexible appendage is discussed by using the conventional modeling method, and the method defects are demonstrated that some coupling terms between large overall motion and small deformation are lost. A general formulation is developed by using Kane′s method, and the missed terms are determined. Furthermore, dynamics modeling methods of flexible appendages for spacecraft based on small deformations are analyzed. The dynamic simulation and experimental study of a flexible beam are completed, and simulation results are verified by the experimental ones.
+　　Key Words　Spacecraft，Flexible body,Dynamics, Mathematical model,Linearized method.
+1　前　言
+　　柔性附件动力学问题已成为人造卫星和宇宙飞船动力学分析中必不可少的重要环节。卫星天线、太阳能帆板的伸展长度与其自身相比可以大到几倍甚至几十倍，弹性变形的影响不可忽略。例如，1958年美国第1颗人造地球卫星探险者1号发射升空后，由于其鞭状天线伸展度大、柔度大，其振动引起了卫星能量耗散，造成卫星自旋运动不稳，导致了空间飞行任务的失败，究其原因是在原始设计时没有计及天线柔性的影响。在进行空间飞行器中柔性附件动力学建模时，由于问题的复杂性，促使人们时常在某个阶段进行线性化，但这种线性化常常带来缺陷。近几十年来，国内外许多学者对此进行了大量的研究［1～7］，建立了许多有效的建模方法，但并未彻底解决空间飞行器动力学中的刚柔耦合问题。对这个问题的深入研究，将为空间飞行器的动力学行为预示、姿态及振动控制提供理论依据，具有重要的理论和实际意义。本文对空间飞行器柔性附件动力学建模方法进行了系统分析，研究了传统动力学建模方法产生缺陷的原因，并探讨了解决办法。
+2　过早线性化的缺陷分析
+　　随着对空间飞行器动力学理论研究的深入与工程应用的发展，发现在分析柔性体的小变形振动时，若沿用传统动力学建模方法以及根据传统动力学建模方法开发的动力学分析软件，如：DICOS，NBOD2，ALLFLEX，TREETOPS等，在一定情况下将产生错误的结果［2］。这个问题引起了美国宇航部门、机械工程和力学界的极大重视，并在1987年美国NASA的JPL实验室举行的多体系统动力学会议上，成为主要议题［3］。为了揭示传统动力学方法建模的缺陷，研究一个带有小尺度变量和大尺度变量的质点系统。对于这样的系统，建立相对于小尺度变量的线性化动力学方程一般能够满足工程上的要求。设系统有μ个质点，N个自由度，取N个广义坐标q1，q2，…，qN，则有N个广义速率u1，u2，…，uN。假定前n (n＜N)个广义坐标和广义速率远远小于其余的广义坐标和广义速率，即为小尺度变量；其余的N-n个变量为大尺度变量。本文基于Kane方程，采用两种方式建立上述系统的动力学方程：一种是在求出偏速度以后，再对运动学参量线性化；另一种是先于偏速度计算就线性化，本文称之为过早线性化。将这两种方法得到的动力学方程进行比较，可以揭示过早线性化的动力学建模方法存在的缺陷。
+　　基于Kane方法的质点系统动力学方程为
+(1)
+
+式中　Vir为在惯性坐标系质点i的偏速度，定义为

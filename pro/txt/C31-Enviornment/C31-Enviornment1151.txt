@@ -1,0 +1,27 @@
+环境科学学报
+ACTA　SCIENTIAE　CIRCUMSTANTIAE
+1998年1月第18卷第1期科技期刊
+环状扩散管-分级采样器的建立和细粒子酸性的测定
+孙庆瑞　王美蓉　田洪海　陈旦华
+(北京大学技术物理系，北京　100871)
+
+摘要　建立了国内第一台扩散管-分级采样器，用来研究大气气溶胶的组成和细粒子的酸性.实验证明该采样系统能够有效地避免大气中的碱性物质对颗粒物采样的干扰.在北京、湖南等地进行了现场实验，测定了气溶胶的酸性.
+关键词　气溶胶；扩散管-分级采样器；颗粒物酸性.
+DESIGN OF AN ANNULAR DENUDER/CASCADE IMPACTOR
+SYSTEM AND MEASUREMENT OF ACIDITY OF FINE PARTICLES
+
+Sun Qingrui, Wang Meirong, Tian Honghai, Chen Danhua
+(Department of Technical Physics, Peking University, Beijing 100871)
+
+ABSTRACT　An annular denuder/cascade impactor system was designed and evaluated for the first time in China to study aerosol acidity. Laboratory tests and field mesurements showed a good performance of the system, capable of avoiding interference of basic gases, such as NH3 , with acid aerosols during sampling. The acidity of fine particles was measured in nine sites of China.
+Keywords　Annular denuder/cascade impactor system, atmospheric aerosol acidity.
+
+1　引　　言
+　　酸沉降问题是当今世界上重要的环境问题之一，气溶胶的酸性是酸沉降研究中的一个重要内容.由于酸性气溶胶，特别是气溶胶中的强酸(H+)会损害人的呼吸系统，引起气喘病，所以酸性气溶胶的研究成为目前气溶胶研究的一个热点［1，2］.国内有关气溶胶的研究很多，但对气溶胶酸性的研究很少.而且由于常规的气溶胶采样方法没有排除大气中碱性物质对采样的干扰，影响了对气溶胶酸性的正确测定［3］.为了正确测定气溶胶的酸性，必须在采样过程中解决两个问题：一是粗细粒子的相互作用问题，由于粗细粒子的来源不同、成分不同、酸度也不同，如不分别采样，在样品溶解时，二者会发生中和反应，导致错误的测量结果.因此，为了正确测定气溶胶的酸性，必须采用分级采样的办法，粗细粒子分别收集.另一个应当解决的问题是，在采样过程中，大气中的气态NH3会和收集在滤膜上的酸性气溶胶发生反应，造成采样误差.为了克服NH3的干扰，在收集细粒子之前，要除去大气中的氨.
+　　我们在研究中建立了扩散管-分级采样器，用扩散管去掉大气中的氨，用分级撞击技术分离粗、细粒子，从而有效地测定了气溶胶的酸性.
+　　
+2　扩散管-分级采样器的结构与性能
+2.1　环状扩散管的除氨效率
+　　扩散管去除氨是基于扩散原理，使空气以层流状态穿过涂有吸收剂的管子，由于气体的扩散系数远远大于颗粒物的扩散系数，气体分子扩散到管壁上被吸收剂选择吸收，而颗粒物质则因扩散系数小而穿过管子，达到被吸收的气体与其它组分分离的目的.扩散管的种类很多，有筒式的(cylindrical denuder),集束式的(deffusion denuder assembly)和环状扩散管(annular denuder, 简称AD).AD是由两个同轴玻璃圆管套合而成，内管两端封口，采样气流从两管的夹缝里穿过.AD的优点在于其单位长度的吸收效率比其它扩散管大得多，而且允许大流量采样，吸收容量也较大.所以目前世界上用得最多.
+　　我们设计制作的玻璃AD(图1)，总长度30cm，涂有吸收剂的有效长度为24cm，吸收表面
+

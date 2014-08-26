@@ -1,0 +1,18 @@
+软件学报
+Journal of Software
+2000 Vol.11 No.1 P.116-121
+
+
+
+区间逻辑的一个辅助证明工具
+胡成军　王戟　陈火旺
+摘　要　DC/P(duration calculus prover)是一族实时区间逻辑的辅助定理证明工具.它采用Gentzen风格相继式演算作为基本证明系统,并结合项重写、自动判定算法等技术以提高证明的自动化程序.该文介绍了DC/P的语义编码方法、采用的相继式证明系统及实现技术,并给出了应用实例.
+关键词　邻域逻辑,区间时序逻辑,均值演算,时段演算,相继式演算,定理证明.
+中图法分类号　TP301
+A Proof Assistant for Interval Logics
+HU Cheng-jun　WANG Ji　CHEN Huo-wang
+(School of Computer　National University of Defense Technology　Changsha　410073)
+Abstract　DC/P (duration calculus prover) is a proof assistant for a family of interval logics. It adopts the Gentzen-style sequent calculus as its basic proof system. The techniques such as term rewriting and automatic decision procedure are integrated to automate many trivial proof steps. In this paper, the authors briefly describe the semantic encoding approach, and the sequent calculus, as well as the related implementation techniques of the DC/P.
+Key words　Neighbourhood logic, interval temporal logic, mean calculus, duration calculus, sequent calculus, theorem proving.
+　　作为一种实时逻辑,区间逻辑因其表达能力强而被大量应用于硬件电路、实时系统等领域［1,2］.区间逻辑区别于点式逻辑(point based temporal logic)的根本性质是公式语义解释在区间上,而不是在时间点上.对于某些性质,例如,“A在任一长于l的观察区间上总为真”等,使用区间逻辑来描述、推导更方便、更自然.
+　　本文介绍我们开发的时段演算定理证明器(duration calculus prover,简称DC/P)(DC/P版本1.0可从http://www.iist.unu.edu/～hcj下载,需要者也可与作者联系).作为区间逻辑的一个辅助证明工具,DC/P的目的是将推导过程机械化、(半)自动化,使人们从枯燥易犯错的手工推导中解脱出来.DC/P实际上是支持包括邻域逻辑［3］(neighbourhood logic,简称NL)、区间时序逻辑［4,5］(interval temporal logic,简称ITL)、均值演算［6］(mean calculus,简称MC)和时段演算［7］(duration calculus,简称DC)在内的一族实时区间逻辑的辅助定理证明工具.之前,Skakkeb

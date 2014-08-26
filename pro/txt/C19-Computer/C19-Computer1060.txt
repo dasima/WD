@@ -1,0 +1,34 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1998年 第24卷 第5期  Vol.24  No.5 1998
+
+
+
+一类随机系统的输出跟踪
+王　玲　　韩志刚
+摘　要　采用直接自适应控制律方法解决多输入单输出随机系统的变目标输出跟踪问题，同时主要分析了控制律作用下的该系统的稳定性，并给出了输出跟踪的较弱收敛性条件及仿真实例.
+关键词　伪梯度向量，Lp渐近稳定，直接自适应控制律.
+OUTPUT TRACKING FOR A KIND OF STOCHASTIC SYSTEMS
+WANG LING　HAN ZHIGANG
+(Department of Automatic Control and System Science, Heilongjiang University, Harbin 150080)
+Abstract　In this paper, we consider output-tracking problem for MISO stochastic system whose mathematical model is unknown or partly unknown. In modern control theory, the system model is necessary for designing the control law, but it is almost impossible to find an exact model. Thus direct adaptive control is used to solve this problem. The stability of system is analyzed, and weak convergence condition for output tracking is given. At last, simulation example is presented.
+Key words　Pseudo-gradient vector, Lp asymptotical stability, direct adaptive control law.
+1　引言
+　　一般地说，目标值不变的跟踪问题较为简单，易于处理，较复杂的情况表现在被跟踪目标发生变化，此时影响跟踪效果最直接最重要的因素是模型和算法.而当系统模型与被跟踪目标模型均未知的情况下，已有的理论方法不可避免存在建模这一关键棘手的问题.文献［2,3］中首次给出了直接自适应控制律的模型及控制律的基本形式，该方法可以有效避开这一问题，且达到满意的精度.文献［4］进一步给出了与参数估计对偶的自适应控制方法，即文献［5］中的无模型控制律.该方法的主要特点是算法简单、需要已知信息少和适用范围广等.文献［6，7］进一步改进上述算法的形式，取得较好的效果.
+　　本文则在此基础上着重于一般非平稳系统，对于直接自适应控制律作用下的该类系统变目标输出跟踪的稳定性进行分析，给出其收敛性条件，且该条件弱于文献［6］中辩识算法要求的条件.
+1　直接自适应控制律的设计
+　　本文考虑离散时间随机系统S，系统的时滞为1，其模型形式如下
+　　(1)
+其中k是离散时间，y(k+1)∈R,u(k)∈Rn为系统的输出与输入，θ(k)为时变参数，f［.］为随机过程.,p,l为非负整数.问题在于：寻找控制律u(k)，使得系统(1)的输出y(k+1)跟踪期望输出y0(k+1).
+　　文献［1］指出系统S的一类动态线性化方程为
+y(k+1)=y(k)+φτ(k)［u(k)-u(k-1)］,　　(2)
+其中φ(k)为随机过程定义为仿梯度向量.
+　　根据文献［4］，直接自适应控制律的具体形式为
+　　(3)
+其中δk为控制参数，(k)为φ(k)的估值.
+3　主要结果
+　　首先给出相关定义
+　　定义1.实序列ak∈［0,1］，称为是稳定激励的，如果存在λ∈(0,1),M>0，使
+　　(4)
+则记｛ak｝∈S0(λ).
+　　定义2.若

@@ -1,0 +1,20 @@
+微型机与应用
+MICROCOMPUTER & ITS APPLICATIONS
+2000　Vol.19　No.6　P.38-40
+
+
+
+
+Java和JavaScript在WWW信息服务中的应用（二）
+刘东波
+摘要：JavaScript、Java applets和JavaBeans在WWW应用开发中的作用及其相互关系。
+关键词：Java语言 Java Applet Java Beans JavaScript WWW
+(接上期)
+3  用JavaScript和Java Applets开发WWW应用
+　　Java和JavaScript在开发交互式WWW应用时所起的作用既有差别，又互为补充。Netscape Navigator3以及更高版本的Web浏览器提供了一种称为LiveConnect的方法，用来实现JavaScript与Java applets之间的通信。因此，在必要时可以同时采用这二种语言来开发高效的Web应用。
+3.1 用JavaScript访问Java
+　　在JavaScript脚本中可以直接调用Java包中的Java方法。例如：
+　　＜SCRIPT LANGUAGE＝″JavaScript″＞
+　　java.lang.System.out.println(″Display a String in Java Console!″)
+　　＜／SCRIPT＞
+　　以上JavaScript脚本执行的结果是在Java控制台窗口中显示字符串“Display a String in Java Console

@@ -1,0 +1,28 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第4期 No.4 Vol.18 1998
+科技期刊
+
+有机化学品的自相关拓扑指数与生物毒性的定量关系*
+王　鹏　苏建成　陈春云　(哈尔滨工业大学应用化学系,哈尔滨 150001)
+文　摘　 针对目前化学品生物毒性评价和预测中存在的问题, 采用以范德华体积(V)和电负性(E)为结构参数的自相关拓扑指数法, 建立了54种有机化学品的分子结构与青锵鱼急性毒性(48h-LC50)的定量构效关系数学模型。对模型采用的范德华体积进行了修正,使其更能准确地描述分子的结构信息，经逐步回归分析得到的线性关系良好的定量构效关系方程 logLC50=0.03+
+0.32V(1)+13.33E(0)-6.83E(2)-4.48E(3) (R=0.9513, F=245.1)，有可能应用于不同结构化学品的生物毒性预测。
+关键词　化学品　QSAR　自相关拓扑指数
+Quantitative structure-activity relationship of organic chemicals using autocorrelation descriptors. Wang Peng，Su Jiancheng，Chen Chunyun (Department of Applied Chemistry, Harbin Institute of Technology, Harbin,150001).China Environmental Science.1998,18(4):306～309
+Abstract―The Quantitative Structure-Activity Relationships(QSAR) between acute toxicity of 54 chemicals to Orizias Latipes (48h-LC50) and components of autocorrelation vectors of Van der waals volume(V) and electronegativity(E)　have been examined. The Van der waals volumes used in the model were modified for describing the stereo-structure of chemicals more accurately. The QSAR equation logLC50=0.03+0.32V(1)+13.33E(0)-6.83E(2)-4.48E(3) was shown to be an excellent model for these chemicals (R=0.9513, F=245.1). It has been used to predict ecotoxicological activity of many organic chemicals of different structures. 
+Key words:organic chemicals　QSAR　autocorrelation descriptor
+　　数以万计的化学品已投入市场,而且此数目还在不断的增长。定量构效关系(Quantitative Structure Activity Relationship, QSAR)数学模型对于有机化学品的生物毒性评价与预测具有广阔的应用前景。但由于各种化学品分子结构差异较大,通常需选择多项结构/理化参数(如logP,MW,MR,π，σ等)进行逐步回归分析,以获得具有普遍意义的QSAR方程式，而上述参数的选择,经常会遇到数据不全或由于不同的测定体系而导致数据差异较大等问题。80年代开始，分子拓扑指数用于QSAR的研究，本文在文献工作的基础上〔1～3〕，对传统的自相关拓扑指数的计算方法加以适当的改进,修正了该拓扑指数所采用的范德华体积参数以提高其对分子的分辨能力,并实现了整个计算过程程序化,给出可操作的实用软件，将其应用于54种不同类型分子结构化学品的生物毒性研究,取得了良好的结果。
+1　自相关拓扑指数法的范德华体积值的修正
+　　自相关拓扑指数(Autocorrelation descriptor)的概念是由Moreau和Broto〔1〕于1980年首次提出。在数学上,函数Y=f(x)的自相关函数定义为:
+　　　　F(t) =∫f(x)f(x+t)dx (1) 
+　　如果 f(x)所描述的是随x变化的某种理化性质,则可以认为F(t)描述了这种理化性质的分布情况。如果把一个分子表示为隐氢图,就可以应用自相关函数来描述理化性质在该分子中的分布情况,从而表达分子的有关结构信息。若将该隐氢图考虑为一拓扑空间,则式(1)在这个拓扑空间就可表示为:
+F(t) = ∑f(i)f(j)　(2)
+式中: i,j为两个相距一定路径长度的节点。
+　　对于特定分子,在其自相关函数中引入不同类型的结构/理化性质值,即可得到不同的结构信息参数〔2〕。本文采用将分子中各原子的范德华体积值的平方根作为f(i),经计算得到的拓扑指数V来表征分子立体结构; 将各原子的电负性的平方根作为f(i),经计算得到的拓扑指数E来表征分子的电子结构〔3〕。
+　　自相关拓扑指数V可用来表征分子的立体结构,已被用于QSAR研究中〔2，3〕。 但V的计算只考虑了分子中各单个原子的贡献,而忽略了原子间的相互影响,如由于化学键类型的不同对分子体积的影响。于是采用上述计算方法不能区分苯与环己烷,四氯乙烷与四氯乙烯等,它们的自相关拓扑指数V(i)分别是相同的。
+　　文献计算方法的不足在于把构成分子的原子都看成是球形,而实际上由于化学键的作用使原子重叠成梨形,所以应对代入自相关函数的范德华体积进行修正。本文采用的方法是把形成化学键的两个球形原子间的重叠部分(球冠体积)从单个原子的球形体积中计算除去。
+　　以苯酚分子1号位碳原子(苯环上与OH相键合的碳原子)为例，该原子分别以3种不同类型的键与其它原子键合:C―O键,C―C键,C=C键，由球冠体积计算公式:
+　　　　V = πh(3r2+h2)/6　(3)
+式中: r和h分别为球冠的半径和冠高。
+经计算,得修正后的苯酚分子1号位碳原子的范德华体积为:
+V'= VC-V

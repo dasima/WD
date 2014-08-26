@@ -1,0 +1,44 @@
+环境科学学报
+ACTA　SCIENTIAE　CIRCUMSTANTIAE
+1998年2月第18卷第2期科技期
+丁基锡化合物在水体悬浮颗粒物上的吸附行为研究
+黄国兰　陈志琼*　戴树桂
+(南开大学环境科学系，天津 300071)
+
+摘要　将海河河口表层底泥制成悬浮颗粒物(SPM)，采用批量平衡法首次研究了模拟河口条件下三丁基锡(TBT)和二丁基锡(DBT)在该SPM上的吸附行为.结果表明，TBT和DBT均能在SPM上发生吸附，尤以TBT更为显著.吸附速率可用Kuo和Lake的经验公式描述；吸附过程受SPM的浓度及TOC含量、pH值、温度、腐殖酸浓度和盐度影响.实际河口水样中的SPM对TBT和DBT的吸附百分率也较高，因此SPM是TBT和DBT归趋的重要场所，去除SPM可使水体得到一定净化.
+关键词　三丁基锡；二丁基锡；悬浮颗粒物；吸附.
+ADSORPTION BEHAVIOR OF BUTYLTIN COMPOUNDS OF SUSPENDED PARTICULATE MATTER IN WATER BODY
+
+Huang Guolan,Chen Zhiqiong,Dai Shugui
+(Dept of Environmental Science,Nankai University,Tianjin 300071)
+
+ABSTRACT　This paper reported for first time the adsorption behavior of butyltin compounds on the suspended particulate matter (SPM) under a simulated estuary condition by using batch-equilibrium method.SPM is prepared by surface sediments from the Haihe estuary.The results showed that both TBT and DBT,especially TBT,can be adsorbed significantly on SPM.The adsorption rate may be expressed by the emeric equation of Kuo and Lake.The adsorption rate is influenced greater by the concentrations of SPM,TOC,humic acid,and temperature than by the salinity.APM in water sample taken from the estuary has even higher adsorption ability to TBT and DBT.This shows that SPM is an important sink to TBT and DBT and,consequently,the removal of SPM can purify water body to some extent.
+Keywords　tributyltin,dibutyltin,suspended paticulate matter,adsorption.
+
+
+1　前言
+　　有机锡化合物是人为引入海洋环境中的毒性最大的物质之一，但由于其应用广泛，海洋中的含量日益增加［1］，丁基锡化合物便是典型的代表.它们主要存在于河口和港湾，研究它们在河口地区的环境行为具有重要意义.
+　　悬浮颗粒物SPM(Suspended Particulate Matter)是河口水体的重要组份，它对污染物的行为是有影响的，但是对有机锡化合物在SPM上的吸附行为所开展的研究尚不多，尤其在国内，还没有文献报道.Randall和Weber等［2，3］曾作过一些研究，但是他们均用人工合成吸附剂作SPM，与实际环境中的SPM必然存在差距.本研究将海河河口表层(≤2cm)底泥制成SPM，研究了TBT和DBT在水-SPM间的分配行为.实际河口水样的调查结果表明，TBT和DBT在SPM上均存在吸附，是它们的重要归趋场所.
+
+2　实验部分
+2.1　人工海水和SPM的制备
+　　人工海水采用Kester配方［4］配制，其他所需盐度用去离子水稀释而成，模拟海河河口盐度为15；SPM由海河河口表层(≤2cm)底泥经自然风干后捣碎、碾细、过筛取小于60μm的颗粒物混匀制得.它们的一些性质参数见表1.
+表1　人工海水和SPM的性质
+Table 1 Characteristics of artificial sea water and SPM
+
+水pH值
+8.05盐度
+15总碳，mg/L
+15.37无机碳，mg/L
+12.67溶解有机碳，mg/L
+2.70　电导率，mΩ/cm
+32.0
+SPMpH值
+7.48TOC，%
+0.58CEC，meq/100g(土)
+153.16粒径，μm
+≤60元素分析*，%
+CHN
+2.020.360.02
+
+2.2　实验用TBT、DBT和

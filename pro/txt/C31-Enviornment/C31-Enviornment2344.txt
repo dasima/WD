@@ -1,0 +1,19 @@
+环境科学学报
+ACTA SCIENTIAE CIRCUMSTANTIAE
+1999年　第19卷 第1期 Vol.19　No.1 1999
+
+
+
+电极旋转放电条件下O3合成效率的理论研究
+孙亚兵　任兆杏　王守国　
+摘要　根据低温等离子体理论和电磁场理论，在实验的基础上研究了电极旋转条件下低温等离子体的产生机制和臭氧的合成机制，分析了放电过程中二次放电重叠对臭氧合成的影响，建立了旋转放电与二次放电的理论模型，并根据这一理论模型导出电极旋转条件下的臭氧合成效率与二次放电重叠概率以及电极旋转速度间的理论关系.这一理论结果表明：二次放电重叠使得臭氧合成效率降低，而电极以适当地速度旋转则可以有效地避免二次放电的重叠，从而提高臭氧的合成效率.理论值和实验结果能够较好地吻合.
+关键词　电极旋转；二次放电；重叠概率；O3合成概率.
+Ozone generation efficiency under the conditions of rotary discharge
+SUN Yabing,REN Zhaoxing,WANG Shouguo 
+Institute of Plasma Physics,Chinese Academy of Science,Hefei 230031
+Abstract　Based on gas discharge and electromagnetic field theory and data collected in the experiments,the mechanism of gas discharge and ozone generation was investigated.The effect of the secondary discharge overlapping on ozone generation was found to be important.By establishing the theory model of rotary and secondary discharges,the relation between ozone generation efficiency and secondary discharge overlapping possibility was decuced under the conditions of rotary discharge.
+Keywords　electrode rotary,secondary discharge,overlapping possibility,ozone generation efficiency.
+1　引言
+　　臭氧具有独特的消毒、灭菌、除臭、脱色等功能，且应用时对生态环境不产生二次污染，具有良好的环境生态效应，因此被广泛地应用于环保领域［1―4］.但通过低温等离子体放电合成臭氧的效率非常低，限制了臭氧的应用与推广.研究等离子体放电机制和电极系统，可以发现合成臭氧效率低的关键原因在于：一方面，高电压的施加使得电极系统因感应加热而损耗大量的能量，同时电极系统的发热又分解一部分已形成的臭氧；另一方面，放电电压和放电电流相互矛盾着决定放电气隙，这是空间放电无法克服的矛盾.本文通过对电极系统的改变来研究臭氧合成效率的影响因素，寻找提高合成臭氧效率的有效途径.
+2　旋转电极系统电磁场的理论计算
+　　旋转电极系统由两个大小相同的圆盘电极组成.其内部电磁场等效于圆形电容器的电磁场.设圆盘半径为a，两极间距为d(a

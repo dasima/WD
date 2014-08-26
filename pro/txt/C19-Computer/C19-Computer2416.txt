@@ -1,0 +1,19 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年　第36卷　第11期　Vol.36　No.11　1999
+
+
+
+VR环境图像生成中几项关键技术研究
+于洪川　吴福朝　阮宗才　韦　穗
+摘　要：文中讨论了基于图像的VR环境图像生成中，未标定旋转图像序列的插补、整合及全景图的生成3项关键技术问题，并给出插补、整合及全景图生成方法.所给方法有以下优点：插补和整合图像是源图像对应的摄像机在新视点下的视图，这保证了插补和整合图像的真实性；控制参数α变化，可得到所需视点方向的插补与整合图像，即可以控制视点方向；在此基础上开发的切点累积全景图生成技术克服了传统方法中技术缺陷，实用性强；此外，所给方法不需要事先标定摄像机.实验表明该方法处理简单，效果理想.
+关键词：匹配矩阵，图像插补，图像整合，全景图生成
+中图法分类号：TP391
+THE STUDY OF SEVERAL KEY TECHNIQUES IN
+BUILDING VR VISUAL FIELD
+YU Hong-Chuan, WU Fu-Chao, RUAN Zong-Cai, and WEI Sui
+(Institute of Artificial Intelligence, Anhui University, Hefei 230039)
+Abstract　In this paper, three key techniques are discussed in building VR visual field based on real images. They are interpolation, registration, and panorama of uncalibrated rotating image sequence. The merits of their implemented methods include the following, (1)The interpolated (registration) image accords with perspective geometry. This one ensures that the interpolated (registration) image is real; (2)When the coefficient(α) is changed, the inter polated (registration) images corresponding to different views can be obtained. It means that the view direction can be controlled;(3)The tac-point cumulation method of panoramic images overcomes some drawbacks in the previous methods; (4) The camera needn't be calibrated. The experiment indicates that the effect is very ideal. 
+Key words　matched matrix, image interpolation, image registrati on, panoramic images
+1　引　言
+　　基于真实图像的VR环境生成技术的研究，是目前VR技术研究中最为活跃的研究课题之一.与 传统计算机图形学中重构场景的根本区别在于：它不依赖于几何模型，而是利用事先获取的一组图像序列，对环境进行编码，并通过适当地变换这些图像生成位于不同视点的新视图，最终实现环境的完全漫游.其最

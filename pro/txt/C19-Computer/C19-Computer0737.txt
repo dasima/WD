@@ -1,0 +1,41 @@
+自动化学报
+AGTA AUTOMATICA SINICA
+1999年 第25卷 第2期 Vol.25 No.2 1999
+
+
+
+
+一类不确定非线性系统的鲁棒H∞控制1)
+王向东　高立群　张嗣瀛
+摘　要　讨论了在自由系统和输入通道都带有有界不确定性的仿射非线性系统的鲁棒H∞控制问题，给出了状态反馈控制设计，对所有允许的不确定性它既能保证关于H∞模的干扰抑制品质，又能镇定该系统.同时指出如果一个相应的Hamilton-Jacobi不等式有非负解，则该不确定仿射非线性系统的鲁棒H∞控制问题可解.
+关键词　不确定性，非线性系统，鲁棒H∞控制.
+ROBUST H∞ CONTROL FOR UNCERTAIN NONLINEAR 
+SYSTEMS VIA STATE FEEDBACK
+WANG Xiangdong　GAO Liqun　ZHANG Siying
+(Dept.of Automatic Control,Northeastern Univ.,Shenyang　110006)
+Abstract　In this paper,we discuss the robust H∞ control problem for a class of affine nonlinear systems with norm-bounded uncertainties in both free system and input matrices.We present a state feedback control design which stabilizes the plant and guarantees an H∞ norm bound constrain on disturbance attenuation for all admissible uncertainties.The robust H∞ control problem is solved by finding a solution for Hamilton-Jacobi inequality,which is the nonlinear analogy of Riccati inequality appearring in study of H∞ control problem of linear system.
+Key words　Uncertainty, nonlinear system, robust H∞ control.
+1　引言
+　　在状态空间方法中，减少闭环系统的H∞模(或等价地，L2-诱导模)可以看作是零合的微分对策问题，这样所需要的控制的存在性和设计都与线性二次微分对策理论中出现的Riccati方程解的存在性有关系［1―4］.最近以来，关于不确定系统的鲁棒H∞控制问题引起人们的研究兴趣［5―6］.在这里控制的目的是镇定不确定系统，同时还能对所有允许的不确定性保证关于H∞模的干扰抑制品质.
+　　本文讨论在自由系统和输入通道都带有有界不确定性的仿射非线性系统的鲁棒H∞控制问题，可以看作文献［8］的推广.文献［8］所讨论的系统只在自由系统中带有不确定性，本文所采用的方法依赖于Hamilton-Jacobi不等式，通过求解一个由标称系统和不确定性的界函数构造的Hamilton-Jacobi不等式的光滑解，就能得到不确定非线性系统的鲁棒H∞控制问题的解.
+　　记号：对z∈Rn,‖z‖2,‖z‖T分别表示代表满足条件‖z(t)‖T＜∞的向量值函数z(t)的集合.
+2　系统描述
+　　考虑不确定非线性系统
+
+(1)
+
+(2)
+其中x∈XRn是状态，X是x=0的一个邻域，d∈Rl是干扰输入，u∈Rm是控制输入，z∈Rs是输出.f(x),g1(x),g2(x),h1(x),k12(x)是已知光滑函数，Δf(x),Δg2(x)是未知光滑函数.不失一般性作者假设f(0)=0,h1(0)=0.
+　　假设1.　　　　　　　 
+(3)
+　　假设2. 1) Δf(x)=e(x)δ(x)，其中e:Rn→Rn×q，δ:Rn→Rq分别是已知和未知的光滑函数且Δf(x)属于如下定义的有界集合：
+
+(4)
+其中ω:Rn→Rq是给定的函数.
+　　　　　2)
+(5)
+其中0≤β(x)＜1.
+　　本文讨论不确定系统(1)，(2)的状态反馈鲁棒H∞控制问题.考虑设计非线性反馈控制
+
+(6)
+　　定义1. 给定γ＞0.称闭环系统(1)，(2)，(6)是在U

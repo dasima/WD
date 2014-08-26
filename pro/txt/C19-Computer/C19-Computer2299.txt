@@ -1,0 +1,16 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年 第36卷 第5期 Vol.36 No.5 1999
+
+
+
+延迟离散Hopfield型神经网络异步收敛性
+邱深山　徐晓飞　刘明珠　王亚东
+摘　要　离散Hopfield型神经网络的一个重要性质是异步运行方式下总能收敛到稳定态；同步运行方式下总能收敛到周期不超过2的极限环．它是该模型可以用于联想记忆设计、组合优化计算的理论基础．文中给出了延迟离散Hopfield型网络的收敛性定理．在异步运行方式下，证明了对称连接权阵的收敛性定理，推广了已有的离散Hopfield型网络的收敛性结果, 给出了能量函数极大值点与延迟离散Hopfield型网络的稳定态的关系及稳定态邻域的演化特征, 得到了能量函数收敛与异步运行时网络达到稳定的协调关系.
+关键词　离散Hopfield型神经网络，延迟，收敛性，稳定态
+中图法分类号　TP18；TP311
+CONVERGENCE OF DISCRETE HOPFIELD-TYPE NEURAL 
+NETWORKS WITH TIME-DELAY IN A SERIAL MODE
+QIU Shen-Shan, XU Xiao-Fei, and WANG Ya-Dong
+(Department of Computer Science and Engineering, Harbin Institute of Technology, Harbin　150001) 
+LIU Ming-Zhu

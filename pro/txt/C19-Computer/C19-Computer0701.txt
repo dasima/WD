@@ -1,0 +1,35 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1998年 第24卷 第5期  Vol.24  No.5 1998
+
+
+
+关于Razumikhin-Type定理的衰变估计
+侯春海　　钱积新
+关键词　Razumikhin-Type定理，衰变估计.
+On the Decay Estimate for Razumikhin-Type Theorems
+HOU CHUNHAI　　QIAN JIXIN
+(Institute of Industrial Process Control, National Laboratory of Industrial
+Control Technology, Zhejiang University, Hangzhou　310027)
+Key words　Razumikhin-Type theorems, decay estimate.
+1　引言
+　　在研究系统的稳定性过程中，专家们不但想得到关于稳定性的定性描述，而且更希望得到定量信息.多年来，动态系统的定量稳定性分析研究一直受到专家的关注.就时滞系统而言，1982年T.Mori等人给出带有定常时滞的线性时不变系统的衰变估计，1994年B.Lehman和K.Shujaee对一类纯滞后时变泛函微分方程解的衰变估计［1］.进行研究［2］.楚天广和王照林应用比较原理的方法研究了时滞系统的实用稳定性［3，4］.
+　　众所周知，Razumikhin-Type定量是指用通常Lyapunov函数，加上Razumikhin-Type条件而得到的一系列与常微分方程平行的种种稳定性与不稳定性准则，在研究纯滞后泛函微分方程解的稳定性过程中，Razumikhin-Type定理发挥着重要作用［5］.近年来，应用Razumikhin-Type定理对时滞系统进行稳定性分析愈来愈引起工程师们的重视［6］.所以，研究Razumikhin-Type定理的衰变估计具有极大的理论与应用价值.虽然已有应用Razumikhin-Type比较原理研究时滞系统的定量稳定性的报导［3］，但是针对Razumikhin-Type定理的实际应用，具体给出其定量渐近描述的研究成果并不多见.本文从Razumikhin-Type定理的应用角度出发给出其衰变估计，从而为工程设计提供理论依据.
+2　符号及定义
+　　表示“对所有的”或“对任给的”，表示“均存在”或“均可找到”；R=(-∞,+∞)，R+=［0,+∞］；［s］：不大于s的最大整数.设u:R→R为连续函数，则定义
+　　(1)
+　　(2)
+(1)式中的r为正数，在以下的讨论中也假设r为正数.
+3　主要定理
+　　定理1.连续函数u:R→R＋满足下述条件：若存在q＞1，α＞0，且当r(t)＜qu(t),t≥t0时，(t)≤-αu(t)，则有
+　(3)
+其中　
+　　证明.1) 先证明
+　　使用文献［5］中Theorem4.1的证明过程，容易证明本步结果.
+　　2) 再证明
+　　首先假设：t*∈［t,t+r］，使得.若否，由有
+　　(4)
+由已知条件可知，，有()≤-αu()≤0，因此
+　　(5)
+而这是矛盾的.因此，假设成立.
+　　若令，则有t

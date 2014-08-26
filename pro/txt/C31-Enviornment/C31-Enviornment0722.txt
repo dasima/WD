@@ -1,0 +1,31 @@
+环境科学学报
+ACTA　SCIENTIAE　CIRCUMSTANTIAE
+1998年2月第18卷第2期科技期刊
+地理信息系统与生态系统对酸沉降
+相对敏感性评价
+何隆华　杨宏伟
+(中国科学院南京地理与湖泊研究所，　南京　210008)
+周　修　萍
+(国家环保局南京环境科学研究所)
+
+摘要　叙述了地理信息系统(GIS)在生态系统对酸沉降相对敏感性评价中的应用.通过数字化地图建立了4种生态要素的基础评价数据库；讨论了生态系统因子对酸沉降的敏感分级、敏感性评价系统和评价模型.最后介绍了生态系统对酸沉降敏感指数制图.
+关键词　酸沉降；敏感指数制图；空间分析；GIS.
+GEOGRAPHIC INFORMATION SYSTEM AND THE ESTIMATION 
+OF ECOSYSTEM'S RELATIVE SENSITIVITY TO ACID DEPOSITION
+
+He Longhua， Yang Hongwei
+( Nanjing Institute of Geography and Limnology, Chinese Academy of Sciences, Nanjing 210008)
+Zhou Xiuping
+(Nanjing Institute of Environment Science, Nanjing 210042)
+
+ABSTRACT　As a kind of spatial analysis tool and spatial modeling tool, geographical information system shows to be a very useful thing in analyzing environmental problems. In this study, GIS technology is used in estimating ecosystem′s relative sensitivity to acid deposition. Four variable layers, i.e., base rock, soil buffering capacity, vegetation type, and soil humidity, are used in the estimation. Five grades are separated in this research. The study also demonstrates the multi\|layer spatial analysis method and sensitivity mapping in sensitivity analysis.
+GIS technique will help decision makers in the drafting of emission control measures. If a finer resolution is used, more detailed sensitivity zones will be resulted which reflects the major environmental features.
+Keywords　acid depositon, spatial analysis, geographical information system.
+
+
+　　地理信息系统(GIS)是集计算机科学、地理学、测绘学、遥感学、统计学、环境科学、城市科学、空间科学、信息科学和管理科学为一体的新兴边缘学科［1，2］.早期的地理信息系统由计算机地图制图发展而来，缺少用于地理分析和地理建模的功能.随着计算机技术、地图学、遥感技术、空间分析技术的发展，GIS技术逐渐成熟，具有了综合分析空间数据和进行空间建模的能力，为自然环境、社会经济等方面提供管理决策的依据.进入九十年代以来，地理信息系统又出现了新的发展特征：空间数据库日益普及，应用领域越来越广泛；GIS向着开放性和多媒体方向发展；GIS的地理查询、空间分析功能越来越强，决策工具进一步成熟.
+　　本文介绍应用地理信息系统进行的生态系统对酸沉降敏感性分析，把各种环境因子图输入计算机，形成环境要素空间数据库，由GIS提供对各敏感因子的快速检索和查询.通过建立在GIS中的敏感指数评价模型，决策者很快就能得到生态环境对酸沉降的敏感性等级，有助于提高预防酸沉降危害的规划水平和环保管理决策水平.
+
+1　敏感性评价范围
+　　本次评价的范围选在中国东部七省一市，即浙江、福建、江西、安徽、湖南、湖北、江苏和上海市.选择该区作为本次研究的区域有如下原因：1.本区经济较发达，上海市作为长江流域的龙头，又是用煤大户，酸沉降频率比较高；2.此区域基础信息丰富，各生态要素图容易获得.
+　　本次研究的敏感指数图成图比例尺要求为1

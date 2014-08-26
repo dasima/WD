@@ -1,0 +1,15 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第6期 第10卷 Vol.10 No.6 1999
+
+
+
+基于脑图谱和模糊聚类的磁共振图像分割标注
+谭 鸥 贾春光 吕旭东 段会龙 吕维雪
+　　摘要　利用TT Atlas中丰富的结构信息,文章提出了一种自动分割脑MRI(magnetic resonance image)图像的方法.这种方法可分为两步.首先,将MRI图像和TT Atlas配准,通过图像和医学图谱的匹配,利用图谱中结构信息的先验知识,就可以对图像作初步的分割标注.然后,利用这个预分割的模板对MRI图像进行模糊聚类分割,从而提高分割的精度.为了自动地将预模板中的结构信息用于分割,文章还提出了一种引入形状因子的FCM聚类算法.除了在匹配时需要手工定出一些点之外,该方法基本上是自动的.
+　　关键词　MRI(magnetic resonance image),自动图像分割,图像匹配,脑图谱,模糊C均值聚类,形状因子,可视化人体数据集.
+　　中图法分类号　TP391
+　
+Segmentation and Classification of MRI Based on FCM Clustering
+Algorithm and Computerized Brain Atlas
+TAN Ou JIA Chun-guang L－ Xu-dong DUAN Hui-long L

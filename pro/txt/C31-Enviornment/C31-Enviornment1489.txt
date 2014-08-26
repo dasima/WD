@@ -1,0 +1,40 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第4期 No.4 Vol.18 1998
+科技期刊
+
+大港地区大气颗粒物中多环芳烃分布及污染源识别的研究*
+朱　坦　孙　韧　张　林　江理明　（南开大学环境科学系，天津 300071）
+文　摘　多环芳烃(PAHs)是一类对人体危害较大的有机污染物。目前对大气环境中PAHs来源识别技术还处于探索与发展阶段。为了解天津大港油田地区大气环境中PAHs污染状况与来源，对天津市大港地区大气颗粒物中10种PAHs分布及污染源开展了调查。结果表明：大港地区10种PAHs总浓度平均为169ng/m3，比市区对照点的465ng/m3低63.7%，其中苯并(a)芘(BaP)平均浓度为 13.6 ng/m3 ，比市区对照点的41.1ng/m3低66.9%。实验结果经统计处理发现BaP浓度与其它9种PAHs浓度存在一定的相关性，相关系数均在0.60以上。利用比值法进行源识别得出：大港石化区PAHs主要来源为燃煤污染；而大港油田区PAHs主要来源为燃油污染。
+关键词　多环芳烃　大气颗粒物　源解析
+Study on identifying the distribution and pollution sources of PAHs in airborne particulate in Dagang Area, Tianjin.Zhu Tan, Sun Ren, Zhang Lin, Jiang Liming (Department of Environmental Science, Nankai University, Tianjin 300071).China Environmental Science.1998,18(4):289～292
+Abstract―Polycyclic Aromatic Hydrocarbons(PAHs) are probably the most widely spread organic pollutants in the environment and some PAHs exhibit carcinogenic effects in humans. The distribution and pollution sources of PAHs in atmospheric particulate were investigated in Dagang Area, Tianjin.The results show that the mean total concentration of 10 PAHs is 169ng/m3 ,63.7% less than that of 465ng/m3 of the urban control sample;the mean concentration of BaP is 13.6ng/m3 ,66.9% less than 41.1ng/m3 in the urban control sample . There exists certain relativity between the concentration of BaP and other 9 PAHs. The ratio of BaP to other PAHs was used as a method to identify that the major source of PAHs was coal-combustion pollution in Dagang petrochemistry industrial zone and oil-combustion pollution in Dagang oil-field zone .
+Key words:PAHs　airborne particulate　source analyzing
+　　多环芳烃(Polycyclic Aromatic Hydrocarbons, PAHs)是一类数量大、种类多、分布广、对人体有极大危害的化合物。其中苯并〔a〕芘（Benzo〔a〕pyrene, BaP)是PAHs中的一种致癌活性较强的代表性化合物。大部分PAHs是由人类活动过程中使用燃料的不完全燃烧以及某些工业生产过程中产生。PAHs的数量及其分布情况，在很大程度上由不同的燃料和不同的燃烧过程决定〔1～4〕。
+　　目前对大气环境中PAHs来源识别技术还处于探索与发展阶段〔5～8〕,识别方法有定性和半定量方法(比值法、轮廓图法、特征化合物法 )及定量方法(化学质量平衡法和多元统计法)等,各种方法的主要技术内容和优缺点已另有详述〔9〕。本文对天津大港地区大气颗粒物中10种PAHs分布及污染源开展了调查（同时在天津市内设立对照点），采用比值法对天津大港地区PAHs来源进行了探索性研究。
+1　实验部分
+1.1　采样点的设置及样品的采集
+　　大港区位于天津市东南部，距天津市中心45km。全区总面积为935km2。大港城区是由大港石化工业区、大港油田生活区和官港组成。根据不同地区的特点，在大港石化工业区(规划区)设两个采样点，一个位于厂区，一个位于生活区。同时，在大港油田生活区三号院和大港油田采油一厂各设一个采样点。此外，在市区中环线旁(南开大学南门)设置一个对照采样点。
+　　使用大流量采样器(1.0～1.7m3/min)在玻璃纤维滤膜上采集空气中颗粒物,采样日期为1994年11月24～26日，每天上午8:00～下午16:00，精确记录采样时间。
+1.2　样品的分析
+1.2.1　仪器及试剂　气相色谱-质谱-计算机联用系统(HP 5890 Ⅱ GC/5971A MSD)；KB-6C 大流量采样器 ( 青岛崂山电子仪器实验所 )；索氏提取器；旋转蒸发器；硅胶层析柱(10g硅胶，100～200目，250℃活化2h)；二氯甲烷(分析纯，重蒸)。
+1.2.2　样品前处理　采样后的玻璃纤维滤膜放在索氏提取器中，加入100mL二氯甲烷于60℃水浴中提取8h。提取液在旋转蒸发器上浓缩至4mL，再用高纯氮气吹至0.5mL，加入少量硅胶,室温下挥发至干。将这些硅胶移入已装好的层析柱中，分别以60mL正己烷和120mL正己烷/苯 (1:1) 洗脱脂肪烃(弃去)和PAHs( 溶剂流速为 1滴/s )。将洗脱液同上方法浓缩至0.5mL。样品于冰箱中避光保存。
+1.2.3　GC/MS分析条件　HP-5石英毛细管柱(25m×0.2mm，美国惠普公司)；色谱仪柱温程序：100℃(2min),20℃/min→200℃,4℃/min→300℃(10min)；进样口温度：300℃；气―质传输线温度：300℃；载气：高纯氦气；流量：1.0mL/min；进样方式：分流进样；分流比：30∶1；进样量: 5μL；质谱离子源：电子轰击源(EI)；扫描质量范围：30～550amu,样品的定性采用标准质谱库计算机检索（美国国家标准局，NBS75K)同时结合PAHs标准物质的色谱保留时间确证；样品定量分析采用选择离子监测(Selective Ion Monitoring,SIM)技术。根据PAHs质谱图特征，所选取的定量分析均为各PAHs的分子离子。
+2　结果与讨论
+2.1　大气颗粒物中PAHs浓度调查
+　　大港地区不同功能区大气颗粒物中PAHs浓度调查结果见表1。
+表1　大港地区不同功能区PAHs浓度(ng/m3)
+Table 1　PAHs concentrations in the various function
+zones in Dagang Area(ng/m3)
+
+PAHs名称石化居
+民区 石化　
+厂区　油田居　
+民区　 油田生
+产区 市区
+TSP(mg/m3)0.381 0.297 0.444 0.3370.669
+菲 16.0 10.1 26.0 20.8 39.3
+蒽 1.70 1.00 2.30 2.30 5.95
+荧蒽67.3 17.1 42.843.0 139　
+芘 34.8 7.80 16.7 18.6 59.8
+苯并〔a〕蒽 28.9 6.00 11.1 13.4 42.1

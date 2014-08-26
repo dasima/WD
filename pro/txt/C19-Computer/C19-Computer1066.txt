@@ -1,0 +1,23 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1998年 第24卷 第5期  Vol.24  No.5 1998
+
+
+
+连续时间回归网络的稳定性分析
+张兰玲　刘贺平　孙一康
+关键词　连续回归神经网络，渐近稳定，绝对稳定.
+STABILITY ANALYSIS FOR CONTINUOUS-TIME
+RECURRENT NEURAL NETWORKS
+ZHANG LANLING　LIU HEPING　　SUN YIKANG
+(Department of Automation,Beijing University of Science and Technology, Beijing　100083)
+Key words　Continuous-time recurrent neural network, asymptotic stability, absolute stability.
+1　引言
+　　回归网络稳定性的分析大多是采用李亚普诺夫直接法［1］，这种方法的关键在于李亚普诺夫函数的选择，由于目前还没有系统地构造李亚普诺夫函数的方法，用直接法分析网络的稳定性无疑是比较困难的.本文基于Gersgorin定理，以一类连续回归神经网络为例，讨论网络渐近稳定和绝对稳定的充分条件，这种方法通过对网络参数的简单运算判断网络的稳定性.
+2　平衡点的存在性及变换
+　　本文研究如下形式的连续回归神经网络
+　　(1)
+其中y=［y1(t),y2(t),…,yn(t)］T∈Rn为神经元的状态矢量，σ(.)是tanh函数，A=diag［a1,a2,…,an］∈Rn×n是常值矩阵(ai＞0,i=1,…,n)，i=［I1,I2,…,In］T∈Rn为神经元的外部常值输入矢量，W=［wi,j］n×n∈Rn×n是网络的连接权矩阵.
+　设ye为神经网络系统(1)的一个平衡点，则
+ye=A－1σ(Wye)+A－1i.　　(2)
+　　定义映射

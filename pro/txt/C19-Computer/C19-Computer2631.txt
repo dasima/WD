@@ -1,0 +1,17 @@
+软件学报
+JOURNAL OF SOFTWARE
+1999年 第10卷 第7期　No.7 Vol.10 1999
+
+
+
+基于GenVoca模型的软件构架研究
+喻　勇　徐　锦　赵文耘　许幼鸣　钱乐秋
+　　摘要　GenVoca是一个领域独立模型,用于设计和构造基于大规模软件重用的层次软件系统.该模型为在多个领域中实现软件构架技术提供了一套有效的方法.文章讨论了GenVoca模型的主要特征,提出了基于该模型构造的一个可复用的图形编辑器(graphical editor,简称GE)软件构架,并对该构架中的主要域、构件以及构件间的相互关系进行了分析,给出了将这些构件复合成一些不同的图形编辑器的示例.
+　　关键词　GenVoca模型,构件,域,软件构架,图形编辑器.
+　　中图法分类号　TP311
+Research of Software Architecture Based on GenVoca Model
+YU Yong XU Jin ZHAO Wen-yun XU You-ming QIAN Le-qiu
+(Department of Computer Science Fudan University Shanghai 200433)
+　　Abstract　 GenVoca is a domain-independent model of hierarchical software system design and construction that is based on large-scale reuse. This model is a blueprint for implementing software component technologies in many domains. In this paper, the authors discuss the main features of GenVoca model and present a reusable graphical editor (GE) software architecture based on this model. They explain the realms and their components of the architecture, examine the relations between these components, and show how combining these components into some graphical editors is achieved.
+　　Key words　GenVoca model, component, realm, software architecture, graphical editor.
+　　随着软件系统规模和复杂度的日益升级,人们逐渐意识到,系统总体结构的设计和规格说明比对算法和数据结构的选择重要得多[1].在这种背景下,人们认识到了软件构架(software architecture)的重要性,并认为对软件构架的深入研究将会成为提高软件重用度的新的最有希望的途径,甚至有人认为,90年代是软件构架的

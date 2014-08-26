@@ -1,0 +1,36 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1999年　第25卷　第5期　Vol.25 No.5 1999
+
+
+
+
+基于输入匹配的广义预测自校正控制器
+――有色噪声情况1)
+赵后今
+摘　要　为随机线性系统建立了全局收敛广义预测自校正控制算法，处理的是有色噪声的情况，并给出了完整而严格的收敛性证明.在通常假设条件下使用这种算法，能使适应控制律和最优控制律之差在样本均方意义下收敛到零.
+关键词　预测控制，自校正控制，全局收敛，输入匹配.
+GENERALIZED PREDICTIVE SELF-TUNING CONTROLLER BASED ON INPUT MATCHING 
+――THE COLORED NOISE CASE
+ZHAO Houjin
+(Department of Computer and System Science, Nankai University, Tianjin　300071)
+Abstract　This paper establishes a globally convergent generalized predictive self-tuning control algorithm for the stochastic linear system having colored noise. A complete and rigorous proof of the global convergence of the algorithm is given. The algorithm will ensure that the sample-mean-square difference between the adaptive control law and the optimal control law converges to zero under the general assumptions.
+Key words　Predictive control,　self-tuning control, global convergence, input matching.
+1　引　言
+　　自校正控制已由原来的自校正调节器(ATR)和自校正控制器(ATC)发展到广义预测自校正控制器［1］，自从Clarke D. W.等人于1987年提出广义预测控制(GPC)以来［2，3］，预测控制成为控制领域中的热点，几年来涌现出不少预测自校正控制算法，然而，稳定性和收敛性分析的突破性进展直到最近才得到［4―5］.文献［4］中处理的是确定性情况，文献［5］中处理的是白噪情况.关于有色噪声情况，虽有文章讨论，但终因条件过强或要求预先知识过多而不能令人满意.文献［6］中给出了一种算法的收敛性证明，但其算法本身的可行性有问题.本文将为具有有色噪声随机线性系统建立一种广义预测自校正控制算法，提供完整而严格的全局收敛证明.使用这种算法不但能保证全局收敛而且能实现输入匹配，即能使适应控制律和最优控制律之差在样本均方意义下收敛到零.该算法使用一种多输入辨识器，简化了计算，不用在线解线性方程组，也避免了烦琐的矩阵求逆运算.
+2　问　题
+　　考虑具有任意初始条件的随机线性时不变有限维系统
+A(q-1)y(t)=Bq-1u(t-1)+Cq-1ξ(t)／Δ，　(1)
+其中y(t),u(t),ξ(t)分别是输出、输入和扰动；Δ=1-q-1;A(q-1),B(q-1),C(q-1)是单位延迟算子q-1的多项式
+
+ξ(t)是定义在概率空间｛Ω,F,P｝上的鞅差序列，且适应于递增的子σ-代数序列｛Ft｝，Ft表示t时刻及其以前的观测值生成的σ-代数，F0表示由初始条件生成的σ-代数.
+E｛ξ(t)｜Ft-1｝=0，　a.s，　(2)
+E｛ξ2(t)｜Ft-1｝=σ2，　a.s，　(3)
+　(4)
+性能指标
+J=E｛｜Δy(t+j)-Δw(t+j)｜2+λ｜u(t+j-1)｜2｜Ft｝，　(5)
+w(t)是已知的有界参考信号.
+　　假设U(t)=［u(t),u(t+1),…,u(t+N-1)］T是Ft-可测的，先在系统参数已知的情况下求出最小化性能指标J的U(t)，用u(t)作为反馈控制律.然后，对于参数未知的系统，根据自校正原则和负反馈原理，建立一种随机适应控制算法.最后证明这种广义预测自校正控制算法的全局收敛性.
+3　广义预测控制
+　　引入多项式Ej(q-1),Fj(q-1),使得C(q-1)=Ej(q-1)A(q-1)+q-jFj(q-1),
+其中　Ej(q-1)=1+e1q-1+…+ej-1q-j+1,　　

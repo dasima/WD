@@ -1,0 +1,18 @@
+航空工艺技术
+AERONAUTICAL MANUFACTURING TECHNOLOGY
+1999年 第2期 No.2 1999
+
+
+
+超高强度钢30CrMnSiNi2A冲击韧性值的探讨
+
+周萍兴
+　　[摘要]　研究和分析了机械加工精度、试验条件及热处理工艺对超高强度钢30CrMnSiNi2A试样冲击韧性值ak的影响，对生产出合格的超高强度钢成品零件具有指导意义。
+　　关键词：超高强度钢　试样　冲击韧性值
+Study on Impact Toughness Value of Super High Strength Steel 30CrMnSiNi2A
+　　[ABSTRACT]　The effects of machining accuracy, test condition and thermal treatment process on impact toughness value ak of super high strength steel 30CrMnSiNi2A sample are studied and analyzed. This will be a guide for producing qualified finished super high strength steel part.
+　　Keywords: Super high strength steel　Specimen　Impact toughness value
+　　材料的冲击韧性试验是最容易获得材料动态性能的方法。因此，在航空工业生产中广泛使用的超高强度钢30CrMnSiNi2A材料所制造的重要承力件，在设计图纸和冶金工艺文件中多标有冲击韧性值要求，以便检查材料的脆性倾向和冶金工艺质量。但在多年的实践中，我们发现同一炉号的材料，在相同条件下进行热处理，在不同生产时间其试验结果相差甚远。尤其是在近两年来的生产中，多次出现零件最终热处理所带随炉试样冲击韧性值不合格的现象，或热处理后工艺试验合格而在成品零件破坏检查时又出现不合格的现象，严重影响了生产的顺利进行和飞机的正常交付。为此，我们对工厂现行的试样加工工艺，热处理工艺和冲击试验条件等方面进行了综合试验分析和探讨。
+1　试样制备
+　　试验用料采用抚顺钢厂生产的20 mm棒材，化学成分见表1。
+表1　试验用料

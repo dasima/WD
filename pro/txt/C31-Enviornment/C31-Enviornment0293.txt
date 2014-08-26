@@ -1,0 +1,22 @@
+中国环境科学
+CHINA ENVIRONMENTAL SCIENCE
+1998年 第18卷 第4期 No.4 Vol.18 1998
+科技期刊
+
+镍铜氧化物对吐氏酸废水臭氧氧化的催化作用*
+张彭义　祝万鹏　 (清华大学环境科学与工程系，环境模拟与污染控制国家联合重点实验室，北京 100084)
+许　强　(浙江省宁波环保科研设计院，宁波 315010)
+文　摘　染料中间体废水等难生物降解废水是目前水处理研究的焦点。用浸渍法和附着沉淀法制备了以γ-Al2O3为载体的负载型镍、铜氧化物催化剂，并以催化吐氏酸废水的臭氧氧化。研究结果表明，镍、铜单组分和双组分氧化物催化剂能不同程度地提高臭氧的利用效率，其中附着沉淀法制备的Ni-Cu-Urea-1催化剂活性最高，当臭氧投加量为0.82g/L时，其臭氧化指数为1.1；助剂钾对催化剂活性的影响与制备方法有关，当用浸渍法制备时，助剂钾能提高催化剂活性，而附着沉淀法时则不利。
+关键词　吐氏酸废水　固体催化剂　催化臭氧化
+Catalyzed ozonation of tobias acid wastewater by Ni and Cu oxides. Zhang Pengyi, Zhu Wanpeng (State Key Joint Laboratory on Environmental Simulation and Pollution Control,Department of Environmental Science and Engineering, Tsinghua University, Beijing 100084);Xu Qiang (Ningbo Environmental Protection Design Institute, Ningbo 315010).China Environmental Science.1998,18(4):310～313
+Abstract― Poorly biodegradable wastewater,such as dye intermediate wastewater,is at present the research focus of water treatment. This paper studies the catalyzed ozonation of tobias acid wastewater, a typical dye intermediate wastewater, with catalysts of Ni and Cu oxides which are loaded over the γ-Al2O3 carrier by the methods of impregnation or absorption-precipitation. It is shown that, catalysts of single oxide and complex oxides can improve ozonation efficiency in varying degrees, and catalyst Ni-Cu-Urea-1 prepared by the impregnation method has the highest activity. When the ozone dosage arrives to 0.82g/L, its ozonation index is 1.1. In addition, the effect of additive K on the catalytic performance is preliminarily investigated. 
+Key words:tobias acid wastewater　solid catalyst　catalyzed ozonation
+　　臭氧具有很强的氧化与杀菌能力，在水处理中的应用已有一百多年的历史。目前广泛地用于饮用水消毒、循环冷却水和废水的处理〔1〕。然而臭氧处理成本高，特别对于难降解有机废水，普通的臭氧氧化法存在投加量大、利用率低等问题。为了提高臭氧氧化的速率和效率，国内外探索了催化臭氧化，如紫外光催化〔2〕、固体催化剂催化〔3〕。催化臭氧化的机理是在紫外光和催化剂的作用下，强化臭氧氧化过程，即加强羟基自由基的产生和氧化还原循环。本文研究了负载型镍、铜氧化物催化剂对吐氏酸臭氧氧化的催化作用。
+1　试验方法
+1.1　催化剂制备
+　　分别采用浸渍法、附着沉淀法制备负载型催化剂。选用的催化剂载体为工业用γ-Al2O3，其外形为球形颗粒，直径2.5～4.5mm，比表面积约为250m2/g。催化剂活性组分均为分析纯硝酸盐，即Ni(NO3)2、Cu(NO3)2和KNO3。
+　　浸渍法是常用的负载型催化剂制备方法，主要包括浸渍-干燥-焙烧等步骤。首先将γ-Al2O3载体在浓度为6％～7％（以金属元素重量计）的硝酸盐溶液中（对于多组分，则是混合溶液）浸渍4h，然后在85℃下干燥，450℃下焙烧4h。重复1次即得到试验用的4种催化剂，即Ni-02、Cu-02、Ni-Cu-02、Ni-Cu-K-02（催化剂名称中，前面的元素表示其中含有的活性组分，数字表示浸渍次数）。
+　　此外，还用附着沉淀法〔4〕制备了Ni-Cu-Urea-1、Ni-Cu-Urea-2和Ni-Cu-K-Urea等3种双组分催化剂。该方法是在浸渍液中预先加入沉淀剂的母体，如尿素，待扩散、吸附过程完成（达到平衡）后，通过改变温度等条件，使沉淀剂母体产生沉淀物种，将活性组分均匀沉积在载体上。具体步骤是将一定量的分析纯尿素溶解在硝酸盐溶液中，然后将γ-Al2O3载体在其中浸4h；再将浸有γ-Al2O3的溶液用水浴加热至55℃，保持5h；其余步骤同浸渍法。附着沉淀法中，载体只浸渍1次。
+1.2　吐氏酸废水的催化臭氧化试验
+　　试验的吐氏酸废水取自天津某化工厂，用自来水稀释至初始COD约1500mg/L，色度300倍（稀释倍数法），并用氨水调节pH值到9.0。臭氧气由XFZ-5型臭氧发生器产生，流量为0.05m3/h，其中臭氧浓度为21～27mg/L。
+　　试验用反应器为一个带旋转筐的圆柱反应器，尺寸为

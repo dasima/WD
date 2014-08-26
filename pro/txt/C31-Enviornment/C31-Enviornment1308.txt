@@ -1,0 +1,45 @@
+环境科学学报
+ACTA SCIENTIAE CIRCUMASTANTIAE
+1999年 第19卷 第3期 Vol.19  No.3 1999
+
+
+
+长期土壤酸化模型(LTSAM)
+安俊岭　黄美元　陶树旺　胡朝霞　
+摘要　以碱总量守恒为基础，以Ulrich缓冲范围为模型主要框架建立了兼能描述酸性与石灰性土 壤长期酸化反应过程的动态模型.经与SMART模型在理论设计和模拟结果两方面作对比之后，又利用新建模型以北京地区典型褐土为例进行了硫沉降与酸(H+)沉降的对比计算.结果表明：(1)LTSAM模型能够很好地反映土壤缓冲酸的主要机制.(2)模式运行即稳定又省时.(3)大气硫沉降不同于酸沉降.也就是说，硫沉降改变时，阳离子(尤其是主要离子)沉降量的变化应当加以考虑.
+关键词　Ulrich缓冲范围；电中性方程；盐基饱和度；碱度；SO42-吸附.
+Long-term soil acidification model (LTSAM)
+AN Junling, HUANG Meiyuan, TAO Shuwang, HU Zhaoxia 
+LAPC, Institute of Atmospheric Physics, Chinese Academy of Science, B eijing 100029
+Abstract　A new dynamic model which can depict the long-term calcareous and non-calcareo us soil response to atmospheric acid deposition has been developed based on the co n tinuity of alkalinity and Ulrich buffer ranges. After comparing LTSAM with SMART (simulation model for acidification's regional trends) in model designs and mod elling results, we have given two acidic deposition scenarios to simulate acidif ication of typical drab soil in Beijing area in order to show discrepancy betwee n acid (H+) deposition and sulphuric (S) deposition in assessment of effects o f acidic deposition on the ecosystems. The result indicates that:(1) LTSAM can d escribe dominant soil buffer mechanisms (e.g.carbonate buffer range, exchange b uffer range, and aluminum buffer range) as well as SMART. (2) LTSAM is proved st able and time-saving.(3) changes in atmospheric deposition of base cations should be considered while a n increase or a decrease in S deposition occurs.
+Keywords　Ulrich buffer ranges, electro neutrality equation, ba se saturation, alkalinity, SO42- adsorption.
+　　在生态系统中，土壤是酸沉降的主要接受者. 土壤对酸沉降的缓冲能力是调节地表水和地下水酸化的关键因素［1］.因此，研究生态系统中土壤的酸化过程就显得尤为重要.自八十年代初以来，欧美国家相继建立了不少预测土壤和地表水酸化的数学模型［2］(如MAGIC模型［3］和SMART模型［4］)，并以硫沉降为代表，即硫沉降(SO42-)等同于酸(H+)沉降来确定当地生态系统的临界值，从而提出相应削减SO2排放量的控制方案.国内的一些工作也是依照此原则开展的［5，6］.事实上硫沉降不同于酸(H+)沉降.从理论上来讲，电中性方程中对SO42-起平衡作用的阳离子除H+外，还有其它阳离子，如Ca2+、Mg2+、K+、Na+和NH4+；从实际观测结果来看，［SO42-］与［H+］在大气酸沉降中并无确定的关系，在中国情况更加明显［7］ .针对硫沉降与酸沉降有别这一重要问题，本文以碱总量守恒为基础建立了可讨论降水中各主要阴阳离子相对重要性的、既能描述酸性土壤又能反映石灰性土壤长期酸化过程的动态模型.
+1　基本假设
+　　土壤中不考虑植被的影响.
+　　土壤溶液中的化学组分决定于内、外源的相互作用.外源，即大气沉降量；内源，即土壤矿 物的风化以及土壤颗粒吸附的离子与土壤溶液中游离态离子之间的等当量交换.
+　　阴离子SO42-可被土壤颗粒所吸附，并服从Langmuir等温吸附方程［8］；NO3-和Cl-不存在吸附；NH4+不参与阳离子交换反应.
+　　SO2、NOx降落到地面遇水后迅速转化为SO42-和NO3-.
+　　有机酸根、其它无机离子(如SO42-、OH-)与铝离子的络合过程均忽略.原因是这类络合仅引起总铝量的微小增加［9］.
+　　每个时间步长(一年)内，外源输入的化学成分与土层内土壤溶液中化学组分之间能够混合均 一.
+　　降水取当地历史均值，在模拟过程中认为不再变化.
+2　模型设计
+　　参考Reuss［10］,Cosby\[3\],Christophersen［11］,De   Vries［4,9］,Arp［12］等模式进行设计，设计过程力求既能够反映土壤中几种主要缓冲机制［4］(碳酸盐缓冲范围、硅酸盐缓冲范围、阳离子交换缓冲范围和铝缓冲范围等)，又能够体现中国南北方土壤和降水的主要特征.
+2.1　水文过程
+　　由于着眼于土壤酸化过程的长期效应，模式假定进入土壤的入渗水通量等于净降水率.净降水率(Q)定义为降水量扣除蒸发量和地表径流之后的余额.地表径流取当地实测值.蒸发量的计算分两步进行，首先求得潜在蒸发量(采用Christiansen-Hargreaves潜在蒸发量经验公式［13］或干燥度表达式［14］)，然后求出实际蒸发量.
+2.1.1　实际蒸发量［15］
+p=pe.θ/θfc
+式中，p为实际蒸发量，pe潜在蒸发量，θ、θfc分别为土壤容积含水量和田间持水量.θfc可实测或查有关文献得到.
+2.1.2　土壤容积含水量θ、容量ρ［9］
+θ(m3/m3)=0.04+0.0077fclay　　　　　　　fclay≤30%
+θ=0.27　　　　　　　　　　　　fclay＞30%
+ρ=1000/(0.625+0.05fctc+0.0015fclay)　　fctc＜5%
+ρ=725-337logfctc　　　　　　　　　　fctc＞15%
+式中fclay、fctc分别表示土壤中粘粒与有机质含量，可实测或查阅《土壤通报》、《土壤学报》等得到；阳离子交换量CEC也可类同求得.另外，当5%＜fctc＜15%时，ρ取线性内插值.
+2.2　化学过程
+　　这是模式的核心.设计过程以Ulrich对土壤缓冲作用归划缓冲范围的观点［4，16］为主线，以质量作用定律、质量守恒方程和电中性方程为理论基础，以既能体现中国酸雨特点(硫酸型)和降水特征(Ca2+与NH4+普遍高)*，又可讨论各阴阳离子对土壤酸化贡献的大小为主旨.
+2.2.1　土壤缓冲机制
+　　(1) 碳酸盐缓冲范围　对于微酸性土壤和石灰性土壤，土壤溶液中的酸性源于CO2溶于水形成的碳酸.石灰性土壤中由此产生的酸和外输入酸都是通过碳酸钙中和的(碳酸盐缓冲范围).处于该缓冲范围内的土壤pH值维持在8.5-6.2［17］.
+　　(2) 硅酸盐缓冲范围与阳离子交换缓冲范围　当pH值低至6时，土壤中的矿物质会释放出碱金属和碱土金属离子而消耗质子(硅酸盐缓冲范围).硅酸盐接受质子的速度随质子活度的增加(pH的降低)而有限增加.若质子增加速度超过硅酸盐矿物的风化速度，则土壤的化学状态会由硅酸盐缓冲范围转变为阳离子交换缓冲范围(土壤溶液中的自由氢离子与土壤颗粒上被吸附的非酸性阳离子，如Ca2+、Mg2+、K+、Na+发生等当量交换而中和掉)，这种转变是可逆的［16］.
+　　(3) 铝缓冲范围　土壤进一步酸化时，即土壤pH降到4.2-2.8时［17］，土壤盐基饱和度的降低迫使自由氢离子与土壤中的铝(如氢氧化铝)发生反应(铝缓冲范围).
+3H++Al(OH)3=Al3++3H2O
+这时，阳离子交换不仅限于H+、Ca

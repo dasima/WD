@@ -1,0 +1,57 @@
+导弹与航天运载技术
+MISSILES AND SPACE VEHICLES
+1999年 第3期　No.3 1999
+
+
+
+某型高度表的可靠性增长分析
+周源泉　郭建英
+　　摘要　对某型高度表的综合环境下的可靠性增长试验的故障信息，用多台不同步截尾的AMSAA模型及多台同步AMSAA-BISE模型进行了详细的统计分析，结果表明，产品有显著的可靠性增长，故障数据可用AMSAA模型跟踪，其平均故障间隔时间(MTBF)的置信下限超过了总体部门下达的指标。
+　　主题词　高度表，可靠性增长试验，可靠性分析，+AMSAA-BISE模型。
+Reliability Growth Analysis of a Type of Altimeter
+Zhou Yuanquan
+(Beijing Institute of Strength ＆ Environmental Engineering,Beijing,100076)
+Guo Jianying
+(Harbin University of Science ＆ Technology, Harbin,150080)
+　　Abstract　Using multi-system nonsynchronous truncated AMSAA model and multi-system synchronous truncated AMSAA-BISE model, the failure data of reliability growth testing in combined environment for a type of altimeter are analysed in detail. The results indicate that the product has significant reliability growth, the failure data can be tracked by AMSAA model, and the lower confidence limits of MTBF for the altimeter exceed the desired value given by the overall department.
+　　Key　Words　Altimeter,Reliablity growth test,Reliablity analysis，+AMSAA-BISE model.
+1　引　言
+　　某型高度表是某大型复杂系统的关键测控部件，在研制初期，其故障严重影响了系统的可靠性。为了提高系统的可靠性，决定对该高度表进行综合环境可靠性增长试验。
+　　总体部门对该高度表下达的可靠性指标为，在置信水平γ=0.80时，要求其MTBF的置信下限不小于300 h。
+　　 为了避免单台产品试验的随机性及加快可靠性增长的进程，采取两台同型高度表作同步投试、同步改进(发现B型故障后，针对故障模式，两个高度表于同一累积试验时间作同步工程与设计纠正)的不同步截尾的可靠性增长试验，其试验结果列于表1。
+表1　高度表可靠性增长试验的故障数据
+
+iniMiJi/htij/h
+1661 49425,82,246,537,808,1 003
+2331 52936,253,768
+
+　　表中ni是第i台高度表的故障次数，参数Mi是与ni及截尾方式有关的量：
+
+　　Ji为第i台的截尾的累积试验时间；tij是第i台的第j次故障的累计试验时间。
+　　下面对试验结果进行分析。
+2　两台高度表故障数据的比较
+　　本节先检验两台高度表有无可靠性增长。再检验它们是否可用AMSAA模型(文献［1］将它称为幂律模型，有的文献称为Crow模型)拟合。在得到肯定后，再检验两台高度表的故障数据有无显著差异，即是否可认为属同型系统。
+2.1　两台高度表的增长检验与拟合优度检验
+2.1.1　增长检验
+　　据文献［1］计算第i台的Laplace检验统计量：
+
+　　据表1，可算得：μ1=-1.685 9，μ2=-1.617 4，查Laplace检验统计量的临界表(见文献［4］的260页)，可得：M1=6,α1=0.10的μ1,α1/2=μ1，0.05=-1.649 4,而M2=3,α2=0.15的μ2，α2/2=μ2，0.075=-1.467 4。因
+μ1＜μ1,0.05,　μ2＜μ2,0.075
+故以显著性水平α1/2=0.05,表明第1台有显著的可靠性正增长。以显著性水平α2/2=0.075，表明第2台有显著的可靠性正增长。
+2.1.2　拟合优度检验
+　　按文献［1］，计算第i台(i=1,2)的拟合优度检验统计量：
+
+式中　
+　　据表1，可算得：
+　　查的临界值表(见文献［4］的261页)，可得：M1=6,α1=0.2的及M2=3,α2=0.2的因故第1台、第2台的高度表的故障数据分别服从幂律过程(有的文献称为Weibull过程)，则
+
+式中　Ni(t)是第i台高度表在时间区间(0，t］内的故障次数。ai，bi分别是第i台高度表的尺度参数与形状参数。
+　　据文献［1］，可算得αi,bi的点估计分别为
+
+　　可见间，间都有一定的差距。问题是，在统计上，第1，2台有无显著差异，即第1，2台可否看成同型系统。这需要检验b1=b2，a1=a2是否成立。下面分步进行讨论。
+2.2　b1=b2的检验
+　　检验假设
+　　在给定N1(J1)=n1的条件下，有　　
+　　同样，在给定N2(J2)=n2的条件下，有　　
+若b1=b2,则　　　
+当F*的观测值满足　F2n1，2n2;α/2≤F

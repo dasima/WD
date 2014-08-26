@@ -1,0 +1,58 @@
+环境科学学报
+ACTA　SCIENTIAE　CIRCUMSTANTIAE
+1998年2月第18卷第2期科技期刊
+微量元素镍在小白鼠脏器内积累规律的研究
+汪燕芳
+(江西师范大学化学系，南昌330027)
+周松茂　张奇凤　陈国树
+(南昌大学化学系)
+范广勤　阎　冀　刘延芳
+(江西医学院卫生系)
+关键词　　镍；脏器；积累规律. 
+ACCUMULATIVE REGULARITY OF NICKEL IN THE VISCERA OF SMALL WHITE MICE
+
+Wang Yanfang, Zhou Songmai, Zhang Qifeng, Chen Guoshu
+(Department of Chemistry, Nanchang University, Nanchang 330047)
+Fan Guangqin, Yan Ji, Liu Yanfang
+(Department of Health, Jiangxi Medical College, Nanchang 330006)
+
+ABSTRACT　Adult small white mice are used for the experiment. This paper studies the distribution of nickel accumulation in the viscera of mice under different conditions and the influence of copper, iron and selenium to the accumulation of nickel. The results show that the accumulation of various species of nic-kel in the viscera of small white mice is different, the accumulation of inorganic nickel is apparently higher than that of organic nickel. Copper and iron have synergistic effect to the accumulation while selenium has antagonistic effect.
+Keywords　viscera, accumulative regularity, nickel.
+　　微量元素镍广泛地分布在大气、水体、土壤和生物体内环境中.研究表明，人体摄入过量的微量元素镍能引起中毒症［1―3］，影响DNA的合成和RNA的复制，引起细胞突变，导致癌症.长期接触镍化合物，均有致癌作用［4］.我国已发现鼻咽癌、肺癌等与镍及其化合物有密切关系［5，6］，因此，研究动物脏器内镍的积累规律，对深入剖析镍的生物化学功能，研究环境中镍对健康的威胁、中毒和致癌因素具有重要意义.
+　　本文采用成年小白鼠为试验对象，分别以无机镍和有机镍隔日灌胃，动物染毒10天后，解剖小白鼠，测定各脏器内的镍含量，并进行医学统计，揭示了不同形态镍化合物在脏器内的积累规律，也探明了微量元素铜、铁对镍积累的促进作用和硒对镍积累的抑制作用.为职业病的防治和保护生物体内环境提供了科学依据.
+
+1　材料与方法
+1.1　实验材料
+　　健康成年小白鼠，昆明鼠种，体重18―22g，雌雄各半；块状饲料(含大豆粉、玉米粉、鱼粉、碎大米粉等)，饮用水(以上均由江西医学院实验动物部提供).Ni(C4H4O5)(本实验室合成，经原子吸收分光光度计、元素分析仪及红外光谱仪鉴定，其纯度为99.25%)，Ni(NO3)2*6H2O，CuSO4*5H2O，Na2SeO3,FeSO4(NH4)2SO4*6H2O,橄榄油(化学纯)和吐温-80，以上试剂未经说明均为分析纯，实验用水为二次蒸馏水.
+1.2　仪器与工作条件
+　　Z-8000偏振塞曼原子吸收分光光度仪(日本岛津).工作条件：镍空心阴极灯，灯电流10.0mA,吸收波长232.0nm，狭缝宽0.2nm，透光容器：普通石墨管，载气(高纯氩气)200mL/min,间断进气30mL/min,进样量20μL;温度条件：干燥80―120℃，30s；灰化700℃，30s;原子化2700℃，10s;净化2800℃，3s.
+1.3　试验方法
+　　将小白鼠随机分为对照组(N0)和5个试验组，每组16只，雌雄各半.以橄榄油、水、吐温-80混合液为溶剂，分别将Ni(C4H4O5)(N1组)，Ni(NO3)2*6H2O(N2组)，Ni(C4H4O5)与CuSO4的混合物(N3组)，Ni(C4H4O5)与FeSO4(NH4)2SO4*6H2O的混合物(N4)组,Ni(C4H4O5)与 Na2SeO3的混合物(N\-5组)制成乳浊液.固定镍、铜、铁、硒用量均为4.0mg/kg(体重)，溶剂用量控制在每次每只小白鼠为0.8mL以内配成相应乳浊液.各组均喂养基本饲料、水；实验组还采用隔日灌胃法，注入相应试剂的乳浊液，对照组也灌胃等比例量的混合溶剂，观察小白鼠的体征变化.在小白鼠染毒10天后，断颈椎处死小白鼠，取出脏器，除血称重.用湿法消解各脏器［7］，用原子吸收分光光度计测定各脏器内镍的含量(包括无机镍及有机镍)，并进行数理统计.
+1.4　仪器的灵敏度与检测限
+　　实验结果表明：该仪器测镍的灵敏度为0.006μg/mL/1%，检测限为0.013μg/mL.
+1.5　试样分析的回收率
+　　结果见表1.
+　　
+表1　标准回收实验
+Table 1 Standard recovery experiment
+
+样品含量，μg/g加入量，μg/g测得量，μg/g回收率，%
+肝样1#0.330.600.9197.8
+肝样2#0.250.600.90105.9
+脾样1#0.880.601.50101.4
+脾样2#0.630.601.24100.8
+
+
+2　结果与讨论
+2.1　镍在不同组小白鼠脏器内的积累程度
+　　按实验方法，采用原子吸收光度法测定各试样中镍的含量，其结果列入表2.
+
+表2　镍在不同组别小白鼠脏器内积累的分布规律(x±SD,μg/g)
+Table 2 Accumulation of different species of nickel in organs
+
+组别n肝肺胃脾肾心
+N0组160.10±0.060.56±0.050.22±0.090.45±0.040.13±0.050.42±0.02
+N1组160.16±0.09*0.74±0.06**0.42±0.05**0.49±0.04*0.30±0.02**0.77±0.02**
+N2组160.21±0.03**0.86±0.05**0.52±0.06**0.70±0.06**0.42±0.04**0.92±0.09**
+N3组160.26±0.02**0.81±0.08**0.73±0.05**1.18±0.16**1.07±0.16**1.46±0.08**
+N4组160.51±0.08**0.91±0.04**0.78±0.04**1.28±0.06

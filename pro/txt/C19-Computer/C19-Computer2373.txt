@@ -1,0 +1,8 @@
+计算机研究与发展
+JOURNAL OF COMPUTER RESEARCH AND DEVELOPMENT
+1999年 第36卷 第9期 Vol.36 No.9 1999
+
+
+
+一种基于结点的分布式合作缓存管理算法DCC
+郑晓薇　郑纬民

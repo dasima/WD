@@ -1,0 +1,23 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1997年　第23卷　第4期　Vol.23　No.4　1997
+
+
+
+点发序列问题的控制策略1)
+邢科义　李俊民　许祥秦　胡保生
+　　摘　要　在离散事件系统的Petri网模型下，讨论是否存在控制策略使得仅有希望的序列使能， 而又保持事件的并发性的问题. 证明了存在这种策略的必要充分条件是给定的目标序列集是可控的. 在目标序列集不可控而所考虑的序列集都是Petri网点发序列集时，提出了综合给定序列集的极大可控子序列集生成器的方法. 
+　　关键词　点发序列问题，Petri网，控制策略. 
+THE CONTROL STRATEGY FOR THE FIRING SEQUENCE PROBLEM
+XING KEYI LI JUNMIN XU XIANGQIN
+(Department of Applied Mathematics, XIDIAN University, Xi′an 710071)
+HU BAOSHENG
+(Systems Engineering Institute, Xi′an Jiaotong University, Xi′an 710049)
+Abstract In this paper we use Petri nets to model a discrete event system, and discuss whether or not there exists a control strategy by which only the specified target firing sequences can be enabled. It is proved that a necessary and sufficient condition for the existence of such strategy is that the set of the specified target firing sequences are controllable. For the case where the firing sequence sets involved are Petri net firing sequence sets we present a method for synthesizing a control strategy by which the closed loop system can generate the supremal controllable subset of a given firing sequence set.
+Key words Firing sequence problem, Petri net, control strategy.
+1　引　言
+　　在离散事件系统控制理论中，Ramadge和Wonham［1］在自动机语言下研究了各种控制问题，讨论了监督控制，即使闭环系统沿目标语言演化的动态控制器的存在性，给出了监控器的综合方法. 但事件的并发性是不能用自动机语言来描述的，从而被排除在他们研究的情形之外. 
+　　Petri网(P-网)是模拟分析并发事件系统的有力工具，它能清楚地描述事件的相关性和独立性，以及事件的并发性. Ichikawa和Ushio［2，3］仅在一些特殊情况下讨论了基于P-网的控制问题. 本文在一般的P-网中讨论点发序列问题，在系统行为和希望行为都是P-网序列集时，给出了问题的控制策略存在的必要充分条件，以及综合方法. 提出了接受极大可控子序列集的受控系统的构造方法. 
+2　Petri网点发序列集， 控制策略
+　　本文讨论P-网N=(P,T,I,O,m0)［4］中几个变迁可以同时点发数次的情形，即在标识m下点发的变迁全体是一个变迁袋. 用T∞表示T上的所有变迁袋的集合. b∈T∞称为在m下是状态使能的，如果对所有p∈P，有#(p,t)≤m(p)， 其中#(u,v)=在m下，状态使能的变迁袋b的点发使系统由m变为状态m′，m′(p)=m(p)+#(t,p)-#(p,t),记作m〔b＞m′.用R(N,m0)记N的可由m0到达的标识之集. T∞*表示所有变迁袋序列之集. 记号m〔b＞m′自然地可扩展到T∞*上. 从m0可依次点发的变迁袋序列之集就是N生成的点发序列集L(N)={σ∈T∞*｜m0〔σ＞有定义}. 
+　　变迁集可分为可控变迁集Tc和不可控变迁集Tu,T=Tc∪Tu. 本文考虑形式为V：R(N，m0)→的控制策略. V把m映射为可控变迁袋的集合V(m)

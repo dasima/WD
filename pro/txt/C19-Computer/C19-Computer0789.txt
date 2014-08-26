@@ -1,0 +1,15 @@
+自动化学报
+ACTA AUTOMATICA SINICA
+1999年 第25卷 第6期 Vol.25 No.6 1999
+
+
+
+一种离散事件系统实时控制器的设计
+王　蓓　吴智铭
+摘　要　针对实时离散事件系统，提出了一种实时动态控制器的设计方法.用有限状态机FSM(Finite State Machine)对系统进行建模.用时态逻辑TL (Temporal Logic)给出系统的规范化要求.通过这两种形式化方法的有效结合，实现了控制器动态监控的功能.
+关键词　FSM，时态逻辑，监控器，动态控制器.
+AN APPROACH FOR DESIGNING REAL 
+TIME DES CONTROLLER
+WANG Bei　WU Zhiming
+(Dept.of Automation,Shanghai Jiaotong Univ,Shanghai　200030)
+Abstract　A new design method is presented for discrete event system(DES)controller.DES is modeled by finte state mechanism(FSM).The system specification is described by using temporal logic(TL).With the combination of these two formal methods,one can not only realize the DES supervisor to maintain close-loop beha-

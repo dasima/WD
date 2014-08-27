@@ -1,5 +1,6 @@
 #include "word_unique.h"
-#include <echo/exception.h>
+//#include <echo/exception.h>
+#include <stdexcept>
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -7,26 +8,25 @@
 #include <fstream>
 #include <iostream>
 #include <cstdio>
+#include <cstdlib>
 #include <string>
-#include "../lib/cppjieba/src/MixSegment.hpp"
+#include "MixSegment.hpp"
+
 using namespace std;
 using namespace CppJieba;
 
-const char * const JIEBA_DICT_FILE = "../lib/cppjieba/dict/jieba.dict.utf8";
-const char * const HMM_DICT_FILE = "../lib/cppjieba/dict/hmm_model.utf8";
+//const char * const TEST_FILE = "./cut.txt";
+const char * const JIEBA_DICT_FILE = "../lib/libcppjieba/dict/jieba.dict.utf8";
+const char * const HMM_DICT_FILE = "../lib/libcppjieba/dict/hmm_model.utf8";
 
 
-WordUnique::WordUnique()
-{
-    //getDoc(); 
-}
 
 void WordUnique::getDoc()
 {
     ifstream in;
     in.open("../data/index.txt");
     if(!in)
-        throw Exception("open file failed");
+        throw runtime_error("open file failed");
     //int fd = open("../data/index.txt", O_RDONLY);
 
     int fd2 = open("../data/page.lib", O_RDONLY);
@@ -35,10 +35,12 @@ void WordUnique::getDoc()
         perror("open failed");
         return;
     }
+    MixSegment seg(JIEBA_DICT_FILE, HMM_DICT_FILE);
     char buf[100000];
     int fsize;
     int offset;
     string line;
+    vector<string> words;
     if(getline(in, line))
     {
         //获取偏移量和文档大小
@@ -53,7 +55,6 @@ void WordUnique::getDoc()
         //获取一个文本内容
         //Rio Rio_(fd2);//这里我的rio中readn函数参数为const类型，是不对的
         lseek(fd2, offset, SEEK_SET);
-        int ret;
         if(read(fd2, buf, fsize))
         {
             //printf("%s", buf);
@@ -67,30 +68,28 @@ void WordUnique::getDoc()
             //cout << con << endl;
             //cout << pos1 <<  " " << pos2 << endl;
            
-            Vec_.push_back(con);
+            seg.cut(con.c_str(), words);
+            cout << words << endl;
+
+            //Vec_.push_back(con);
             //对每一个文本进行处理
             //这里可以函数返回值为string类型的con,从而不进行函数调用
-            //do(con);
         }
     }
-    vector<string>::iterator vit = Vec_.begin();
-    string s = *vit;
-    makeCut(s);
 }
 
-//这里需要每次传给makeCut一个字符串参数
-void makeCut(const string &path)
+/*
+void WordUnique::makeCut()
 {
-    MixSegment seg(JIEBA_DICT_FILE, HMM_DICT_FILE);
-    cutWord(seg, path);
+    cutWord(seg, TEST_FILE);
 }
+*/
 
-void WordUnique::cutWord(const ISegment &seg, const char * const filename)
+/*
+void WordUnique::cutWord(const ISegment& seg, const char * const filename)
 {
-    char *file = filename;
+    //const char *file = filename;
     ifstream in(filename);
-    if(!in)
-        throw Exception("open fail");
     vector<string> words;
     string line;
     string res;
@@ -105,5 +104,5 @@ void WordUnique::cutWord(const ISegment &seg, const char * const filename)
         }
     }
 }
-
+*/
 

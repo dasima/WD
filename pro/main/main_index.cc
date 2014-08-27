@@ -1,21 +1,33 @@
-#include "../include/document.h"
-#include <fstream>
-#include <string.h>
+#include <echo/rio.h>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <stdlib.h>
 #include <stdio.h>
-using namespace std;
 
 int main(int argc, const char *argv[])
 {
-    Document doc;
-    char base[1000];
-    getcwd(base, 999);//获取当前路径
-    memset(base, '\0', sizeof(base));
-    strcpy(base, "../data/");
-    doc.readFile(base);
-    getcwd(base, 999);
-    strcat(base, "/data/index.txt");
-    cout << base << endl;
+    //read index_file
+    int index = open("index.txt", O_RDONLY);
+    lseek(index, 0, SEEK_CUR);
+    char msg[100];
+    read(index, msg, 3);
+    printf("%d\n", (int)msg);
+    /*
+    char* nindex;
+    char *s;
+    printf("a\n");
+    nindex = rio_readline(index, 10);
+    printf("b\n");
+    printf("%s\n", nindex);
+    */
+    //read_page.lib
 
-    doc.buildIndex(base);
+    //cut
+    
     return 0;
 }

@@ -4,15 +4,14 @@
 #include <echo/rio.h>
 #include <vector>
 #include <iostream>
-#include "../lib/cppjieba/src/ISegment.hpp"
 
 class WordUnique
 {
     public:
-        WordUnique();
+        //WordUnique();
         void getDoc();
-        void cutWord(const ISegment &, const char * const);
-        void makeCut(const string &);
+        //void makeCut();
+        //void cutWord(const CppJieba::ISegment &, const char * const );
     private:
         //Rio Rio_;
         std::vector<std::string> Vec_;
